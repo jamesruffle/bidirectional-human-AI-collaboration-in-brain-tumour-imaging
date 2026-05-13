@@ -1,0 +1,54 @@
+{
+  "fold": [
+    "int"
+  ],
+  "case_id": [
+    "str"
+  ],
+  "radiologist": [
+    "str"
+  ],
+  "pathology": [
+    "str"
+  ],
+  "cohort": [
+    "str"
+  ],
+  "volume": [
+    "NoneType"
+  ],
+  "radiomic_category": [
+    "NoneType"
+  ],
+  "model_confidence": [
+    "float64"
+  ],
+  "gt": [
+    "int"
+  ],
+  "model_pred": [
+    "int"
+  ],
+  "cv_pred": [
+    "int"
+  ],
+  "model_prob": [
+    "float64"
+  ],
+  "combined_prob": [
+    "float64"
+  ],
+  "human_prob": [
+    "float"
+  ],
+  "human_confidence": [
+    "int"
+  ],
+  "human_agreement": [
+    "float",
+    "float64"
+  ],
+  "used_human": [
+    "bool"
+  ]
+}

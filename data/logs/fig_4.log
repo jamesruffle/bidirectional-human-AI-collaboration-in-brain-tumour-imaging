@@ -1,0 +1,21 @@
+Run started: 2026-05-09T10:54:37Z
+Script:      code/figures/fig_4.py
+Host CPUs:   128
+----
+Using pre-extracted prob_data_dict (564 cases)
+  Model alone AUROC (unique-case, n=564): 0.908
+  Model accuracy: 0.824
+  Model alone AUPRC (unique-case, n=564): 0.961
+  Model+Radiologist (CV) AUROC (unique-case, n=564): 0.911
+  Model+Radiologist (CV) AUPRC (unique-case, n=564): 0.974
+  Radiologist alone AUROC (reader-averaged, n=11): 0.729
+  Overall accuracy: 0.698
+  Radiologist alone AUPRC (reader-averaged, n=11): 0.724
+  Radiologist+Model AUROC (reader-averaged, n=11): 0.839
+  Overall accuracy: 0.743
+  Radiologist+Model AUPRC (reader-averaged, n=11): 0.832
+Fig_4 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_4.png
+Fig_4 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_4.svg
+----
+Run ended:   2026-05-09T10:54:40Z
+Wall clock:  3.1s

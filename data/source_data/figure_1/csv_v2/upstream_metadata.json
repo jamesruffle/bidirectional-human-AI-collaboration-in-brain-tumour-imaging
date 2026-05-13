@@ -1,0 +1,12 @@
+{
+    "_description": "Upstream cohort metadata from the primary model paper (ref 42) and model-inference timing logs. These values describe the source data and infrastructure rather than the 564-case radiologist-reviewed subset bundled in source_data/, so they cannot be derived from the figure-script CSVs.",
+    "full_test_set_country_counts": {
+        "Netherlands": 82,
+        "UK": 397,
+        "USA": 614,
+        "Sub-Saharan Africa": 16
+    },
+    "full_test_set_total": 1109,
+    "model_inference_seconds_per_case": 4.10,
+    "_model_inference_source": "timing_summary.json from the model evaluation run; corresponds to 3600/4.10 = 878 cases/hour"
+}

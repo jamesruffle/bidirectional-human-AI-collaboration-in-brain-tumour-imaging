@@ -1,0 +1,27 @@
+Computing minimal agreement inputs live from /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/figure_1/csv_v2/radiologist_df.csv...
+  Loaded 2200 rows x 5 cols (live-derived)
+
+Generating Extended Data Figure 4...
+
+Extended_Data_Fig_4 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_4.png
+Extended_Data_Fig_4 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_4.svg
+
+Figure-displayed Cohen κ values (panel titles):
+  a) Model-radiologist agreement, without support  κ = 0.314
+  b) Model-radiologist agreement, with support     κ = 0.482
+  c) Radiologist-radiologist agreement, without    κ = 0.333
+  d) Radiologist-radiologist agreement, with       κ = 0.486
+
+Aggregate pairwise Cohen κ across all comparisons (paragraph 84):
+  Without support  κ_aggregate = 0.324  (rad-rad n=1289 + rad-model n=1100 = 2389 pairs)
+  With support     κ_aggregate = 0.484  (rad-rad n=1289 + rad-model n=1100 = 2389 pairs)
+
+Bootstrap p-values for Cohen κ contrasts (paragraph 84, B=5000, seed=20260505):
+  Rad-model    Δκ = +0.168 [+0.110, +0.222]  Bootstrap p = 0.0000  (n=564 common cases)
+  Rad-rad      Δκ = +0.153 [+0.042, +0.260]  Bootstrap p = 0.0060  (n=205 common cases)
+  Aggregate    Δκ = +0.160 [+0.096, +0.224]  Bootstrap p = 0.0000  (n=5000 valid replicates)
+
+Per-pair κ direction split (paragraph 84, '% higher with support'):
+  Of 66 unique reader-pair κ comparisons:
+    κ higher WITH support:    51 (77.3%)
+    κ higher WITHOUT support: 15 (22.7%)

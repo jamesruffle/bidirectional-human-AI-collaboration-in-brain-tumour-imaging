@@ -1,0 +1,176 @@
+Loading Fig 1 inputs from /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/figure_1/csv_v2...
+  Loaded 16 master variables from CSV/JSON
+  Derived 24 variables total (subsets + paired_data + plot_df + experience_df)
+Rendering Fig 1...
+Panel a: Using reader-averaged balanced accuracy for radiologist alone: 0.698
+Panel a: Using reader-averaged balanced accuracy for radiologist with model: 0.743
+Panel a: Using pair-level model baseline accuracy from grid search: 0.824
+Panel a: Using pair-level nested CV accuracy from grid search: 0.842
+
+Panel b: Using MRMC results for radiologist metrics
+  Radiologist alone AUROC (MRMC): 0.729
+  Radiologist alone AUPRC (MRMC): 0.724
+  Radiologist alone Sensitivity (MRMC): 0.7982
+  Radiologist alone Specificity (MRMC): 0.5145
+  Radiologist with model AUROC (MRMC): 0.839
+  Radiologist with model AUPRC (MRMC): 0.832
+  Radiologist with model Sensitivity (MRMC): 0.8927
+  Radiologist with model Specificity (MRMC): 0.5673
+
+Canonical AUROC/AUPRC (unique-case model arms; n=564):
+  Model alone AUROC:                     0.908
+  Model alone AUPRC:                     0.961
+  Model+Radiologist (CV) AUROC:          0.911
+  Model+Radiologist (CV) AUPRC:          0.974
+  Using group 1 reader-averaged metrics: Balanced Accuracy=0.6982, Precision=0.6925, F1=0.7139
+  Using group 2 reader-averaged metrics: Balanced Accuracy=0.7427, Precision=0.7136, F1=0.7601
+  Model+Radiologist (pair-level CV): n=1100 pairs, Acc=0.842, Sens=0.915, Spec=0.769
+  Bootstrapping pair-level CIs for model metrics (B=5000)...
+
+Bootstrapping pair-level CIs for Model+Radiologist (CV) metrics (B=5000)...
+
+Panel B figure-displayed values (point estimate [95% CI]):
+  Radiologist alone        Accuracy     0.698 [0.658-0.739]
+  Radiologist alone        Sensitivity  0.798 [0.756-0.841]
+  Radiologist alone        Specificity  0.515 [0.429-0.600]
+  Radiologist alone        Precision    0.693 [0.641-0.744]
+  Radiologist alone        F1           0.714 [0.682-0.745]
+  Radiologist with model   Accuracy     0.743 [0.711-0.775]
+  Radiologist with model   Sensitivity  0.893 [0.852-0.934]
+  Radiologist with model   Specificity  0.567 [0.520-0.615]
+  Radiologist with model   Precision    0.714 [0.681-0.746]
+  Radiologist with model   F1           0.760 [0.729-0.791]
+  Model alone              Accuracy     0.824 [0.802-0.845]
+  Model alone              Sensitivity  0.920 [0.896-0.941]
+  Model alone              Specificity  0.727 [0.690-0.763]
+  Model alone              Precision    0.771 [0.740-0.802]
+  Model alone              F1           0.839 [0.817-0.860]
+  Model with radiologist   Accuracy     0.842 [0.820-0.863]
+  Model with radiologist   Sensitivity  0.915 [0.890-0.936]
+  Model with radiologist   Specificity  0.769 [0.734-0.804]
+  Model with radiologist   Precision    0.798 [0.767-0.828]
+  Model with radiologist   F1           0.853 [0.831-0.874]
+
+──────────────────────────────────────────────────────────────────────────────
+Table 1 auxiliary statistics (AUROC/AUPRC CIs, Δ point + paired CI)
+──────────────────────────────────────────────────────────────────────────────
+
+AUROC / AUPRC point estimate [95% CI]:
+  Radiologist alone        AUROC  0.729 [0.683, 0.774]
+  Radiologist with model   AUROC  0.839 [0.811, 0.868]
+  Model alone              AUROC  0.908 [0.871, 0.941]
+  Model with radiologist   AUROC  0.911 [0.883, 0.937]
+  Radiologist alone        AUPRC  0.724 [0.674, 0.770]
+  Radiologist with model   AUPRC  0.832 [0.801, 0.862]
+  Model alone              AUPRC  0.961 [0.936, 0.982]
+  Model with radiologist   AUPRC  0.974 [0.964, 0.983]
+
+Δ Human (radiologist with AI vs alone) — reader-level paired bootstrap:
+  Δ auroc        +0.111 [+0.074, +0.151]
+  Δ auprc        +0.108 [+0.069, +0.152]
+  Δ accuracy     +0.045 [+0.014, +0.078]
+  Δ sensitivity  +0.095 [+0.053, +0.140]
+  Δ specificity  +0.053 [-0.007, +0.107]
+  Δ precision    +0.021 [-0.013, +0.058]
+  Δ f1           +0.046 [+0.017, +0.078]
+
+Δ AI (model with radiologist vs alone) — case-level paired bootstrap (n=564):
+  Δ auroc        +0.003 [-0.022, +0.030]
+  Δ auprc        +0.013 [-0.005, +0.035]
+  Δ accuracy     +0.018 [+0.006, +0.028]
+  Δ sensitivity  -0.005 [-0.012, -0.000]
+  Δ specificity  +0.042 [+0.017, +0.065]
+  Δ precision    +0.027 [+0.013, +0.039]
+  Δ f1           +0.013 [+0.004, +0.022]
+
+Confidence-accuracy correlation (Pearson r per reader, reader-level bootstrap CI):
+  Radiologist alone               r = 0.188 [0.138, 0.241]
+  Radiologist with model          r = 0.337 [0.267, 0.407]
+  Δ Human (with vs without)        +0.148 [+0.083, +0.221]
+
+Model calibration_diff (high - low confidence accuracy):
+  Model alone (median split):              -0.112
+  Model + radiologist (Q3/Q1 split):       +0.276
+
+Agent-level (n=12: 11 radiologists + 1 model) calibration metrics (manuscript Para 126):
+  Sentence 1 — confidence-accuracy correlation (paired t=-4.347, p<0.01; manuscript: p<0.01):
+    Without support  mean = 0.166 ± 0.117
+    With support     mean = 0.331 ± 0.122
+  Sentence 2 — calibration difference (paired t=-3.406, p<0.01; manuscript: p<0.01):
+    Without support  mean = 0.155 ± 0.144
+    With support     mean = 0.334 ± 0.121
+  Sentence 3 — confidence bias (paired t=-3.804, p<0.01; manuscript: p<0.01):
+    Without support  mean = 0.626 ± 0.456
+    With support     mean = 1.457 ± 0.834
+
+Mean confidence per arm (case-level, with reader-level bootstrap CI on the per-reader mean):
+  Radiologist alone               Mean = 6.88 [6.39, 7.34]  (per-reader range: 5.12-8.41)
+  Radiologist with model          Mean = 7.23 [6.81, 7.73]  (per-reader range: 6.36-9.07)
+  Δ Human (with vs without)        +0.35 [+0.13, +0.60]
+  Δ Human confidence bootstrap p (reader-level, B=5000, seed=20260505): p=0.0020
+
+RTAT (response time per case, seconds; reader-level bootstrap CI on the per-reader mean):
+  Radiologist alone               Mean = 45.6 s [35.0, 60.9]  (per-reader range: 26.4-105.7)
+  Radiologist with model          Mean = 30.6 s [24.7, 37.4]  (per-reader range: 18.7-56.1)
+  Δ Human (with vs without)        -15.1 s [-24.8, -7.2]
+
+Pooled-review summary (raw 2200-row pool, paragraphs 86 + 88):
+  Confidence without model:  mean=6.88 ± 1.92
+  Confidence with model:     mean=7.23 ± 1.93
+  RTAT without model:        mean=45.6 ± 41.4
+  RTAT with model:           mean=30.6 ± 30.2
+  Throughput without model:  mean=79 ± 71.7 cases/hour  (delta-method SD; paragraph 88)
+  Throughput with model:     mean=118 ± 116.4 cases/hour  (delta-method SD; paragraph 88)
+  Reporting-efficiency gain: 49%  (paragraph 88)
+
+Per-reader Δ confidence (correct − incorrect) (para 123 sentence 3):
+  Radiologist alone             mean = 0.700 ± 0.396  (n=11)
+  Radiologist with model        mean = 1.420 ± 0.864  (n=11)
+
+Confidence/accuracy vs reporting speed (per-confidence-bin pooled, paragraph 109):
+  Radiologist alone             conf-speed r = +0.984 (p=2.75e-07) | acc-speed r = +0.886 (p=0.000653)
+  Radiologist with model        conf-speed r = +0.936 (p=6.94e-05) | acc-speed r = +0.820 (p=0.00364)
+
+Reporting-speed variability — raw cases/hour (paragraph 109):
+  Without model (n=1100): mean = 128.7, CV = 64.1%
+  With model    (n=1100): mean = 174.0, CV = 50.4%
+  Levene's test of equal variances: W = 8.265, p = 0.0041
+
+Country composition test (564 reviewed vs 1109 full test set; para 182):
+  Reviewed (564):    Netherlands=28 (4.96%), UK=208 (36.88%), USA=316 (56.03%), Sub-Saharan Africa=12 (2.13%)
+  Full set (1109):   Netherlands=82 (7.39%), UK=397 (35.80%), USA=614 (55.37%), Sub-Saharan Africa=16 (1.44%)
+  χ²(3) = 13.36, p = 0.0039
+
+Per-reader calibration regression (accuracy ~ confidence in 1-10 units):
+  Radiologist alone             slope = 0.054 ± 0.031  mean dev = 0.179 ± 0.077
+  Radiologist with model        slope = 0.085 ± 0.024  mean dev = 0.135 ± 0.044
+
+Panel c: Calculating individual radiologist performance on unique cases
+
+Per-radiologist accuracy direction (paragraph 80; n=11 readers):
+  Improved with model:   8/11 (73%)
+  Unchanged:             1/11
+  Declined slightly:     2/11
+
+Panel c: Using consistent metrics from Panel A
+  Radiologist alone (balanced accuracy): 0.6982
+  Radiologist with model (balanced accuracy): 0.7427
+  Model alone (pair-level accuracy): 0.8236
+  Model with radiologist support (pair-level CV accuracy): 0.8418
+
+Panel d: Using pair-level accuracy from Panel A
+  Model alone (pair-level accuracy): 0.8236
+  Model with radiologist support (pair-level CV accuracy): 0.8418
+  Panel d 'M' point: using pair-level accuracy (0.8236, 0.8418)
+Total CV predictions: 1100
+Cases with used_human=True: 656
+
+Model calibrated confidence (Brier-derived CQS, paragraph 86):
+  Without radiologist support: 8.20 ± 3.44
+  With radiologist support:    8.67 ± 2.19
+  Δ AI (with vs without):       +0.47  (Table 1 R12 col 7)
+
+Model throughput (paragraph 88 / Table 1 R13 cols 4-5):
+  878 cases/hour (4.10s per case)
+Figure_1 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_1.png
+Figure_1 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_1.svg

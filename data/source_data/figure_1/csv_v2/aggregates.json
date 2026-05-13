@@ -1,0 +1,206 @@
+{
+  "data": {
+    "group1_avg": {
+      "balanced_accuracy": 0.6981818181818181,
+      "precision": 0.6925352293653,
+      "recall": 0.7490909090909091,
+      "specificity": 0.6472727272727272,
+      "f1": 0.7139430983282254,
+      "balanced_accuracy_std": 0.06859872538150358,
+      "precision_std": 0.08705671952966906,
+      "recall_std": 0.07204222820421434,
+      "specificity_std": 0.14403856232973353,
+      "f1_std": 0.053249553215549736
+    },
+    "group2_avg": {
+      "balanced_accuracy": 0.7427272727272727,
+      "precision": 0.7136132096770139,
+      "recall": 0.8163636363636363,
+      "specificity": 0.6690909090909091,
+      "f1": 0.7601123353068377,
+      "balanced_accuracy_std": 0.054119549331408084,
+      "precision_std": 0.0545935338079789,
+      "recall_std": 0.06918653669251071,
+      "specificity_std": 0.08016511885472218,
+      "f1_std": 0.05255217043796499
+    },
+    "pair_level_model_metrics": {
+      "accuracy": 0.8236363636363636,
+      "precision": 0.7713414634146342,
+      "recall": 0.92,
+      "specificity": 0.7272727272727273,
+      "f1": 0.8391376451077943,
+      "tp": 506,
+      "fp": 150,
+      "tn": 400,
+      "fn": 44,
+      "n_pairs": 1100,
+      "auroc": 0.9095322314049588,
+      "auprc": 0.8827689521621741
+    },
+    "pair_level_cv_metrics": {
+      "accuracy": 0.8418181818181818,
+      "precision": 0.7984126984126985,
+      "recall": 0.9145454545454546,
+      "specificity": 0.769090909090909,
+      "f1": 0.8525423728813559,
+      "tp": 503,
+      "fp": 127,
+      "tn": 423,
+      "fn": 47,
+      "n_pairs": 1100,
+      "auroc": 0.9062826446280993,
+      "auprc": 0.9078412358049893
+    },
+    "mrmc_auroc": {
+      "treatment_effect": -2147483648.0,
+      "treatment_se": -2147483648.0,
+      "treatment_ci_lower": -2147483648.0,
+      "treatment_ci_upper": -2147483648.0,
+      "pvalue": -2147483648.0,
+      "fom_with": 0.8394545454545455,
+      "fom_without": 0.7289454545454546,
+      "fom": "ROC"
+    },
+    "mrmc_sens": {
+      "treatment_effect": -2147483648.0,
+      "treatment_se": -2147483648.0,
+      "treatment_ci_lower": -2147483648.0,
+      "treatment_ci_upper": -2147483648.0,
+      "pvalue": -2147483648.0,
+      "fom_with": 0.8927273,
+      "fom_without": 0.7981818,
+      "fom": "Sensitivity"
+    },
+    "mrmc_spec": {
+      "treatment_effect": -2147483648.0,
+      "treatment_se": -2147483648.0,
+      "treatment_ci_lower": -2147483648.0,
+      "treatment_ci_upper": -2147483648.0,
+      "pvalue": -2147483648.0,
+      "fom_with": 0.5672727,
+      "fom_without": 0.5145455,
+      "fom": "Specificity"
+    },
+    "HAS_POSTHOCS": true,
+    "model_results": {
+      "_sentinel": true
+    },
+    "unique_case_model_metrics": {
+      "auroc": 0.9084399319298648,
+      "auprc": 0.9610221120466399,
+      "n_unique_cases": 564
+    },
+    "unique_case_cv_metrics": {
+      "auroc": 0.9110308036482534,
+      "auprc": 0.9744545725972027,
+      "n_unique_cases": 564
+    },
+    "mrmc_auprc": {
+      "fom_with": 0.8323516857528375,
+      "fom_without": 0.7238739287845575,
+      "fom": "AUPRC"
+    }
+  },
+  "types": {
+    "group1_avg": {
+      "balanced_accuracy": "numpy.float64",
+      "precision": "numpy.float64",
+      "recall": "numpy.float64",
+      "specificity": "numpy.float64",
+      "f1": "numpy.float64",
+      "balanced_accuracy_std": "numpy.float64",
+      "precision_std": "numpy.float64",
+      "recall_std": "numpy.float64",
+      "specificity_std": "numpy.float64",
+      "f1_std": "numpy.float64"
+    },
+    "group2_avg": {
+      "balanced_accuracy": "numpy.float64",
+      "precision": "numpy.float64",
+      "recall": "numpy.float64",
+      "specificity": "numpy.float64",
+      "f1": "numpy.float64",
+      "balanced_accuracy_std": "numpy.float64",
+      "precision_std": "numpy.float64",
+      "recall_std": "numpy.float64",
+      "specificity_std": "numpy.float64",
+      "f1_std": "numpy.float64"
+    },
+    "pair_level_model_metrics": {
+      "accuracy": "builtins.float",
+      "precision": "builtins.float",
+      "recall": "builtins.float",
+      "specificity": "numpy.float64",
+      "f1": "builtins.float",
+      "auroc": "numpy.float64",
+      "auprc": "numpy.float64",
+      "tp": "numpy.int64",
+      "fp": "numpy.int64",
+      "tn": "numpy.int64",
+      "fn": "numpy.int64",
+      "n_pairs": "builtins.int"
+    },
+    "pair_level_cv_metrics": {
+      "accuracy": "numpy.float64",
+      "precision": "numpy.float64",
+      "recall": "numpy.float64",
+      "specificity": "numpy.float64",
+      "f1": "numpy.float64",
+      "auroc": "numpy.float64",
+      "auprc": "numpy.float64",
+      "tp": "numpy.int64",
+      "fp": "numpy.int64",
+      "tn": "numpy.int64",
+      "fn": "numpy.int64",
+      "n_pairs": "builtins.int"
+    },
+    "mrmc_auroc": {
+      "treatment_effect": "builtins.float",
+      "treatment_se": "builtins.float",
+      "treatment_ci_lower": "builtins.float",
+      "treatment_ci_upper": "builtins.float",
+      "pvalue": "builtins.float",
+      "fom_with": "builtins.float",
+      "fom_without": "builtins.float",
+      "fom": "builtins.str"
+    },
+    "mrmc_sens": {
+      "treatment_effect": "builtins.float",
+      "treatment_se": "builtins.float",
+      "treatment_ci_lower": "builtins.float",
+      "treatment_ci_upper": "builtins.float",
+      "pvalue": "builtins.float",
+      "fom_with": "builtins.float",
+      "fom_without": "builtins.float",
+      "fom": "builtins.str"
+    },
+    "mrmc_spec": {
+      "treatment_effect": "builtins.float",
+      "treatment_se": "builtins.float",
+      "treatment_ci_lower": "builtins.float",
+      "treatment_ci_upper": "builtins.float",
+      "pvalue": "builtins.float",
+      "fom_with": "builtins.float",
+      "fom_without": "builtins.float",
+      "fom": "builtins.str"
+    },
+    "HAS_POSTHOCS": "builtins.bool",
+    "model_results": "dict",
+    "unique_case_model_metrics": {
+      "auroc": "numpy.float64",
+      "auprc": "numpy.float64",
+      "n_unique_cases": "builtins.int"
+    },
+    "unique_case_cv_metrics": {
+      "auroc": "numpy.float64",
+      "auprc": "numpy.float64",
+      "n_unique_cases": "builtins.int"
+    },
+    "mrmc_auprc": {
+      "fom_with": "builtins.float",
+      "fom_without": "builtins.float",
+      "fom": "builtins.str"
+    }
+  }
+}

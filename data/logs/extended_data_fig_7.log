@@ -1,0 +1,71 @@
+Run started: 2026-05-09T10:54:37Z
+Script:      code/figures/extended_data_fig_7.py
+Host CPUs:   128
+----
+Loading edf7_inputs from /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/extended_data_figure_7/edf7_inputs.csv...
+  2200 rows x 8 cols
+Rendering Extended Data Figure 7...
+
+Calculating metrics for radar plots...
+  Meningioma: without=0.833, with=0.926
+  Metastases: without=0.545, with=0.636
+  Paediatric presurgical tumour: without=0.596, with=0.596
+  Postoperative glioma resection: without=0.624, with=0.652
+  Presurgical glioma: without=0.738, with=0.786
+  Micro: without=0.300, with=0.325
+  Small: without=0.579, with=0.658
+  Medium: without=0.588, with=0.800
+  Large: without=0.722, with=0.907
+  Very Large: without=0.933, with=0.951
+  Irregular/Complex Single: without=0.691, with=0.784
+  Well-circumscribed Single: without=0.651, with=0.767
+  Infiltrative Single: without=0.828, with=0.887
+  Multiple: without=0.588, with=0.608
+  Meningioma: without=8.444, with=8.963
+  Metastases: without=6.614, with=7.386
+  Paediatric presurgical tumour: without=7.096, with=6.750
+  Postoperative glioma resection: without=6.714, with=6.672
+  Presurgical glioma: without=6.824, with=7.357
+  Micro: without=6.225, with=6.325
+  Small: without=5.974, with=6.289
+  Medium: without=7.000, with=7.312
+  Large: without=6.796, with=7.759
+  Very Large: without=7.525, with=8.399
+  Irregular/Complex Single: without=6.883, with=7.438
+  Well-circumscribed Single: without=7.023, with=7.674
+  Infiltrative Single: without=7.132, with=7.931
+  Multiple: without=6.863, with=7.098
+  Meningioma: without=78.6 cases/hr, with=128.7 cases/hr
+  Metastases: without=68.0 cases/hr, with=102.7 cases/hr
+  Paediatric presurgical tumour: without=88.2 cases/hr, with=130.2 cases/hr
+  Postoperative glioma resection: without=78.9 cases/hr, with=116.4 cases/hr
+  Presurgical glioma: without=79.2 cases/hr, with=117.9 cases/hr
+  Micro: without=60.8 cases/hr, with=112.9 cases/hr
+  Small: without=71.1 cases/hr, with=113.3 cases/hr
+  Medium: without=71.8 cases/hr, with=108.9 cases/hr
+  Large: without=80.4 cases/hr, with=99.0 cases/hr
+  Very Large: without=92.3 cases/hr, with=141.5 cases/hr
+  Irregular/Complex Single: without=72.3 cases/hr, with=123.9 cases/hr
+  Well-circumscribed Single: without=77.8 cases/hr, with=97.0 cases/hr
+  Infiltrative Single: without=83.1 cases/hr, with=128.0 cases/hr
+  Multiple: without=78.1 cases/hr, with=110.6 cases/hr
+
+Extended_Data_Fig_7 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_7.png
+Extended_Data_Fig_7 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_7.svg
+
+Radar analysis summary:
+Total cases analyzed: 1100
+Radiologists: 11
+Pathology categories: 5
+Size categories: 5
+Radiomic categories: 4
+
+Overall improvements:
+  Accuracy: 0.698 to 0.743 (+4.5%)
+  Confidence: 6.9 to 7.2 (+0.4)
+  Cases per hour: 78.9 to 117.8 (+38.9 cases/hr)
+
+EDF 7 saved to /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_7.png
+----
+Run ended:   2026-05-09T10:54:40Z
+Wall clock:  3.5s

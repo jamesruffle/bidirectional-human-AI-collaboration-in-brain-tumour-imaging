@@ -1,0 +1,9 @@
+Agent,Condition,Sex,N,TP,FP,TN,FN,Balanced accuracy,AUROC,AUPRC,Sensitivity,Specificity,Precision,F1 score
+Radiologist,Radiologist (Without model),Female,66,33,19,11,3,0.642,0.713,0.758,0.917,0.367,0.635,0.750
+Radiologist,Radiologist (Without model),Male,70,49,12,6,3,0.638,0.771,0.872,0.942,0.333,0.803,0.867
+Radiologist,Radiologist (With model),Female,66,34,19,11,2,0.656,0.859,0.887,0.944,0.367,0.642,0.764
+Radiologist,Radiologist (With model),Male,70,48,12,6,4,0.628,0.854,0.936,0.923,0.333,0.800,0.857
+Model,Model (Without radiologist),Female,37,29,0,7,1,0.983,0.971,0.994,0.967,1.000,1.000,0.983
+Model,Model (Without radiologist),Male,45,37,1,3,4,0.826,0.939,0.994,0.902,0.750,0.974,0.937
+Model,Model (With radiologist),Female,37,29,0,7,1,0.983,0.971,0.994,0.967,1.000,1.000,0.983
+Model,Model (With radiologist),Male,45,37,0,4,4,0.951,0.945,0.995,0.902,1.000,1.000,0.949

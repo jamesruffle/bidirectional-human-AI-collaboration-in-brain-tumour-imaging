@@ -1,0 +1,2201 @@
+radiologist,inferred_pathology,volume_category,radiomic_category,with_segmentation,correct_prediction,confidence,response_time
+Radiologist #9,Presurgical glioma,Medium,Irregular/Complex Single,False,0,5,63.289870262146003
+Radiologist #9,Meningioma,Medium,Well-circumscribed Single,False,1,9,33.28664755821228
+Radiologist #9,Presurgical glioma,,,False,0,6,37.539839029312127
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,23.768117904663089
+Radiologist #9,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,9,19.996684551239014
+Radiologist #9,Presurgical glioma,Micro,Infiltrative Single,False,0,7,44.304204940795898
+Radiologist #9,Metastases,Large,Multiple,False,1,9,32.564106702804565
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,38.576619863510132
+Radiologist #9,Paediatric presurgical tumour,Medium,Infiltrative Single,False,1,9,25.938647031784058
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,15.514402627944946
+Radiologist #9,Presurgical glioma,,,False,1,7,32.015548229217529
+Radiologist #9,Postoperative glioma resection,,,False,1,8,25.082650661468502
+Radiologist #9,Presurgical glioma,Large,Infiltrative Single,False,1,7,39.957887887954712
+Radiologist #9,Postoperative glioma resection,,,False,1,5,51.243274927139282
+Radiologist #9,Presurgical glioma,,,False,1,5,15.60519814491272
+Radiologist #9,Presurgical glioma,,,False,1,8,31.336126089096069
+Radiologist #9,Paediatric presurgical tumour,,,False,0,8,25.34159517288208
+Radiologist #9,Presurgical glioma,,,False,1,8,18.842499971389771
+Radiologist #9,Presurgical glioma,,,False,0,5,56.392694234848022
+Radiologist #9,Paediatric presurgical tumour,,,False,1,6,26.232699394226078
+Radiologist #9,Presurgical glioma,,,False,0,9,39.052380084991455
+Radiologist #9,Presurgical glioma,Micro,Single Lesion (Unclassified),False,0,5,29.505166053771973
+Radiologist #9,Postoperative glioma resection,,,False,0,8,19.591979026794437
+Radiologist #9,Presurgical glioma,,,False,1,8,25.949108600616452
+Radiologist #9,Presurgical glioma,,,False,1,7,18.380052089691159
+Radiologist #9,Presurgical glioma,Micro,Irregular/Complex Single,False,0,5,54.949785709381104
+Radiologist #9,Presurgical glioma,Medium,Infiltrative Single,False,1,8,32.958890676498413
+Radiologist #9,Presurgical glioma,Large,Irregular/Complex Single,False,0,6,39.429177045822144
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,48.06372594833374
+Radiologist #9,Presurgical glioma,,,False,1,9,16.543585538864136
+Radiologist #9,Presurgical glioma,,,False,0,5,26.833418369293213
+Radiologist #9,Paediatric presurgical tumour,,,False,1,5,67.373469352722168
+Radiologist #9,Paediatric presurgical tumour,,,False,0,8,12.673370838165283
+Radiologist #9,Postoperative glioma resection,,,False,0,5,37.430182456970215
+Radiologist #9,Paediatric presurgical tumour,,,False,1,7,25.5753493309021
+Radiologist #9,Meningioma,Medium,Well-circumscribed Single,False,1,7,34.193066596984863
+Radiologist #9,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,8,15.964586496353149
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,53.196761846542358
+Radiologist #9,Presurgical glioma,,,False,1,8,23.664158344268799
+Radiologist #9,Postoperative glioma resection,,,False,1,8,22.043678522109985
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,14.738487243652344
+Radiologist #9,Presurgical glioma,,,False,1,7,21.109136581420898
+Radiologist #9,Presurgical glioma,,,False,1,5,31.333862781524655
+Radiologist #9,Postoperative glioma resection,,,False,1,7,26.657976150512692
+Radiologist #9,Postoperative glioma resection,,,False,1,7,67.12212610244751
+Radiologist #9,Postoperative glioma resection,,,False,1,5,23.83649754524231
+Radiologist #9,Presurgical glioma,,,False,1,8,35.572156190872192
+Radiologist #9,Presurgical glioma,,,False,1,7,36.495173931121833
+Radiologist #9,Presurgical glioma,Micro,Irregular/Complex Single,False,0,5,68.782661199569702
+Radiologist #9,Postoperative glioma resection,,,False,0,7,109.16120290756226
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,17.96603536605835
+Radiologist #9,Postoperative glioma resection,,,False,1,8,10.413140773773192
+Radiologist #9,Presurgical glioma,,,False,1,6,21.734501600265503
+Radiologist #9,Presurgical glioma,,,False,1,6,104.89903473854064
+Radiologist #9,Presurgical glioma,,,False,1,9,12.872817516326904
+Radiologist #9,Presurgical glioma,,,False,1,7,24.79627895355225
+Radiologist #9,Meningioma,Very Large,Irregular/Complex Single,False,1,9,13.702045202255247
+Radiologist #9,Presurgical glioma,,,False,1,7,27.726371288299561
+Radiologist #9,Presurgical glioma,Medium,Well-circumscribed Single,False,0,8,16.830958127975464
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,19.55353307723999
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,18.439572095870972
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,12.371012687683104
+Radiologist #9,Presurgical glioma,,,False,1,8,18.948315382003784
+Radiologist #9,Postoperative glioma resection,,,False,1,8,24.270525932312012
+Radiologist #9,Metastases,Medium,Infiltrative Single,False,1,8,10.194881439208984
+Radiologist #9,Postoperative glioma resection,,,False,1,7,16.745146989822388
+Radiologist #9,Postoperative glioma resection,,,False,1,5,18.879373073577881
+Radiologist #9,Paediatric presurgical tumour,Very Large,Infiltrative Single,False,1,9,12.874900341033936
+Radiologist #9,Postoperative glioma resection,Micro,Irregular/Complex Single,False,0,7,58.755186796188354
+Radiologist #9,Meningioma,Very Large,Irregular/Complex Single,False,1,8,7.4764883518218994
+Radiologist #9,Presurgical glioma,,,False,1,7,102.59613800048828
+Radiologist #9,Presurgical glioma,,,False,1,5,44.960685014724731
+Radiologist #9,Presurgical glioma,Micro,Multiple,False,1,8,15.812455415725708
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,9.7691841125488281
+Radiologist #9,Presurgical glioma,,,False,1,9,11.877633571624756
+Radiologist #9,Postoperative glioma resection,,,False,1,5,25.623135566711422
+Radiologist #9,Presurgical glioma,Medium,Irregular/Complex Single,False,0,5,47.334202527999878
+Radiologist #9,Postoperative glioma resection,,,False,1,8,58.607102870941162
+Radiologist #9,Postoperative glioma resection,,,False,1,8,20.504245758056641
+Radiologist #9,Postoperative glioma resection,,,False,1,7,19.512557983398441
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,8.7312541007995605
+Radiologist #9,Postoperative glioma resection,,,False,1,7,17.035570383071899
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,5,25.300062417984009
+Radiologist #9,Presurgical glioma,,,False,1,7,22.940499782562256
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,23.398521661758423
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,11.2564377784729
+Radiologist #9,Paediatric presurgical tumour,,,False,0,5,28.533170223236084
+Radiologist #9,Presurgical glioma,,,False,1,9,14.259396553039551
+Radiologist #9,Postoperative glioma resection,,,False,1,7,15.180952072143556
+Radiologist #9,Presurgical glioma,Medium,Multiple,False,0,6,17.582494020462036
+Radiologist #9,Presurgical glioma,,,False,1,8,17.20708179473877
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,23.83869481086731
+Radiologist #9,Presurgical glioma,,,False,1,7,18.662497043609619
+Radiologist #9,Postoperative glioma resection,,,False,1,7,50.910287141799927
+Radiologist #9,Presurgical glioma,,,False,1,5,38.19931697845459
+Radiologist #9,Presurgical glioma,,,False,1,7,10.8078932762146
+Radiologist #9,Metastases,Micro,Well-circumscribed Single,False,0,5,48.363332509994507
+Radiologist #9,Presurgical glioma,,,False,1,8,11.488597393035889
+Radiologist #9,Presurgical glioma,,,False,1,9,7.2833263874053955
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,32.120967388153083
+Radiologist #9,Presurgical glioma,Medium,Irregular/Complex Single,True,0,5,132.57522892951965
+Radiologist #9,Meningioma,Medium,Well-circumscribed Single,True,1,10,31.895871162414551
+Radiologist #9,Presurgical glioma,,,True,1,5,32.326453924179077
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,77.999549388885498
+Radiologist #9,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,10,50.18187403678894
+Radiologist #9,Presurgical glioma,Micro,Infiltrative Single,True,0,9,208.27445816993716
+Radiologist #9,Metastases,Large,Multiple,True,1,9,18.987909555435181
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,28.272040128707889
+Radiologist #9,Paediatric presurgical tumour,Medium,Infiltrative Single,True,1,5,24.487535953521729
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,27.203167676925659
+Radiologist #9,Presurgical glioma,,,True,1,8,26.681801319122314
+Radiologist #9,Postoperative glioma resection,,,True,1,9,17.830873727798462
+Radiologist #9,Presurgical glioma,Large,Infiltrative Single,True,1,8,26.017667770385746
+Radiologist #9,Postoperative glioma resection,,,True,0,5,27.94034481048584
+Radiologist #9,Presurgical glioma,,,True,1,6,37.494569778442383
+Radiologist #9,Presurgical glioma,,,True,1,9,31.819028377532959
+Radiologist #9,Paediatric presurgical tumour,,,True,0,7,27.70063304901123
+Radiologist #9,Presurgical glioma,,,True,1,7,22.854432344436649
+Radiologist #9,Presurgical glioma,,,True,1,9,15.854665040969849
+Radiologist #9,Paediatric presurgical tumour,,,True,1,7,33.753516435623169
+Radiologist #9,Presurgical glioma,,,True,0,5,22.702242136001587
+Radiologist #9,Presurgical glioma,Micro,Single Lesion (Unclassified),True,1,7,31.369258642196652
+Radiologist #9,Postoperative glioma resection,,,True,0,9,18.682762861251831
+Radiologist #9,Presurgical glioma,,,True,1,7,11.92279887199402
+Radiologist #9,Presurgical glioma,,,True,1,8,14.986484050750732
+Radiologist #9,Presurgical glioma,Micro,Irregular/Complex Single,True,0,7,28.841526985168457
+Radiologist #9,Presurgical glioma,Medium,Infiltrative Single,True,1,8,11.984649658203123
+Radiologist #9,Presurgical glioma,Large,Irregular/Complex Single,True,1,6,29.476870059967041
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,13.783905029296877
+Radiologist #9,Presurgical glioma,,,True,1,9,16.307041645050049
+Radiologist #9,Presurgical glioma,,,True,0,7,13.696650505065918
+Radiologist #9,Paediatric presurgical tumour,,,True,1,5,27.368872165679932
+Radiologist #9,Paediatric presurgical tumour,,,True,0,5,23.715266227722168
+Radiologist #9,Postoperative glioma resection,,,True,0,6,24.341843843460083
+Radiologist #9,Paediatric presurgical tumour,,,True,1,8,22.174020528793331
+Radiologist #9,Meningioma,Medium,Well-circumscribed Single,True,1,9,19.562960624694824
+Radiologist #9,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,9,12.972226142883301
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,0,5,21.108572721481323
+Radiologist #9,Presurgical glioma,,,True,1,9,14.350213766098022
+Radiologist #9,Postoperative glioma resection,,,True,1,8,16.140416622161865
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,1,5,53.942017555236816
+Radiologist #9,Presurgical glioma,,,True,1,6,23.384101867675781
+Radiologist #9,Presurgical glioma,,,True,1,5,35.146740913391113
+Radiologist #9,Postoperative glioma resection,,,True,1,8,10.645208597183228
+Radiologist #9,Postoperative glioma resection,,,True,1,8,20.688509941101078
+Radiologist #9,Postoperative glioma resection,,,True,1,7,22.940067529678345
+Radiologist #9,Presurgical glioma,,,True,1,8,87.19654369354248
+Radiologist #9,Presurgical glioma,,,True,1,9,19.768471479415894
+Radiologist #9,Presurgical glioma,Micro,Irregular/Complex Single,True,0,8,26.13477087020874
+Radiologist #9,Postoperative glioma resection,,,True,0,5,46.694380521774292
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,14.346617698669434
+Radiologist #9,Postoperative glioma resection,,,True,1,8,13.799454927444458
+Radiologist #9,Presurgical glioma,,,True,0,6,22.355945825576782
+Radiologist #9,Presurgical glioma,,,True,1,7,12.632291793823242
+Radiologist #9,Presurgical glioma,,,True,1,8,10.322504758834841
+Radiologist #9,Presurgical glioma,,,True,1,8,18.403961181640625
+Radiologist #9,Meningioma,Very Large,Irregular/Complex Single,True,1,9,16.612047910690308
+Radiologist #9,Presurgical glioma,,,True,1,8,10.986234903335571
+Radiologist #9,Presurgical glioma,Medium,Well-circumscribed Single,True,1,7,24.910003900527958
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,19.417351007461548
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,16.296009063720703
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,7.1263210773468018
+Radiologist #9,Presurgical glioma,,,True,1,8,14.236663103103638
+Radiologist #9,Postoperative glioma resection,,,True,1,8,21.171850442886356
+Radiologist #9,Metastases,Medium,Infiltrative Single,True,1,7,11.684155464172363
+Radiologist #9,Postoperative glioma resection,,,True,1,8,13.890701055526732
+Radiologist #9,Postoperative glioma resection,,,True,1,7,16.308752775192261
+Radiologist #9,Paediatric presurgical tumour,Very Large,Infiltrative Single,True,1,9,17.682446956634521
+Radiologist #9,Postoperative glioma resection,Micro,Irregular/Complex Single,True,1,6,30.370193481445312
+Radiologist #9,Meningioma,Very Large,Irregular/Complex Single,True,1,8,30.287597894668579
+Radiologist #9,Presurgical glioma,,,True,1,5,75.372252941131592
+Radiologist #9,Presurgical glioma,,,True,1,8,10.2506422996521
+Radiologist #9,Presurgical glioma,Micro,Multiple,True,1,8,15.378193140029907
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,17.388631105422974
+Radiologist #9,Presurgical glioma,,,True,1,8,25.296501636505127
+Radiologist #9,Postoperative glioma resection,,,True,0,6,317.01324415206909
+Radiologist #9,Presurgical glioma,Medium,Irregular/Complex Single,True,1,5,33.586843013763428
+Radiologist #9,Postoperative glioma resection,,,True,1,8,10.816298484802246
+Radiologist #9,Postoperative glioma resection,,,True,1,8,13.955678701400757
+Radiologist #9,Postoperative glioma resection,,,True,1,8,11.08513617515564
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,10.565162658691406
+Radiologist #9,Postoperative glioma resection,,,True,1,6,17.0844886302948
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,1,7,14.072681903839111
+Radiologist #9,Presurgical glioma,,,True,1,8,11.870487213134766
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,28.18201470375061
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,8.8586077690124512
+Radiologist #9,Paediatric presurgical tumour,,,True,0,8,13.203648090362549
+Radiologist #9,Presurgical glioma,,,True,1,9,10.4497971534729
+Radiologist #9,Postoperative glioma resection,,,True,1,8,10.277043581008911
+Radiologist #9,Presurgical glioma,Medium,Multiple,True,0,5,17.628050565719604
+Radiologist #9,Presurgical glioma,,,True,1,8,20.397845268249512
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,25.906937122344971
+Radiologist #9,Presurgical glioma,,,True,1,9,64.838101863861084
+Radiologist #9,Postoperative glioma resection,,,True,1,8,21.284409046173096
+Radiologist #9,Presurgical glioma,,,True,1,6,10.937214851379396
+Radiologist #9,Presurgical glioma,,,True,0,6,10.362247705459597
+Radiologist #9,Metastases,Micro,Well-circumscribed Single,True,0,5,27.98120903968811
+Radiologist #9,Presurgical glioma,,,True,1,9,7.6585824489593506
+Radiologist #9,Presurgical glioma,,,True,1,9,8.6029610633850098
+Radiologist #9,Presurgical glioma,Very Large,Infiltrative Single,True,1,7,17.289247274398804
+Radiologist #10,Paediatric presurgical tumour,Medium,Infiltrative Single,False,1,9,42.346545219421387
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,False,0,7,40.845056056976318
+Radiologist #10,Presurgical glioma,,,False,0,6,48.618790149688721
+Radiologist #10,Postoperative glioma resection,,,False,1,6,84.969313859939575
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,40.872522115707397
+Radiologist #10,Metastases,Micro,Irregular/Complex Single,False,0,8,61.497947931289673
+Radiologist #10,Paediatric presurgical tumour,,,False,0,9,29.368295431137085
+Radiologist #10,Postoperative glioma resection,,,False,1,6,68.703555107116699
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,21.294864177703857
+Radiologist #10,Presurgical glioma,,,False,1,9,28.869794845581051
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,22.585803270339969
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,46.435988664627082
+Radiologist #10,Presurgical glioma,,,False,1,6,105.9645357131958
+Radiologist #10,Presurgical glioma,,,False,1,10,27.790868043899536
+Radiologist #10,Postoperative glioma resection,,,False,1,6,85.098811864852905
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,False,1,2,84.43754768371582
+Radiologist #10,Postoperative glioma resection,,,False,1,6,90.328189373016357
+Radiologist #10,Postoperative glioma resection,,,False,1,9,64.912279367446899
+Radiologist #10,Postoperative glioma resection,,,False,1,6,87.898863554000854
+Radiologist #10,Presurgical glioma,,,False,0,7,103.6689293384552
+Radiologist #10,Presurgical glioma,,,False,1,6,53.598575115203857
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,36.363443613052368
+Radiologist #10,Presurgical glioma,,,False,1,10,35.205644607543945
+Radiologist #10,Meningioma,Very Large,Irregular/Complex Single,False,1,10,19.553398609161377
+Radiologist #10,Postoperative glioma resection,,,False,1,7,90.455892562866197
+Radiologist #10,Presurgical glioma,,,False,1,9,32.926126480102539
+Radiologist #10,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,7,55.989952325820923
+Radiologist #10,Paediatric presurgical tumour,Small,Well-circumscribed Single,False,1,8,54.437577724456787
+Radiologist #10,Postoperative glioma resection,,,False,1,8,84.335695743560791
+Radiologist #10,Presurgical glioma,,,False,1,8,55.508689880371087
+Radiologist #10,Presurgical glioma,,,False,1,10,21.240863800048828
+Radiologist #10,Presurgical glioma,,,False,0,10,39.319121599197388
+Radiologist #10,Postoperative glioma resection,,,False,0,10,31.723967313766479
+Radiologist #10,Presurgical glioma,,,False,0,7,61.89672589302063
+Radiologist #10,Metastases,Large,Multiple,False,0,5,119.68923354148863
+Radiologist #10,Presurgical glioma,,,False,1,5,69.976022720336914
+Radiologist #10,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,10,39.54822301864624
+Radiologist #10,Postoperative glioma resection,,,False,0,6,45.728493213653564
+Radiologist #10,Presurgical glioma,Small,Well-circumscribed Single,False,1,9,51.975989818572998
+Radiologist #10,Paediatric presurgical tumour,,,False,0,6,32.61424994468689
+Radiologist #10,Presurgical glioma,,,False,0,5,74.069185972213745
+Radiologist #10,Presurgical glioma,,,False,1,10,49.330143690109253
+Radiologist #10,Presurgical glioma,,,False,0,3,81.145562410354614
+Radiologist #10,Postoperative glioma resection,,,False,1,6,182.35752058029172
+Radiologist #10,Meningioma,Very Large,Irregular/Complex Single,False,1,6,65.826020956039429
+Radiologist #10,Postoperative glioma resection,,,False,1,7,40.451459407806396
+Radiologist #10,Presurgical glioma,Small,Irregular/Complex Single,False,1,3,64.753560543060303
+Radiologist #10,Postoperative glioma resection,,,False,1,7,46.83620548248291
+Radiologist #10,Presurgical glioma,Medium,Infiltrative Single,False,1,2,155.46813702583313
+Radiologist #10,Presurgical glioma,Medium,Irregular/Complex Single,False,1,9,29.624920845031738
+Radiologist #10,Metastases,Micro,Well-circumscribed Single,False,0,5,99.616270780563354
+Radiologist #10,Presurgical glioma,Large,Multiple,False,0,7,45.840775489807129
+Radiologist #10,Postoperative glioma resection,Medium,Infiltrative Single,False,0,8,47.201640129089363
+Radiologist #10,Metastases,Very Large,Multiple,False,1,5,58.694062471389771
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,26.013152360916138
+Radiologist #10,Presurgical glioma,,,False,1,8,143.34284901618958
+Radiologist #10,Presurgical glioma,,,False,1,8,31.489612579345703
+Radiologist #10,Meningioma,Small,Well-circumscribed Single,False,0,10,38.859529256820679
+Radiologist #10,Presurgical glioma,Small,Irregular/Complex Single,False,1,3,100.17609310150146
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,False,1,5,41.426547050476081
+Radiologist #10,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,4,56.890956878662109
+Radiologist #10,Postoperative glioma resection,,,False,1,8,28.439285516738892
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,False,0,8,64.275675296783447
+Radiologist #10,Presurgical glioma,,,False,1,9,62.084070920944207
+Radiologist #10,Presurgical glioma,,,False,1,9,26.610470056533813
+Radiologist #10,Presurgical glioma,Medium,Irregular/Complex Single,False,1,10,19.413109064102173
+Radiologist #10,Presurgical glioma,,,False,0,10,27.417901277542114
+Radiologist #10,Presurgical glioma,,,False,1,8,66.030023813247681
+Radiologist #10,Postoperative glioma resection,,,False,1,5,98.766782999038696
+Radiologist #10,Meningioma,Very Large,Well-circumscribed Single,False,1,10,31.012325286865234
+Radiologist #10,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,10,43.010403633117683
+Radiologist #10,Presurgical glioma,,,False,1,8,54.175655841827393
+Radiologist #10,Presurgical glioma,Medium,Irregular/Complex Single,False,1,2,154.26566243171692
+Radiologist #10,Presurgical glioma,Large,Infiltrative Single,False,0,4,73.550530910491943
+Radiologist #10,Postoperative glioma resection,,,False,1,9,29.848599910736084
+Radiologist #10,Presurgical glioma,,,False,0,8,32.956786632537842
+Radiologist #10,Presurgical glioma,,,False,0,3,144.91674208641052
+Radiologist #10,Meningioma,Medium,Well-circumscribed Single,False,1,10,22.898443937301639
+Radiologist #10,Presurgical glioma,Medium,Irregular/Complex Single,False,1,7,37.023072004318237
+Radiologist #10,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,6,25.140605926513672
+Radiologist #10,Presurgical glioma,,,False,1,6,75.64358377456665
+Radiologist #10,Postoperative glioma resection,,,False,1,7,40.188888072967529
+Radiologist #10,Presurgical glioma,,,False,0,6,97.280301809310913
+Radiologist #10,Presurgical glioma,Medium,Well-circumscribed Single,False,1,9,29.828474283218384
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,82.027087688446045
+Radiologist #10,Postoperative glioma resection,,,False,1,5,74.377926826477051
+Radiologist #10,Postoperative glioma resection,,,False,0,5,29.685553550720211
+Radiologist #10,Presurgical glioma,,,False,1,7,17.606068849563599
+Radiologist #10,Presurgical glioma,,,False,1,6,60.50199818611145
+Radiologist #10,Postoperative glioma resection,,,False,1,6,63.15487813949585
+Radiologist #10,Presurgical glioma,Micro,Irregular/Complex Single,False,0,8,27.370328903198239
+Radiologist #10,Postoperative glioma resection,,,False,1,8,151.62573575973511
+Radiologist #10,Presurgical glioma,,,False,0,8,61.713836669921882
+Radiologist #10,Presurgical glioma,,,False,1,4,54.109192609786987
+Radiologist #10,Presurgical glioma,,,False,1,7,16.849921464920044
+Radiologist #10,Postoperative glioma resection,,,False,1,8,33.152518510818481
+Radiologist #10,Presurgical glioma,,,False,0,4,52.685702800750732
+Radiologist #10,Presurgical glioma,Large,Infiltrative Single,False,1,6,49.105305910110481
+Radiologist #10,Presurgical glioma,Micro,Irregular/Complex Single,False,0,7,36.643333673477173
+Radiologist #10,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,8,261.76307535171509
+Radiologist #10,Paediatric presurgical tumour,Medium,Infiltrative Single,True,1,9,134.84175181388855
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,139.58170557022095
+Radiologist #10,Presurgical glioma,,,True,0,6,305.57252883911133
+Radiologist #10,Postoperative glioma resection,,,True,1,8,22.80902886390686
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,True,1,7,55.306949138641357
+Radiologist #10,Metastases,Micro,Irregular/Complex Single,True,0,7,30.38385272026062
+Radiologist #10,Paediatric presurgical tumour,,,True,0,8,28.33637809753418
+Radiologist #10,Postoperative glioma resection,,,True,1,8,75.62968635559082
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,25.340535879135128
+Radiologist #10,Presurgical glioma,,,True,1,10,28.15639853477478
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,26.5966637134552
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,30.383314371109009
+Radiologist #10,Presurgical glioma,,,True,1,9,29.587882518768311
+Radiologist #10,Presurgical glioma,,,True,1,8,28.454787492752075
+Radiologist #10,Postoperative glioma resection,,,True,0,6,63.954319953918457
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,True,1,5,27.29167366027832
+Radiologist #10,Postoperative glioma resection,,,True,1,5,25.865266799926761
+Radiologist #10,Postoperative glioma resection,,,True,1,7,83.185742378234863
+Radiologist #10,Postoperative glioma resection,,,True,0,5,96.749610900878906
+Radiologist #10,Presurgical glioma,,,True,1,6,33.004743099212646
+Radiologist #10,Presurgical glioma,,,True,1,7,30.46701002120972
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,True,1,7,103.07857370376588
+Radiologist #10,Presurgical glioma,,,True,1,8,26.2156822681427
+Radiologist #10,Meningioma,Very Large,Irregular/Complex Single,True,1,10,17.171556711196899
+Radiologist #10,Postoperative glioma resection,,,True,0,4,105.085294008255
+Radiologist #10,Presurgical glioma,,,True,1,6,33.198486328125
+Radiologist #10,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,7,27.259287118911743
+Radiologist #10,Paediatric presurgical tumour,Small,Well-circumscribed Single,True,1,5,29.999919891357425
+Radiologist #10,Postoperative glioma resection,,,True,0,5,35.81230092048645
+Radiologist #10,Presurgical glioma,,,True,1,6,38.663121461868286
+Radiologist #10,Presurgical glioma,,,True,1,9,27.78187203407288
+Radiologist #10,Presurgical glioma,,,True,1,8,27.827016830444336
+Radiologist #10,Postoperative glioma resection,,,True,0,10,26.499330520629883
+Radiologist #10,Presurgical glioma,,,True,0,8,38.054240465164185
+Radiologist #10,Metastases,Large,Multiple,True,1,7,41.474556922912598
+Radiologist #10,Presurgical glioma,,,True,1,5,35.36202597618103
+Radiologist #10,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,5,30.257348537445068
+Radiologist #10,Postoperative glioma resection,,,True,0,7,34.503070592880249
+Radiologist #10,Presurgical glioma,Small,Well-circumscribed Single,True,1,6,36.666471481323242
+Radiologist #10,Paediatric presurgical tumour,,,True,0,7,37.706593990325928
+Radiologist #10,Presurgical glioma,,,True,0,7,28.257204294204712
+Radiologist #10,Presurgical glioma,,,True,1,8,24.083346128463745
+Radiologist #10,Presurgical glioma,,,True,0,7,28.6521897315979
+Radiologist #10,Postoperative glioma resection,,,True,0,6,49.123683929443359
+Radiologist #10,Meningioma,Very Large,Irregular/Complex Single,True,0,5,25.983596801757809
+Radiologist #10,Postoperative glioma resection,,,True,1,6,40.798625469207757
+Radiologist #10,Presurgical glioma,Small,Irregular/Complex Single,True,1,6,80.049417734146118
+Radiologist #10,Postoperative glioma resection,,,True,1,7,36.269861698150642
+Radiologist #10,Presurgical glioma,Medium,Infiltrative Single,True,1,7,35.070529937744141
+Radiologist #10,Presurgical glioma,Medium,Irregular/Complex Single,True,1,6,32.446979999542243
+Radiologist #10,Metastases,Micro,Well-circumscribed Single,True,0,5,71.575489044189453
+Radiologist #10,Presurgical glioma,Large,Multiple,True,0,4,113.34083271026611
+Radiologist #10,Postoperative glioma resection,Medium,Infiltrative Single,True,1,5,37.75265097618103
+Radiologist #10,Metastases,Very Large,Multiple,True,1,7,24.790901660919189
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,True,1,7,34.423828840255737
+Radiologist #10,Presurgical glioma,,,True,1,7,27.639671087265011
+Radiologist #10,Presurgical glioma,,,True,1,9,20.76150107383728
+Radiologist #10,Meningioma,Small,Well-circumscribed Single,True,0,9,18.074038982391361
+Radiologist #10,Presurgical glioma,Small,Irregular/Complex Single,True,1,6,20.726675510406491
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,22.91823935508728
+Radiologist #10,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,8,18.632951021194454
+Radiologist #10,Postoperative glioma resection,,,True,1,7,23.20186448097229
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,True,0,9,22.460538864135746
+Radiologist #10,Presurgical glioma,,,True,1,6,83.079286098480225
+Radiologist #10,Presurgical glioma,,,True,1,6,57.09506893157959
+Radiologist #10,Presurgical glioma,Medium,Irregular/Complex Single,True,1,8,28.261452198028564
+Radiologist #10,Presurgical glioma,,,True,0,9,27.368468523025516
+Radiologist #10,Presurgical glioma,,,True,1,6,36.389265298843377
+Radiologist #10,Postoperative glioma resection,,,True,1,7,40.955576181411743
+Radiologist #10,Meningioma,Very Large,Well-circumscribed Single,True,1,10,34.10641622543335
+Radiologist #10,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,9,31.233879089355469
+Radiologist #10,Presurgical glioma,,,True,0,5,143.22616457939148
+Radiologist #10,Presurgical glioma,Medium,Irregular/Complex Single,True,1,8,19.759449005126957
+Radiologist #10,Presurgical glioma,Large,Infiltrative Single,True,0,6,41.962431907653809
+Radiologist #10,Postoperative glioma resection,,,True,1,6,37.061030626296997
+Radiologist #10,Presurgical glioma,,,True,0,7,28.990408420562744
+Radiologist #10,Presurgical glioma,,,True,0,4,86.480657577514648
+Radiologist #10,Meningioma,Medium,Well-circumscribed Single,True,1,10,29.091138601303101
+Radiologist #10,Presurgical glioma,Medium,Irregular/Complex Single,True,1,6,50.550397872924805
+Radiologist #10,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,10,17.427432060241699
+Radiologist #10,Presurgical glioma,,,True,1,7,22.764788627624512
+Radiologist #10,Postoperative glioma resection,,,True,1,4,49.595427274703979
+Radiologist #10,Presurgical glioma,,,True,0,5,44.72833251953125
+Radiologist #10,Presurgical glioma,Medium,Well-circumscribed Single,True,1,8,168.61607670783997
+Radiologist #10,Presurgical glioma,Very Large,Infiltrative Single,True,1,6,41.281709671020508
+Radiologist #10,Postoperative glioma resection,,,True,1,5,22.229914426803589
+Radiologist #10,Postoperative glioma resection,,,True,0,4,36.550028800964363
+Radiologist #10,Presurgical glioma,,,True,1,6,30.12070894241333
+Radiologist #10,Presurgical glioma,,,True,1,5,43.952289819717407
+Radiologist #10,Postoperative glioma resection,,,True,0,6,21.70564436912537
+Radiologist #10,Presurgical glioma,Micro,Irregular/Complex Single,True,0,7,112.94721174240112
+Radiologist #10,Postoperative glioma resection,,,True,1,6,20.644047498703003
+Radiologist #10,Presurgical glioma,,,True,0,7,48.607361793518074
+Radiologist #10,Presurgical glioma,,,True,1,8,26.910887002944943
+Radiologist #10,Presurgical glioma,,,True,1,7,17.641719341278076
+Radiologist #10,Postoperative glioma resection,,,True,1,7,20.667948484420776
+Radiologist #10,Presurgical glioma,,,True,0,7,32.11901593208313
+Radiologist #10,Presurgical glioma,Large,Infiltrative Single,True,1,7,38.426255464553833
+Radiologist #10,Presurgical glioma,Micro,Irregular/Complex Single,True,0,7,18.39959287643433
+Radiologist #10,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,7,81.320488214492798
+Radiologist #2,Presurgical glioma,Small,Well-circumscribed Single,False,1,6,28.66040301322937
+Radiologist #2,Presurgical glioma,,,False,1,7,29.481964826583862
+Radiologist #2,Postoperative glioma resection,,,False,1,7,28.400558948516849
+Radiologist #2,Presurgical glioma,,,False,0,6,40.875595092773438
+Radiologist #2,Presurgical glioma,,,False,1,6,41.516973257064819
+Radiologist #2,Presurgical glioma,Large,Irregular/Complex Single,False,0,7,33.463814973831177
+Radiologist #2,Presurgical glioma,,,False,0,8,23.113896131515503
+Radiologist #2,Presurgical glioma,,,False,0,7,30.35783672332764
+Radiologist #2,Presurgical glioma,,,False,1,8,33.23853063583374
+Radiologist #2,Presurgical glioma,,,False,1,5,51.884247064590447
+Radiologist #2,Presurgical glioma,Micro,Irregular/Complex Single,False,1,5,55.106994390487671
+Radiologist #2,Presurgical glioma,,,False,1,8,16.080562829971313
+Radiologist #2,Postoperative glioma resection,,,False,0,6,54.90046501159668
+Radiologist #2,Postoperative glioma resection,,,False,0,9,18.198418855667114
+Radiologist #2,Presurgical glioma,,,False,1,8,15.816339015960692
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,25.198488712310791
+Radiologist #2,Postoperative glioma resection,,,False,0,7,23.298505306243896
+Radiologist #2,Metastases,Very Large,Irregular/Complex Single,False,1,3,32.959174871444702
+Radiologist #2,Paediatric presurgical tumour,,,False,1,5,24.73939061164856
+Radiologist #2,Postoperative glioma resection,Very Large,Infiltrative Single,False,0,3,36.968016386032097
+Radiologist #2,Presurgical glioma,,,False,1,7,37.017060041427612
+Radiologist #2,Presurgical glioma,,,False,0,7,14.83602499961853
+Radiologist #2,Presurgical glioma,Large,Irregular/Complex Single,False,0,2,21.098810195922852
+Radiologist #2,Presurgical glioma,Medium,Well-circumscribed Single,False,0,7,28.54882550239563
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,12.366656064987184
+Radiologist #2,Postoperative glioma resection,,,False,0,6,24.940177440643311
+Radiologist #2,Meningioma,Very Large,Well-circumscribed Single,False,1,7,12.325310945510864
+Radiologist #2,Presurgical glioma,Micro,Well-circumscribed Single,False,0,6,23.516476392745972
+Radiologist #2,Postoperative glioma resection,,,False,0,3,47.169862031936646
+Radiologist #2,Presurgical glioma,Large,Infiltrative Single,False,0,5,34.915250062942505
+Radiologist #2,Metastases,Medium,Multiple,False,0,4,56.45361065864563
+Radiologist #2,Postoperative glioma resection,,,False,0,7,23.984255313873291
+Radiologist #2,Presurgical glioma,,,False,0,5,32.125693559646606
+Radiologist #2,Presurgical glioma,,,False,1,8,11.794578790664673
+Radiologist #2,Postoperative glioma resection,,,False,0,5,27.392831325531009
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,34.499008655548096
+Radiologist #2,Presurgical glioma,Large,Infiltrative Single,False,1,6,37.714447975158691
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,49.074239492416382
+Radiologist #2,Presurgical glioma,,,False,1,4,46.480849504470825
+Radiologist #2,Paediatric presurgical tumour,,,False,0,8,28.178800821304321
+Radiologist #2,Meningioma,Very Large,Multiple,False,1,6,47.505658864974976
+Radiologist #2,Paediatric presurgical tumour,,,False,0,9,18.265608072280884
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,15.711153030395508
+Radiologist #2,Presurgical glioma,,,False,1,5,38.421968698501587
+Radiologist #2,Metastases,Medium,Multiple,False,1,9,13.772299528121948
+Radiologist #2,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,6,13.929460287094116
+Radiologist #2,Postoperative glioma resection,Very Large,Infiltrative Single,False,0,2,43.797811269760132
+Radiologist #2,Postoperative glioma resection,,,False,0,6,59.269203901290894
+Radiologist #2,Postoperative glioma resection,,,False,0,3,35.41159462928772
+Radiologist #2,Presurgical glioma,Large,Infiltrative Single,False,0,4,30.781583309173584
+Radiologist #2,Metastases,Small,Multiple,False,0,7,43.441743612289429
+Radiologist #2,Presurgical glioma,Micro,Irregular/Complex Single,False,1,7,30.651439189910889
+Radiologist #2,Presurgical glioma,,,False,1,6,19.242631435394287
+Radiologist #2,Presurgical glioma,Micro,Well-circumscribed Single,False,1,6,16.096317291259766
+Radiologist #2,Paediatric presurgical tumour,,,False,0,9,14.87103009223938
+Radiologist #2,Postoperative glioma resection,,,False,0,6,45.923052072525024
+Radiologist #2,Postoperative glioma resection,,,False,0,3,76.284857034683228
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,14.733839511871338
+Radiologist #2,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,8,17.274125814437866
+Radiologist #2,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,9,14.388518571853638
+Radiologist #2,Metastases,Micro,Well-circumscribed Single,False,0,6,64.251542568206787
+Radiologist #2,Metastases,Very Large,Multiple,False,1,8,17.831907033920288
+Radiologist #2,Meningioma,Medium,Well-circumscribed Single,False,1,6,16.050396680831909
+Radiologist #2,Presurgical glioma,,,False,0,5,23.848448276519772
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,46.978874444961548
+Radiologist #2,Presurgical glioma,Micro,Well-circumscribed Single,False,0,5,32.699381113052368
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,22.946603775024411
+Radiologist #2,Postoperative glioma resection,,,False,1,4,41.926377534866333
+Radiologist #2,Postoperative glioma resection,,,False,1,6,17.639736890792847
+Radiologist #2,Presurgical glioma,,,False,1,6,14.47059202194214
+Radiologist #2,Presurgical glioma,,,False,1,7,39.953597068786621
+Radiologist #2,Postoperative glioma resection,,,False,1,5,50.104962587356567
+Radiologist #2,Paediatric presurgical tumour,,,False,0,7,27.98503398895264
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,21.900688886642456
+Radiologist #2,Postoperative glioma resection,,,False,0,6,26.234439611434937
+Radiologist #2,Paediatric presurgical tumour,,,False,0,9,16.584166526794434
+Radiologist #2,Presurgical glioma,,,False,1,6,29.981883764266968
+Radiologist #2,Presurgical glioma,Large,Irregular/Complex Single,False,1,7,31.693245649337769
+Radiologist #2,Presurgical glioma,Micro,Multiple,False,0,7,21.934097766876221
+Radiologist #2,Presurgical glioma,,,False,0,5,32.808640480041504
+Radiologist #2,Postoperative glioma resection,,,False,1,2,51.534822702407837
+Radiologist #2,Presurgical glioma,,,False,1,8,22.153654813766479
+Radiologist #2,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,8,11.408795595169067
+Radiologist #2,Presurgical glioma,,,False,0,3,41.55556058883667
+Radiologist #2,Presurgical glioma,,,False,1,7,10.811378240585327
+Radiologist #2,Postoperative glioma resection,,,False,0,6,26.016594409942627
+Radiologist #2,Presurgical glioma,,,False,1,6,35.69542407989502
+Radiologist #2,Paediatric presurgical tumour,Large,Irregular/Complex Single,False,1,6,23.519341230392456
+Radiologist #2,Presurgical glioma,,,False,1,7,12.39849019050598
+Radiologist #2,Postoperative glioma resection,,,False,0,5,45.01288914680481
+Radiologist #2,Postoperative glioma resection,,,False,0,8,13.374528884887695
+Radiologist #2,Presurgical glioma,,,False,0,7,29.821794986724854
+Radiologist #2,Postoperative glioma resection,,,False,1,2,40.780487775802612
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,15.862358570098875
+Radiologist #2,Presurgical glioma,Medium,Infiltrative Single,False,0,1,66.779022932052612
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,False,1,4,31.914878606796265
+Radiologist #2,Presurgical glioma,Large,Infiltrative Single,False,1,6,27.098109722137451
+Radiologist #2,Presurgical glioma,,,False,1,3,55.193080425262451
+Radiologist #2,Presurgical glioma,,,False,1,5,41.143064975738525
+Radiologist #2,Presurgical glioma,Micro,Irregular/Complex Single,False,1,4,33.004948139190674
+Radiologist #2,Presurgical glioma,Small,Well-circumscribed Single,True,1,8,109.04326105117798
+Radiologist #2,Presurgical glioma,,,True,1,9,25.587166547775269
+Radiologist #2,Postoperative glioma resection,,,True,0,7,25.535082578659058
+Radiologist #2,Presurgical glioma,,,True,0,8,15.683078527450562
+Radiologist #2,Presurgical glioma,,,True,0,5,29.067342758178711
+Radiologist #2,Presurgical glioma,Large,Irregular/Complex Single,True,1,8,59.389547348022461
+Radiologist #2,Presurgical glioma,,,True,0,4,16.649455785751343
+Radiologist #2,Presurgical glioma,,,True,0,8,24.032065629959103
+Radiologist #2,Presurgical glioma,,,True,1,8,33.910698890686035
+Radiologist #2,Presurgical glioma,,,True,1,6,20.469459772109985
+Radiologist #2,Presurgical glioma,Micro,Irregular/Complex Single,True,1,6,23.743250370025635
+Radiologist #2,Presurgical glioma,,,True,1,9,20.044192552566528
+Radiologist #2,Postoperative glioma resection,,,True,1,8,14.987515926361084
+Radiologist #2,Postoperative glioma resection,,,True,0,7,22.583999633789062
+Radiologist #2,Presurgical glioma,,,True,1,9,42.414261817932129
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,30.391022205352783
+Radiologist #2,Postoperative glioma resection,,,True,1,7,43.540213346481323
+Radiologist #2,Metastases,Very Large,Irregular/Complex Single,True,1,8,15.648215532302856
+Radiologist #2,Paediatric presurgical tumour,,,True,0,2,22.016604423522949
+Radiologist #2,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,6,33.019304275512695
+Radiologist #2,Presurgical glioma,,,True,1,8,23.722452640533447
+Radiologist #2,Presurgical glioma,,,True,0,8,87.917127132415771
+Radiologist #2,Presurgical glioma,Large,Irregular/Complex Single,True,1,3,171.29088973999023
+Radiologist #2,Presurgical glioma,Medium,Well-circumscribed Single,True,0,9,74.564069986343384
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,14.569628715515137
+Radiologist #2,Postoperative glioma resection,,,True,0,5,48.455352067947388
+Radiologist #2,Meningioma,Very Large,Well-circumscribed Single,True,1,9,20.872045516967773
+Radiologist #2,Presurgical glioma,Micro,Well-circumscribed Single,True,0,6,30.94988584518433
+Radiologist #2,Postoperative glioma resection,,,True,1,9,25.175549030303955
+Radiologist #2,Presurgical glioma,Large,Infiltrative Single,True,1,3,42.741365194320679
+Radiologist #2,Metastases,Medium,Multiple,True,1,8,22.539514541625977
+Radiologist #2,Postoperative glioma resection,,,True,1,4,20.104696273803711
+Radiologist #2,Presurgical glioma,,,True,1,8,34.767795562744141
+Radiologist #2,Presurgical glioma,,,True,1,9,9.2940402030944824
+Radiologist #2,Postoperative glioma resection,,,True,1,5,29.585546731948853
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,15.41036319732666
+Radiologist #2,Presurgical glioma,Large,Infiltrative Single,True,1,8,42.278193950653083
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,36.089248895645142
+Radiologist #2,Presurgical glioma,,,True,1,6,31.83332085609436
+Radiologist #2,Paediatric presurgical tumour,,,True,0,7,26.24533224105835
+Radiologist #2,Meningioma,Very Large,Multiple,True,1,8,48.464126586914062
+Radiologist #2,Paediatric presurgical tumour,,,True,1,3,44.538067102432251
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,37.262158632278442
+Radiologist #2,Presurgical glioma,,,True,1,7,26.653821706771851
+Radiologist #2,Metastases,Medium,Multiple,True,1,7,17.951826810836792
+Radiologist #2,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,9,29.002437591552731
+Radiologist #2,Postoperative glioma resection,Very Large,Infiltrative Single,True,0,6,59.528762817382812
+Radiologist #2,Postoperative glioma resection,,,True,0,4,31.450775623321533
+Radiologist #2,Postoperative glioma resection,,,True,0,6,13.721614837646484
+Radiologist #2,Presurgical glioma,Large,Infiltrative Single,True,1,8,14.021424770355225
+Radiologist #2,Metastases,Small,Multiple,True,0,5,41.033217906951904
+Radiologist #2,Presurgical glioma,Micro,Irregular/Complex Single,True,1,6,21.880232334136963
+Radiologist #2,Presurgical glioma,,,True,1,9,39.709426879882812
+Radiologist #2,Presurgical glioma,Micro,Well-circumscribed Single,True,1,2,20.104524374008179
+Radiologist #2,Paediatric presurgical tumour,,,True,1,5,18.296159029006962
+Radiologist #2,Postoperative glioma resection,,,True,0,7,21.823015928268436
+Radiologist #2,Postoperative glioma resection,,,True,0,4,19.5088484287262
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,True,0,6,20.52929782867432
+Radiologist #2,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,9,17.474931001663208
+Radiologist #2,Presurgical glioma,Very Large,Irregular/Complex Single,True,0,3,71.372908592224121
+Radiologist #2,Metastases,Micro,Well-circumscribed Single,True,1,8,14.85068941116333
+Radiologist #2,Metastases,Very Large,Multiple,True,1,9,16.094850778579712
+Radiologist #2,Meningioma,Medium,Well-circumscribed Single,True,1,8,19.24213171005249
+Radiologist #2,Presurgical glioma,,,True,1,4,17.545294284820557
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,True,1,6,34.689579010009766
+Radiologist #2,Presurgical glioma,Micro,Well-circumscribed Single,True,1,7,18.644120454788208
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,13.856920003890991
+Radiologist #2,Postoperative glioma resection,,,True,1,5,32.057456493377686
+Radiologist #2,Postoperative glioma resection,,,True,1,7,21.816174745559689
+Radiologist #2,Presurgical glioma,,,True,1,8,19.069931030273441
+Radiologist #2,Presurgical glioma,,,True,0,6,15.522127389907835
+Radiologist #2,Postoperative glioma resection,,,True,1,3,32.96263861656189
+Radiologist #2,Paediatric presurgical tumour,,,True,1,2,19.716155767440799
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,29.923720598220825
+Radiologist #2,Postoperative glioma resection,,,True,1,3,16.02351975440979
+Radiologist #2,Paediatric presurgical tumour,,,True,0,3,44.768000841140747
+Radiologist #2,Presurgical glioma,,,True,1,6,26.055101633071899
+Radiologist #2,Presurgical glioma,Large,Irregular/Complex Single,True,1,7,18.755082845687863
+Radiologist #2,Presurgical glioma,Micro,Multiple,True,0,5,32.578591108322144
+Radiologist #2,Presurgical glioma,,,True,0,7,21.62512826919556
+Radiologist #2,Postoperative glioma resection,,,True,0,3,25.089161157608032
+Radiologist #2,Presurgical glioma,,,True,1,9,29.627516508102417
+Radiologist #2,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,9,11.056889057159424
+Radiologist #2,Presurgical glioma,,,True,1,6,22.873084783554081
+Radiologist #2,Presurgical glioma,,,True,1,9,16.086221694946289
+Radiologist #2,Postoperative glioma resection,,,True,1,4,22.616344451904297
+Radiologist #2,Presurgical glioma,,,True,1,8,27.75949764251709
+Radiologist #2,Paediatric presurgical tumour,Large,Irregular/Complex Single,True,1,4,57.581685781478882
+Radiologist #2,Presurgical glioma,,,True,1,9,12.603583097457886
+Radiologist #2,Postoperative glioma resection,,,True,1,7,29.08076906204224
+Radiologist #2,Postoperative glioma resection,,,True,1,8,14.807744741439819
+Radiologist #2,Presurgical glioma,,,True,0,2,32.131280422210693
+Radiologist #2,Postoperative glioma resection,,,True,1,3,18.20146369934082
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,24.150285005569454
+Radiologist #2,Presurgical glioma,Medium,Infiltrative Single,True,1,7,12.899695873260498
+Radiologist #2,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,11.81992769241333
+Radiologist #2,Presurgical glioma,Large,Infiltrative Single,True,1,8,28.426727771759037
+Radiologist #2,Presurgical glioma,,,True,1,4,26.024469137191769
+Radiologist #2,Presurgical glioma,,,True,1,5,41.575233936309807
+Radiologist #2,Presurgical glioma,Micro,Irregular/Complex Single,True,0,5,44.803916215896606
+Radiologist #3,Presurgical glioma,,,False,1,7,164.92834067344666
+Radiologist #3,Postoperative glioma resection,,,False,1,7,35.046805620193481
+Radiologist #3,Presurgical glioma,Very Large,Irregular/Complex Single,False,0,4,47.63434362411499
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,28.456592798233032
+Radiologist #3,Presurgical glioma,,,False,1,9,23.066012620925903
+Radiologist #3,Postoperative glioma resection,,,False,0,6,19.176742076873779
+Radiologist #3,Presurgical glioma,,,False,1,7,26.495170831680294
+Radiologist #3,Presurgical glioma,Medium,Multiple,False,1,6,25.828585624694824
+Radiologist #3,Presurgical glioma,Small,Irregular/Complex Single,False,0,3,35.348047256469727
+Radiologist #3,Postoperative glioma resection,,,False,1,8,17.555666208267212
+Radiologist #3,Presurgical glioma,Medium,Infiltrative Single,False,0,6,90.166599988937378
+Radiologist #3,Presurgical glioma,,,False,1,7,22.494199275970459
+Radiologist #3,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,5,23.10534238815308
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,22.712682962417603
+Radiologist #3,Presurgical glioma,,,False,0,4,37.70224404335022
+Radiologist #3,Postoperative glioma resection,,,False,1,8,25.63212776184082
+Radiologist #3,Presurgical glioma,Medium,Well-circumscribed Single,False,0,6,24.683889150619507
+Radiologist #3,Presurgical glioma,,,False,1,6,28.151922464370728
+Radiologist #3,Paediatric presurgical tumour,,,False,0,5,31.971001148223881
+Radiologist #3,Presurgical glioma,Small,Irregular/Complex Single,False,1,7,34.544939041137695
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,25.146741151809689
+Radiologist #3,Postoperative glioma resection,,,False,0,5,33.370606422424324
+Radiologist #3,Postoperative glioma resection,,,False,0,6,18.67389965057373
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,15.77359104156494
+Radiologist #3,Postoperative glioma resection,,,False,1,7,23.958677768707275
+Radiologist #3,Presurgical glioma,,,False,0,6,33.429608106613159
+Radiologist #3,Presurgical glioma,,,False,0,7,76.442051887512207
+Radiologist #3,Presurgical glioma,,,False,1,5,20.111634016036987
+Radiologist #3,Presurgical glioma,,,False,1,7,11.205607414245604
+Radiologist #3,Postoperative glioma resection,,,False,0,7,25.60601806640625
+Radiologist #3,Presurgical glioma,Small,Irregular/Complex Single,False,1,6,11.157161712646484
+Radiologist #3,Presurgical glioma,Large,Irregular/Complex Single,False,1,7,15.645917177200316
+Radiologist #3,Presurgical glioma,,,False,0,7,19.925110101699829
+Radiologist #3,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,7,17.395938396453857
+Radiologist #3,Presurgical glioma,Medium,Infiltrative Single,False,1,9,10.355650186538696
+Radiologist #3,Postoperative glioma resection,,,False,0,8,12.908643960952761
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,12.388873338699341
+Radiologist #3,Presurgical glioma,,,False,0,6,20.18365740776062
+Radiologist #3,Presurgical glioma,,,False,1,6,16.399484634399414
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,9.2806038856506365
+Radiologist #3,Presurgical glioma,,,False,0,6,33.273649930953979
+Radiologist #3,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,8,15.123438119888306
+Radiologist #3,Presurgical glioma,Micro,Irregular/Complex Single,False,0,4,43.939393758773811
+Radiologist #3,Presurgical glioma,,,False,1,4,24.963621616363525
+Radiologist #3,Presurgical glioma,Very Large,Multiple,False,1,8,12.162545680999756
+Radiologist #3,Presurgical glioma,,,False,1,6,57.39245867729187
+Radiologist #3,Metastases,Micro,Multiple,False,1,4,23.893064975738525
+Radiologist #3,Postoperative glioma resection,,,False,0,7,18.09272289276123
+Radiologist #3,Presurgical glioma,Micro,Irregular/Complex Single,False,1,8,19.043622493743896
+Radiologist #3,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,8,35.319731473922729
+Radiologist #3,Postoperative glioma resection,,,False,0,7,10.692225456237791
+Radiologist #3,Postoperative glioma resection,,,False,1,5,36.228290319442749
+Radiologist #3,Postoperative glioma resection,,,False,1,6,22.743622779846191
+Radiologist #3,Presurgical glioma,Micro,Irregular/Complex Single,False,1,6,19.682153701782227
+Radiologist #3,Metastases,Medium,Irregular/Complex Single,False,1,6,25.767885208129883
+Radiologist #3,Metastases,Micro,Well-circumscribed Single,False,0,4,33.151798486709595
+Radiologist #3,Postoperative glioma resection,,,False,1,7,26.918631792068481
+Radiologist #3,Meningioma,Very Large,Irregular/Complex Single,False,1,8,10.54311728477478
+Radiologist #3,Postoperative glioma resection,,,False,0,9,11.843569040298462
+Radiologist #3,Presurgical glioma,,,False,0,7,103.79468107223512
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,15.99011492729187
+Radiologist #3,Postoperative glioma resection,,,False,0,6,21.275975227355961
+Radiologist #3,Presurgical glioma,,,False,1,7,12.042638063430786
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,9.1629564762115479
+Radiologist #3,Presurgical glioma,,,False,1,7,17.831070899963379
+Radiologist #3,Postoperative glioma resection,Very Large,Multiple,False,1,8,11.557317018508911
+Radiologist #3,Presurgical glioma,Large,Irregular/Complex Single,False,1,3,30.320116996765137
+Radiologist #3,Postoperative glioma resection,,,False,1,7,82.888702154159546
+Radiologist #3,Presurgical glioma,,,False,0,7,15.612239837646484
+Radiologist #3,Postoperative glioma resection,Micro,Infiltrative Single,False,1,7,10.20215630531311
+Radiologist #3,Postoperative glioma resection,,,False,1,5,36.222067356109619
+Radiologist #3,Presurgical glioma,Micro,Irregular/Complex Single,False,0,7,19.641053438186649
+Radiologist #3,Presurgical glioma,Micro,Well-circumscribed Single,False,1,6,12.236331462860107
+Radiologist #3,Presurgical glioma,,,False,1,7,18.233428716659542
+Radiologist #3,Paediatric presurgical tumour,Small,Irregular/Complex Single,False,1,5,15.307894229888916
+Radiologist #3,Presurgical glioma,,,False,0,7,12.376910448074341
+Radiologist #3,Postoperative glioma resection,,,False,0,5,19.386524438858032
+Radiologist #3,Presurgical glioma,Micro,Irregular/Complex Single,False,1,3,53.54642391204834
+Radiologist #3,Postoperative glioma resection,,,False,0,6,27.508420705795288
+Radiologist #3,Presurgical glioma,,,False,0,7,9.7985687255859375
+Radiologist #3,Meningioma,Medium,Irregular/Complex Single,False,0,5,44.86441969871521
+Radiologist #3,Presurgical glioma,,,False,1,4,37.448346376419067
+Radiologist #3,Presurgical glioma,,,False,1,8,11.868173360824583
+Radiologist #3,Metastases,Large,Irregular/Complex Single,False,1,7,18.266715049743649
+Radiologist #3,Postoperative glioma resection,,,False,1,8,23.816495895385746
+Radiologist #3,Presurgical glioma,,,False,1,5,26.004493951797485
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,False,0,5,18.2173445224762
+Radiologist #3,Presurgical glioma,,,False,0,6,19.453731536865234
+Radiologist #3,Postoperative glioma resection,,,False,1,6,28.875373840332031
+Radiologist #3,Meningioma,Very Large,Irregular/Complex Single,False,1,9,11.210744380950928
+Radiologist #3,Presurgical glioma,,,False,0,5,15.232751131057739
+Radiologist #3,Presurgical glioma,,,False,0,9,8.7202255725860596
+Radiologist #3,Presurgical glioma,Large,Irregular/Complex Single,False,1,7,20.467803716659542
+Radiologist #3,Postoperative glioma resection,,,False,0,5,20.12141585350037
+Radiologist #3,Presurgical glioma,,,False,1,6,27.519546031951904
+Radiologist #3,Presurgical glioma,,,False,0,5,36.13618278503418
+Radiologist #3,Meningioma,Medium,Irregular/Complex Single,False,1,9,11.938300132751465
+Radiologist #3,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,9,10.25169801712036
+Radiologist #3,Meningioma,Very Large,Irregular/Complex Single,False,1,9,12.666640281677246
+Radiologist #3,Paediatric presurgical tumour,,,False,0,8,9.768883228302002
+Radiologist #3,Presurgical glioma,,,True,1,7,47.938578605651855
+Radiologist #3,Postoperative glioma resection,,,True,1,7,18.411290168762207
+Radiologist #3,Presurgical glioma,Very Large,Irregular/Complex Single,True,0,5,39.20385217666626
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,10.359410047531128
+Radiologist #3,Presurgical glioma,,,True,1,8,15.104392051696776
+Radiologist #3,Postoperative glioma resection,,,True,0,7,10.286570310592651
+Radiologist #3,Presurgical glioma,,,True,1,7,23.513595819473267
+Radiologist #3,Presurgical glioma,Medium,Multiple,True,1,7,19.934533596038818
+Radiologist #3,Presurgical glioma,Small,Irregular/Complex Single,True,1,6,12.08966851234436
+Radiologist #3,Postoperative glioma resection,,,True,1,6,13.570588350296021
+Radiologist #3,Presurgical glioma,Medium,Infiltrative Single,True,0,6,23.479950666427609
+Radiologist #3,Presurgical glioma,,,True,0,6,19.860742807388306
+Radiologist #3,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,8,12.037567615509031
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,True,1,7,12.251319885253906
+Radiologist #3,Presurgical glioma,,,True,0,7,12.024821996688845
+Radiologist #3,Postoperative glioma resection,,,True,1,8,10.300740957260132
+Radiologist #3,Presurgical glioma,Medium,Well-circumscribed Single,True,1,7,11.537978172302246
+Radiologist #3,Presurgical glioma,,,True,1,8,14.476416110992432
+Radiologist #3,Paediatric presurgical tumour,,,True,0,4,13.514432668685911
+Radiologist #3,Presurgical glioma,Small,Irregular/Complex Single,True,1,6,16.589153528213501
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,True,1,7,18.267946481704712
+Radiologist #3,Postoperative glioma resection,,,True,0,6,24.472565889358521
+Radiologist #3,Postoperative glioma resection,,,True,0,6,15.238720893859863
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,8.7532103061676025
+Radiologist #3,Postoperative glioma resection,,,True,1,7,17.576309680938721
+Radiologist #3,Presurgical glioma,,,True,1,5,30.454363107681274
+Radiologist #3,Presurgical glioma,,,True,1,5,15.888283967971802
+Radiologist #3,Presurgical glioma,,,True,1,6,21.378671169281009
+Radiologist #3,Presurgical glioma,,,True,1,9,11.703946352005005
+Radiologist #3,Postoperative glioma resection,,,True,1,5,27.748469352722168
+Radiologist #3,Presurgical glioma,Small,Irregular/Complex Single,True,1,7,14.604278802871704
+Radiologist #3,Presurgical glioma,Large,Irregular/Complex Single,True,1,6,18.75937128067017
+Radiologist #3,Presurgical glioma,,,True,1,6,11.727110147476196
+Radiologist #3,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,7,29.809554576873779
+Radiologist #3,Presurgical glioma,Medium,Infiltrative Single,True,1,8,8.9087646007537842
+Radiologist #3,Postoperative glioma resection,,,True,0,7,13.65292263031006
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,True,1,6,21.061972141265869
+Radiologist #3,Presurgical glioma,,,True,1,6,21.70762825012207
+Radiologist #3,Presurgical glioma,,,True,1,7,19.525255680084229
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,10.357437372207642
+Radiologist #3,Presurgical glioma,,,True,0,6,15.366673469543455
+Radiologist #3,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,8,28.551409244537357
+Radiologist #3,Presurgical glioma,Micro,Irregular/Complex Single,True,0,7,14.392574310302734
+Radiologist #3,Presurgical glioma,,,True,1,6,23.329378843307492
+Radiologist #3,Presurgical glioma,Very Large,Multiple,True,1,7,13.527935743331909
+Radiologist #3,Presurgical glioma,,,True,1,4,46.931087732315063
+Radiologist #3,Metastases,Micro,Multiple,True,1,6,22.397408962249759
+Radiologist #3,Postoperative glioma resection,,,True,0,6,23.930076837539676
+Radiologist #3,Presurgical glioma,Micro,Irregular/Complex Single,True,1,5,23.155260324478149
+Radiologist #3,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,9,8.8415188789367676
+Radiologist #3,Postoperative glioma resection,,,True,0,6,14.584887742996216
+Radiologist #3,Postoperative glioma resection,,,True,1,5,34.444114923477173
+Radiologist #3,Postoperative glioma resection,,,True,1,4,25.562222719192505
+Radiologist #3,Presurgical glioma,Micro,Irregular/Complex Single,True,1,6,20.00291895866394
+Radiologist #3,Metastases,Medium,Irregular/Complex Single,True,1,6,15.714160203933716
+Radiologist #3,Metastases,Micro,Well-circumscribed Single,True,1,5,46.927858829498291
+Radiologist #3,Postoperative glioma resection,,,True,1,5,26.866148948669437
+Radiologist #3,Meningioma,Very Large,Irregular/Complex Single,True,1,8,10.037337779998779
+Radiologist #3,Postoperative glioma resection,,,True,0,7,11.483667850494385
+Radiologist #3,Presurgical glioma,,,True,1,6,35.787138223648071
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,11.416947603225708
+Radiologist #3,Postoperative glioma resection,,,True,0,5,22.891253709793091
+Radiologist #3,Presurgical glioma,,,True,1,8,15.061481714248655
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,7.5950138568878174
+Radiologist #3,Presurgical glioma,,,True,1,7,12.3296058177948
+Radiologist #3,Postoperative glioma resection,Very Large,Multiple,True,1,8,13.854356288909912
+Radiologist #3,Presurgical glioma,Large,Irregular/Complex Single,True,1,5,16.727372169494629
+Radiologist #3,Postoperative glioma resection,,,True,1,6,31.93258619308472
+Radiologist #3,Presurgical glioma,,,True,0,6,19.71873664855957
+Radiologist #3,Postoperative glioma resection,Micro,Infiltrative Single,True,1,7,25.505246877670288
+Radiologist #3,Postoperative glioma resection,,,True,0,6,72.4072425365448
+Radiologist #3,Presurgical glioma,Micro,Irregular/Complex Single,True,1,7,29.27680611610413
+Radiologist #3,Presurgical glioma,Micro,Well-circumscribed Single,True,1,6,35.74864387512207
+Radiologist #3,Presurgical glioma,,,True,1,6,81.001617431640625
+Radiologist #3,Paediatric presurgical tumour,Small,Irregular/Complex Single,True,1,7,19.763273239135746
+Radiologist #3,Presurgical glioma,,,True,0,8,14.648350238800049
+Radiologist #3,Postoperative glioma resection,,,True,0,5,29.230543613433841
+Radiologist #3,Presurgical glioma,Micro,Irregular/Complex Single,True,0,5,28.092128992080688
+Radiologist #3,Postoperative glioma resection,,,True,0,5,69.065199375152588
+Radiologist #3,Presurgical glioma,,,True,0,7,28.781441450119019
+Radiologist #3,Meningioma,Medium,Irregular/Complex Single,True,1,8,29.487842559814453
+Radiologist #3,Presurgical glioma,,,True,1,6,17.856746912002563
+Radiologist #3,Presurgical glioma,,,True,1,8,18.126427173614506
+Radiologist #3,Metastases,Large,Irregular/Complex Single,True,1,8,33.054172039031982
+Radiologist #3,Postoperative glioma resection,,,True,1,4,57.73519492149353
+Radiologist #3,Presurgical glioma,,,True,1,6,71.723314762115479
+Radiologist #3,Presurgical glioma,Very Large,Infiltrative Single,True,0,4,41.28281569480896
+Radiologist #3,Presurgical glioma,,,True,0,6,21.210645198822021
+Radiologist #3,Postoperative glioma resection,,,True,1,7,62.495418071746826
+Radiologist #3,Meningioma,Very Large,Irregular/Complex Single,True,1,9,14.423149824142456
+Radiologist #3,Presurgical glioma,,,True,0,4,57.072494745254517
+Radiologist #3,Presurgical glioma,,,True,0,5,36.030135869979858
+Radiologist #3,Presurgical glioma,Large,Irregular/Complex Single,True,1,7,19.730034351348881
+Radiologist #3,Postoperative glioma resection,,,True,0,7,30.836185932159424
+Radiologist #3,Presurgical glioma,,,True,1,5,30.266978025436401
+Radiologist #3,Presurgical glioma,,,True,1,6,37.806683778762817
+Radiologist #3,Meningioma,Medium,Irregular/Complex Single,True,1,8,28.118827342987061
+Radiologist #3,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,8,58.263697385787971
+Radiologist #3,Meningioma,Very Large,Irregular/Complex Single,True,1,8,12.651722192764282
+Radiologist #3,Paediatric presurgical tumour,,,True,0,9,86.72516655921936
+Radiologist #5,Presurgical glioma,,,False,0,7,46.108346462249763
+Radiologist #5,Postoperative glioma resection,,,False,1,8,38.492860794067383
+Radiologist #5,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,20.059990882873532
+Radiologist #5,Paediatric presurgical tumour,,,False,1,6,26.09380316734314
+Radiologist #5,Postoperative glioma resection,,,False,0,9,40.381272077560425
+Radiologist #5,Postoperative glioma resection,Micro,Infiltrative Single,False,0,9,34.900230884552002
+Radiologist #5,Presurgical glioma,,,False,1,10,13.989383220672607
+Radiologist #5,Presurgical glioma,Large,Infiltrative Single,False,1,9,25.184992551803589
+Radiologist #5,Postoperative glioma resection,,,False,1,9,15.144498825073242
+Radiologist #5,Presurgical glioma,,,False,1,7,54.632365703582771
+Radiologist #5,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,21.64171934127808
+Radiologist #5,Presurgical glioma,Micro,Infiltrative Single,False,0,5,98.094485282897963
+Radiologist #5,Presurgical glioma,,,False,1,9,13.94683003425598
+Radiologist #5,Postoperative glioma resection,,,False,1,9,14.015604019165041
+Radiologist #5,Postoperative glioma resection,,,False,0,7,17.949992179870605
+Radiologist #5,Presurgical glioma,Medium,Infiltrative Single,False,1,1,97.048142910003662
+Radiologist #5,Presurgical glioma,Very Large,Infiltrative Single,False,0,1,150.25444173812866
+Radiologist #5,Presurgical glioma,,,False,1,7,112.80717062950134
+Radiologist #5,Presurgical glioma,,,False,1,8,20.21497106552124
+Radiologist #5,Paediatric presurgical tumour,,,False,1,3,61.827111005783081
+Radiologist #5,Postoperative glioma resection,,,False,1,7,20.557943820953369
+Radiologist #5,Presurgical glioma,Small,Irregular/Complex Single,False,1,5,16.997452020645142
+Radiologist #5,Postoperative glioma resection,Medium,Irregular/Complex Single,False,0,7,17.686445951461792
+Radiologist #5,Presurgical glioma,,,False,1,9,22.709737539291385
+Radiologist #5,Postoperative glioma resection,,,False,1,9,11.017423152923584
+Radiologist #5,Presurgical glioma,,,False,1,2,56.863764047622681
+Radiologist #5,Presurgical glioma,Large,Irregular/Complex Single,False,0,7,19.013093948364254
+Radiologist #5,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,10,17.203002691268921
+Radiologist #5,Meningioma,Very Large,Irregular/Complex Single,False,1,10,23.224102258682251
+Radiologist #5,Meningioma,Medium,Irregular/Complex Single,False,0,5,344.75240516662598
+Radiologist #5,Postoperative glioma resection,Small,Multiple,False,0,4,23.337407350540161
+Radiologist #5,Postoperative glioma resection,,,False,1,9,9.4314501285552979
+Radiologist #5,Metastases,Micro,Well-circumscribed Single,False,0,5,120.76360464096069
+Radiologist #5,Presurgical glioma,,,False,1,7,36.444224834442139
+Radiologist #5,Postoperative glioma resection,,,False,1,6,18.731610059738159
+Radiologist #5,Presurgical glioma,,,False,1,10,9.5987439155578596
+Radiologist #5,Postoperative glioma resection,,,False,1,7,10.741403341293337
+Radiologist #5,Presurgical glioma,,,False,1,7,16.377234697341919
+Radiologist #5,Postoperative glioma resection,,,False,1,3,27.014952421188354
+Radiologist #5,Presurgical glioma,,,False,0,5,14.011057138442991
+Radiologist #5,Postoperative glioma resection,,,False,1,5,17.674030065536499
+Radiologist #5,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,9.9889142513275164
+Radiologist #5,Presurgical glioma,,,False,1,8,133.45375037193298
+Radiologist #5,Paediatric presurgical tumour,Very Large,Infiltrative Single,False,1,10,13.8366539478302
+Radiologist #5,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,14.58118772506714
+Radiologist #5,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,17.127907752990723
+Radiologist #5,Presurgical glioma,,,False,1,7,29.420153617858887
+Radiologist #5,Presurgical glioma,,,False,1,7,26.32982063293457
+Radiologist #5,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,10,12.483383893966677
+Radiologist #5,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,5,17.128018617630005
+Radiologist #5,Presurgical glioma,Small,Infiltrative Single,False,0,5,21.939748048782349
+Radiologist #5,Presurgical glioma,,,False,1,3,36.117823362350464
+Radiologist #5,Presurgical glioma,Medium,Infiltrative Single,False,1,6,52.49369215965271
+Radiologist #5,Presurgical glioma,,,False,1,8,15.21783447265625
+Radiologist #5,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,9.8199434280395508
+Radiologist #5,Postoperative glioma resection,,,False,0,8,14.598666667938232
+Radiologist #5,Presurgical glioma,,,False,0,7,22.687481164932251
+Radiologist #5,Presurgical glioma,Micro,Single Lesion (Unclassified),False,0,7,12.727699995040894
+Radiologist #5,Presurgical glioma,,,False,1,7,28.288418292999268
+Radiologist #5,Presurgical glioma,Medium,Irregular/Complex Single,False,1,9,14.178509473800659
+Radiologist #5,Presurgical glioma,,,False,1,5,35.659692287445068
+Radiologist #5,Presurgical glioma,Large,Irregular/Complex Single,False,1,8,50.953529596328735
+Radiologist #5,Presurgical glioma,,,False,1,7,15.600742101669312
+Radiologist #5,Meningioma,Very Large,Irregular/Complex Single,False,1,8,13.633992671966553
+Radiologist #5,Postoperative glioma resection,,,False,1,8,47.553420066833496
+Radiologist #5,Presurgical glioma,,,False,1,9,12.962998151779177
+Radiologist #5,Paediatric presurgical tumour,,,False,1,4,22.597805976867679
+Radiologist #5,Postoperative glioma resection,,,False,1,8,16.906128644943237
+Radiologist #5,Presurgical glioma,,,False,1,8,20.269266128540039
+Radiologist #5,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,21.111522674560547
+Radiologist #5,Presurgical glioma,,,False,1,7,9.6989293098449707
+Radiologist #5,Meningioma,Large,Irregular/Complex Single,False,0,5,21.353148221969604
+Radiologist #5,Presurgical glioma,Small,Irregular/Complex Single,False,0,7,115.06761717796326
+Radiologist #5,Paediatric presurgical tumour,,,False,1,8,20.183864831924438
+Radiologist #5,Presurgical glioma,,,False,1,7,17.233430624008179
+Radiologist #5,Postoperative glioma resection,Micro,Irregular/Complex Single,False,0,7,17.713174343109131
+Radiologist #5,Postoperative glioma resection,Medium,Infiltrative Single,False,0,7,12.324640512466431
+Radiologist #5,Presurgical glioma,Large,Irregular/Complex Single,False,0,4,25.937793970108032
+Radiologist #5,Postoperative glioma resection,,,False,1,6,34.28834056854248
+Radiologist #5,Postoperative glioma resection,,,False,1,8,11.945864915847778
+Radiologist #5,Presurgical glioma,,,False,0,3,40.56847882270813
+Radiologist #5,Presurgical glioma,Very Large,Irregular/Complex Single,False,0,4,33.899786710739136
+Radiologist #5,Presurgical glioma,,,False,1,7,17.931630611419678
+Radiologist #5,Paediatric presurgical tumour,Medium,Infiltrative Single,False,1,7,13.163369655609131
+Radiologist #5,Presurgical glioma,,,False,1,7,96.040024518966675
+Radiologist #5,Meningioma,Very Large,Well-circumscribed Single,False,1,8,12.190265655517578
+Radiologist #5,Postoperative glioma resection,Medium,Infiltrative Single,False,0,7,14.925288200378418
+Radiologist #5,Postoperative glioma resection,Medium,Irregular/Complex Single,False,0,7,14.197818040847778
+Radiologist #5,Presurgical glioma,,,False,1,7,12.169277191162109
+Radiologist #5,Presurgical glioma,,,False,1,7,121.79498910903931
+Radiologist #5,Presurgical glioma,,,False,1,8,10.694206714630129
+Radiologist #5,Postoperative glioma resection,,,False,1,7,8.0058441162109375
+Radiologist #5,Presurgical glioma,,,False,1,8,6.7068793773651123
+Radiologist #5,Presurgical glioma,Medium,Irregular/Complex Single,False,0,6,15.791993379592896
+Radiologist #5,Presurgical glioma,,,False,1,7,18.073557615280151
+Radiologist #5,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,5,36.874244213104248
+Radiologist #5,Postoperative glioma resection,Micro,Single Lesion (Unclassified),False,0,7,10.430684566497805
+Radiologist #5,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,6,14.793814420700071
+Radiologist #5,Metastases,Micro,Multiple,False,0,5,25.857129335403439
+Radiologist #5,Postoperative glioma resection,,,False,1,8,7.6753106117248526
+Radiologist #5,Presurgical glioma,,,True,1,4,102.82858228683472
+Radiologist #5,Postoperative glioma resection,,,True,1,2,44.78177285194397
+Radiologist #5,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,11.101114988327026
+Radiologist #5,Paediatric presurgical tumour,,,True,1,8,12.429193496704102
+Radiologist #5,Postoperative glioma resection,,,True,0,9,9.0457162857055664
+Radiologist #5,Postoperative glioma resection,Micro,Infiltrative Single,True,0,3,25.743196725845337
+Radiologist #5,Presurgical glioma,,,True,1,9,11.344437599182127
+Radiologist #5,Presurgical glioma,Large,Infiltrative Single,True,1,10,14.184875965118408
+Radiologist #5,Postoperative glioma resection,,,True,1,9,10.411568880081177
+Radiologist #5,Presurgical glioma,,,True,1,3,16.454282283782959
+Radiologist #5,Presurgical glioma,Very Large,Infiltrative Single,True,1,7,12.266736745834351
+Radiologist #5,Presurgical glioma,Micro,Infiltrative Single,True,0,3,18.742817640304565
+Radiologist #5,Presurgical glioma,,,True,1,10,23.13007760047913
+Radiologist #5,Postoperative glioma resection,,,True,1,10,15.268128395080566
+Radiologist #5,Postoperative glioma resection,,,True,0,3,28.401579141616821
+Radiologist #5,Presurgical glioma,Medium,Infiltrative Single,True,1,5,25.63967490196228
+Radiologist #5,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,19.870823383331299
+Radiologist #5,Presurgical glioma,,,True,0,6,21.377770662307739
+Radiologist #5,Presurgical glioma,,,True,1,8,16.086086988449097
+Radiologist #5,Paediatric presurgical tumour,,,True,1,8,16.235443830490112
+Radiologist #5,Postoperative glioma resection,,,True,0,3,40.944561719894409
+Radiologist #5,Presurgical glioma,Small,Irregular/Complex Single,True,1,8,11.972813844680786
+Radiologist #5,Postoperative glioma resection,Medium,Irregular/Complex Single,True,1,5,20.116855144500729
+Radiologist #5,Presurgical glioma,,,True,1,8,12.372837781906128
+Radiologist #5,Postoperative glioma resection,,,True,1,9,13.521742343902588
+Radiologist #5,Presurgical glioma,,,True,1,9,13.947214126586914
+Radiologist #5,Presurgical glioma,Large,Irregular/Complex Single,True,1,8,12.808538675308228
+Radiologist #5,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,10,11.469491720199583
+Radiologist #5,Meningioma,Very Large,Irregular/Complex Single,True,1,10,10.338630676269531
+Radiologist #5,Meningioma,Medium,Irregular/Complex Single,True,0,10,16.413984060287476
+Radiologist #5,Postoperative glioma resection,Small,Multiple,True,1,4,13.756585359573364
+Radiologist #5,Postoperative glioma resection,,,True,1,3,18.663869380950928
+Radiologist #5,Metastases,Micro,Well-circumscribed Single,True,0,8,16.70109486579895
+Radiologist #5,Presurgical glioma,,,True,1,8,15.390420913696287
+Radiologist #5,Postoperative glioma resection,,,True,0,4,15.225180387496948
+Radiologist #5,Presurgical glioma,,,True,1,10,9.6465299129486084
+Radiologist #5,Postoperative glioma resection,,,True,1,9,16.739020824432373
+Radiologist #5,Presurgical glioma,,,True,1,9,48.170451164245605
+Radiologist #5,Postoperative glioma resection,,,True,0,6,30.912259578704838
+Radiologist #5,Presurgical glioma,,,True,1,6,17.120603322982788
+Radiologist #5,Postoperative glioma resection,,,True,1,6,16.3426513671875
+Radiologist #5,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,10.804852485656738
+Radiologist #5,Presurgical glioma,,,True,1,9,10.675173997879028
+Radiologist #5,Paediatric presurgical tumour,Very Large,Infiltrative Single,True,1,10,23.360887765884399
+Radiologist #5,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,10.342864513397217
+Radiologist #5,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,16.841350555419922
+Radiologist #5,Presurgical glioma,,,True,1,8,12.35242486000061
+Radiologist #5,Presurgical glioma,,,True,0,3,17.819619417190552
+Radiologist #5,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,9,8.940716028213501
+Radiologist #5,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,9,8.7186498641967773
+Radiologist #5,Presurgical glioma,Small,Infiltrative Single,True,1,6,29.507784128189087
+Radiologist #5,Presurgical glioma,,,True,1,6,12.179941415786743
+Radiologist #5,Presurgical glioma,Medium,Infiltrative Single,True,1,4,12.113400936126707
+Radiologist #5,Presurgical glioma,,,True,1,9,14.256844043731689
+Radiologist #5,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,15.902443170547484
+Radiologist #5,Postoperative glioma resection,,,True,0,6,16.459876775741577
+Radiologist #5,Presurgical glioma,,,True,0,1,34.621356964111328
+Radiologist #5,Presurgical glioma,Micro,Single Lesion (Unclassified),True,0,8,9.4045820236206037
+Radiologist #5,Presurgical glioma,,,True,1,9,12.655605554580688
+Radiologist #5,Presurgical glioma,Medium,Irregular/Complex Single,True,1,8,57.315905570983887
+Radiologist #5,Presurgical glioma,,,True,1,8,9.5054843425750715
+Radiologist #5,Presurgical glioma,Large,Irregular/Complex Single,True,1,9,11.050522804260254
+Radiologist #5,Presurgical glioma,,,True,1,7,11.165377378463743
+Radiologist #5,Meningioma,Very Large,Irregular/Complex Single,True,1,10,11.536421775817873
+Radiologist #5,Postoperative glioma resection,,,True,1,9,12.518131971359251
+Radiologist #5,Presurgical glioma,,,True,1,9,8.7683472633361816
+Radiologist #5,Paediatric presurgical tumour,,,True,0,5,11.289660930633543
+Radiologist #5,Postoperative glioma resection,,,True,1,8,10.782993078231812
+Radiologist #5,Presurgical glioma,,,True,1,9,11.463326930999756
+Radiologist #5,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,11.759220600128174
+Radiologist #5,Presurgical glioma,,,True,1,8,17.095669984817505
+Radiologist #5,Meningioma,Large,Irregular/Complex Single,True,1,10,21.214390277862549
+Radiologist #5,Presurgical glioma,Small,Irregular/Complex Single,True,1,5,23.322587966918945
+Radiologist #5,Paediatric presurgical tumour,,,True,1,9,26.135499238967896
+Radiologist #5,Presurgical glioma,,,True,1,7,11.461157321929932
+Radiologist #5,Postoperative glioma resection,Micro,Irregular/Complex Single,True,1,6,18.743891000747681
+Radiologist #5,Postoperative glioma resection,Medium,Infiltrative Single,True,1,7,12.984857797622681
+Radiologist #5,Presurgical glioma,Large,Irregular/Complex Single,True,1,8,17.847303867340088
+Radiologist #5,Postoperative glioma resection,,,True,0,3,29.338207244873047
+Radiologist #5,Postoperative glioma resection,,,True,1,9,14.882017850875854
+Radiologist #5,Presurgical glioma,,,True,0,8,19.232518434524536
+Radiologist #5,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,8,15.691695928573608
+Radiologist #5,Presurgical glioma,,,True,1,9,13.745533227920532
+Radiologist #5,Paediatric presurgical tumour,Medium,Infiltrative Single,True,1,8,11.576517343521118
+Radiologist #5,Presurgical glioma,,,True,1,9,11.201578617095947
+Radiologist #5,Meningioma,Very Large,Well-circumscribed Single,True,1,10,11.621177196502686
+Radiologist #5,Postoperative glioma resection,Medium,Infiltrative Single,True,0,1,31.406954050064087
+Radiologist #5,Postoperative glioma resection,Medium,Irregular/Complex Single,True,0,1,30.376477479934689
+Radiologist #5,Presurgical glioma,,,True,1,7,12.273142576217651
+Radiologist #5,Presurgical glioma,,,True,1,8,16.284507989883423
+Radiologist #5,Presurgical glioma,,,True,1,9,65.311441898345947
+Radiologist #5,Postoperative glioma resection,,,True,1,8,29.920869588851929
+Radiologist #5,Presurgical glioma,,,True,1,6,17.9046790599823
+Radiologist #5,Presurgical glioma,Medium,Irregular/Complex Single,True,1,8,12.162089347839355
+Radiologist #5,Presurgical glioma,,,True,0,5,19.790426015853878
+Radiologist #5,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,9,8.1977880001068115
+Radiologist #5,Postoperative glioma resection,Micro,Single Lesion (Unclassified),True,0,3,15.462788820266724
+Radiologist #5,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,9,9.7410571575164795
+Radiologist #5,Metastases,Micro,Multiple,True,1,8,29.262603998184204
+Radiologist #5,Postoperative glioma resection,,,True,1,8,11.305103540420532
+Radiologist #1,Metastases,Small,Multiple,False,0,8,80.85851526260376
+Radiologist #1,Presurgical glioma,,,False,0,9,22.425061464309689
+Radiologist #1,Meningioma,Very Large,Irregular/Complex Single,False,1,7,38.931330442428589
+Radiologist #1,Postoperative glioma resection,,,False,0,8,26.743602752685547
+Radiologist #1,Presurgical glioma,,,False,0,7,33.966755390167243
+Radiologist #1,Postoperative glioma resection,,,False,0,10,19.040259838104248
+Radiologist #1,Paediatric presurgical tumour,,,False,0,9,22.64549994468689
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,19.854726791381839
+Radiologist #1,Presurgical glioma,,,False,0,6,28.738009691238403
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,23.801636219024655
+Radiologist #1,Presurgical glioma,,,False,0,5,59.194644927978523
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,39.547442436218262
+Radiologist #1,Presurgical glioma,,,False,0,6,54.791235685348511
+Radiologist #1,Postoperative glioma resection,,,False,0,8,25.24033522605896
+Radiologist #1,Presurgical glioma,Small,Irregular/Complex Single,False,1,8,26.457901954650879
+Radiologist #1,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,8,25.843059301376343
+Radiologist #1,Presurgical glioma,Large,Infiltrative Single,False,1,8,39.38053560256958
+Radiologist #1,Postoperative glioma resection,,,False,0,6,34.21495795249939
+Radiologist #1,Presurgical glioma,,,False,1,5,37.743709564208977
+Radiologist #1,Meningioma,Very Large,Irregular/Complex Single,False,1,9,14.228679895400999
+Radiologist #1,Postoperative glioma resection,,,False,1,5,36.77071213722229
+Radiologist #1,Presurgical glioma,,,False,0,7,24.774522542953491
+Radiologist #1,Presurgical glioma,,,False,1,7,35.935609579086304
+Radiologist #1,Postoperative glioma resection,,,False,1,6,35.565286874771118
+Radiologist #1,Metastases,Medium,Multiple,False,1,8,49.142518997192383
+Radiologist #1,Presurgical glioma,,,False,1,10,16.418055772781372
+Radiologist #1,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,6,22.610073328018188
+Radiologist #1,Presurgical glioma,,,False,1,9,18.925136089324951
+Radiologist #1,Presurgical glioma,,,False,0,5,31.30378532409668
+Radiologist #1,Presurgical glioma,,,False,1,10,15.088697195053101
+Radiologist #1,Presurgical glioma,Large,Multiple,False,1,10,19.332988500595093
+Radiologist #1,Presurgical glioma,Micro,Single Lesion (Unclassified),False,1,7,35.264658689498901
+Radiologist #1,Postoperative glioma resection,,,False,1,6,31.052083253860477
+Radiologist #1,Presurgical glioma,,,False,1,10,14.708705186843872
+Radiologist #1,Meningioma,Very Large,Infiltrative Single,False,1,10,25.121302366256717
+Radiologist #1,Postoperative glioma resection,,,False,1,8,18.99546217918396
+Radiologist #1,Metastases,Large,Multiple,False,1,7,29.511779308319088
+Radiologist #1,Presurgical glioma,Large,Irregular/Complex Single,False,0,5,60.340567350387573
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,15.675960540771484
+Radiologist #1,Postoperative glioma resection,,,False,0,6,19.758968830108643
+Radiologist #1,Presurgical glioma,,,False,0,7,121.75710105895996
+Radiologist #1,Postoperative glioma resection,,,False,0,8,22.101396083831787
+Radiologist #1,Presurgical glioma,,,False,1,5,22.758579730987549
+Radiologist #1,Presurgical glioma,,,False,1,5,21.13406610488892
+Radiologist #1,Postoperative glioma resection,,,False,0,7,17.932136058807373
+Radiologist #1,Postoperative glioma resection,,,False,1,6,23.195273399353027
+Radiologist #1,Presurgical glioma,Micro,Irregular/Complex Single,False,0,5,234.67450976371765
+Radiologist #1,Postoperative glioma resection,,,False,1,6,44.442293643951416
+Radiologist #1,Presurgical glioma,Small,Well-circumscribed Single,False,1,6,84.234812498092651
+Radiologist #1,Presurgical glioma,Micro,Single Lesion (Unclassified),False,0,8,24.765183210372925
+Radiologist #1,Postoperative glioma resection,Very Large,Infiltrative Single,False,0,7,22.953367471694943
+Radiologist #1,Presurgical glioma,,,False,1,6,56.507491111755371
+Radiologist #1,Metastases,Micro,Well-circumscribed Single,False,0,7,61.566269397735603
+Radiologist #1,Presurgical glioma,,,False,1,7,25.364678621292114
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,21.696020603179932
+Radiologist #1,Presurgical glioma,,,False,0,6,22.895416021347049
+Radiologist #1,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,7,31.825647354125977
+Radiologist #1,Presurgical glioma,,,False,0,8,22.287958145141602
+Radiologist #1,Presurgical glioma,Micro,Multiple,False,1,6,23.934032440185547
+Radiologist #1,Postoperative glioma resection,,,False,1,6,22.823391437530521
+Radiologist #1,Presurgical glioma,Micro,Irregular/Complex Single,False,0,5,28.986665725708008
+Radiologist #1,Presurgical glioma,Very Large,Multiple,False,1,8,18.325696706771851
+Radiologist #1,Meningioma,Small,Irregular/Complex Single,False,0,7,40.470991134643562
+Radiologist #1,Meningioma,Medium,Well-circumscribed Single,False,1,7,24.889677047729489
+Radiologist #1,Presurgical glioma,Medium,Multiple,False,1,8,29.761291027069088
+Radiologist #1,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,8,37.600227117538452
+Radiologist #1,Postoperative glioma resection,,,False,1,8,20.476782083511356
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,43.04448127746582
+Radiologist #1,Paediatric presurgical tumour,,,False,0,7,33.14306902885437
+Radiologist #1,Postoperative glioma resection,,,False,1,7,19.036653518676761
+Radiologist #1,Presurgical glioma,,,False,1,7,32.590656042098999
+Radiologist #1,Presurgical glioma,,,False,0,5,22.328592777252201
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,17.253670454025269
+Radiologist #1,Postoperative glioma resection,Micro,Irregular/Complex Single,False,0,8,188.53040599823001
+Radiologist #1,Presurgical glioma,,,False,1,5,24.5456702709198
+Radiologist #1,Presurgical glioma,,,False,1,7,24.197626352310181
+Radiologist #1,Presurgical glioma,,,False,1,10,13.853574275970461
+Radiologist #1,Postoperative glioma resection,,,False,1,7,20.678069353103641
+Radiologist #1,Presurgical glioma,Micro,Multiple,False,0,5,92.956230878829956
+Radiologist #1,Presurgical glioma,Small,Well-circumscribed Single,False,1,5,22.644965171813965
+Radiologist #1,Meningioma,Very Large,Irregular/Complex Single,False,1,10,17.327317714691162
+Radiologist #1,Presurgical glioma,,,False,0,6,29.297536373138428
+Radiologist #1,Postoperative glioma resection,,,False,0,7,31.92633938789368
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,False,0,6,33.623863697052002
+Radiologist #1,Metastases,Large,Multiple,False,1,8,12.603969573974609
+Radiologist #1,Paediatric presurgical tumour,,,False,0,8,16.68597674369812
+Radiologist #1,Meningioma,Medium,Irregular/Complex Single,False,1,9,34.862307548522949
+Radiologist #1,Metastases,Very Large,Multiple,False,1,7,25.196300268173218
+Radiologist #1,Presurgical glioma,,,False,1,5,18.850003004074097
+Radiologist #1,Presurgical glioma,,,False,1,5,32.699246644973755
+Radiologist #1,Presurgical glioma,Large,Irregular/Complex Single,False,1,6,40.737212896347046
+Radiologist #1,Presurgical glioma,,,False,1,8,29.784255743026733
+Radiologist #1,Presurgical glioma,,,False,1,5,30.423932552337646
+Radiologist #1,Paediatric presurgical tumour,,,False,0,8,11.028732299804688
+Radiologist #1,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,6,26.293058633804321
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,11.343944787979126
+Radiologist #1,Presurgical glioma,,,False,1,10,12.321018695831301
+Radiologist #1,Postoperative glioma resection,,,False,0,10,16.15227746963501
+Radiologist #1,Presurgical glioma,,,False,1,8,14.635195016860962
+Radiologist #1,Postoperative glioma resection,,,False,1,8,21.333765983581543
+Radiologist #1,Metastases,Small,Multiple,True,0,9,94.612774610519395
+Radiologist #1,Presurgical glioma,,,True,0,6,37.944217920303352
+Radiologist #1,Meningioma,Very Large,Irregular/Complex Single,True,1,5,116.33272528648376
+Radiologist #1,Postoperative glioma resection,,,True,0,6,34.772755861282349
+Radiologist #1,Presurgical glioma,,,True,0,6,201.49440598487851
+Radiologist #1,Postoperative glioma resection,,,True,0,8,26.391137599945068
+Radiologist #1,Paediatric presurgical tumour,,,True,0,10,13.060640096664429
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,23.061687469482425
+Radiologist #1,Presurgical glioma,,,True,1,7,22.08613657951355
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,True,1,7,17.345288991928101
+Radiologist #1,Presurgical glioma,,,True,0,5,18.79863429069519
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,79.43235445022583
+Radiologist #1,Presurgical glioma,,,True,1,7,23.238105297088623
+Radiologist #1,Postoperative glioma resection,,,True,0,8,18.50077748298645
+Radiologist #1,Presurgical glioma,Small,Irregular/Complex Single,True,1,7,38.584659337997437
+Radiologist #1,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,9,55.030770301818848
+Radiologist #1,Presurgical glioma,Large,Infiltrative Single,True,1,9,15.814690351486206
+Radiologist #1,Postoperative glioma resection,,,True,1,5,21.970271825790405
+Radiologist #1,Presurgical glioma,,,True,1,6,23.718886613845825
+Radiologist #1,Meningioma,Very Large,Irregular/Complex Single,True,1,10,32.425873041152954
+Radiologist #1,Postoperative glioma resection,,,True,1,7,20.480584144592285
+Radiologist #1,Presurgical glioma,,,True,0,7,18.464775562286377
+Radiologist #1,Presurgical glioma,,,True,1,5,140.856196641922
+Radiologist #1,Postoperative glioma resection,,,True,0,6,210.30862593650815
+Radiologist #1,Metastases,Medium,Multiple,True,1,7,22.717288494110107
+Radiologist #1,Presurgical glioma,,,True,1,10,11.502492904663086
+Radiologist #1,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,5,64.345442295074463
+Radiologist #1,Presurgical glioma,,,True,1,10,11.088274002075195
+Radiologist #1,Presurgical glioma,,,True,0,7,24.946011066436768
+Radiologist #1,Presurgical glioma,,,True,1,10,59.667018413543701
+Radiologist #1,Presurgical glioma,Large,Multiple,True,1,10,10.456925868988035
+Radiologist #1,Presurgical glioma,Micro,Single Lesion (Unclassified),True,1,9,21.795210838317871
+Radiologist #1,Postoperative glioma resection,,,True,1,5,31.874199151992801
+Radiologist #1,Presurgical glioma,,,True,1,10,15.615616083145142
+Radiologist #1,Meningioma,Very Large,Infiltrative Single,True,1,9,15.728380680084229
+Radiologist #1,Postoperative glioma resection,,,True,1,9,20.622725009918213
+Radiologist #1,Metastases,Large,Multiple,True,1,8,27.5815110206604
+Radiologist #1,Presurgical glioma,Large,Irregular/Complex Single,True,1,9,23.877835750579838
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,17.901007413864136
+Radiologist #1,Postoperative glioma resection,,,True,1,5,30.64606237411499
+Radiologist #1,Presurgical glioma,,,True,0,6,34.284378290176392
+Radiologist #1,Postoperative glioma resection,,,True,0,8,137.83754515647888
+Radiologist #1,Presurgical glioma,,,True,1,7,25.814549207687374
+Radiologist #1,Presurgical glioma,,,True,1,6,20.145415782928467
+Radiologist #1,Postoperative glioma resection,,,True,0,7,23.808765649795529
+Radiologist #1,Postoperative glioma resection,,,True,1,6,28.931942462921143
+Radiologist #1,Presurgical glioma,Micro,Irregular/Complex Single,True,0,5,60.780154943466187
+Radiologist #1,Postoperative glioma resection,,,True,1,7,21.675739049911499
+Radiologist #1,Presurgical glioma,Small,Well-circumscribed Single,True,1,7,19.751445055007931
+Radiologist #1,Presurgical glioma,Micro,Single Lesion (Unclassified),True,0,8,23.922403812408447
+Radiologist #1,Postoperative glioma resection,Very Large,Infiltrative Single,True,0,7,31.502771615982056
+Radiologist #1,Presurgical glioma,,,True,1,7,41.542941093444817
+Radiologist #1,Metastases,Micro,Well-circumscribed Single,True,0,8,26.782529830932617
+Radiologist #1,Presurgical glioma,,,True,1,7,95.223908424377441
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,15.393534660339355
+Radiologist #1,Presurgical glioma,,,True,0,8,17.377721309661865
+Radiologist #1,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,8,46.38775372505188
+Radiologist #1,Presurgical glioma,,,True,0,9,14.360659599304199
+Radiologist #1,Presurgical glioma,Micro,Multiple,True,1,8,25.741212844848636
+Radiologist #1,Postoperative glioma resection,,,True,1,7,29.017284154891968
+Radiologist #1,Presurgical glioma,Micro,Irregular/Complex Single,True,0,6,45.442674160003662
+Radiologist #1,Presurgical glioma,Very Large,Multiple,True,1,10,19.564680814743038
+Radiologist #1,Meningioma,Small,Irregular/Complex Single,True,1,8,41.645242929458618
+Radiologist #1,Meningioma,Medium,Well-circumscribed Single,True,1,9,18.654671430587769
+Radiologist #1,Presurgical glioma,Medium,Multiple,True,1,9,27.09809398651123
+Radiologist #1,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,7,28.669161081314087
+Radiologist #1,Postoperative glioma resection,,,True,1,7,14.321014165878296
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,9.4327297210693359
+Radiologist #1,Paediatric presurgical tumour,,,True,0,7,47.381144046783447
+Radiologist #1,Postoperative glioma resection,,,True,1,5,15.106990098953249
+Radiologist #1,Presurgical glioma,,,True,1,5,126.0164759159088
+Radiologist #1,Presurgical glioma,,,True,1,5,31.387661457061768
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,12.440309286117554
+Radiologist #1,Postoperative glioma resection,Micro,Irregular/Complex Single,True,0,7,17.858200550079346
+Radiologist #1,Presurgical glioma,,,True,0,7,37.628269672393799
+Radiologist #1,Presurgical glioma,,,True,1,5,39.272835969924927
+Radiologist #1,Presurgical glioma,,,True,1,10,11.462863206863403
+Radiologist #1,Postoperative glioma resection,,,True,1,5,17.878584861755371
+Radiologist #1,Presurgical glioma,Micro,Multiple,True,0,7,17.166622877120972
+Radiologist #1,Presurgical glioma,Small,Well-circumscribed Single,True,1,5,27.026334047317505
+Radiologist #1,Meningioma,Very Large,Irregular/Complex Single,True,1,10,12.397113800048828
+Radiologist #1,Presurgical glioma,,,True,1,6,21.553066730499268
+Radiologist #1,Postoperative glioma resection,,,True,0,8,169.11106133461001
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,True,1,7,23.020298480987549
+Radiologist #1,Metastases,Large,Multiple,True,1,8,14.87148380279541
+Radiologist #1,Paediatric presurgical tumour,,,True,0,9,22.420504331588745
+Radiologist #1,Meningioma,Medium,Irregular/Complex Single,True,1,9,20.838451147079468
+Radiologist #1,Metastases,Very Large,Multiple,True,1,8,21.082956552505493
+Radiologist #1,Presurgical glioma,,,True,1,8,22.291627883911133
+Radiologist #1,Presurgical glioma,,,True,1,8,18.051306486129761
+Radiologist #1,Presurgical glioma,Large,Irregular/Complex Single,True,1,7,34.692862749099731
+Radiologist #1,Presurgical glioma,,,True,1,6,26.978507280349731
+Radiologist #1,Presurgical glioma,,,True,1,6,17.04288125038147
+Radiologist #1,Paediatric presurgical tumour,,,True,0,6,52.971394538879402
+Radiologist #1,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,8,20.520251750946045
+Radiologist #1,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,15.280312538146973
+Radiologist #1,Presurgical glioma,,,True,1,9,11.300586700439451
+Radiologist #1,Postoperative glioma resection,,,True,0,7,14.320757150650024
+Radiologist #1,Presurgical glioma,,,True,1,7,12.485795497894289
+Radiologist #1,Postoperative glioma resection,,,True,1,7,12.998357534408569
+Radiologist #6,Presurgical glioma,,,False,1,7,96.901726245880127
+Radiologist #6,Presurgical glioma,Large,Infiltrative Single,False,1,10,42.168672323226929
+Radiologist #6,Presurgical glioma,,,False,1,7,83.345735549926758
+Radiologist #6,Postoperative glioma resection,,,False,0,4,78.974204301834106
+Radiologist #6,Presurgical glioma,,,False,1,5,50.920933723449707
+Radiologist #6,Presurgical glioma,,,False,1,6,75.44212007522583
+Radiologist #6,Postoperative glioma resection,,,False,0,7,46.983895540237427
+Radiologist #6,Presurgical glioma,Micro,Irregular/Complex Single,False,0,7,57.683855295181282
+Radiologist #6,Presurgical glioma,Small,Irregular/Complex Single,False,1,6,76.533804655075073
+Radiologist #6,Presurgical glioma,Large,Infiltrative Single,False,1,10,32.87376856803894
+Radiologist #6,Presurgical glioma,,,False,0,2,71.762937784194946
+Radiologist #6,Presurgical glioma,,,False,1,5,30.449205160140991
+Radiologist #6,Postoperative glioma resection,,,False,1,6,36.083932876586914
+Radiologist #6,Presurgical glioma,Micro,Irregular/Complex Single,False,1,8,38.630242824554443
+Radiologist #6,Paediatric presurgical tumour,,,False,1,5,181.19264459609985
+Radiologist #6,Postoperative glioma resection,,,False,1,2,54.184446811676025
+Radiologist #6,Postoperative glioma resection,,,False,0,4,41.994617938995361
+Radiologist #6,Presurgical glioma,Large,Irregular/Complex Single,False,1,7,47.765404939651489
+Radiologist #6,Postoperative glioma resection,,,False,1,3,98.916521310806274
+Radiologist #6,Presurgical glioma,,,False,0,5,50.506059408187866
+Radiologist #6,Postoperative glioma resection,,,False,0,3,74.500323534011841
+Radiologist #6,Presurgical glioma,Small,Multiple,False,1,4,63.113131761550903
+Radiologist #6,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,7,30.419533014297485
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,143.53633403778076
+Radiologist #6,Paediatric presurgical tumour,,,False,0,3,193.72551131248477
+Radiologist #6,Postoperative glioma resection,,,False,0,4,40.750264406204224
+Radiologist #6,Presurgical glioma,,,False,1,5,28.861898899078369
+Radiologist #6,Postoperative glioma resection,Micro,Infiltrative Single,False,0,3,103.91952061653136
+Radiologist #6,Presurgical glioma,Large,Irregular/Complex Single,False,1,3,100.58264255523682
+Radiologist #6,Presurgical glioma,,,False,0,3,75.647097110748291
+Radiologist #6,Presurgical glioma,,,False,1,10,13.065412282943726
+Radiologist #6,Presurgical glioma,,,False,1,6,33.653918266296387
+Radiologist #6,Presurgical glioma,,,False,1,5,68.909652948379517
+Radiologist #6,Postoperative glioma resection,,,False,0,3,74.528353691101074
+Radiologist #6,Presurgical glioma,,,False,1,3,51.167703628540039
+Radiologist #6,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,3,47.677661418914802
+Radiologist #6,Presurgical glioma,,,False,0,3,72.211571216583252
+Radiologist #6,Presurgical glioma,,,False,1,10,17.214745998382568
+Radiologist #6,Presurgical glioma,Micro,Well-circumscribed Single,False,1,8,20.449732065200809
+Radiologist #6,Postoperative glioma resection,,,False,1,5,46.657916784286499
+Radiologist #6,Presurgical glioma,,,False,1,4,35.187244176864624
+Radiologist #6,Postoperative glioma resection,,,False,1,4,33.229846715927124
+Radiologist #6,Presurgical glioma,,,False,0,7,40.227399110794067
+Radiologist #6,Metastases,Large,Infiltrative Single,False,1,7,17.379188299179077
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,34.259832859039307
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,27.226647138595581
+Radiologist #6,Postoperative glioma resection,,,False,1,6,33.970253229141235
+Radiologist #6,Postoperative glioma resection,,,False,1,5,30.143089771270752
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,68.118576765060425
+Radiologist #6,Presurgical glioma,Micro,Single Lesion (Unclassified),False,0,6,43.262891292572021
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,34.303416967391968
+Radiologist #6,Metastases,Very Large,Multiple,False,1,8,37.90112566947937
+Radiologist #6,Presurgical glioma,,,False,1,4,22.182430028915405
+Radiologist #6,Presurgical glioma,,,False,1,9,14.30120587348938
+Radiologist #6,Presurgical glioma,Small,Infiltrative Single,False,0,2,54.519447088241577
+Radiologist #6,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,7,44.922188282012939
+Radiologist #6,Presurgical glioma,Micro,Irregular/Complex Single,False,1,3,66.151796102523804
+Radiologist #6,Presurgical glioma,,,False,0,2,44.325849056243896
+Radiologist #6,Meningioma,Medium,Irregular/Complex Single,False,0,9,60.686078548431396
+Radiologist #6,Presurgical glioma,Micro,Irregular/Complex Single,False,1,2,66.161169290542603
+Radiologist #6,Postoperative glioma resection,Micro,Irregular/Complex Single,False,1,8,13.86883282661438
+Radiologist #6,Presurgical glioma,,,False,1,7,20.005413055419918
+Radiologist #6,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,7,23.974669456481934
+Radiologist #6,Metastases,Large,Multiple,False,1,8,39.800148725509651
+Radiologist #6,Postoperative glioma resection,,,False,1,1,43.392544507980347
+Radiologist #6,Meningioma,Very Large,Irregular/Complex Single,False,1,10,20.40131783485413
+Radiologist #6,Paediatric presurgical tumour,,,False,1,4,87.212712049484253
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,False,1,4,52.492631673812873
+Radiologist #6,Presurgical glioma,Medium,Well-circumscribed Single,False,1,8,22.075072288513184
+Radiologist #6,Postoperative glioma resection,,,False,1,5,23.657613039016724
+Radiologist #6,Presurgical glioma,,,False,1,5,21.047505378723145
+Radiologist #6,Presurgical glioma,Medium,Irregular/Complex Single,False,0,3,40.213276624679565
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,False,1,3,54.601489305496216
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,False,1,4,22.876933097839355
+Radiologist #6,Presurgical glioma,,,False,1,3,27.78605318069458
+Radiologist #6,Presurgical glioma,,,False,1,6,59.840149402618408
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,12.860151529312134
+Radiologist #6,Postoperative glioma resection,Medium,Irregular/Complex Single,False,0,3,41.42579460144043
+Radiologist #6,Paediatric presurgical tumour,,,False,1,3,47.345757961273193
+Radiologist #6,Presurgical glioma,,,False,1,4,29.432132720947266
+Radiologist #6,Presurgical glioma,,,False,1,9,20.154999732971191
+Radiologist #6,Presurgical glioma,,,False,1,3,55.299006462097168
+Radiologist #6,Presurgical glioma,Medium,Well-circumscribed Single,False,1,3,31.992579698562626
+Radiologist #6,Postoperative glioma resection,,,False,1,4,25.666954755783081
+Radiologist #6,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,3,39.887146472930908
+Radiologist #6,Meningioma,Medium,Well-circumscribed Single,False,0,3,32.654540538787842
+Radiologist #6,Postoperative glioma resection,,,False,1,3,36.119535684585571
+Radiologist #6,Postoperative glioma resection,,,False,1,3,34.822036743164062
+Radiologist #6,Presurgical glioma,,,False,0,6,25.393176555633545
+Radiologist #6,Presurgical glioma,,,False,1,3,22.084527730941769
+Radiologist #6,Presurgical glioma,Medium,Infiltrative Single,False,1,7,24.911113262176517
+Radiologist #6,Presurgical glioma,,,False,0,3,26.206658840179443
+Radiologist #6,Postoperative glioma resection,,,False,1,4,25.296667098999023
+Radiologist #6,Presurgical glioma,,,False,1,3,22.440137147903439
+Radiologist #6,Postoperative glioma resection,Micro,Irregular/Complex Single,False,1,2,47.438238620758057
+Radiologist #6,Presurgical glioma,,,False,1,4,22.007528066635128
+Radiologist #6,Postoperative glioma resection,,,False,1,4,15.648285865783691
+Radiologist #6,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,9,9.2204613685607928
+Radiologist #6,Metastases,Small,Multiple,False,0,4,27.463327169418331
+Radiologist #6,Presurgical glioma,,,False,1,2,39.22405743598938
+Radiologist #6,Presurgical glioma,,,True,0,5,58.404313802719123
+Radiologist #6,Presurgical glioma,Large,Infiltrative Single,True,1,10,16.898972988128662
+Radiologist #6,Presurgical glioma,,,True,1,2,36.843117713928223
+Radiologist #6,Postoperative glioma resection,,,True,1,5,87.447786331176758
+Radiologist #6,Presurgical glioma,,,True,1,5,21.392335653305054
+Radiologist #6,Presurgical glioma,,,True,1,5,31.23782587051392
+Radiologist #6,Postoperative glioma resection,,,True,0,7,14.937316417694092
+Radiologist #6,Presurgical glioma,Micro,Irregular/Complex Single,True,0,6,22.1787543296814
+Radiologist #6,Presurgical glioma,Small,Irregular/Complex Single,True,1,6,26.576360702514648
+Radiologist #6,Presurgical glioma,Large,Infiltrative Single,True,1,10,20.503585338592529
+Radiologist #6,Presurgical glioma,,,True,1,6,20.837951421737671
+Radiologist #6,Presurgical glioma,,,True,1,6,19.93497371673584
+Radiologist #6,Postoperative glioma resection,,,True,1,8,24.35903525352478
+Radiologist #6,Presurgical glioma,Micro,Irregular/Complex Single,True,1,7,15.997399091720579
+Radiologist #6,Paediatric presurgical tumour,,,True,1,6,15.469157457351685
+Radiologist #6,Postoperative glioma resection,,,True,1,6,20.77594256401062
+Radiologist #6,Postoperative glioma resection,,,True,1,3,45.381913661956787
+Radiologist #6,Presurgical glioma,Large,Irregular/Complex Single,True,1,8,23.852343559265137
+Radiologist #6,Postoperative glioma resection,,,True,0,3,54.987240791320801
+Radiologist #6,Presurgical glioma,,,True,0,3,21.418186664581299
+Radiologist #6,Postoperative glioma resection,,,True,1,5,12.056683778762816
+Radiologist #6,Presurgical glioma,Small,Multiple,True,0,2,44.520270824432373
+Radiologist #6,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,8,27.238638162612915
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,13.074499845504761
+Radiologist #6,Paediatric presurgical tumour,,,True,1,5,19.942906141281128
+Radiologist #6,Postoperative glioma resection,,,True,0,6,16.767797708511353
+Radiologist #6,Presurgical glioma,,,True,1,6,12.319157123565674
+Radiologist #6,Postoperative glioma resection,Micro,Infiltrative Single,True,0,3,15.4425208568573
+Radiologist #6,Presurgical glioma,Large,Irregular/Complex Single,True,1,4,25.103821992874146
+Radiologist #6,Presurgical glioma,,,True,1,5,16.569161891937256
+Radiologist #6,Presurgical glioma,,,True,1,10,13.504538297653198
+Radiologist #6,Presurgical glioma,,,True,1,5,24.094661474227905
+Radiologist #6,Presurgical glioma,,,True,1,9,19.395918130874637
+Radiologist #6,Postoperative glioma resection,,,True,1,5,20.219699621200562
+Radiologist #6,Presurgical glioma,,,True,1,8,12.868994474411011
+Radiologist #6,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,8,28.000971794128414
+Radiologist #6,Presurgical glioma,,,True,1,6,18.324084520339969
+Radiologist #6,Presurgical glioma,,,True,1,10,9.3322303295135498
+Radiologist #6,Presurgical glioma,Micro,Well-circumscribed Single,True,1,8,16.538377523422241
+Radiologist #6,Postoperative glioma resection,,,True,1,7,23.787811279296875
+Radiologist #6,Presurgical glioma,,,True,1,6,23.638819694519043
+Radiologist #6,Postoperative glioma resection,,,True,0,5,39.319432497024536
+Radiologist #6,Presurgical glioma,,,True,1,6,18.047957181930546
+Radiologist #6,Metastases,Large,Infiltrative Single,True,1,10,10.657054424285889
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,12.276149034500122
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,True,1,5,41.32156777381897
+Radiologist #6,Postoperative glioma resection,,,True,1,5,15.184523582458496
+Radiologist #6,Postoperative glioma resection,,,True,1,7,19.032668590545651
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,6.859445333480835
+Radiologist #6,Presurgical glioma,Micro,Single Lesion (Unclassified),True,0,9,18.068371772766117
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,10.870078325271606
+Radiologist #6,Metastases,Very Large,Multiple,True,1,10,34.081354141235352
+Radiologist #6,Presurgical glioma,,,True,1,8,17.753058433532715
+Radiologist #6,Presurgical glioma,,,True,1,10,14.992341279983521
+Radiologist #6,Presurgical glioma,Small,Infiltrative Single,True,0,4,23.270841598510746
+Radiologist #6,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,9,13.380096435546877
+Radiologist #6,Presurgical glioma,Micro,Irregular/Complex Single,True,0,5,46.13708758354187
+Radiologist #6,Presurgical glioma,,,True,0,7,17.822761297225952
+Radiologist #6,Meningioma,Medium,Irregular/Complex Single,True,1,10,23.848397970199585
+Radiologist #6,Presurgical glioma,Micro,Irregular/Complex Single,True,0,5,34.406732082366943
+Radiologist #6,Postoperative glioma resection,Micro,Irregular/Complex Single,True,1,5,19.749839782714844
+Radiologist #6,Presurgical glioma,,,True,1,7,14.322350025177002
+Radiologist #6,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,10,11.960208654403688
+Radiologist #6,Metastases,Large,Multiple,True,1,10,21.228660583496094
+Radiologist #6,Postoperative glioma resection,,,True,1,4,22.230807542800903
+Radiologist #6,Meningioma,Very Large,Irregular/Complex Single,True,1,10,9.3398489952087402
+Radiologist #6,Paediatric presurgical tumour,,,True,1,3,15.089846611022949
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,True,1,7,21.175275087356567
+Radiologist #6,Presurgical glioma,Medium,Well-circumscribed Single,True,1,10,11.926230669021606
+Radiologist #6,Postoperative glioma resection,,,True,1,5,25.650706768035889
+Radiologist #6,Presurgical glioma,,,True,1,4,12.746793508529665
+Radiologist #6,Presurgical glioma,Medium,Irregular/Complex Single,True,0,3,33.50359320640564
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,16.99876070022583
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,21.489210844039921
+Radiologist #6,Presurgical glioma,,,True,0,2,45.89950966835022
+Radiologist #6,Presurgical glioma,,,True,0,3,58.738783121109009
+Radiologist #6,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,9.9566111564636248
+Radiologist #6,Postoperative glioma resection,Medium,Irregular/Complex Single,True,0,4,28.058746814727783
+Radiologist #6,Paediatric presurgical tumour,,,True,0,3,20.57076621055603
+Radiologist #6,Presurgical glioma,,,True,0,6,37.115240097045898
+Radiologist #6,Presurgical glioma,,,True,1,10,9.204340934753418
+Radiologist #6,Presurgical glioma,,,True,1,6,14.761529445648192
+Radiologist #6,Presurgical glioma,Medium,Well-circumscribed Single,True,1,7,28.061906814575195
+Radiologist #6,Postoperative glioma resection,,,True,1,4,29.163278341293331
+Radiologist #6,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,7,14.87468957901001
+Radiologist #6,Meningioma,Medium,Well-circumscribed Single,True,1,6,16.019079685211182
+Radiologist #6,Postoperative glioma resection,,,True,1,6,16.595110177993774
+Radiologist #6,Postoperative glioma resection,,,True,0,3,24.967857837676998
+Radiologist #6,Presurgical glioma,,,True,0,6,17.51640248298645
+Radiologist #6,Presurgical glioma,,,True,1,4,29.72269177436829
+Radiologist #6,Presurgical glioma,Medium,Infiltrative Single,True,1,9,10.604575395584106
+Radiologist #6,Presurgical glioma,,,True,0,3,26.187559604644772
+Radiologist #6,Postoperative glioma resection,,,True,1,7,16.748872041702271
+Radiologist #6,Presurgical glioma,,,True,1,7,24.431353330612183
+Radiologist #6,Postoperative glioma resection,Micro,Irregular/Complex Single,True,0,4,22.634153842926025
+Radiologist #6,Presurgical glioma,,,True,1,5,18.809291362762451
+Radiologist #6,Postoperative glioma resection,,,True,1,5,14.265483140945436
+Radiologist #6,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,10,25.710985422134399
+Radiologist #6,Metastases,Small,Multiple,True,1,6,53.993180274963379
+Radiologist #6,Presurgical glioma,,,True,0,5,43.272996664047241
+Radiologist #11,Presurgical glioma,,,False,0,9,52.612689256668091
+Radiologist #11,Presurgical glioma,Micro,Irregular/Complex Single,False,0,7,45.732151746749878
+Radiologist #11,Presurgical glioma,,,False,1,7,39.558156251907349
+Radiologist #11,Postoperative glioma resection,Very Large,Irregular/Complex Single,False,1,7,75.545625448226929
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,30.533716917037964
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,34.070892572402954
+Radiologist #11,Presurgical glioma,,,False,1,7,31.307288408279419
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,29.709025859832764
+Radiologist #11,Postoperative glioma resection,Micro,Infiltrative Single,False,0,5,43.83216118812561
+Radiologist #11,Presurgical glioma,,,False,1,6,36.919846296310425
+Radiologist #11,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,5,78.915013790130615
+Radiologist #11,Presurgical glioma,,,False,1,5,65.142992496490479
+Radiologist #11,Presurgical glioma,,,False,0,5,45.684970617294312
+Radiologist #11,Metastases,Large,Multiple,False,1,7,35.930345058441162
+Radiologist #11,Postoperative glioma resection,,,False,1,6,24.975952625274655
+Radiologist #11,Presurgical glioma,,,False,1,4,56.981497526168823
+Radiologist #11,Postoperative glioma resection,,,False,1,4,86.450821161270142
+Radiologist #11,Postoperative glioma resection,Micro,Irregular/Complex Single,False,1,6,24.501296997070312
+Radiologist #11,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,9,31.325308561325077
+Radiologist #11,Presurgical glioma,Large,Infiltrative Single,False,1,7,64.290932416915894
+Radiologist #11,Postoperative glioma resection,,,False,0,9,23.006182909011841
+Radiologist #11,Paediatric presurgical tumour,,,False,0,10,19.155353307723999
+Radiologist #11,Presurgical glioma,,,False,1,5,67.363655090332031
+Radiologist #11,Meningioma,Very Large,Irregular/Complex Single,False,1,10,17.847647190093994
+Radiologist #11,Presurgical glioma,,,False,1,6,60.690191268920898
+Radiologist #11,Presurgical glioma,,,False,1,5,39.421323537826538
+Radiologist #11,Presurgical glioma,Large,Infiltrative Single,False,1,10,17.870634794235229
+Radiologist #11,Presurgical glioma,,,False,0,10,14.303283452987673
+Radiologist #11,Presurgical glioma,,,False,1,10,18.022120237350464
+Radiologist #11,Postoperative glioma resection,Micro,Irregular/Complex Single,False,0,4,49.781167984008789
+Radiologist #11,Postoperative glioma resection,,,False,1,6,183.95071196556091
+Radiologist #11,Paediatric presurgical tumour,,,False,0,10,46.734640836715698
+Radiologist #11,Presurgical glioma,,,False,1,5,82.664623737335205
+Radiologist #11,Postoperative glioma resection,,,False,0,9,18.918164253234863
+Radiologist #11,Postoperative glioma resection,Small,Infiltrative Single,False,1,6,35.568211317062378
+Radiologist #11,Presurgical glioma,,,False,1,5,33.884651184082031
+Radiologist #11,Presurgical glioma,Large,Irregular/Complex Single,False,1,6,48.105717420578003
+Radiologist #11,Postoperative glioma resection,,,False,1,6,41.590114593505859
+Radiologist #11,Postoperative glioma resection,Micro,Single Lesion (Unclassified),False,0,7,49.430325746536255
+Radiologist #11,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,6,34.247752666473389
+Radiologist #11,Presurgical glioma,,,False,0,8,22.197891712188721
+Radiologist #11,Postoperative glioma resection,Micro,Single Lesion (Unclassified),False,0,7,30.278995513916016
+Radiologist #11,Presurgical glioma,,,False,1,7,66.866286277770996
+Radiologist #11,Postoperative glioma resection,Micro,Irregular/Complex Single,False,0,7,37.235221385955811
+Radiologist #11,Postoperative glioma resection,,,False,0,6,65.325484752655029
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,False,0,6,39.460654020309448
+Radiologist #11,Presurgical glioma,Small,Infiltrative Single,False,1,5,43.629757165908813
+Radiologist #11,Presurgical glioma,Micro,Single Lesion (Unclassified),False,0,7,14.923799753189089
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,12.86819624900818
+Radiologist #11,Presurgical glioma,,,False,1,5,33.311483860015869
+Radiologist #11,Presurgical glioma,,,False,0,9,23.123705148696899
+Radiologist #11,Presurgical glioma,,,False,0,10,17.211625337600708
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,18.251313209533691
+Radiologist #11,Postoperative glioma resection,,,False,1,5,31.709771871566769
+Radiologist #11,Postoperative glioma resection,,,False,1,6,24.4367790222168
+Radiologist #11,Presurgical glioma,,,False,0,8,28.141545295715328
+Radiologist #11,Presurgical glioma,,,False,1,5,33.074486017227173
+Radiologist #11,Presurgical glioma,,,False,1,10,12.513664484024048
+Radiologist #11,Presurgical glioma,,,False,0,6,31.968913793563843
+Radiologist #11,Postoperative glioma resection,,,False,1,6,28.501072883605961
+Radiologist #11,Presurgical glioma,,,False,1,6,28.181307315826416
+Radiologist #11,Presurgical glioma,,,False,1,7,36.456562995910645
+Radiologist #11,Presurgical glioma,,,False,1,5,42.487507581710815
+Radiologist #11,Postoperative glioma resection,,,False,1,7,32.658530950546265
+Radiologist #11,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,4,89.102977275848389
+Radiologist #11,Presurgical glioma,Small,Well-circumscribed Single,False,0,4,67.412262678146362
+Radiologist #11,Postoperative glioma resection,,,False,1,7,26.722879648208615
+Radiologist #11,Presurgical glioma,,,False,0,7,22.211612939834595
+Radiologist #11,Postoperative glioma resection,,,False,0,6,63.629651546478271
+Radiologist #11,Presurgical glioma,,,False,0,7,22.308517456054688
+Radiologist #11,Postoperative glioma resection,,,False,0,9,23.342713117599487
+Radiologist #11,Presurgical glioma,Micro,Multiple,False,0,5,78.591923475265503
+Radiologist #11,Postoperative glioma resection,Medium,Irregular/Complex Single,False,0,6,34.755933523178101
+Radiologist #11,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,7,47.235538959503167
+Radiologist #11,Presurgical glioma,Small,Irregular/Complex Single,False,1,6,37.78374457359314
+Radiologist #11,Presurgical glioma,,,False,1,10,16.543363332748413
+Radiologist #11,Presurgical glioma,,,False,1,10,20.539453029632568
+Radiologist #11,Postoperative glioma resection,,,False,1,7,52.507481813430793
+Radiologist #11,Presurgical glioma,,,False,1,7,36.05072808265686
+Radiologist #11,Metastases,Micro,Well-circumscribed Single,False,0,4,56.976828813552856
+Radiologist #11,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,10,17.461084365844727
+Radiologist #11,Postoperative glioma resection,,,False,1,7,25.032870054244995
+Radiologist #11,Meningioma,Very Large,Irregular/Complex Single,False,1,10,22.213069677352905
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,False,1,2,41.382818222045898
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,14.678438425064089
+Radiologist #11,Metastases,Micro,Multiple,False,0,8,38.445062637329102
+Radiologist #11,Meningioma,Very Large,Irregular/Complex Single,False,1,5,24.619448184967041
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,13.65664267539978
+Radiologist #11,Presurgical glioma,Medium,Infiltrative Single,False,0,2,47.629614114761353
+Radiologist #11,Postoperative glioma resection,,,False,0,5,39.118929147720337
+Radiologist #11,Presurgical glioma,Very Large,Well-circumscribed Single,False,1,7,20.470775842666622
+Radiologist #11,Metastases,Small,Multiple,False,0,1,35.558358907699585
+Radiologist #11,Presurgical glioma,,,False,0,6,33.159028053283691
+Radiologist #11,Presurgical glioma,,,False,0,6,15.40833854675293
+Radiologist #11,Presurgical glioma,,,False,0,7,22.155539035797119
+Radiologist #11,Presurgical glioma,,,False,1,7,13.493305683135986
+Radiologist #11,Postoperative glioma resection,,,False,0,8,18.068269729614254
+Radiologist #11,Metastases,Very Large,Multiple,False,1,7,44.917166471481323
+Radiologist #11,Metastases,Micro,Multiple,False,0,5,101.2264280319214
+Radiologist #11,Meningioma,Medium,Irregular/Complex Single,False,1,10,25.131168603897091
+Radiologist #11,Presurgical glioma,,,True,0,5,104.29528403282166
+Radiologist #11,Presurgical glioma,Micro,Irregular/Complex Single,True,0,6,29.28783130645752
+Radiologist #11,Presurgical glioma,,,True,1,5,36.856870651245117
+Radiologist #11,Postoperative glioma resection,Very Large,Irregular/Complex Single,True,1,9,16.812807321548462
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,20.213097333908081
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,True,1,7,27.653824329376221
+Radiologist #11,Presurgical glioma,,,True,1,8,26.940235137939453
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,12.46574640274048
+Radiologist #11,Postoperative glioma resection,Micro,Infiltrative Single,True,0,4,66.746334075927734
+Radiologist #11,Presurgical glioma,,,True,1,4,22.483601570129395
+Radiologist #11,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,8,23.82306432723999
+Radiologist #11,Presurgical glioma,,,True,1,2,39.324243068695068
+Radiologist #11,Presurgical glioma,,,True,0,7,16.589076995849609
+Radiologist #11,Metastases,Large,Multiple,True,0,5,29.293992042541504
+Radiologist #11,Postoperative glioma resection,,,True,1,6,15.330053091049194
+Radiologist #11,Presurgical glioma,,,True,1,6,25.028650522232056
+Radiologist #11,Postoperative glioma resection,,,True,1,6,23.576931238174438
+Radiologist #11,Postoperative glioma resection,Micro,Irregular/Complex Single,True,0,6,18.910598993301392
+Radiologist #11,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,10,28.75003290176392
+Radiologist #11,Presurgical glioma,Large,Infiltrative Single,True,0,6,76.411934375762939
+Radiologist #11,Postoperative glioma resection,,,True,0,6,22.479944705963131
+Radiologist #11,Paediatric presurgical tumour,,,True,0,5,23.76308274269104
+Radiologist #11,Presurgical glioma,,,True,1,6,15.823108434677124
+Radiologist #11,Meningioma,Very Large,Irregular/Complex Single,True,1,10,22.408921003341675
+Radiologist #11,Presurgical glioma,,,True,1,7,12.660269260406494
+Radiologist #11,Presurgical glioma,,,True,1,6,23.433274507522583
+Radiologist #11,Presurgical glioma,Large,Infiltrative Single,True,1,10,18.175634622573853
+Radiologist #11,Presurgical glioma,,,True,0,6,17.705801486968994
+Radiologist #11,Presurgical glioma,,,True,1,7,16.8802170753479
+Radiologist #11,Postoperative glioma resection,Micro,Irregular/Complex Single,True,0,6,18.873566865921021
+Radiologist #11,Postoperative glioma resection,,,True,1,7,15.711901903152466
+Radiologist #11,Paediatric presurgical tumour,,,True,0,7,15.586288213729858
+Radiologist #11,Presurgical glioma,,,True,1,6,13.446887016296388
+Radiologist #11,Postoperative glioma resection,,,True,0,6,17.983482837677002
+Radiologist #11,Postoperative glioma resection,Small,Infiltrative Single,True,1,5,29.308437585830688
+Radiologist #11,Presurgical glioma,,,True,1,6,12.70150351524353
+Radiologist #11,Presurgical glioma,Large,Irregular/Complex Single,True,1,9,17.93756890296936
+Radiologist #11,Postoperative glioma resection,,,True,1,6,40.271049022674561
+Radiologist #11,Postoperative glioma resection,Micro,Single Lesion (Unclassified),True,0,5,17.367309808731079
+Radiologist #11,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,9,19.591459989547729
+Radiologist #11,Presurgical glioma,,,True,0,8,12.141189336776732
+Radiologist #11,Postoperative glioma resection,Micro,Single Lesion (Unclassified),True,0,6,14.39309787750244
+Radiologist #11,Presurgical glioma,,,True,1,4,25.590176820755005
+Radiologist #11,Postoperative glioma resection,Micro,Irregular/Complex Single,True,0,5,22.921823263168331
+Radiologist #11,Postoperative glioma resection,,,True,0,6,23.179038047790527
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,True,1,7,15.641708374023438
+Radiologist #11,Presurgical glioma,Small,Infiltrative Single,True,0,5,24.55110502243042
+Radiologist #11,Presurgical glioma,Micro,Single Lesion (Unclassified),True,0,5,20.242633104324341
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,21.629711389541622
+Radiologist #11,Presurgical glioma,,,True,1,4,29.300152540206909
+Radiologist #11,Presurgical glioma,,,True,0,5,21.045569896698002
+Radiologist #11,Presurgical glioma,,,True,0,8,17.978102207183838
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,12.815565347671509
+Radiologist #11,Postoperative glioma resection,,,True,1,7,12.340345144271851
+Radiologist #11,Postoperative glioma resection,,,True,1,6,25.366974115371704
+Radiologist #11,Presurgical glioma,,,True,0,7,17.448443651199341
+Radiologist #11,Presurgical glioma,,,True,1,4,24.890042543411251
+Radiologist #11,Presurgical glioma,,,True,1,8,11.32856559753418
+Radiologist #11,Presurgical glioma,,,True,1,8,24.654139518737797
+Radiologist #11,Postoperative glioma resection,,,True,1,8,13.49466609954834
+Radiologist #11,Presurgical glioma,,,True,0,7,19.285131454467773
+Radiologist #11,Presurgical glioma,,,True,1,7,14.632073879241943
+Radiologist #11,Presurgical glioma,,,True,1,7,15.259666442871094
+Radiologist #11,Postoperative glioma resection,,,True,0,4,27.100639820098881
+Radiologist #11,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,9,17.723448991775513
+Radiologist #11,Presurgical glioma,Small,Well-circumscribed Single,True,0,4,23.647377967834476
+Radiologist #11,Postoperative glioma resection,,,True,1,7,17.485844850540161
+Radiologist #11,Presurgical glioma,,,True,0,6,29.397753477096561
+Radiologist #11,Postoperative glioma resection,,,True,0,6,11.733273506164551
+Radiologist #11,Presurgical glioma,,,True,1,5,21.082644939422607
+Radiologist #11,Postoperative glioma resection,,,True,0,7,14.853672027587891
+Radiologist #11,Presurgical glioma,Micro,Multiple,True,0,4,45.6034836769104
+Radiologist #11,Postoperative glioma resection,Medium,Irregular/Complex Single,True,1,7,30.122324466705319
+Radiologist #11,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,7,25.21432995796204
+Radiologist #11,Presurgical glioma,Small,Irregular/Complex Single,True,1,8,28.304378747940063
+Radiologist #11,Presurgical glioma,,,True,1,10,7.7179358005523682
+Radiologist #11,Presurgical glioma,,,True,1,10,10.963393926620483
+Radiologist #11,Postoperative glioma resection,,,True,1,8,18.153733491897583
+Radiologist #11,Presurgical glioma,,,True,1,7,15.319199800491331
+Radiologist #11,Metastases,Micro,Well-circumscribed Single,True,0,5,18.646120071411133
+Radiologist #11,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,10,19.528600215911865
+Radiologist #11,Postoperative glioma resection,,,True,1,7,13.565601825714111
+Radiologist #11,Meningioma,Very Large,Irregular/Complex Single,True,1,10,13.377819299697876
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,18.750042915344238
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,13.311452865600586
+Radiologist #11,Metastases,Micro,Multiple,True,0,5,36.079756736755371
+Radiologist #11,Meningioma,Very Large,Irregular/Complex Single,True,0,3,27.699993848800659
+Radiologist #11,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,11.346046447753906
+Radiologist #11,Presurgical glioma,Medium,Infiltrative Single,True,0,4,14.945703029632568
+Radiologist #11,Postoperative glioma resection,,,True,1,4,13.058336019515991
+Radiologist #11,Presurgical glioma,Very Large,Well-circumscribed Single,True,1,8,21.032206535339355
+Radiologist #11,Metastases,Small,Multiple,True,0,5,19.84128308296204
+Radiologist #11,Presurgical glioma,,,True,0,3,17.94185733795166
+Radiologist #11,Presurgical glioma,,,True,1,3,36.619243860244751
+Radiologist #11,Presurgical glioma,,,True,0,7,18.771925926208496
+Radiologist #11,Presurgical glioma,,,True,1,6,9.2942385673522967
+Radiologist #11,Postoperative glioma resection,,,True,1,7,13.152420043945312
+Radiologist #11,Metastases,Very Large,Multiple,True,1,7,9.5617713928222656
+Radiologist #11,Metastases,Micro,Multiple,True,0,3,80.697633266448975
+Radiologist #11,Meningioma,Medium,Irregular/Complex Single,True,1,10,14.14319634437561
+Radiologist #7,Presurgical glioma,,,False,1,8,126.24658250808716
+Radiologist #7,Presurgical glioma,,,False,1,6,158.40894937515259
+Radiologist #7,Meningioma,Very Large,Well-circumscribed Single,False,1,10,139.48526883125305
+Radiologist #7,Presurgical glioma,,,False,1,8,112.10426878929138
+Radiologist #7,Meningioma,Large,Well-circumscribed Single,False,1,10,119.86746287345886
+Radiologist #7,Postoperative glioma resection,,,False,1,10,122.27653455734252
+Radiologist #7,Postoperative glioma resection,,,False,0,9,219.6553010940552
+Radiologist #7,Meningioma,Very Large,Irregular/Complex Single,False,1,8,260.01600003242493
+Radiologist #7,Presurgical glioma,,,False,0,5,106.87074041366576
+Radiologist #7,Presurgical glioma,,,False,1,9,115.03820705413818
+Radiologist #7,Postoperative glioma resection,,,False,1,6,148.0828685760498
+Radiologist #7,Presurgical glioma,,,False,1,3,305.67436170578003
+Radiologist #7,Metastases,Medium,Infiltrative Single,False,1,8,118.7848174571991
+Radiologist #7,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,9,101.4854736328125
+Radiologist #7,Presurgical glioma,,,False,1,8,93.184781312942505
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,False,1,3,242.61933326721191
+Radiologist #7,Presurgical glioma,,,False,1,9,70.070775747299194
+Radiologist #7,Presurgical glioma,,,False,1,8,141.68754863739014
+Radiologist #7,Presurgical glioma,Medium,Infiltrative Single,False,0,2,147.32618737220764
+Radiologist #7,Postoperative glioma resection,,,False,1,9,52.262693405151367
+Radiologist #7,Presurgical glioma,Large,Infiltrative Single,False,0,4,190.47506618499759
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,59.019729375839233
+Radiologist #7,Postoperative glioma resection,,,False,1,8,143.61013865470886
+Radiologist #7,Metastases,Medium,Multiple,False,1,10,61.984600782394409
+Radiologist #7,Presurgical glioma,Very Large,Irregular/Complex Single,False,0,6,109.92400431632996
+Radiologist #7,Meningioma,Very Large,Irregular/Complex Single,False,1,8,207.07866764068604
+Radiologist #7,Presurgical glioma,,,False,0,8,82.002508163452148
+Radiologist #7,Postoperative glioma resection,,,False,1,8,70.323441743850708
+Radiologist #7,Presurgical glioma,,,False,0,8,88.563715934753418
+Radiologist #7,Postoperative glioma resection,Medium,Infiltrative Single,False,0,9,140.12208962440491
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,False,0,7,135.0594277381897
+Radiologist #7,Postoperative glioma resection,,,False,1,8,87.394154071807861
+Radiologist #7,Presurgical glioma,,,False,1,10,28.600165605545044
+Radiologist #7,Postoperative glioma resection,,,False,1,8,98.877632856369019
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,87.574162721633911
+Radiologist #7,Presurgical glioma,,,False,1,6,104.99208092689514
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,82.801403284072876
+Radiologist #7,Postoperative glioma resection,Micro,Single Lesion (Unclassified),False,0,10,70.193106889724731
+Radiologist #7,Presurgical glioma,Small,Irregular/Complex Single,False,0,8,98.169882297515883
+Radiologist #7,Postoperative glioma resection,,,False,1,8,89.095089435577393
+Radiologist #7,Presurgical glioma,,,False,0,5,123.37830996513368
+Radiologist #7,Postoperative glioma resection,,,False,0,9,95.959524154663086
+Radiologist #7,Presurgical glioma,,,False,1,10,54.416035413742073
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,75.417791128158569
+Radiologist #7,Meningioma,Very Large,Well-circumscribed Single,False,1,10,38.622539043426514
+Radiologist #7,Presurgical glioma,,,False,1,8,88.772792816162109
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,101.31854152679443
+Radiologist #7,Postoperative glioma resection,,,False,1,8,103.69647836685181
+Radiologist #7,Postoperative glioma resection,Medium,Irregular/Complex Single,False,0,9,103.82753372192384
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,124.51588416099548
+Radiologist #7,Presurgical glioma,,,False,1,8,92.763120174407959
+Radiologist #7,Postoperative glioma resection,,,False,0,8,120.15988087654114
+Radiologist #7,Presurgical glioma,,,False,1,5,169.46053671836853
+Radiologist #7,Postoperative glioma resection,,,False,0,9,92.206470012664795
+Radiologist #7,Presurgical glioma,,,False,0,8,78.843456506729126
+Radiologist #7,Postoperative glioma resection,,,False,1,8,86.561429500579834
+Radiologist #7,Presurgical glioma,Micro,Well-circumscribed Single,False,1,5,132.94531178474426
+Radiologist #7,Presurgical glioma,,,False,1,3,158.85448408126831
+Radiologist #7,Presurgical glioma,Medium,Infiltrative Single,False,0,8,213.81382489204407
+Radiologist #7,Postoperative glioma resection,Medium,Irregular/Complex Single,False,1,5,124.8764762878418
+Radiologist #7,Presurgical glioma,,,False,1,8,63.141931056976318
+Radiologist #7,Metastases,Micro,Multiple,False,0,8,172.69147562980652
+Radiologist #7,Presurgical glioma,,,False,1,8,106.6562135219574
+Radiologist #7,Presurgical glioma,,,False,0,5,139.67175626754761
+Radiologist #7,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,10,20.126813888549805
+Radiologist #7,Presurgical glioma,,,False,1,10,28.859889984130859
+Radiologist #7,Presurgical glioma,Micro,Multiple,False,1,8,144.6619176864624
+Radiologist #7,Presurgical glioma,,,False,1,4,155.88140106201172
+Radiologist #7,Metastases,Micro,Irregular/Complex Single,False,1,6,163.95877528190613
+Radiologist #7,Presurgical glioma,Medium,Irregular/Complex Single,False,1,10,57.541433095932007
+Radiologist #7,Paediatric presurgical tumour,,,False,0,8,43.935858488082886
+Radiologist #7,Metastases,Large,Irregular/Complex Single,False,1,8,40.71673846244812
+Radiologist #7,Meningioma,Medium,Irregular/Complex Single,False,1,10,19.38684606552124
+Radiologist #7,Postoperative glioma resection,Medium,Irregular/Complex Single,False,0,10,45.075281620025642
+Radiologist #7,Presurgical glioma,,,False,1,9,57.499415636062622
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,69.042620420455933
+Radiologist #7,Presurgical glioma,,,False,1,5,103.51288747787476
+Radiologist #7,Presurgical glioma,,,False,1,5,144.31530523300171
+Radiologist #7,Postoperative glioma resection,Very Large,Irregular/Complex Single,False,1,8,41.051778793334961
+Radiologist #7,Paediatric presurgical tumour,Very Large,Infiltrative Single,False,1,6,222.28455662727359
+Radiologist #7,Presurgical glioma,,,False,0,5,87.801289558410645
+Radiologist #7,Postoperative glioma resection,,,False,1,8,68.577254056930542
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,False,1,5,137.97352504730225
+Radiologist #7,Presurgical glioma,,,False,1,8,101.36022019386292
+Radiologist #7,Presurgical glioma,Micro,Infiltrative Single,False,1,5,80.043420553207397
+Radiologist #7,Postoperative glioma resection,,,False,1,9,84.712310314178467
+Radiologist #7,Paediatric presurgical tumour,,,False,1,8,94.492157936096206
+Radiologist #7,Postoperative glioma resection,,,False,1,8,144.13222527503967
+Radiologist #7,Presurgical glioma,,,False,1,10,33.7322096824646
+Radiologist #7,Postoperative glioma resection,,,False,1,8,113.33927822113036
+Radiologist #7,Presurgical glioma,,,False,0,6,78.15243124961853
+Radiologist #7,Presurgical glioma,,,False,1,5,116.95516514778136
+Radiologist #7,Presurgical glioma,,,False,1,9,79.589505434036255
+Radiologist #7,Presurgical glioma,,,False,1,9,41.519286155700691
+Radiologist #7,Presurgical glioma,,,False,1,9,65.534777879714966
+Radiologist #7,Presurgical glioma,,,False,1,8,75.209967374801636
+Radiologist #7,Meningioma,Large,Well-circumscribed Single,False,1,8,46.574601650238037
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,13.04401421546936
+Radiologist #7,Postoperative glioma resection,,,False,1,8,72.268487453460693
+Radiologist #7,Postoperative glioma resection,,,False,0,5,80.248850345611572
+Radiologist #7,Presurgical glioma,,,True,1,8,133.08918476104736
+Radiologist #7,Presurgical glioma,,,True,1,8,182.44428467750549
+Radiologist #7,Meningioma,Very Large,Well-circumscribed Single,True,1,10,32.969000816345215
+Radiologist #7,Presurgical glioma,,,True,1,10,244.88339304924011
+Radiologist #7,Meningioma,Large,Well-circumscribed Single,True,1,10,266.36456394195562
+Radiologist #7,Postoperative glioma resection,,,True,1,8,53.102939367294312
+Radiologist #7,Postoperative glioma resection,,,True,1,8,71.179849863052368
+Radiologist #7,Meningioma,Very Large,Irregular/Complex Single,True,1,10,44.995184183120728
+Radiologist #7,Presurgical glioma,,,True,0,8,69.095140933990479
+Radiologist #7,Presurgical glioma,,,True,1,8,73.317475557327271
+Radiologist #7,Postoperative glioma resection,,,True,1,5,79.544739723205566
+Radiologist #7,Presurgical glioma,,,True,1,8,79.609254598617554
+Radiologist #7,Metastases,Medium,Infiltrative Single,True,1,10,246.33443927764893
+Radiologist #7,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,10,47.036254405975342
+Radiologist #7,Presurgical glioma,,,True,1,10,62.868845224380493
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,True,1,6,96.996479272842393
+Radiologist #7,Presurgical glioma,,,True,1,9,47.343247175216682
+Radiologist #7,Presurgical glioma,,,True,1,8,57.281480312347412
+Radiologist #7,Presurgical glioma,Medium,Infiltrative Single,True,1,5,91.205269813537598
+Radiologist #7,Postoperative glioma resection,,,True,1,9,47.455269813537598
+Radiologist #7,Presurgical glioma,Large,Infiltrative Single,True,1,10,90.23021030426024
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,33.672776937484741
+Radiologist #7,Postoperative glioma resection,,,True,1,10,39.284638643264771
+Radiologist #7,Metastases,Medium,Multiple,True,1,9,42.279641151428223
+Radiologist #7,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,6,85.028095006942749
+Radiologist #7,Meningioma,Very Large,Irregular/Complex Single,True,1,10,36.788184404373169
+Radiologist #7,Presurgical glioma,,,True,0,8,199.04092359542847
+Radiologist #7,Postoperative glioma resection,,,True,1,9,145.62976717948914
+Radiologist #7,Presurgical glioma,,,True,0,8,55.668280601501465
+Radiologist #7,Postoperative glioma resection,Medium,Infiltrative Single,True,0,8,64.895842552185059
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,True,0,5,61.582337617874153
+Radiologist #7,Postoperative glioma resection,,,True,1,5,71.605736494064331
+Radiologist #7,Presurgical glioma,,,True,1,10,26.904244661331177
+Radiologist #7,Postoperative glioma resection,,,True,1,8,75.248254299163818
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,29.835739612579346
+Radiologist #7,Presurgical glioma,,,True,1,8,65.601447582244873
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,22.386127948760983
+Radiologist #7,Postoperative glioma resection,Micro,Single Lesion (Unclassified),True,0,9,25.732946157455444
+Radiologist #7,Presurgical glioma,Small,Irregular/Complex Single,True,0,8,26.778132438659668
+Radiologist #7,Postoperative glioma resection,,,True,1,5,51.967740535736077
+Radiologist #7,Presurgical glioma,,,True,0,5,75.345271587371826
+Radiologist #7,Postoperative glioma resection,,,True,0,8,53.653446674346931
+Radiologist #7,Presurgical glioma,,,True,1,10,33.441397666931152
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,18.87822413444519
+Radiologist #7,Meningioma,Very Large,Well-circumscribed Single,True,1,10,24.701526880264279
+Radiologist #7,Presurgical glioma,,,True,1,9,41.548415422439575
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,53.172882795333862
+Radiologist #7,Postoperative glioma resection,,,True,1,9,27.686980962753296
+Radiologist #7,Postoperative glioma resection,Medium,Irregular/Complex Single,True,1,5,49.919545412063599
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,57.802053213119507
+Radiologist #7,Presurgical glioma,,,True,1,10,17.048926115036011
+Radiologist #7,Postoperative glioma resection,,,True,0,5,53.021197557449341
+Radiologist #7,Presurgical glioma,,,True,0,5,55.373281478881843
+Radiologist #7,Postoperative glioma resection,,,True,0,8,98.727797985076904
+Radiologist #7,Presurgical glioma,,,True,0,8,49.312689304351807
+Radiologist #7,Postoperative glioma resection,,,True,1,10,29.101898908615112
+Radiologist #7,Presurgical glioma,Micro,Well-circumscribed Single,True,0,8,50.490063667297363
+Radiologist #7,Presurgical glioma,,,True,1,5,66.822517156600952
+Radiologist #7,Presurgical glioma,Medium,Infiltrative Single,True,0,5,58.706464767456055
+Radiologist #7,Postoperative glioma resection,Medium,Irregular/Complex Single,True,1,6,65.127368450164795
+Radiologist #7,Presurgical glioma,,,True,1,8,28.540174722671509
+Radiologist #7,Metastases,Micro,Multiple,True,0,5,40.885380029678345
+Radiologist #7,Presurgical glioma,,,True,1,8,26.653396844863892
+Radiologist #7,Presurgical glioma,,,True,0,5,146.26994061470032
+Radiologist #7,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,10,16.204034090042114
+Radiologist #7,Presurgical glioma,,,True,1,10,19.208841562271122
+Radiologist #7,Presurgical glioma,Micro,Multiple,True,0,9,30.811665534973145
+Radiologist #7,Presurgical glioma,,,True,1,8,33.13153600692749
+Radiologist #7,Metastases,Micro,Irregular/Complex Single,True,0,9,62.081582069396973
+Radiologist #7,Presurgical glioma,Medium,Irregular/Complex Single,True,1,10,18.482948541641235
+Radiologist #7,Paediatric presurgical tumour,,,True,0,10,26.785575866699219
+Radiologist #7,Metastases,Large,Irregular/Complex Single,True,1,10,24.850400924682617
+Radiologist #7,Meningioma,Medium,Irregular/Complex Single,True,1,10,18.18703556060791
+Radiologist #7,Postoperative glioma resection,Medium,Irregular/Complex Single,True,0,9,20.027847051620483
+Radiologist #7,Presurgical glioma,,,True,1,8,23.101974964141849
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,20.20490550994873
+Radiologist #7,Presurgical glioma,,,True,1,8,28.568129301071167
+Radiologist #7,Presurgical glioma,,,True,1,8,40.441826105117798
+Radiologist #7,Postoperative glioma resection,Very Large,Irregular/Complex Single,True,1,10,14.351058483123779
+Radiologist #7,Paediatric presurgical tumour,Very Large,Infiltrative Single,True,1,5,22.641783952713013
+Radiologist #7,Presurgical glioma,,,True,0,5,37.772546768188477
+Radiologist #7,Postoperative glioma resection,,,True,1,8,26.235420942306519
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,True,1,5,71.502678155899048
+Radiologist #7,Presurgical glioma,,,True,1,8,31.807754039764404
+Radiologist #7,Presurgical glioma,Micro,Infiltrative Single,True,0,8,57.004013299942017
+Radiologist #7,Postoperative glioma resection,,,True,1,8,25.788486242294312
+Radiologist #7,Paediatric presurgical tumour,,,True,1,8,49.202534198760986
+Radiologist #7,Postoperative glioma resection,,,True,1,5,23.692867755889893
+Radiologist #7,Presurgical glioma,,,True,1,10,13.591174125671388
+Radiologist #7,Postoperative glioma resection,,,True,1,8,32.90422248840332
+Radiologist #7,Presurgical glioma,,,True,0,8,118.66247963905334
+Radiologist #7,Presurgical glioma,,,True,1,8,27.186473369598389
+Radiologist #7,Presurgical glioma,,,True,1,9,18.473068237304688
+Radiologist #7,Presurgical glioma,,,True,1,10,14.260626554489136
+Radiologist #7,Presurgical glioma,,,True,1,10,17.485803365707397
+Radiologist #7,Presurgical glioma,,,True,1,8,18.723130941390991
+Radiologist #7,Meningioma,Large,Well-circumscribed Single,True,1,10,18.271089792251587
+Radiologist #7,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,33.118046283721924
+Radiologist #7,Postoperative glioma resection,,,True,1,9,18.222887516021729
+Radiologist #7,Postoperative glioma resection,,,True,1,8,38.541615962982178
+Radiologist #8,Postoperative glioma resection,,,False,0,7,55.098216533660889
+Radiologist #8,Postoperative glioma resection,,,False,0,8,33.301463603973389
+Radiologist #8,Paediatric presurgical tumour,,,False,1,8,68.459815979003906
+Radiologist #8,Presurgical glioma,,,False,0,7,64.430129051208496
+Radiologist #8,Postoperative glioma resection,Micro,Single Lesion (Unclassified),False,0,9,27.76063060760498
+Radiologist #8,Meningioma,Medium,Irregular/Complex Single,False,1,10,22.952691555023197
+Radiologist #8,Meningioma,Large,Irregular/Complex Single,False,0,9,47.037515878677368
+Radiologist #8,Presurgical glioma,Small,Well-circumscribed Single,False,1,10,149.11734533309937
+Radiologist #8,Postoperative glioma resection,,,False,0,7,64.313296794891357
+Radiologist #8,Presurgical glioma,Small,Irregular/Complex Single,False,1,9,40.103113412857056
+Radiologist #8,Postoperative glioma resection,,,False,0,8,157.7558000087738
+Radiologist #8,Presurgical glioma,Very Large,Multiple,False,1,8,24.750868082046509
+Radiologist #8,Presurgical glioma,,,False,0,8,58.928036451339722
+Radiologist #8,Presurgical glioma,,,False,1,10,18.12438178062439
+Radiologist #8,Presurgical glioma,,,False,0,9,19.128724098205566
+Radiologist #8,Paediatric presurgical tumour,,,False,1,7,24.516514539718628
+Radiologist #8,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,8,37.113516330718994
+Radiologist #8,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,20.830643177032471
+Radiologist #8,Postoperative glioma resection,,,False,1,9,111.49649119377136
+Radiologist #8,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,9,16.775728464126587
+Radiologist #8,Presurgical glioma,Large,Infiltrative Single,False,1,8,85.406669616699219
+Radiologist #8,Postoperative glioma resection,,,False,0,8,22.861733198165894
+Radiologist #8,Presurgical glioma,Medium,Multiple,False,1,8,79.382213592529297
+Radiologist #8,Postoperative glioma resection,,,False,0,10,19.573991060256962
+Radiologist #8,Postoperative glioma resection,,,False,1,8,59.222869157791138
+Radiologist #8,Presurgical glioma,,,False,0,8,22.763522386550903
+Radiologist #8,Postoperative glioma resection,,,False,1,7,92.199634552001953
+Radiologist #8,Presurgical glioma,,,False,1,9,19.543904542922974
+Radiologist #8,Presurgical glioma,,,False,1,9,43.472402095794678
+Radiologist #8,Presurgical glioma,,,False,0,7,32.479271173477173
+Radiologist #8,Presurgical glioma,Micro,Irregular/Complex Single,False,0,8,34.336935758590698
+Radiologist #8,Presurgical glioma,,,False,1,9,20.23429536819458
+Radiologist #8,Paediatric presurgical tumour,,,False,1,9,40.745951414108283
+Radiologist #8,Metastases,Medium,Multiple,False,1,9,17.225432872772217
+Radiologist #8,Presurgical glioma,,,False,1,9,16.005982637405396
+Radiologist #8,Meningioma,Very Large,Irregular/Complex Single,False,1,9,35.976696014404297
+Radiologist #8,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,14.984329462051392
+Radiologist #8,Meningioma,Medium,Irregular/Complex Single,False,1,10,67.531270265579224
+Radiologist #8,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,10,38.818113088607788
+Radiologist #8,Presurgical glioma,,,False,0,9,27.348075151443481
+Radiologist #8,Presurgical glioma,,,False,1,9,38.676107168197632
+Radiologist #8,Presurgical glioma,,,False,0,8,64.578899621963501
+Radiologist #8,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,15.789263248443604
+Radiologist #8,Presurgical glioma,,,False,1,9,27.084290027618408
+Radiologist #8,Presurgical glioma,,,False,1,8,89.077457904815674
+Radiologist #8,Postoperative glioma resection,,,False,0,8,163.49434375762939
+Radiologist #8,Postoperative glioma resection,,,False,0,8,55.331526756286621
+Radiologist #8,Presurgical glioma,,,False,1,7,110.69787549972534
+Radiologist #8,Postoperative glioma resection,,,False,1,8,22.390813589096069
+Radiologist #8,Postoperative glioma resection,,,False,1,7,39.649188995361328
+Radiologist #8,Presurgical glioma,,,False,1,9,36.095848560333252
+Radiologist #8,Presurgical glioma,,,False,1,8,165.35204696655271
+Radiologist #8,Presurgical glioma,,,False,1,8,32.4290931224823
+Radiologist #8,Postoperative glioma resection,,,False,1,7,36.642736673355103
+Radiologist #8,Postoperative glioma resection,,,False,1,8,22.539832830429081
+Radiologist #8,Postoperative glioma resection,,,False,0,8,51.433946132659912
+Radiologist #8,Presurgical glioma,,,False,1,8,18.718281507492065
+Radiologist #8,Presurgical glioma,,,False,1,8,16.396739959716797
+Radiologist #8,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,8,20.605088949203491
+Radiologist #8,Presurgical glioma,,,False,0,8,29.56713175773621
+Radiologist #8,Paediatric presurgical tumour,Very Large,Infiltrative Single,False,1,9,40.589008569717407
+Radiologist #8,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,9,44.072150468826287
+Radiologist #8,Postoperative glioma resection,,,False,1,8,43.847504377365112
+Radiologist #8,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,8,43.181323766708367
+Radiologist #8,Presurgical glioma,,,False,1,8,42.037156581878662
+Radiologist #8,Presurgical glioma,,,False,1,8,52.057650089263923
+Radiologist #8,Postoperative glioma resection,Medium,Infiltrative Single,False,1,7,27.827676057815552
+Radiologist #8,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,22.37380743026733
+Radiologist #8,Postoperative glioma resection,,,False,1,8,20.504765748977661
+Radiologist #8,Presurgical glioma,Micro,Single Lesion (Unclassified),False,0,9,29.721096277236938
+Radiologist #8,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,22.001151561737061
+Radiologist #8,Metastases,Small,Multiple,False,0,8,70.061354398727417
+Radiologist #8,Presurgical glioma,Large,Irregular/Complex Single,False,1,8,18.101346254348755
+Radiologist #8,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,17.474400997161865
+Radiologist #8,Presurgical glioma,,,False,1,10,24.061494827270508
+Radiologist #8,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,17.46761417388916
+Radiologist #8,Paediatric presurgical tumour,Very Large,Infiltrative Single,False,1,9,16.550967693328857
+Radiologist #8,Presurgical glioma,,,False,1,8,14.659133434295654
+Radiologist #8,Meningioma,Medium,Infiltrative Single,False,1,9,73.512135982513428
+Radiologist #8,Presurgical glioma,,,False,1,8,36.361157417297363
+Radiologist #8,Meningioma,Medium,Well-circumscribed Single,False,1,10,15.960178136825562
+Radiologist #8,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,8,33.589918613433838
+Radiologist #8,Postoperative glioma resection,,,False,1,7,73.909709453582764
+Radiologist #8,Postoperative glioma resection,,,False,1,7,22.940505027771
+Radiologist #8,Presurgical glioma,,,False,1,7,46.780501842498779
+Radiologist #8,Postoperative glioma resection,Medium,Infiltrative Single,False,1,8,15.629502534866331
+Radiologist #8,Presurgical glioma,,,False,1,10,21.79265284538269
+Radiologist #8,Presurgical glioma,,,False,1,9,28.684484481811523
+Radiologist #8,Presurgical glioma,Very Large,Infiltrative Single,False,1,10,16.019074678421021
+Radiologist #8,Meningioma,Very Large,Irregular/Complex Single,False,1,10,22.129491567611691
+Radiologist #8,Postoperative glioma resection,Small,Multiple,False,0,8,22.87055230140686
+Radiologist #8,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,10,28.839699268341064
+Radiologist #8,Presurgical glioma,Micro,Irregular/Complex Single,False,0,8,34.588540554046631
+Radiologist #8,Presurgical glioma,,,False,0,8,22.161865711212162
+Radiologist #8,Presurgical glioma,,,False,0,9,26.670913696289062
+Radiologist #8,Paediatric presurgical tumour,,,False,1,9,14.479201316833496
+Radiologist #8,Postoperative glioma resection,Medium,Infiltrative Single,False,0,8,32.011960029602051
+Radiologist #8,Presurgical glioma,,,False,0,8,18.88245153427124
+Radiologist #8,Postoperative glioma resection,Medium,Infiltrative Single,False,0,8,18.936800718307492
+Radiologist #8,Paediatric presurgical tumour,,,False,1,8,24.945312738418579
+Radiologist #8,Postoperative glioma resection,,,True,0,7,38.813423633575439
+Radiologist #8,Postoperative glioma resection,,,True,0,9,36.420310258865364
+Radiologist #8,Paediatric presurgical tumour,,,True,1,8,19.520843982696533
+Radiologist #8,Presurgical glioma,,,True,1,8,16.904739618301392
+Radiologist #8,Postoperative glioma resection,Micro,Single Lesion (Unclassified),True,0,8,15.151620388031006
+Radiologist #8,Meningioma,Medium,Irregular/Complex Single,True,1,8,17.23820686340332
+Radiologist #8,Meningioma,Large,Irregular/Complex Single,True,1,8,40.886680364608765
+Radiologist #8,Presurgical glioma,Small,Well-circumscribed Single,True,1,8,18.836347579956051
+Radiologist #8,Postoperative glioma resection,,,True,0,8,15.673737287521362
+Radiologist #8,Presurgical glioma,Small,Irregular/Complex Single,True,1,7,13.818273305892944
+Radiologist #8,Postoperative glioma resection,,,True,0,8,137.20177030563354
+Radiologist #8,Presurgical glioma,Very Large,Multiple,True,1,8,150.05786824226379
+Radiologist #8,Presurgical glioma,,,True,1,8,16.758003711700439
+Radiologist #8,Presurgical glioma,,,True,1,10,19.048957586288449
+Radiologist #8,Presurgical glioma,,,True,0,8,17.325583457946777
+Radiologist #8,Paediatric presurgical tumour,,,True,1,9,17.967832803726196
+Radiologist #8,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,10,35.665436983108521
+Radiologist #8,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,17.700996398925781
+Radiologist #8,Postoperative glioma resection,,,True,1,8,23.887649774551392
+Radiologist #8,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,10,13.194087028503418
+Radiologist #8,Presurgical glioma,Large,Infiltrative Single,True,1,8,22.04646110534668
+Radiologist #8,Postoperative glioma resection,,,True,1,8,35.438950061798096
+Radiologist #8,Presurgical glioma,Medium,Multiple,True,0,8,21.201820611953732
+Radiologist #8,Postoperative glioma resection,,,True,1,8,27.064538717269897
+Radiologist #8,Postoperative glioma resection,,,True,1,10,17.260798692703247
+Radiologist #8,Presurgical glioma,,,True,1,8,33.012589931488037
+Radiologist #8,Postoperative glioma resection,,,True,1,10,15.617438077926636
+Radiologist #8,Presurgical glioma,,,True,1,10,15.22791051864624
+Radiologist #8,Presurgical glioma,,,True,1,9,20.973020792007446
+Radiologist #8,Presurgical glioma,,,True,1,9,14.710690021514893
+Radiologist #8,Presurgical glioma,Micro,Irregular/Complex Single,True,0,9,26.404453754425049
+Radiologist #8,Presurgical glioma,,,True,1,8,21.505423545837399
+Radiologist #8,Paediatric presurgical tumour,,,True,1,10,15.336854696273804
+Radiologist #8,Metastases,Medium,Multiple,True,1,10,29.634361028671265
+Radiologist #8,Presurgical glioma,,,True,1,10,14.041713714599609
+Radiologist #8,Meningioma,Very Large,Irregular/Complex Single,True,1,10,13.255488157272341
+Radiologist #8,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,17.789859533309937
+Radiologist #8,Meningioma,Medium,Irregular/Complex Single,True,1,10,14.576928615570068
+Radiologist #8,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,9,24.359743595123291
+Radiologist #8,Presurgical glioma,,,True,1,10,14.224059343338013
+Radiologist #8,Presurgical glioma,,,True,1,9,17.099182367324829
+Radiologist #8,Presurgical glioma,,,True,1,8,24.959680557250977
+Radiologist #8,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,18.363702535629272
+Radiologist #8,Presurgical glioma,,,True,1,9,20.792047739028931
+Radiologist #8,Presurgical glioma,,,True,1,8,29.469794511795044
+Radiologist #8,Postoperative glioma resection,,,True,0,10,31.478883266448971
+Radiologist #8,Postoperative glioma resection,,,True,1,10,37.95534348487854
+Radiologist #8,Presurgical glioma,,,True,1,10,22.047660112380981
+Radiologist #8,Postoperative glioma resection,,,True,1,10,14.792158603668211
+Radiologist #8,Postoperative glioma resection,,,True,1,8,16.109739303588867
+Radiologist #8,Presurgical glioma,,,True,0,8,19.190505981445312
+Radiologist #8,Presurgical glioma,,,True,1,8,25.973423480987549
+Radiologist #8,Presurgical glioma,,,True,1,8,27.609115600585938
+Radiologist #8,Postoperative glioma resection,,,True,0,7,26.7759108543396
+Radiologist #8,Postoperative glioma resection,,,True,0,8,19.655613422393799
+Radiologist #8,Postoperative glioma resection,,,True,1,8,38.869497537612922
+Radiologist #8,Presurgical glioma,,,True,1,10,10.143201112747192
+Radiologist #8,Presurgical glioma,,,True,1,10,18.267531156539921
+Radiologist #8,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,10,12.822694778442385
+Radiologist #8,Presurgical glioma,,,True,0,9,18.940372467041016
+Radiologist #8,Paediatric presurgical tumour,Very Large,Infiltrative Single,True,1,8,26.061977386474609
+Radiologist #8,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,10,14.669937372207642
+Radiologist #8,Postoperative glioma resection,,,True,1,10,23.581830263137817
+Radiologist #8,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,8,21.325649261474609
+Radiologist #8,Presurgical glioma,,,True,1,7,24.900092124938965
+Radiologist #8,Presurgical glioma,,,True,1,10,35.76004695892334
+Radiologist #8,Postoperative glioma resection,Medium,Infiltrative Single,True,1,8,9.9286551475524902
+Radiologist #8,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,21.895952701568604
+Radiologist #8,Postoperative glioma resection,,,True,1,10,17.662961483001709
+Radiologist #8,Presurgical glioma,Micro,Single Lesion (Unclassified),True,1,10,48.629768133163452
+Radiologist #8,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,17.459848880767822
+Radiologist #8,Metastases,Small,Multiple,True,0,10,21.490106105804443
+Radiologist #8,Presurgical glioma,Large,Irregular/Complex Single,True,1,10,14.253579378128052
+Radiologist #8,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,12.566762447357178
+Radiologist #8,Presurgical glioma,,,True,1,10,11.829576015472412
+Radiologist #8,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,13.896866321563721
+Radiologist #8,Paediatric presurgical tumour,Very Large,Infiltrative Single,True,1,10,14.010271549224854
+Radiologist #8,Presurgical glioma,,,True,0,10,53.19344425201416
+Radiologist #8,Meningioma,Medium,Infiltrative Single,True,1,8,19.91694164276123
+Radiologist #8,Presurgical glioma,,,True,1,8,35.702340841293335
+Radiologist #8,Meningioma,Medium,Well-circumscribed Single,True,1,10,17.319544315338135
+Radiologist #8,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,10,10.435287952423096
+Radiologist #8,Postoperative glioma resection,,,True,1,8,23.278387784957889
+Radiologist #8,Postoperative glioma resection,,,True,0,8,19.751568555831909
+Radiologist #8,Presurgical glioma,,,True,1,10,12.681313753128052
+Radiologist #8,Postoperative glioma resection,Medium,Infiltrative Single,True,1,10,15.432212829589844
+Radiologist #8,Presurgical glioma,,,True,1,10,14.870402097702026
+Radiologist #8,Presurgical glioma,,,True,1,10,20.217278003692627
+Radiologist #8,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,17.245002031326294
+Radiologist #8,Meningioma,Very Large,Irregular/Complex Single,True,1,10,13.538978815078735
+Radiologist #8,Postoperative glioma resection,Small,Multiple,True,0,8,18.64839601516724
+Radiologist #8,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,10,24.641079187393188
+Radiologist #8,Presurgical glioma,Micro,Irregular/Complex Single,True,0,9,18.64463996887207
+Radiologist #8,Presurgical glioma,,,True,1,10,13.93241024017334
+Radiologist #8,Presurgical glioma,,,True,1,10,15.034569025039673
+Radiologist #8,Paediatric presurgical tumour,,,True,1,10,18.01964902877808
+Radiologist #8,Postoperative glioma resection,Medium,Infiltrative Single,True,1,10,13.209753751754761
+Radiologist #8,Presurgical glioma,,,True,1,10,17.819653511047363
+Radiologist #8,Postoperative glioma resection,Medium,Infiltrative Single,True,0,10,15.063931703567505
+Radiologist #8,Paediatric presurgical tumour,,,True,0,10,10.765033960342407
+Radiologist #4,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,6,114.08886694908142
+Radiologist #4,Presurgical glioma,,,False,1,8,52.54582691192627
+Radiologist #4,Presurgical glioma,Micro,Single Lesion (Unclassified),False,0,5,92.576018810272217
+Radiologist #4,Presurgical glioma,,,False,1,5,63.871109962463379
+Radiologist #4,Presurgical glioma,Small,Irregular/Complex Single,False,1,5,47.84886646270752
+Radiologist #4,Postoperative glioma resection,,,False,0,6,56.14648175239563
+Radiologist #4,Postoperative glioma resection,,,False,0,6,65.447046756744385
+Radiologist #4,Presurgical glioma,,,False,1,6,62.757867097854607
+Radiologist #4,Postoperative glioma resection,,,False,1,7,71.151471853256226
+Radiologist #4,Meningioma,Medium,Irregular/Complex Single,False,1,9,31.22083568572998
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,33.639407396316528
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,49.074285745620728
+Radiologist #4,Presurgical glioma,Large,Irregular/Complex Single,False,1,8,56.50484299659729
+Radiologist #4,Presurgical glioma,,,False,0,6,171.20580577850342
+Radiologist #4,Presurgical glioma,Large,Irregular/Complex Single,False,1,4,93.035903692245483
+Radiologist #4,Presurgical glioma,,,False,0,7,33.927216768264771
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,52.268190145492561
+Radiologist #4,Presurgical glioma,,,False,0,6,33.213122129440308
+Radiologist #4,Postoperative glioma resection,,,False,1,6,67.337871789932251
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,56.611329793930047
+Radiologist #4,Paediatric presurgical tumour,,,False,1,7,31.416673898696899
+Radiologist #4,Postoperative glioma resection,,,False,1,6,78.067013502120972
+Radiologist #4,Presurgical glioma,,,False,1,8,90.998798370361314
+Radiologist #4,Postoperative glioma resection,,,False,0,7,47.408488512039192
+Radiologist #4,Meningioma,Very Large,Irregular/Complex Single,False,1,9,27.77362585067749
+Radiologist #4,Presurgical glioma,,,False,1,5,145.26631331443787
+Radiologist #4,Presurgical glioma,,,False,1,7,90.231878757476807
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,False,1,9,35.298075914382935
+Radiologist #4,Presurgical glioma,,,False,1,6,83.110690355300903
+Radiologist #4,Presurgical glioma,,,False,1,5,79.580165863037109
+Radiologist #4,Presurgical glioma,Very Large,Multiple,False,0,5,65.481979608535767
+Radiologist #4,Postoperative glioma resection,,,False,1,6,99.636694908142076
+Radiologist #4,Presurgical glioma,Large,Infiltrative Single,False,1,6,48.194770812988281
+Radiologist #4,Presurgical glioma,,,False,1,7,197.58295512199399
+Radiologist #4,Postoperative glioma resection,,,False,1,8,33.387872695922852
+Radiologist #4,Presurgical glioma,Large,Multiple,False,1,6,82.558417081832886
+Radiologist #4,Presurgical glioma,,,False,1,9,25.731981039047241
+Radiologist #4,Presurgical glioma,,,False,1,6,76.257095336914062
+Radiologist #4,Presurgical glioma,,,False,1,7,33.222759962081909
+Radiologist #4,Postoperative glioma resection,,,False,1,8,27.500621557235721
+Radiologist #4,Postoperative glioma resection,,,False,1,7,33.864974021911621
+Radiologist #4,Presurgical glioma,,,False,1,8,24.809045076370239
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,29.926436424255371
+Radiologist #4,Presurgical glioma,,,False,1,7,22.311845064163208
+Radiologist #4,Presurgical glioma,Medium,Irregular/Complex Single,False,0,7,73.282089948654175
+Radiologist #4,Presurgical glioma,,,False,0,5,43.243552684783936
+Radiologist #4,Postoperative glioma resection,,,False,1,7,33.588420391082764
+Radiologist #4,Presurgical glioma,,,False,0,7,59.075926780700691
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,22.948119401931763
+Radiologist #4,Presurgical glioma,Medium,Irregular/Complex Single,False,0,4,55.985682487487793
+Radiologist #4,Postoperative glioma resection,,,False,1,7,37.381314277648926
+Radiologist #4,Presurgical glioma,,,False,1,6,44.418866634368896
+Radiologist #4,Postoperative glioma resection,Small,Multiple,False,0,7,30.397398233413696
+Radiologist #4,Presurgical glioma,,,False,1,6,46.13548755645752
+Radiologist #4,Postoperative glioma resection,,,False,1,6,45.391355514526367
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,75.40971565246582
+Radiologist #4,Postoperative glioma resection,Very Large,Infiltrative Single,False,1,7,57.690392255783081
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,71.106086730957031
+Radiologist #4,Paediatric presurgical tumour,,,False,1,5,30.233559131622314
+Radiologist #4,Presurgical glioma,,,False,0,5,53.059112787246704
+Radiologist #4,Postoperative glioma resection,Medium,Infiltrative Single,False,0,7,30.931216955184937
+Radiologist #4,Presurgical glioma,Medium,Irregular/Complex Single,False,1,6,29.3379499912262
+Radiologist #4,Postoperative glioma resection,,,False,1,6,39.618407964706421
+Radiologist #4,Metastases,Large,Multiple,False,1,9,29.240101337432861
+Radiologist #4,Presurgical glioma,,,False,1,6,34.865420818328857
+Radiologist #4,Presurgical glioma,,,False,1,6,74.86409330368042
+Radiologist #4,Postoperative glioma resection,Micro,Single Lesion (Unclassified),False,0,8,29.083902597427368
+Radiologist #4,Postoperative glioma resection,,,False,1,7,24.256223440170288
+Radiologist #4,Presurgical glioma,Micro,Irregular/Complex Single,False,0,7,502.70188021659851
+Radiologist #4,Postoperative glioma resection,,,False,1,8,30.334544658660889
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,18.465772151947021
+Radiologist #4,Presurgical glioma,,,False,1,9,16.75680947303772
+Radiologist #4,Presurgical glioma,Small,Infiltrative Single,False,1,5,67.63603401184082
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,18.8242461681366
+Radiologist #4,Meningioma,Large,Well-circumscribed Single,False,1,9,14.537311553955078
+Radiologist #4,Presurgical glioma,,,False,1,3,20.366430044174194
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,False,1,7,17.256195306777954
+Radiologist #4,Paediatric presurgical tumour,,,False,1,4,39.43936562538147
+Radiologist #4,Postoperative glioma resection,,,False,1,7,24.12443470954895
+Radiologist #4,Paediatric presurgical tumour,,,False,0,7,19.950069665908813
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,False,1,8,22.086852312088013
+Radiologist #4,Postoperative glioma resection,,,False,1,7,28.513397693634037
+Radiologist #4,Presurgical glioma,,,False,1,9,13.269201278686523
+Radiologist #4,Metastases,Micro,Multiple,False,0,8,51.684377193450928
+Radiologist #4,Meningioma,Micro,Irregular/Complex Single,False,0,8,35.571611881256104
+Radiologist #4,Presurgical glioma,,,False,1,7,45.923761367797852
+Radiologist #4,Presurgical glioma,Very Large,Irregular/Complex Single,False,1,7,21.221243381500244
+Radiologist #4,Presurgical glioma,,,False,1,8,25.885496377944943
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,False,0,5,40.863758087158203
+Radiologist #4,Postoperative glioma resection,,,False,1,6,23.489359855651852
+Radiologist #4,Presurgical glioma,,,False,1,6,42.276090621948242
+Radiologist #4,Presurgical glioma,,,False,1,7,22.023201465606689
+Radiologist #4,Presurgical glioma,Small,Irregular/Complex Single,False,1,7,45.062674522399902
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,44.785122156143188
+Radiologist #4,Presurgical glioma,Micro,Single Lesion (Unclassified),False,0,6,34.998841762542725
+Radiologist #4,Postoperative glioma resection,,,False,1,7,32.042541980743408
+Radiologist #4,Presurgical glioma,,,False,1,8,35.127109289169312
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,False,1,6,34.018192291259766
+Radiologist #4,Presurgical glioma,Medium,Infiltrative Single,False,1,6,53.4339599609375
+Radiologist #4,Presurgical glioma,Large,Infiltrative Single,False,0,7,29.42004132270813
+Radiologist #4,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,8,56.244577646255493
+Radiologist #4,Presurgical glioma,,,True,1,7,24.165063619613647
+Radiologist #4,Presurgical glioma,Micro,Single Lesion (Unclassified),True,1,5,53.056097745895386
+Radiologist #4,Presurgical glioma,,,True,1,5,55.068635225296021
+Radiologist #4,Presurgical glioma,Small,Irregular/Complex Single,True,0,5,43.390265226364136
+Radiologist #4,Postoperative glioma resection,,,True,1,6,30.674504518508911
+Radiologist #4,Postoperative glioma resection,,,True,1,7,22.495390176773071
+Radiologist #4,Presurgical glioma,,,True,0,5,28.077840328216556
+Radiologist #4,Postoperative glioma resection,,,True,1,8,24.219199657440186
+Radiologist #4,Meningioma,Medium,Irregular/Complex Single,True,1,10,12.452748775482178
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,16.795094966888428
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,11.207544803619385
+Radiologist #4,Presurgical glioma,Large,Irregular/Complex Single,True,1,8,34.733978033065803
+Radiologist #4,Presurgical glioma,,,True,0,5,52.384992122650146
+Radiologist #4,Presurgical glioma,Large,Irregular/Complex Single,True,1,7,25.19832873344421
+Radiologist #4,Presurgical glioma,,,True,0,6,16.55384087562561
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,17.23458194732666
+Radiologist #4,Presurgical glioma,,,True,0,6,58.315609931945801
+Radiologist #4,Postoperative glioma resection,,,True,1,5,34.322741508483887
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,True,1,6,21.563860177993771
+Radiologist #4,Paediatric presurgical tumour,,,True,1,5,44.142016410827637
+Radiologist #4,Postoperative glioma resection,,,True,0,6,29.00797963142395
+Radiologist #4,Presurgical glioma,,,True,1,9,9.1446647644042969
+Radiologist #4,Postoperative glioma resection,,,True,0,7,23.41581916809082
+Radiologist #4,Meningioma,Very Large,Irregular/Complex Single,True,1,9,16.747542142868042
+Radiologist #4,Presurgical glioma,,,True,1,8,24.922340393066406
+Radiologist #4,Presurgical glioma,,,True,1,6,27.406596899032596
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,22.787694215774536
+Radiologist #4,Presurgical glioma,,,True,0,5,45.993316411972046
+Radiologist #4,Presurgical glioma,,,True,1,7,31.239641427993771
+Radiologist #4,Presurgical glioma,Very Large,Multiple,True,1,6,14.482311964035034
+Radiologist #4,Postoperative glioma resection,,,True,0,5,46.463795185089111
+Radiologist #4,Presurgical glioma,Large,Infiltrative Single,True,1,7,27.608065128326416
+Radiologist #4,Presurgical glioma,,,True,1,7,24.280545949935917
+Radiologist #4,Postoperative glioma resection,,,True,1,5,27.073999881744385
+Radiologist #4,Presurgical glioma,Large,Multiple,True,0,6,51.727397680282593
+Radiologist #4,Presurgical glioma,,,True,1,8,14.73447585105896
+Radiologist #4,Presurgical glioma,,,True,1,8,18.970618486404419
+Radiologist #4,Presurgical glioma,,,True,1,8,23.903642654418945
+Radiologist #4,Postoperative glioma resection,,,True,1,7,64.927762031555176
+Radiologist #4,Postoperative glioma resection,,,True,1,7,17.594957828521729
+Radiologist #4,Presurgical glioma,,,True,1,9,17.440282344818115
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,True,1,6,23.298516511917114
+Radiologist #4,Presurgical glioma,,,True,1,10,14.290477514266968
+Radiologist #4,Presurgical glioma,Medium,Irregular/Complex Single,True,0,5,35.393717050552368
+Radiologist #4,Presurgical glioma,,,True,1,7,20.435133457183841
+Radiologist #4,Postoperative glioma resection,,,True,1,6,31.133676528930664
+Radiologist #4,Presurgical glioma,,,True,1,6,52.842273712158203
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,11.732535362243652
+Radiologist #4,Presurgical glioma,Medium,Irregular/Complex Single,True,1,6,20.957756042480469
+Radiologist #4,Postoperative glioma resection,,,True,0,6,25.547135829925537
+Radiologist #4,Presurgical glioma,,,True,0,7,26.043349981307983
+Radiologist #4,Postoperative glioma resection,Small,Multiple,True,0,5,26.093118667602539
+Radiologist #4,Presurgical glioma,,,True,0,6,29.945842027664185
+Radiologist #4,Postoperative glioma resection,,,True,1,8,26.140426397323608
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,14.824581861495972
+Radiologist #4,Postoperative glioma resection,Very Large,Infiltrative Single,True,1,8,20.827240943908691
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,11.081189155578612
+Radiologist #4,Paediatric presurgical tumour,,,True,1,7,11.332884073257446
+Radiologist #4,Presurgical glioma,,,True,1,7,23.402683973312374
+Radiologist #4,Postoperative glioma resection,Medium,Infiltrative Single,True,1,6,31.455461740493771
+Radiologist #4,Presurgical glioma,Medium,Irregular/Complex Single,True,1,6,17.978776454925537
+Radiologist #4,Postoperative glioma resection,,,True,1,6,14.236486434936523
+Radiologist #4,Metastases,Large,Multiple,True,1,9,11.518707752227783
+Radiologist #4,Presurgical glioma,,,True,1,6,73.117202043533325
+Radiologist #4,Presurgical glioma,,,True,1,7,30.856214046478271
+Radiologist #4,Postoperative glioma resection,Micro,Single Lesion (Unclassified),True,0,8,13.266084432601929
+Radiologist #4,Postoperative glioma resection,,,True,1,5,41.796957492828369
+Radiologist #4,Presurgical glioma,Micro,Irregular/Complex Single,True,1,6,17.137227535247803
+Radiologist #4,Postoperative glioma resection,,,True,1,8,13.967508554458618
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,True,1,10,14.606257200241089
+Radiologist #4,Presurgical glioma,,,True,1,9,13.915899515151978
+Radiologist #4,Presurgical glioma,Small,Infiltrative Single,True,1,5,44.800260782241821
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,12.897475719451904
+Radiologist #4,Meningioma,Large,Well-circumscribed Single,True,1,10,16.019270181655884
+Radiologist #4,Presurgical glioma,,,True,0,6,13.85188055038452
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,11.210147619247437
+Radiologist #4,Paediatric presurgical tumour,,,True,1,5,26.42114353179932
+Radiologist #4,Postoperative glioma resection,,,True,1,7,35.131665706634521
+Radiologist #4,Paediatric presurgical tumour,,,True,0,8,13.900822877883911
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,True,1,9,9.7755839824676514
+Radiologist #4,Postoperative glioma resection,,,True,1,8,12.107043743133543
+Radiologist #4,Presurgical glioma,,,True,1,8,16.213956117630005
+Radiologist #4,Metastases,Micro,Multiple,True,0,6,22.044751405715942
+Radiologist #4,Meningioma,Micro,Irregular/Complex Single,True,1,6,24.342994689941406
+Radiologist #4,Presurgical glioma,,,True,1,8,20.364384412765503
+Radiologist #4,Presurgical glioma,Very Large,Irregular/Complex Single,True,1,8,18.972155332565308
+Radiologist #4,Presurgical glioma,,,True,1,8,16.541550874710083
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,True,1,6,21.47738885879517
+Radiologist #4,Postoperative glioma resection,,,True,0,6,29.233299970626831
+Radiologist #4,Presurgical glioma,,,True,1,8,23.615581750869751
+Radiologist #4,Presurgical glioma,,,True,1,7,12.363001108169556
+Radiologist #4,Presurgical glioma,Small,Irregular/Complex Single,True,1,8,20.535752058029171
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,True,1,5,15.72611403465271
+Radiologist #4,Presurgical glioma,Micro,Single Lesion (Unclassified),True,0,7,16.131816387176514
+Radiologist #4,Postoperative glioma resection,,,True,1,8,9.8700728416442889
+Radiologist #4,Presurgical glioma,,,True,1,8,14.234585046768188
+Radiologist #4,Presurgical glioma,Very Large,Infiltrative Single,True,1,8,12.102952718734739
+Radiologist #4,Presurgical glioma,Medium,Infiltrative Single,True,1,5,18.927327632904053
+Radiologist #4,Presurgical glioma,Large,Infiltrative Single,True,1,6,23.920325994491577

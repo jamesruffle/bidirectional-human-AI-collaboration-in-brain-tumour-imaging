@@ -1,0 +1,5 @@
+Agent,Condition,Δ Balanced accuracy,Δ AUROC,Δ AUPRC,Δ Sensitivity,Δ Specificity,Δ Precision,Δ F1 score
+Radiologist,Radiologist (Without model),+0.004,-0.058,-0.114,-0.026,+0.033,-0.169,-0.117
+Radiologist,Radiologist (With model),+0.027,+0.005,-0.049,+0.021,+0.033,-0.158,-0.093
+Model,Model (Without radiologist),+0.157,+0.032,+0.000,+0.064,+0.250,+0.026,+0.046
+Model,Model (With radiologist),+0.032,+0.026,-0.000,+0.064,+0.000,+0.000,+0.034

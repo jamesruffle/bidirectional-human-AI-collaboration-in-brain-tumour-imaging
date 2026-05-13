@@ -1,0 +1,7 @@
+Computing panel aggregate live from /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/figure_1/csv_v2/radiologist_df.csv...
+  110 rows x 7 cols (live-derived)
+Loading radiologist meta from /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/extended_data_figure_5/csv/edf5_radiologist_meta.csv...
+  11 rows
+Valid pathologies (>= 5 cases): ['Meningioma', 'Metastases', 'Paediatric presurgical tumour', 'Postoperative glioma resection', 'Presurgical glioma']
+Extended_Data_Fig_5 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_5.png
+Extended_Data_Fig_5 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_5.svg

@@ -1,0 +1,1101 @@
+fold,case_id,radiologist,pathology,cohort,volume,radiomic_category,model_confidence,gt,model_pred,cv_pred,model_prob,combined_prob,human_prob,human_confidence,human_agreement,used_human
+0,BraTS-GLI-00033-100,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9999377889,0,0,0,6.22111329e-05,6.22111329e-05,0.3,7,1,False
+0,BraTS-GLI-00033-100,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9999377889,0,0,0,6.22111329e-05,6.22111329e-05,0.3,7,1,False
+0,BraTS-GLI-00033-100,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9999377889,0,0,0,6.22111329e-05,6.22111329e-05,0.6,4,1,False
+0,BraTS-GLI-00033-100,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9999377889,0,0,0,6.22111329e-05,6.22111329e-05,0.2,8,1,False
+0,BraTS-GLI-00511-100,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9433845468,0,0,0,0.05661545321,0.05661545321,0.3,7,1,False
+0,BraTS-GLI-00511-100,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9433845468,0,0,0,0.05661545321,0.05661545321,0.2,8,1,False
+0,BraTS-GLI-00511-100,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9433845468,0,0,0,0.05661545321,0.05661545321,0.4,6,1,False
+0,BraTS-GLI-00511-100,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9433845468,0,0,0,0.05661545321,0.05661545321,0.7,3,1,False
+0,BraTS-GLI-00511-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9433845468,0,0,0,0.05661545321,0.05661545321,0.3,7,1,False
+0,BraTS-GLI-02079-100,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9948787689,1,1,1,0.9948787689,0.879876049,0.7,7,1,True
+0,BraTS-GLI-02133-100,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9999941587,1,1,1,0.9999941587,0.6879964368,0.2,8,0.4226497308,True
+0,BraTS-GLI-02133-100,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9999941587,1,1,1,0.9999941587,0.9219964368,0.8,8,0.4226497308,True
+0,BraTS-GLI-02133-100,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9999941587,1,1,1,0.9999941587,0.7269964368,0.3,7,0.4226497308,True
+0,BraTS-GLI-02136-101,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9999951124,1,1,1,0.9999951124,0.9609970186,0.9,9,1,True
+0,BraTS-GLI-02143-104,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9993689656,1,1,1,0.9993689656,0.960615069,0.9,9,1,True
+0,BraTS-GLI-02154-100,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9998842478,1,1,1,0.9998842478,0.6879293911,0.2,8,1,True
+0,BraTS-GLI-02175-100,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9999703169,1,1,1,0.9999703169,0.8049818933,0.5,5,1,True
+0,BraTS-GLI-02189-100,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9997415272,0,0,0,0.0002584728063,0.0002584728063,0.2,8,1,False
+0,BraTS-GLI-02189-100,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9997415272,0,0,0,0.0002584728063,0.0002584728063,0.3,7,1,False
+0,BraTS-GLI-02189-100,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9997415272,0,0,0,0.0002584728063,0.0002584728063,0.2,8,1,False
+0,BraTS-GLI-02189-100,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9997415272,0,0,0,0.0002584728063,0.0002584728063,0.2,8,1,False
+0,BraTS-GLI-02229-100,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.8718250394,0,1,1,0.8718250394,0.687813274,0.4,6,0.4522774425,True
+0,BraTS-GLI-02229-100,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.8718250394,0,1,1,0.8718250394,0.648813274,0.3,3,0.4522774425,True
+0,BraTS-GLI-02229-100,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.8718250394,0,1,1,0.8718250394,0.843813274,0.8,8,0.4522774425,True
+0,BraTS-GLI-02229-100,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.8718250394,0,1,1,0.8718250394,0.882813274,0.9,9,0.4522774425,True
+0,BraTS-GLI-02229-100,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.8718250394,0,1,1,0.8718250394,0.648813274,0.3,7,0.4522774425,True
+0,BraTS-GLI-02229-100,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.8718250394,0,1,1,0.8718250394,0.648813274,0.3,7,0.4522774425,True
+0,BraTS-GLI-02242-103,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.5983631015,0,0,0,0.4016368985,0.4016368985,0.8,2,0.622035527,False
+0,BraTS-GLI-02242-103,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.5983631015,0,0,0,0.4016368985,0.4016368985,0.9,9,0.622035527,False
+0,BraTS-GLI-02242-103,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.5983631015,0,0,0,0.4016368985,0.4016368985,0.8,8,0.622035527,False
+0,BraTS-GLI-02242-103,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.5983631015,0,0,0,0.4016368985,0.4016368985,1,10,0.622035527,False
+0,BraTS-GLI-02242-103,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.5983631015,0,0,0,0.4016368985,0.4016368985,0.9,9,0.622035527,False
+0,BraTS-GLI-02242-103,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.5983631015,0,0,0,0.4016368985,0.4016368985,0.8,8,0.622035527,False
+0,BraTS-GLI-02242-103,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.5983631015,0,0,0,0.4016368985,0.4016368985,0.7,7,0.622035527,False
+0,BraTS-GLI-02247-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9999762191,1,0,0,2.37808872e-05,2.37808872e-05,0.3,7,1,False
+0,BraTS-GLI-02247-100,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9999762191,1,0,0,2.37808872e-05,2.37808872e-05,0.2,8,1,False
+0,BraTS-GLI-02278-100,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9996939898,1,1,1,0.9996939898,0.8438133337,0.6,6,1,True
+0,BraTS-GLI-02559-102,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9999645948,1,1,1,0.9999645948,0.9219784029,0.8,8,1,True
+0,BraTS-GLI-02587-100,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.974163115,1,1,1,0.974163115,0.7112395002,0.3,7,1,True
+0,BraTS-GLI-02587-100,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.974163115,1,1,1,0.974163115,0.7112395002,0.3,7,1,True
+0,BraTS-GLI-02638-101,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9932502508,1,1,1,0.9932502508,0.839882653,0.6,4,1,True
+0,BraTS-GLI-02638-101,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9932502508,1,1,1,0.9932502508,0.683882653,0.2,8,1,True
+0,BraTS-GLI-02638-101,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9932502508,1,1,1,0.9932502508,0.722882653,0.3,7,1,True
+0,BraTS-GLI-02837-101,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9662768841,0,1,1,0.9662768841,0.6674288993,0.2,8,0.4836022205,True
+0,BraTS-GLI-02837-101,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9662768841,0,1,1,0.9662768841,0.8234288993,0.6,6,0.4836022205,True
+0,BraTS-GLI-02837-101,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9662768841,0,1,1,0.9662768841,0.7454288993,0.4,6,0.4836022205,True
+0,BraTS-GLI-02837-101,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9662768841,0,1,1,0.9662768841,0.7844288993,0.5,5,0.4836022205,True
+0,BraTS-GLI-02837-101,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9662768841,0,1,1,0.9662768841,0.6674288993,0.2,8,0.4836022205,True
+0,BraTS-GLI-02837-101,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9662768841,0,1,1,0.9662768841,0.9014288993,0.8,8,0.4836022205,True
+0,BraTS-MEN-00043-000,Radiologist #3,Meningioma,BraTS-MEN,,,1,1,1,1,1,0.961,0.9,9,1,True
+0,BraTS-MEN-00043-000,Radiologist #8,Meningioma,BraTS-MEN,,,1,1,1,1,1,1,1,10,1,True
+0,BraTS-MEN-00069-000,Radiologist #3,Meningioma,BraTS-MEN,,,1,1,1,1,1,0.961,0.9,9,1,True
+0,BraTS-MEN-00299-000,Radiologist #2,Meningioma,BraTS-MEN,,,1,1,1,1,1,0.883,0.7,7,1,True
+0,BraTS-MEN-00455-000,Radiologist #9,Meningioma,BraTS-MEN,,,0.9999989271,1,1,1,0.9999989271,0.8829993455,0.7,7,1,True
+0,BraTS-MEN-00455-000,Radiologist #2,Meningioma,BraTS-MEN,,,0.9999989271,1,1,1,0.9999989271,0.8439993455,0.6,6,1,True
+0,BraTS-MEN-00455-000,Radiologist #1,Meningioma,BraTS-MEN,,,0.9999989271,1,1,1,0.9999989271,0.8829993455,0.7,7,1,True
+0,BraTS-MEN-00708-000,Radiologist #7,Meningioma,BraTS-MEN,,,0.999999404,1,1,1,0.999999404,0.9999996364,1,10,1,True
+0,BraTS-MEN-00895-000,Radiologist #4,Meningioma,BraTS-MEN,,,1,1,1,1,1,0.688,0.2,8,1,True
+0,BraTS-MEN-01012-000,Radiologist #5,Meningioma,BraTS-MEN,,,0.5359633565,1,0,0,0.4640366435,0.4640366435,0.5,5,1,False
+0,BraTS-MEN-01327-000,Radiologist #7,Meningioma,BraTS-MEN,,,0.9999647141,1,1,1,0.9999647141,0.9219784756,0.8,8,1,True
+0,BraTS-MEN-01382-000,Radiologist #9,Meningioma,BraTS-MEN,,,0.9997190833,1,1,1,0.9997190833,0.9608286408,0.9,9,1,True
+0,BraTS-MET-00106-000,Radiologist #5,Metastases,BraTS-MET,,,1,1,1,1,1,0.805,0.5,5,1,True
+0,BraTS-MET-00132-000,Radiologist #9,Metastases,BraTS-MET,,,0.999999404,1,1,1,0.999999404,0.9609996364,0.9,9,1,True
+0,BraTS-MET-00132-000,Radiologist #1,Metastases,BraTS-MET,,,0.999999404,1,1,1,0.999999404,0.9219996364,0.8,8,1,True
+0,BraTS-MET-00132-000,Radiologist #6,Metastases,BraTS-MET,,,0.999999404,1,1,1,0.999999404,0.9219996364,0.8,8,1,True
+0,BraTS-MET-00175-000,Radiologist #8,Metastases,BraTS-MET,,,0.9999995232,1,1,1,0.9999995232,0.9609997091,0.9,9,1,True
+0,BraTS-MET-00596-000,Radiologist #2,Metastases,BraTS-MET,,,0.9976912737,1,1,1,0.9976912737,0.725591677,0.3,7,1,True
+0,BraTS-MET-00596-000,Radiologist #8,Metastases,BraTS-MET,,,0.9976912737,1,1,1,0.9976912737,0.686591677,0.2,8,1,True
+0,BraTS-MET-00640-000,Radiologist #11,Metastases,BraTS-MET,,,1,1,1,1,1,0.805,0.5,5,1,True
+0,BraTS-MET-00642-000,Radiologist #10,Metastases,BraTS-MET,,,1,1,1,1,1,0.805,0.5,5,1,True
+0,BraTS-MET-00642-000,Radiologist #11,Metastases,BraTS-MET,,,1,1,1,1,1,0.844,0.6,4,1,True
+0,BraTS-MET-00673-000,Radiologist #9,Metastases,BraTS-MET,,,0.9999934435,1,1,1,0.9999934435,0.8049960005,0.5,5,1,True
+0,BraTS-MET-00713-000,Radiologist #5,Metastases,BraTS-MET,,,0.9975094234,1,0,0,0.002490576589,0.002490576589,0.5,5,1,False
+0,BraTS-MET-00713-000,Radiologist #11,Metastases,BraTS-MET,,,0.9975094234,1,0,0,0.002490576589,0.002490576589,0.2,8,1,False
+0,BraTS-MET-00747-000,Radiologist #4,Metastases,BraTS-MET,,,0.9999767542,1,1,1,0.9999767542,0.9609858201,0.9,9,1,True
+0,BraTS-PED-00032-000,Radiologist #9,Paediatric presurgical tumour,BraTS-PED,,,0.9992249012,1,1,1,0.9992249012,0.9605271897,0.9,9,1,True
+0,BraTS-PED-00032-000,Radiologist #5,Paediatric presurgical tumour,BraTS-PED,,,0.9992249012,1,1,1,0.9992249012,0.9995271897,1,10,1,True
+0,BraTS-PED-00166-000,Radiologist #3,Paediatric presurgical tumour,BraTS-PED,,,0.9999989271,1,1,1,0.9999989271,0.8049993455,0.5,5,1,True
+0,BraTS-PED-00270-000,Radiologist #10,Paediatric presurgical tumour,BraTS-PED,,,0.9999631643,1,1,1,0.9999631643,0.9609775302,0.9,9,1,True
+0,BraTS-PED-00331-000,Radiologist #2,Paediatric presurgical tumour,BraTS-PED,,,0.9996930121,0,0,0,0.0003069879021,0.0003069879021,0.9,9,0.4226497308,False
+0,BraTS-PED-00331-000,Radiologist #5,Paediatric presurgical tumour,BraTS-PED,,,0.9996930121,0,0,0,0.0003069879021,0.0003069879021,0.4,6,0.4226497308,False
+0,BraTS-PED-00331-000,Radiologist #4,Paediatric presurgical tumour,BraTS-PED,,,0.9996930121,0,0,0,0.0003069879021,0.0003069879021,0.3,7,0.4226497308,False
+0,BraTS2021_00105,Radiologist #9,Presurgical glioma,BraTS-OTHER,,,0.9995412827,1,1,1,0.9995412827,0.9217201824,0.8,8,1,True
+0,BraTS2021_00109,Radiologist #8,Presurgical glioma,BraTS-OTHER,,,0.9999130964,1,1,1,0.9999130964,0.9999469888,1,10,1,True
+0,BraTS2021_00367,Radiologist #3,Presurgical glioma,BraTS-OTHER,,,0.9998378754,1,1,1,0.9998378754,0.726901104,0.3,7,1,True
+0,BraTS2021_00556,Radiologist #7,Presurgical glioma,BraTS-OTHER,,,0.9999616146,1,1,1,0.9999616146,0.9999765849,1,10,1,True
+0,BraTS2021_00560,Radiologist #2,Presurgical glioma,BraTS-OTHER,,,0.9999883175,1,1,1,0.9999883175,0.8829928737,0.7,7,1,True
+0,BraTS2021_01425,Radiologist #3,Presurgical glioma,BraTS-OTHER,,,0.9989556074,1,1,1,0.9989556074,0.8823629205,0.7,7,1,True
+0,BraTS2021_01567,Radiologist #10,Presurgical glioma,BraTS-OTHER,,,0.9999855757,1,1,1,0.9999855757,0.7269912012,0.3,7,1,True
+0,BraTS2021_01642,Radiologist #4,Presurgical glioma,BraTS-OTHER,,,0.9996935129,1,1,1,0.9996935129,0.9218130429,0.8,8,1,True
+0,BraTS2021_01745,Radiologist #1,Presurgical glioma,BraTS-OTHER,,,0.9997522235,1,1,1,0.9997522235,0.9608488563,0.9,9,1,True
+0,EGD-0395,Radiologist #5,Presurgical glioma,EGD,,,0.9994530082,1,1,1,0.9994530082,0.921666335,0.8,8,1,True
+0,EGD-0395,Radiologist #1,Presurgical glioma,EGD,,,0.9994530082,1,1,1,0.9994530082,0.999666335,1,10,1,True
+0,EGD-0397,Radiologist #3,Presurgical glioma,EGD,,,0.999874711,1,1,1,0.999874711,0.7659235737,0.4,6,1,True
+0,NHNN_1034,Radiologist #2,Presurgical glioma,NHNN,,,0.9046316743,1,1,1,0.9046316743,0.6688253213,0.3,7,1,True
+0,NHNN_1034,Radiologist #5,Presurgical glioma,NHNN,,,0.9046316743,1,1,1,0.9046316743,0.7858253213,0.6,4,1,True
+0,NHNN_1080,Radiologist #2,Presurgical glioma,NHNN,,,0.8688987494,0,0,0,0.1311012506,0.1311012506,0.3,3,0.4522774425,False
+0,NHNN_1080,Radiologist #3,Presurgical glioma,NHNN,,,0.8688987494,0,0,0,0.1311012506,0.1311012506,0.7,7,0.4522774425,False
+0,NHNN_1080,Radiologist #5,Presurgical glioma,NHNN,,,0.8688987494,0,0,0,0.1311012506,0.1311012506,0.2,8,0.4522774425,False
+0,NHNN_1080,Radiologist #6,Presurgical glioma,NHNN,,,0.8688987494,0,0,0,0.1311012506,0.1311012506,0.3,7,0.4522774425,False
+0,NHNN_1080,Radiologist #4,Presurgical glioma,NHNN,,,0.8688987494,0,0,0,0.1311012506,0.1311012506,0.2,8,0.4522774425,False
+0,NHNN_1125,Radiologist #11,Presurgical glioma,NHNN,,,0.9999996424,1,1,1,0.9999996424,0.8439997818,0.6,4,1,True
+0,NHNN_1134,Radiologist #8,Presurgical glioma,NHNN,,,0.9991452694,1,1,1,0.9991452694,0.9214786143,0.8,8,1,True
+0,NHNN_1157,Radiologist #3,Presurgical glioma,NHNN,,,0.9999976158,1,1,1,0.9999976158,0.8829985456,0.7,7,1,True
+0,NHNN_1157,Radiologist #1,Presurgical glioma,NHNN,,,0.9999976158,1,1,1,0.9999976158,0.8439985456,0.6,6,1,True
+0,NHNN_1241,Radiologist #9,Presurgical glioma,NHNN,,,0.9102523401,1,0,0,0.08974765986,0.08974765986,0.5,5,1,False
+0,NHNN_1251,Radiologist #4,Presurgical glioma,NHNN,,,0.9999945164,1,1,1,0.9999945164,0.765996655,0.4,4,1,True
+0,NHNN_1269,Radiologist #9,Presurgical glioma,NHNN,,,0.9998954535,1,1,1,0.9998954535,0.9219362266,0.8,8,1,True
+0,NHNN_1426,Radiologist #9,Presurgical glioma,NHNN,,,1,1,1,1,1,0.805,0.5,5,1,True
+0,NHNN_146_scan2,Radiologist #9,Presurgical glioma,NHNN,,,0.9999280801,0,0,0,7.191989425e-05,7.191989425e-05,0.3,7,0.5,False
+0,NHNN_146_scan2,Radiologist #10,Presurgical glioma,NHNN,,,0.9999280801,0,0,0,7.191989425e-05,7.191989425e-05,0.6,4,0.5,False
+0,NHNN_146_scan2,Radiologist #1,Presurgical glioma,NHNN,,,0.9999280801,0,0,0,7.191989425e-05,7.191989425e-05,0.6,6,0.5,False
+0,NHNN_146_scan2,Radiologist #11,Presurgical glioma,NHNN,,,0.9999280801,0,0,0,7.191989425e-05,7.191989425e-05,0.5,5,0.5,False
+0,NHNN_150,Radiologist #5,Presurgical glioma,NHNN,,,1,1,1,1,1,0.727,0.3,7,1,True
+0,NHNN_1600,Radiologist #3,Presurgical glioma,NHNN,,,0.9990003705,1,1,1,0.9990003705,0.960390226,0.9,9,1,True
+0,NHNN_1600,Radiologist #7,Presurgical glioma,NHNN,,,0.9990003705,1,1,1,0.9990003705,0.921390226,0.8,8,1,True
+0,NHNN_1600,Radiologist #4,Presurgical glioma,NHNN,,,0.9990003705,1,1,1,0.9990003705,0.921390226,0.8,8,1,True
+0,NHNN_161_scan1,Radiologist #9,Presurgical glioma,NHNN,,,0.9999242987,0,0,0,7.570134039e-05,7.570134039e-05,0.3,7,1,False
+0,NHNN_161_scan1,Radiologist #10,Presurgical glioma,NHNN,,,0.9999242987,0,0,0,7.570134039e-05,7.570134039e-05,0.3,7,1,False
+0,NHNN_161_scan1,Radiologist #5,Presurgical glioma,NHNN,,,0.9999242987,0,0,0,7.570134039e-05,7.570134039e-05,0.2,8,1,False
+0,NHNN_161_scan1,Radiologist #11,Presurgical glioma,NHNN,,,0.9999242987,0,0,0,7.570134039e-05,7.570134039e-05,0.6,4,1,False
+0,NHNN_161_scan1,Radiologist #4,Presurgical glioma,NHNN,,,0.9999242987,0,0,0,7.570134039e-05,7.570134039e-05,0.3,7,1,False
+0,NHNN_161_scan2,Radiologist #9,Presurgical glioma,NHNN,,,0.9999596144,0,0,0,4.038555562e-05,4.038555562e-05,0.2,8,0.5,False
+0,NHNN_161_scan2,Radiologist #1,Presurgical glioma,NHNN,,,0.9999596144,0,0,0,4.038555562e-05,4.038555562e-05,0.7,7,0.5,False
+0,NHNN_161_scan2,Radiologist #6,Presurgical glioma,NHNN,,,0.9999596144,0,0,0,4.038555562e-05,4.038555562e-05,0.6,4,0.5,False
+0,NHNN_161_scan2,Radiologist #7,Presurgical glioma,NHNN,,,0.9999596144,0,0,0,4.038555562e-05,4.038555562e-05,0.1,9,0.5,False
+0,NHNN_164_scan1,Radiologist #4,Presurgical glioma,NHNN,,,1,1,1,1,1,0.883,0.7,7,1,True
+0,NHNN_1685,Radiologist #3,Presurgical glioma,NHNN,,,0.7052072883,1,1,1,0.7052072883,0.6641764458,0.6,6,1,True
+0,NHNN_1739_scan1,Radiologist #2,Presurgical glioma,NHNN,,,0.9999421835,1,1,1,0.9999421835,0.8439647319,0.6,6,1,True
+0,NHNN_1739_scan2,Radiologist #8,Presurgical glioma,NHNN,,,0.9997795224,1,1,1,0.9997795224,0.9218655087,0.8,8,1,True
+0,NHNN_1741,Radiologist #10,Presurgical glioma,NHNN,,,0.7041424513,0,1,1,0.7041424513,0.7025268953,0.7,7,0.4654775162,True
+0,NHNN_1741,Radiologist #2,Presurgical glioma,NHNN,,,0.7041424513,0,1,1,0.7041424513,0.6635268953,0.6,6,0.4654775162,True
+0,NHNN_1741,Radiologist #5,Presurgical glioma,NHNN,,,0.7041424513,0,1,0,0.7041424513,0.5465268953,0.3,7,0.4654775162,True
+0,NHNN_1741,Radiologist #1,Presurgical glioma,NHNN,,,0.7041424513,0,1,1,0.7041424513,0.6635268953,0.6,6,0.4654775162,True
+0,NHNN_1741,Radiologist #6,Presurgical glioma,NHNN,,,0.7041424513,0,1,1,0.7041424513,0.7415268953,0.8,2,0.4654775162,True
+0,NHNN_1741,Radiologist #11,Presurgical glioma,NHNN,,,0.7041424513,0,1,1,0.7041424513,0.6245268953,0.5,5,0.4654775162,True
+0,NHNN_1741,Radiologist #4,Presurgical glioma,NHNN,,,0.7041424513,0,1,0,0.7041424513,0.5855268953,0.4,6,0.4654775162,True
+0,NHNN_1768,Radiologist #2,Presurgical glioma,NHNN,,,0.9999988079,1,1,1,0.9999988079,0.8439992728,0.6,4,0.2928932188,True
+0,NHNN_1768,Radiologist #11,Presurgical glioma,NHNN,,,0.9999988079,1,1,1,0.9999988079,0.8829992728,0.7,7,0.2928932188,True
+0,NHNN_1781_scan2,Radiologist #1,Presurgical glioma,NHNN,,,0.9999952316,1,1,1,0.9999952316,0.8829970913,0.7,7,1,True
+0,NHNN_1801,Radiologist #9,Presurgical glioma,NHNN,,,0.9999637604,1,1,1,0.9999637604,0.8829778938,0.7,7,1,True
+0,NHNN_1801,Radiologist #7,Presurgical glioma,NHNN,,,0.9999637604,1,1,1,0.9999637604,0.9219778938,0.8,8,1,True
+0,NHNN_1855,Radiologist #10,Presurgical glioma,NHNN,,,0.999999404,1,1,1,0.999999404,0.9609996364,0.9,9,1,True
+0,NHNN_1855,Radiologist #6,Presurgical glioma,NHNN,,,0.999999404,1,1,1,0.999999404,0.7269996364,0.3,3,1,True
+0,NHNN_186,Radiologist #7,Presurgical glioma,NHNN,,,0.9997362157,1,0,0,0.0002637843136,0.0002637843136,0.8,8,1,False
+0,NHNN_190,Radiologist #3,Presurgical glioma,NHNN,,,0.999992609,1,1,1,0.999992609,0.7269954915,0.3,3,1,True
+0,NHNN_1922,Radiologist #1,Presurgical glioma,NHNN,,,0.9983036518,1,1,1,0.9983036518,0.8819652276,0.7,7,1,True
+0,NHNN_192,Radiologist #2,Presurgical glioma,NHNN,,,0.9999895096,1,1,1,0.9999895096,0.7269936008,0.3,7,1,True
+0,NHNN_192,Radiologist #1,Presurgical glioma,NHNN,,,0.9999895096,1,1,1,0.9999895096,0.8049936008,0.5,5,1,True
+0,NHNN_1935_scan1,Radiologist #10,Presurgical glioma,NHNN,,,1,0,1,1,1,0.688,0.2,8,1,True
+0,NHNN_1935_scan1,Radiologist #2,Presurgical glioma,NHNN,,,1,0,1,1,1,0.727,0.3,7,1,True
+0,NHNN_1935_scan1,Radiologist #5,Presurgical glioma,NHNN,,,1,0,1,1,1,0.727,0.3,7,1,True
+0,NHNN_1935_scan1,Radiologist #6,Presurgical glioma,NHNN,,,1,0,1,1,1,0.883,0.7,3,1,True
+0,NHNN_1935_scan1,Radiologist #11,Presurgical glioma,NHNN,,,1,0,1,1,1,0.805,0.5,5,1,True
+0,NHNN_1948,Radiologist #2,Presurgical glioma,NHNN,,,0.9995597112,0,0,0,0.0004402887716,0.0004402887716,0.4,6,0.5917517095,False
+0,NHNN_1948,Radiologist #3,Presurgical glioma,NHNN,,,0.9995597112,0,0,0,0.0004402887716,0.0004402887716,0.6,4,0.5917517095,False
+0,NHNN_1948,Radiologist #5,Presurgical glioma,NHNN,,,0.9995597112,0,0,0,0.0004402887716,0.0004402887716,0.3,7,0.5917517095,False
+0,NHNN_1948,Radiologist #6,Presurgical glioma,NHNN,,,0.9995597112,0,0,0,0.0004402887716,0.0004402887716,0.3,3,0.5917517095,False
+0,NHNN_1948,Radiologist #11,Presurgical glioma,NHNN,,,0.9995597112,0,0,0,0.0004402887716,0.0004402887716,0.5,5,0.5917517095,False
+0,NHNN_1948,Radiologist #7,Presurgical glioma,NHNN,,,0.9995597112,0,0,0,0.0004402887716,0.0004402887716,0.2,8,0.5917517095,False
+0,NHNN_202_scan1,Radiologist #9,Presurgical glioma,NHNN,,,0.9903348088,0,1,1,0.9903348088,0.6821042334,0.2,8,1,True
+0,NHNN_202_scan1,Radiologist #3,Presurgical glioma,NHNN,,,0.9903348088,0,1,1,0.9903348088,0.7211042334,0.3,7,1,True
+0,NHNN_202_scan1,Radiologist #5,Presurgical glioma,NHNN,,,0.9903348088,0,1,1,0.9903348088,0.6431042334,0.1,9,1,True
+0,NHNN_202_scan1,Radiologist #7,Presurgical glioma,NHNN,,,0.9903348088,0,1,1,0.9903348088,0.6431042334,0.1,9,1,True
+0,NHNN_205,Radiologist #8,Presurgical glioma,NHNN,,,0.9996243715,1,1,1,0.9996243715,0.9997708666,1,10,1,True
+0,NHNN_239,Radiologist #2,Presurgical glioma,NHNN,,,0.9999998808,1,1,1,0.9999998808,0.9609999273,0.9,1,1,True
+0,NHNN_240,Radiologist #10,Presurgical glioma,NHNN,,,0.9732411504,0,1,1,0.9732411504,0.7886771017,0.5,5,0.4522774425,True
+0,NHNN_240,Radiologist #2,Presurgical glioma,NHNN,,,0.9732411504,0,1,1,0.9732411504,0.8666771017,0.7,7,0.4522774425,True
+0,NHNN_240,Radiologist #11,Presurgical glioma,NHNN,,,0.9732411504,0,1,1,0.9732411504,0.9056771017,0.8,8,0.4522774425,True
+0,NHNN_240,Radiologist #8,Presurgical glioma,NHNN,,,0.9732411504,0,1,1,0.9732411504,0.6326771017,0.1,9,0.4522774425,True
+0,NHNN_240,Radiologist #4,Presurgical glioma,NHNN,,,0.9732411504,0,1,1,0.9732411504,0.7106771017,0.3,7,0.4522774425,True
+0,NHNN_256_scan1,Radiologist #9,Presurgical glioma,NHNN,,,0.9993607721,0,0,0,0.0006392279174,0.0006392279174,0.3,7,0.5917517095,False
+0,NHNN_256_scan1,Radiologist #2,Presurgical glioma,NHNN,,,0.9993607721,0,0,0,0.0006392279174,0.0006392279174,0.5,5,0.5917517095,False
+0,NHNN_256_scan1,Radiologist #1,Presurgical glioma,NHNN,,,0.9993607721,0,0,0,0.0006392279174,0.0006392279174,0.5,5,0.5917517095,False
+0,NHNN_256_scan1,Radiologist #11,Presurgical glioma,NHNN,,,0.9993607721,0,0,0,0.0006392279174,0.0006392279174,0.3,7,0.5917517095,False
+0,NHNN_256_scan1,Radiologist #8,Presurgical glioma,NHNN,,,0.9993607721,0,0,0,0.0006392279174,0.0006392279174,0.7,7,0.5917517095,False
+0,NHNN_256_scan1,Radiologist #4,Presurgical glioma,NHNN,,,0.9993607721,0,0,0,0.0006392279174,0.0006392279174,0.3,7,0.5917517095,False
+0,NHNN_277,Radiologist #3,Presurgical glioma,NHNN,,,0.9999871254,1,1,1,0.9999871254,0.8439921465,0.6,6,1,True
+0,NHNN_309_scan1,Radiologist #2,Presurgical glioma,NHNN,,,0.9880856201,1,0,0,0.01191437989,0.01191437989,0.6,6,1,False
+0,NHNN_394,Radiologist #9,Presurgical glioma,NHNN,,,0.9912550971,0,0,0,0.008744902909,0.008744902909,0.5,5,1,False
+0,NHNN_394,Radiologist #10,Presurgical glioma,NHNN,,,0.9912550971,0,0,0,0.008744902909,0.008744902909,0.3,7,1,False
+0,NHNN_394,Radiologist #1,Presurgical glioma,NHNN,,,0.9912550971,0,0,0,0.008744902909,0.008744902909,0.5,5,1,False
+0,NHNN_3,Radiologist #6,Presurgical glioma,NHNN,,,1,1,1,1,1,0.727,0.3,3,1,True
+0,NHNN_422,Radiologist #5,Presurgical glioma,NHNN,,,0.988127768,0,1,1,0.988127768,0.7197579385,0.3,7,0.4226497308,True
+0,NHNN_422,Radiologist #6,Presurgical glioma,NHNN,,,0.988127768,0,1,1,0.988127768,0.8757579385,0.7,7,0.4226497308,True
+0,NHNN_422,Radiologist #8,Presurgical glioma,NHNN,,,0.988127768,0,1,1,0.988127768,0.9147579385,0.8,8,0.4226497308,True
+0,NHNN_422,Radiologist #4,Presurgical glioma,NHNN,,,0.988127768,0,1,1,0.988127768,0.7587579385,0.4,6,0.4226497308,True
+0,NHNN_445,Radiologist #6,Presurgical glioma,NHNN,,,0.9999978542,1,1,1,0.9999978542,0.7269986911,0.3,3,1,True
+0,NHNN_480,Radiologist #3,Presurgical glioma,NHNN,,,1,1,1,1,1,0.961,0.9,9,1,True
+0,NHNN_4_scan1,Radiologist #2,Presurgical glioma,NHNN,,,0.9008755684,1,1,1,0.9008755684,0.7835340967,0.6,6,1,True
+0,NHNN_504,Radiologist #10,Presurgical glioma,NHNN,,,0.9999898788,0,0,0,1.012115899e-05,1.012115899e-05,0.6,6,0.4654775162,False
+0,NHNN_504,Radiologist #5,Presurgical glioma,NHNN,,,0.9999898788,0,0,0,1.012115899e-05,1.012115899e-05,0.5,5,0.4654775162,False
+0,NHNN_504,Radiologist #1,Presurgical glioma,NHNN,,,0.9999898788,0,0,0,1.012115899e-05,1.012115899e-05,0.5,5,0.4654775162,False
+0,NHNN_504,Radiologist #11,Presurgical glioma,NHNN,,,0.9999898788,0,0,0,1.012115899e-05,1.012115899e-05,0.5,5,0.4654775162,False
+0,NHNN_504,Radiologist #7,Presurgical glioma,NHNN,,,0.9999898788,0,0,0,1.012115899e-05,1.012115899e-05,0.5,5,0.4654775162,False
+0,NHNN_504,Radiologist #8,Presurgical glioma,NHNN,,,0.9999898788,0,0,0,1.012115899e-05,1.012115899e-05,0.2,8,0.4654775162,False
+0,NHNN_504,Radiologist #4,Presurgical glioma,NHNN,,,0.9999898788,0,0,0,1.012115899e-05,1.012115899e-05,0.4,6,0.4654775162,False
+0,NHNN_635,Radiologist #6,Presurgical glioma,NHNN,,,1,1,1,1,1,0.688,0.2,2,1,True
+0,NHNN_653,Radiologist #9,Presurgical glioma,NHNN,,,0.999124825,1,1,1,0.999124825,0.9214661433,0.8,8,1,True
+0,NHNN_662,Radiologist #11,Presurgical glioma,NHNN,,,1,1,1,1,1,0.922,0.8,2,1,True
+0,NHNN_683,Radiologist #2,Presurgical glioma,NHNN,,,0.9824835658,0,1,1,0.9824835658,0.7943149751,0.5,5,1,True
+0,NHNN_683,Radiologist #5,Presurgical glioma,NHNN,,,0.9824835658,0,1,1,0.9824835658,0.7163149751,0.3,3,1,True
+0,NHNN_683,Radiologist #6,Presurgical glioma,NHNN,,,0.9824835658,0,1,1,0.9824835658,0.8333149751,0.6,6,1,True
+0,NHNN_683,Radiologist #4,Presurgical glioma,NHNN,,,0.9824835658,0,1,1,0.9824835658,0.8333149751,0.6,6,1,True
+0,NHNN_819,Radiologist #7,Presurgical glioma,NHNN,,,0.9995577574,1,0,0,0.0004422425991,0.0004422425991,0.3,7,1,False
+0,NHNN_849,Radiologist #8,Presurgical glioma,NHNN,,,0.6221885085,1,1,0,0.6221885085,0.4185349902,0.1,9,1,True
+0,NHNN_849,Radiologist #4,Presurgical glioma,NHNN,,,0.6221885085,1,1,0,0.6221885085,0.5355349902,0.4,6,1,True
+0,NHNN_852,Radiologist #9,Presurgical glioma,NHNN,,,0.9999847412,1,1,1,0.9999847412,0.8829906921,0.7,7,1,True
+0,NHNN_871,Radiologist #2,Presurgical glioma,NHNN,,,0.9995782408,1,0,0,0.0004217592068,0.0004217592068,0.4,4,1,False
+0,NHNN_909,Radiologist #9,Presurgical glioma,NHNN,,,0.9566097856,0,1,1,0.9566097856,0.7005319692,0.3,7,0.5917517095,True
+0,NHNN_909,Radiologist #5,Presurgical glioma,NHNN,,,0.9566097856,0,1,1,0.9566097856,0.7005319692,0.3,7,0.5917517095,True
+0,NHNN_909,Radiologist #1,Presurgical glioma,NHNN,,,0.9566097856,0,1,1,0.9566097856,0.7005319692,0.3,7,0.5917517095,True
+0,NHNN_909,Radiologist #6,Presurgical glioma,NHNN,,,0.9566097856,0,1,1,0.9566097856,0.7005319692,0.3,3,0.5917517095,True
+0,NHNN_909,Radiologist #11,Presurgical glioma,NHNN,,,0.9566097856,0,1,1,0.9566097856,0.7005319692,0.3,7,0.5917517095,True
+0,NHNN_909,Radiologist #7,Presurgical glioma,NHNN,,,0.9566097856,0,1,1,0.9566097856,0.6615319692,0.2,8,0.5917517095,True
+0,UCSF-PDGM-0039,Radiologist #4,Presurgical glioma,Unknown,,,0.9999816418,1,1,1,0.9999816418,0.9219888015,0.8,8,1,True
+0,UCSF-PDGM-0071,Radiologist #4,Presurgical glioma,Unknown,,,0.9999024868,1,1,1,0.9999024868,0.9219405169,0.8,8,1,True
+0,UCSF-PDGM-0162,Radiologist #10,Presurgical glioma,Unknown,,,0.9999998808,1,1,1,0.9999998808,0.9999999273,1,10,1,True
+0,UCSF-PDGM-0275,Radiologist #8,Presurgical glioma,Unknown,,,0.9999554157,1,1,1,0.9999554157,0.9219728036,0.8,8,1,True
+0,UCSF-PDGM-0329,Radiologist #7,Presurgical glioma,Unknown,,,0.9998995066,1,1,1,0.9998995066,0.999938699,1,10,1,True
+0,UPENN-GBM-00134_21,Radiologist #6,Presurgical glioma,Unknown,,,0.9999984503,1,1,1,0.9999984503,0.9999990547,1,10,1,True
+0,UPENN-GBM-00207_11,Radiologist #5,Presurgical glioma,Unknown,,,0.9998915195,1,1,1,0.9998915195,0.9609338269,0.9,9,1,True
+0,UPENN-GBM-00353_11,Radiologist #9,Presurgical glioma,Unknown,,,0.9999879599,1,1,1,0.9999879599,0.9609926555,0.9,9,1,True
+0,UPENN-GBM-00353_11,Radiologist #4,Presurgical glioma,Unknown,,,0.9999879599,1,1,1,0.9999879599,0.9219926555,0.8,8,1,True
+0,UPENN-GBM-00359_11,Radiologist #9,Presurgical glioma,Unknown,,,0.9999676943,1,1,1,0.9999676943,0.9609802935,0.9,9,1,True
+0,UPENN-GBM-00359_11,Radiologist #8,Presurgical glioma,Unknown,,,0.9999676943,1,1,1,0.9999676943,0.9999802935,1,10,1,True
+0,UPENN-GBM-00433_11,Radiologist #8,Presurgical glioma,Unknown,,,0.999999404,1,1,1,0.999999404,0.9219996364,0.8,8,1,True
+1,BraTS-GLI-00006-101,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9456560016,0,1,1,0.9456560016,0.7051819411,0.2,8,0.4654775162,True
+1,BraTS-GLI-00006-101,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9456560016,0,1,1,0.9456560016,0.8187909812,0.4,6,0.4654775162,True
+1,BraTS-GLI-00006-101,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9456560016,0,1,1,0.9456560016,0.9150682412,0.8,2,0.4654775162,True
+1,BraTS-GLI-00006-101,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9456560016,0,1,1,0.9456560016,0.7664864611,0.3,7,0.4654775162,True
+1,BraTS-GLI-00006-101,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9456560016,0,1,1,0.9456560016,0.8652909812,0.6,6,0.4654775162,True
+1,BraTS-GLI-00006-101,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9456560016,0,1,1,0.9456560016,0.8986819411,0.8,8,0.4654775162,True
+1,BraTS-GLI-00006-101,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9456560016,0,1,1,0.9456560016,0.8774864611,0.7,7,0.4654775162,True
+1,BraTS-GLI-02063-106,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9999992847,1,1,1,0.9999992847,0.8319994349,0.2,2,0.2928932188,True
+1,BraTS-GLI-02063-106,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9999992847,1,1,1,0.9999992847,0.8057494832,0.3,7,0.2928932188,True
+1,BraTS-GLI-02072-102,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9999294281,1,1,1,0.9999294281,0.9354521875,0.8,8,1,True
+1,BraTS-GLI-02132-100,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9999065399,1,1,1,0.9999065399,0.9354366808,0.8,8,1,True
+1,BraTS-GLI-02185-102,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9999444485,1,1,1,0.9999444485,0.916709864,0.7,7,1,True
+1,BraTS-GLI-02227-100,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9929827452,0,1,1,0.9929827452,0.8894563687,0.5,5,0.622035527,True
+1,BraTS-GLI-02227-100,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9929827452,0,1,1,0.9929827452,0.8551142569,0.4,6,0.622035527,True
+1,BraTS-GLI-02227-100,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9929827452,0,1,1,0.9929827452,0.8551142569,0.4,6,0.622035527,True
+1,BraTS-GLI-02227-100,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9929827452,0,1,1,0.9929827452,0.8684563687,0.4,4,0.622035527,True
+1,BraTS-GLI-02227-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9929827452,0,1,1,0.9929827452,0.9104563687,0.6,4,0.622035527,True
+1,BraTS-GLI-02227-100,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9929827452,0,1,1,0.9929827452,0.7372458099,0.2,8,0.622035527,True
+1,BraTS-GLI-02227-100,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9929827452,0,1,1,0.9929827452,0.8551142569,0.4,6,0.622035527,True
+1,BraTS-GLI-02239-102,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9999580728,0,0,0,4.19272219e-05,4.19272219e-05,0.2,8,0.2928932188,False
+1,BraTS-GLI-02239-102,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9999580728,0,0,0,4.19272219e-05,4.19272219e-05,0.8,8,0.2928932188,False
+1,BraTS-GLI-02254-100,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9999890327,1,1,1,0.9999890327,0.8057420762,0.3,7,1,True
+1,BraTS-GLI-02254-100,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9999890327,1,1,1,0.9999890327,0.9369913359,0.7,3,1,True
+1,BraTS-GLI-02254-100,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9999890327,1,1,1,0.9999890327,0.60999331,0,10,1,True
+1,BraTS-GLI-02496-101,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9998883009,1,1,1,0.9998883009,0.9631793503,0.9,9,1,True
+1,BraTS-GLI-02632-100,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9234945774,1,1,1,0.9234945774,0.6901675762,0.2,8,1,True
+1,BraTS-GLI-02810-101,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.999940753,1,1,1,0.999940753,0.9354598601,0.8,8,1,True
+1,BraTS-GLI-02818-101,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9997389527,0,0,0,0.000261047302,0.000261047302,0.5,5,0.5,False
+1,BraTS-GLI-02818-101,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9997389527,0,0,0,0.000261047302,0.000261047302,0.6,6,0.5,False
+1,BraTS-GLI-02818-101,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9997389527,0,0,0,0.000261047302,0.000261047302,1,10,0.5,False
+1,BraTS-GLI-02818-101,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9997389527,0,0,0,0.000261047302,0.000261047302,0.6,6,0.5,False
+1,BraTS-GLI-02832-101,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.999999404,1,1,1,0.999999404,0.9354995962,0.8,8,1,True
+1,BraTS-GLI-02887-100,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9881857,0,0,0,0.01181429997,0.01181429997,0.2,8,1,False
+1,BraTS-GLI-02887-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9881857,0,0,0,0.01181429997,0.01181429997,0.3,7,1,False
+1,BraTS-GLI-02887-100,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9881857,0,0,0,0.01181429997,0.01181429997,0.1,9,1,False
+1,BraTS-GLI-02900-101,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9995993972,1,1,1,0.9995993972,0.8946835238,0.5,5,1,True
+1,BraTS-GLI-02904-101,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.999960734,0,0,0,3.926603313e-05,3.926603313e-05,0.3,3,0.4226497308,False
+1,BraTS-GLI-02904-101,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.999960734,0,0,0,3.926603313e-05,3.926603313e-05,0.3,7,0.4226497308,False
+1,BraTS-GLI-02904-101,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.999960734,0,0,0,3.926603313e-05,3.926603313e-05,0.1,9,0.4226497308,False
+1,BraTS-GLI-02981-100,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9999902539,0,0,0,9.746141586e-06,9.746141586e-06,0.2,8,0.4226497308,False
+1,BraTS-GLI-02981-100,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9999902539,0,0,0,9.746141586e-06,9.746141586e-06,0.6,6,0.4226497308,False
+1,BraTS-GLI-02981-100,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9999902539,0,0,0,9.746141586e-06,9.746141586e-06,0.2,8,0.4226497308,False
+1,BraTS-GLI-02982-100,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9998966455,0,1,1,0.9998966455,0.89491835,0.5,5,0.5120499635,True
+1,BraTS-GLI-02982-100,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9998966455,0,1,1,0.9998966455,0.89491835,0.5,5,0.5120499635,True
+1,BraTS-GLI-02982-100,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9998966455,0,1,1,0.9998966455,0.8604206755,0.4,6,0.5120499635,True
+1,BraTS-GLI-02982-100,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9998966455,0,1,1,0.9998966455,0.9999369538,1,10,0.5120499635,True
+1,BraTS-GLI-02982-100,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9998966455,0,1,1,0.9998966455,0.87391835,0.4,4,0.5120499635,True
+1,BraTS-GLI-02982-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9998966455,0,1,1,0.9998966455,0.9631846283,0.9,9,0.5120499635,True
+1,BraTS-GLI-02982-100,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9998966455,0,1,1,0.9998966455,0.9354299774,0.8,8,0.5120499635,True
+1,BraTS-GLI-02984-101,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9708061852,0,0,0,0.02919381484,0.02919381484,0.6,6,0.5527864045,False
+1,BraTS-GLI-02984-101,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9708061852,0,0,0,0.02919381484,0.02919381484,0.6,6,0.5527864045,False
+1,BraTS-GLI-02984-101,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9708061852,0,0,0,0.02919381484,0.02919381484,0.8,8,0.5527864045,False
+1,BraTS-GLI-02984-101,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9708061852,0,0,0,0.02919381484,0.02919381484,0.5,5,0.5527864045,False
+1,BraTS-GLI-02984-101,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9708061852,0,0,0,0.02919381484,0.02919381484,0.4,6,0.5527864045,False
+1,BraTS-GLI-03039-100,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9980059266,0,1,1,0.9980059266,0.804309282,0.3,7,0.622035527,True
+1,BraTS-GLI-03039-100,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9980059266,0,1,1,0.9980059266,0.8589695487,0.4,6,0.622035527,True
+1,BraTS-GLI-03039-100,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9980059266,0,1,1,0.9980059266,0.8589695487,0.4,6,0.622035527,True
+1,BraTS-GLI-03039-100,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9980059266,0,1,1,0.9980059266,0.935424682,0.7,3,0.622035527,True
+1,BraTS-GLI-03039-100,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9980059266,0,1,1,0.9980059266,0.9341490153,0.8,8,0.622035527,True
+1,BraTS-GLI-03039-100,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9980059266,0,1,1,0.9980059266,0.7406490153,0.2,8,0.622035527,True
+1,BraTS-GLI-03039-100,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9980059266,0,1,1,0.9980059266,0.8589695487,0.4,6,0.622035527,True
+1,BraTS-MEN-00083-000,Radiologist #11,Meningioma,BraTS-MEN,,,0.9999997616,1,1,1,0.9999997616,0.8949998116,0.5,5,1,True
+1,BraTS-MEN-00176-000,Radiologist #1,Meningioma,BraTS-MEN,,,0.9997165799,1,1,1,0.9997165799,0.9630707368,0.9,9,1,True
+1,BraTS-MEN-00303-000,Radiologist #5,Meningioma,BraTS-MEN,,,0.99999547,1,1,1,0.99999547,0.935496931,0.8,8,1,True
+1,BraTS-MEN-00367-000,Radiologist #5,Meningioma,BraTS-MEN,,,1,1,1,1,1,0.895,0.5,5,1,True
+1,BraTS-MEN-00406-000,Radiologist #10,Meningioma,BraTS-MEN,,,0.9999859333,1,1,1,0.9999859333,0.9999914193,1,10,1,True
+1,BraTS-MEN-00658-000,Radiologist #8,Meningioma,BraTS-MEN,,,1,1,1,1,1,1,1,10,1,True
+1,BraTS-MEN-01021-000,Radiologist #7,Meningioma,BraTS-MEN,,,0.9999995232,1,1,1,0.9999995232,0.9354996769,0.8,8,1,True
+1,BraTS-MEN-01048-000,Radiologist #9,Meningioma,BraTS-MEN,,,0.9999494553,1,1,1,0.9999494553,0.9354657559,0.8,8,1,True
+1,BraTS-MEN-01048-000,Radiologist #3,Meningioma,BraTS-MEN,,,0.9999494553,1,1,1,0.9999494553,0.9632180305,0.9,9,1,True
+1,BraTS-MEN-01354-000,Radiologist #10,Meningioma,BraTS-MEN,,,0.9999990463,1,1,1,0.9999990463,0.9069992681,0.6,6,1,True
+1,BraTS-MEN-01433-000,Radiologist #8,Meningioma,BraTS-MEN,,,0.9999986887,1,1,1,0.9999986887,0.9632491706,0.9,9,1,True
+1,BraTS-MET-00756-001,Radiologist #7,Metastases,BraTS-MET,,,0.9999998808,1,1,1,0.9999998808,0.9999999273,1,10,1,True
+1,BraTS-MET-00818-000,Radiologist #11,Metastases,BraTS-MET,,,0.9999697208,1,1,1,0.9999697208,0.9167281233,0.7,7,1,True
+1,BraTS-MET-00821-000,Radiologist #2,Metastases,BraTS-MET,,,0.9999859333,1,1,1,0.9999859333,0.8529888873,0.3,3,1,True
+1,BraTS-PED-00055-000,Radiologist #5,Paediatric presurgical tumour,BraTS-PED,,,0.9998910427,1,1,1,0.9998910427,0.9166712784,0.7,7,1,True
+1,BraTS-PED-00125-000,Radiologist #7,Paediatric presurgical tumour,BraTS-PED,,,0.6333859563,1,1,1,0.6333859563,0.6256237215,0.6,6,1,True
+1,BraTS-PED-00125-000,Radiologist #8,Paediatric presurgical tumour,BraTS-PED,,,0.6333859563,1,1,1,0.6333859563,0.7313666174,0.9,9,1,True
+1,BraTS-SSA-00049-000,Radiologist #3,Presurgical glioma,BraTS-SSA,,,0.9998469353,1,1,1,0.9998469353,0.9166394107,0.7,7,1,True
+1,BraTS-SSA-00049-000,Radiologist #4,Presurgical glioma,BraTS-SSA,,,0.9998469353,1,1,1,0.9998469353,0.9068825228,0.6,6,1,True
+1,BraTS-SSA-00055-000,Radiologist #7,Presurgical glioma,BraTS-SSA,,,0.9998538494,1,1,1,0.9998538494,0.9999108481,1,10,1,True
+1,BraTS-SSA-00068-000,Radiologist #5,Presurgical glioma,BraTS-SSA,,,0.9998598099,1,1,1,0.9998598099,0.9166487126,0.7,7,1,True
+1,BraTS-SSA-00068-000,Radiologist #4,Presurgical glioma,BraTS-SSA,,,0.9998598099,1,1,1,0.9998598099,0.9166487126,0.7,7,1,True
+1,BraTS-SSA-00117-000,Radiologist #11,Presurgical glioma,BraTS-SSA,,,0.9999498129,1,1,1,0.9999498129,0.8604614814,0.4,6,1,True
+1,BraTS-SSA-00198-000,Radiologist #10,Presurgical glioma,BraTS-SSA,,,0.99895823,1,1,1,0.99895823,0.9993645203,1,10,1,True
+1,BraTS-SSA-00206-000,Radiologist #2,Presurgical glioma,BraTS-SSA,,,0.99892658,1,1,1,0.99892658,0.9061761501,0.6,6,1,True
+1,BraTS-SSA-00208-000,Radiologist #5,Presurgical glioma,BraTS-SSA,,,0.99999547,1,1,1,0.99999547,0.9159964213,0.6,4,1,True
+1,BraTS2021_00530,Radiologist #5,Presurgical glioma,BraTS-OTHER,,,0.9999998808,1,1,1,0.9999998808,0.8319999058,0.2,2,1,True
+1,BraTS2021_00570,Radiologist #8,Presurgical glioma,BraTS-OTHER,,,0.9999605417,1,1,1,0.9999605417,0.9999759305,1,10,1,True
+1,BraTS2021_00602,Radiologist #10,Presurgical glioma,BraTS-OTHER,,,0.9999880791,1,1,1,0.9999880791,0.9999927282,1,10,1,True
+1,BraTS2021_00697,Radiologist #9,Presurgical glioma,BraTS-OTHER,,,0.9998868704,1,1,1,0.9998868704,0.9354233547,0.8,8,1,True
+1,BraTS2021_00702,Radiologist #1,Presurgical glioma,BraTS-OTHER,,,0.9998846054,1,1,1,0.9998846054,0.9999296093,1,10,1,True
+1,BraTS2021_00767,Radiologist #6,Presurgical glioma,BraTS-OTHER,,,0.9999655485,1,1,1,0.9999655485,0.9632282094,0.9,9,1,True
+1,BraTS2021_00814,Radiologist #2,Presurgical glioma,BraTS-OTHER,,,0.9999636412,1,1,1,0.9999636412,0.9167237307,0.7,7,1,True
+1,BraTS2021_00814,Radiologist #5,Presurgical glioma,BraTS-OTHER,,,0.9999636412,1,1,1,0.9999636412,0.9999778211,1,10,1,True
+1,BraTS2021_00836,Radiologist #9,Presurgical glioma,BraTS-OTHER,,,0.9999997616,1,1,1,0.9999997616,0.9632498492,0.9,9,1,True
+1,BraTS2021_01323,Radiologist #3,Presurgical glioma,BraTS-OTHER,,,0.9999728203,1,1,1,0.9999728203,0.9167303627,0.7,7,1,True
+1,BraTS2021_01388,Radiologist #7,Presurgical glioma,BraTS-OTHER,,,0.9999138117,1,1,1,0.9999138117,0.9631954859,0.9,9,1,True
+1,BraTS2021_01509,Radiologist #10,Presurgical glioma,BraTS-OTHER,,,0.9980620251,0,0,0,0.001937974943,0.001937974943,0.8,8,0.2928932188,False
+1,BraTS2021_01509,Radiologist #7,Presurgical glioma,BraTS-OTHER,,,0.9980620251,0,0,0,0.001937974943,0.001937974943,0.2,8,0.2928932188,False
+1,BraTS2021_01575,Radiologist #8,Presurgical glioma,BraTS-OTHER,,,0.999986887,1,1,1,0.999986887,0.963241706,0.9,9,1,True
+1,BraTS2021_01575,Radiologist #4,Presurgical glioma,BraTS-OTHER,,,0.999986887,1,1,1,0.999986887,0.9167405258,0.7,7,1,True
+1,BraTS2021_01625,Radiologist #4,Presurgical glioma,BraTS-OTHER,,,0.9999127388,1,1,1,0.9999127388,0.9631948073,0.9,9,1,True
+1,BraTS2021_01654,Radiologist #5,Presurgical glioma,BraTS-OTHER,,,0.9999774694,1,1,1,0.9999774694,0.9999862564,1,10,1,True
+1,EGD-0089,Radiologist #9,Presurgical glioma,EGD,,,0.5292634964,0,0,0,0.4707365036,0.4707365036,0.5,5,0.5120499635,False
+1,EGD-0089,Radiologist #10,Presurgical glioma,EGD,,,0.5292634964,0,0,0,0.4707365036,0.4707365036,0.5,5,0.5120499635,False
+1,EGD-0089,Radiologist #3,Presurgical glioma,EGD,,,0.5292634964,0,0,0,0.4707365036,0.4707365036,0.7,7,0.5120499635,False
+1,EGD-0089,Radiologist #6,Presurgical glioma,EGD,,,0.5292634964,0,0,0,0.4707365036,0.4707365036,0.5,5,0.5120499635,False
+1,EGD-0089,Radiologist #11,Presurgical glioma,EGD,,,0.5292634964,0,0,0,0.4707365036,0.4707365036,0.7,7,0.5120499635,False
+1,EGD-0089,Radiologist #8,Presurgical glioma,EGD,,,0.5292634964,0,0,0,0.4707365036,0.4707365036,0.9,9,0.5120499635,False
+1,EGD-0089,Radiologist #4,Presurgical glioma,EGD,,,0.5292634964,0,0,0,0.4707365036,0.4707365036,0.5,5,0.5120499635,False
+1,EGD-0615,Radiologist #3,Presurgical glioma,EGD,,,0.999814586,1,0,0,0.0001854139555,0.0001854139555,0.8,8,0.2928932188,False
+1,EGD-0615,Radiologist #8,Presurgical glioma,EGD,,,0.999814586,1,0,0,0.0001854139555,0.0001854139555,0.2,8,0.2928932188,False
+1,NHNN_1011,Radiologist #10,Presurgical glioma,NHNN,,,0.9998385684,0,0,0,0.0001614315697,0.0001614315697,0.3,3,0.4226497308,False
+1,NHNN_1011,Radiologist #3,Presurgical glioma,NHNN,,,0.9998385684,0,0,0,0.0001614315697,0.0001614315697,0.6,6,0.4226497308,False
+1,NHNN_1011,Radiologist #6,Presurgical glioma,NHNN,,,0.9998385684,0,0,0,0.0001614315697,0.0001614315697,0.6,4,0.4226497308,False
+1,NHNN_1011,Radiologist #7,Presurgical glioma,NHNN,,,0.9998385684,0,0,0,0.0001614315697,0.0001614315697,0.4,6,0.4226497308,False
+1,NHNN_1204,Radiologist #1,Presurgical glioma,NHNN,,,0.9999998808,1,1,1,0.9999998808,0.9167499139,0.7,7,1,True
+1,NHNN_1225,Radiologist #3,Presurgical glioma,NHNN,,,0.9999974966,1,1,1,0.9999974966,0.8529980223,0.3,3,0.4226497308,True
+1,NHNN_1225,Radiologist #1,Presurgical glioma,NHNN,,,0.9999974966,1,1,1,0.9999974966,0.8949980223,0.5,5,0.4226497308,True
+1,NHNN_1225,Radiologist #6,Presurgical glioma,NHNN,,,0.9999974966,1,1,1,0.9999974966,0.8529980223,0.3,3,0.4226497308,True
+1,NHNN_1373,Radiologist #8,Presurgical glioma,NHNN,,,1,1,1,1,1,0.91675,0.7,7,1,True
+1,NHNN_1380,Radiologist #9,Presurgical glioma,NHNN,,,0.9999271631,1,1,1,0.9999271631,0.9632039307,0.9,9,1,True
+1,NHNN_1380,Radiologist #2,Presurgical glioma,NHNN,,,0.9999271631,1,1,1,0.9999271631,0.9632039307,0.9,9,1,True
+1,NHNN_1380,Radiologist #3,Presurgical glioma,NHNN,,,0.9999271631,1,1,1,0.9999271631,0.935450653,0.8,8,1,True
+1,NHNN_1380,Radiologist #1,Presurgical glioma,NHNN,,,0.9999271631,1,1,1,0.9999271631,0.9999555695,1,10,1,True
+1,NHNN_1477,Radiologist #6,Presurgical glioma,NHNN,,,0.9954496636,0,0,0,0.004550336394,0.004550336394,0.3,7,1,False
+1,NHNN_1477,Radiologist #8,Presurgical glioma,NHNN,,,0.9954496636,0,0,0,0.004550336394,0.004550336394,0.2,8,1,False
+1,NHNN_158_scan2,Radiologist #10,Presurgical glioma,NHNN,,,0.9999681022,0,0,0,3.189784184e-05,3.189784184e-05,0.1,9,1,False
+1,NHNN_158_scan2,Radiologist #2,Presurgical glioma,NHNN,,,0.9999681022,0,0,0,3.189784184e-05,3.189784184e-05,0.4,6,1,False
+1,NHNN_158_scan2,Radiologist #3,Presurgical glioma,NHNN,,,0.9999681022,0,0,0,3.189784184e-05,3.189784184e-05,0.4,6,1,False
+1,NHNN_158_scan2,Radiologist #5,Presurgical glioma,NHNN,,,0.9999681022,0,0,0,3.189784184e-05,3.189784184e-05,0.3,7,1,False
+1,NHNN_158_scan2,Radiologist #4,Presurgical glioma,NHNN,,,0.9999681022,0,0,0,3.189784184e-05,3.189784184e-05,0.3,7,1,False
+1,NHNN_1682,Radiologist #6,Presurgical glioma,NHNN,,,0.999999404,1,1,1,0.999999404,0.9069995425,0.6,6,1,True
+1,NHNN_1747,Radiologist #4,Presurgical glioma,NHNN,,,0.9999655485,1,1,1,0.9999655485,0.9354766591,0.8,8,1,True
+1,NHNN_1793,Radiologist #10,Presurgical glioma,NHNN,,,0.6142297089,0,0,0,0.3857702911,0.3857702911,0.6,6,0.622035527,False
+1,NHNN_1793,Radiologist #2,Presurgical glioma,NHNN,,,0.6142297089,0,0,0,0.3857702911,0.3857702911,0.8,8,0.622035527,False
+1,NHNN_1793,Radiologist #3,Presurgical glioma,NHNN,,,0.6142297089,0,0,0,0.3857702911,0.3857702911,0.3,7,0.622035527,False
+1,NHNN_1793,Radiologist #11,Presurgical glioma,NHNN,,,0.6142297089,0,0,0,0.3857702911,0.3857702911,0.7,7,0.622035527,False
+1,NHNN_1793,Radiologist #7,Presurgical glioma,NHNN,,,0.6142297089,0,0,0,0.3857702911,0.3857702911,0.8,8,0.622035527,False
+1,NHNN_1793,Radiologist #8,Presurgical glioma,NHNN,,,0.6142297089,0,0,0,0.3857702911,0.3857702911,0.8,8,0.622035527,False
+1,NHNN_1793,Radiologist #4,Presurgical glioma,NHNN,,,0.6142297089,0,0,0,0.3857702911,0.3857702911,0.7,7,0.622035527,False
+1,NHNN_181_scan1,Radiologist #11,Presurgical glioma,NHNN,,,1,1,1,1,1,0.80575,0.3,7,1,True
+1,NHNN_1888,Radiologist #9,Presurgical glioma,NHNN,,,0.9975665945,0,0,0,0.002433405491,0.002433405491,0.9,9,0.5,False
+1,NHNN_1888,Radiologist #10,Presurgical glioma,NHNN,,,0.9975665945,0,0,0,0.002433405491,0.002433405491,1,10,0.5,False
+1,NHNN_1888,Radiologist #11,Presurgical glioma,NHNN,,,0.9975665945,0,0,0,0.002433405491,0.002433405491,0.5,5,0.5,False
+1,NHNN_1888,Radiologist #8,Presurgical glioma,NHNN,,,0.9975665945,0,0,0,0.002433405491,0.002433405491,0.9,9,0.5,False
+1,NHNN_1930,Radiologist #1,Presurgical glioma,NHNN,,,0.9999951124,1,1,1,0.9999951124,0.9354966887,0.8,8,1,True
+1,NHNN_1930,Radiologist #11,Presurgical glioma,NHNN,,,0.9999951124,1,1,1,0.9999951124,0.9167464687,0.7,7,1,True
+1,NHNN_1935_scan2,Radiologist #11,Presurgical glioma,NHNN,,,0.9999673367,1,1,1,0.9999673367,0.9354778706,0.8,8,1,True
+1,NHNN_282,Radiologist #2,Presurgical glioma,NHNN,,,0.9999372959,1,1,1,0.9999372959,0.8949504638,0.5,5,0.2928932188,True
+1,NHNN_282,Radiologist #6,Presurgical glioma,NHNN,,,0.9999372959,1,1,1,0.9999372959,0.935457518,0.8,8,0.2928932188,True
+1,NHNN_309_scan3,Radiologist #9,Presurgical glioma,NHNN,,,0.9999386072,1,1,1,0.9999386072,0.9354584064,0.8,8,1,True
+1,NHNN_330,Radiologist #2,Presurgical glioma,NHNN,,,0.9982083332,1,0,0,0.001791666844,0.001791666844,0.3,7,1,False
+1,NHNN_341_scan2,Radiologist #10,Presurgical glioma,NHNN,,,0.9999687689,0,0,0,3.123108036e-05,3.123108036e-05,0.1,9,1,False
+1,NHNN_341_scan2,Radiologist #5,Presurgical glioma,NHNN,,,0.9999687689,0,0,0,3.123108036e-05,3.123108036e-05,0.3,7,1,False
+1,NHNN_341_scan2,Radiologist #1,Presurgical glioma,NHNN,,,0.9999687689,0,0,0,3.123108036e-05,3.123108036e-05,0.5,5,1,False
+1,NHNN_341_scan2,Radiologist #11,Presurgical glioma,NHNN,,,0.9999687689,0,0,0,3.123108036e-05,3.123108036e-05,0.3,7,1,False
+1,NHNN_341_scan2,Radiologist #7,Presurgical glioma,NHNN,,,0.9999687689,0,0,0,3.123108036e-05,3.123108036e-05,0.5,5,1,False
+1,NHNN_443,Radiologist #3,Presurgical glioma,NHNN,,,0.9999996424,1,1,1,0.9999996424,0.9167497416,0.7,7,1,True
+1,NHNN_459,Radiologist #10,Presurgical glioma,NHNN,,,0.9999890204,0,0,0,1.097962468e-05,1.097962468e-05,0.4,6,0.5,False
+1,NHNN_459,Radiologist #3,Presurgical glioma,NHNN,,,0.9999890204,0,0,0,1.097962468e-05,1.097962468e-05,0.6,6,0.5,False
+1,NHNN_459,Radiologist #5,Presurgical glioma,NHNN,,,0.9999890204,0,0,0,1.097962468e-05,1.097962468e-05,0.3,7,0.5,False
+1,NHNN_459,Radiologist #7,Presurgical glioma,NHNN,,,0.9999890204,0,0,0,1.097962468e-05,1.097962468e-05,0.1,9,0.5,False
+1,NHNN_477,Radiologist #7,Presurgical glioma,NHNN,,,0.9998657703,1,1,1,0.9998657703,0.9354090594,0.8,8,1,True
+1,NHNN_478,Radiologist #1,Presurgical glioma,NHNN,,,0.9999992847,1,1,1,0.9999992847,0.7419995154,0.2,8,1,True
+1,NHNN_514,Radiologist #2,Presurgical glioma,NHNN,,,0.9980163099,0,0,0,0.001983690076,0.001983690076,0.4,6,0.4522774425,False
+1,NHNN_514,Radiologist #1,Presurgical glioma,NHNN,,,0.9980163099,0,0,0,0.001983690076,0.001983690076,0.5,5,0.4522774425,False
+1,NHNN_514,Radiologist #11,Presurgical glioma,NHNN,,,0.9980163099,0,0,0,0.001983690076,0.001983690076,0.6,6,0.4522774425,False
+1,NHNN_514,Radiologist #7,Presurgical glioma,NHNN,,,0.9980163099,0,0,0,0.001983690076,0.001983690076,0.5,5,0.4522774425,False
+1,NHNN_514,Radiologist #8,Presurgical glioma,NHNN,,,0.9980163099,0,0,0,0.001983690076,0.001983690076,0.1,9,0.4522774425,False
+1,NHNN_523,Radiologist #2,Presurgical glioma,NHNN,,,0.9998358488,1,1,1,0.9998358488,0.906874014,0.6,6,1,True
+1,NHNN_544,Radiologist #1,Presurgical glioma,NHNN,,,0.9994237423,1,1,1,0.9994237423,0.962885517,0.9,9,1,True
+1,NHNN_604,Radiologist #1,Presurgical glioma,NHNN,,,0.9999697208,1,1,1,0.9999697208,0.8604767607,0.4,6,1,True
+1,NHNN_637_scan2,Radiologist #9,Presurgical glioma,NHNN,,,0.9999964237,1,1,1,0.9999964237,0.9069972552,0.6,6,1,True
+1,NHNN_637_scan2,Radiologist #7,Presurgical glioma,NHNN,,,0.9999964237,1,1,1,0.9999964237,0.8949971747,0.5,5,1,True
+1,NHNN_637_scan1,Radiologist #7,Presurgical glioma,NHNN,,,0.999997139,1,1,1,0.999997139,0.8529977398,0.3,3,1,True
+1,NHNN_672,Radiologist #3,Presurgical glioma,NHNN,,,0.9991381168,1,1,1,0.9991381168,0.9161272894,0.7,7,1,True
+1,NHNN_689,Radiologist #1,Presurgical glioma,NHNN,,,0.9996950626,1,1,1,0.9996950626,0.9630571271,0.9,9,1,True
+1,NHNN_693,Radiologist #6,Presurgical glioma,NHNN,,,0.9951122403,1,1,1,0.9951122403,0.9331386698,0.7,3,1,True
+1,NHNN_700,Radiologist #1,Presurgical glioma,NHNN,,,0.9715858102,1,1,1,0.9715858102,0.8851921093,0.6,6,1,True
+1,NHNN_705,Radiologist #10,Presurgical glioma,NHNN,,,0.9984589815,1,1,1,0.9984589815,0.9147825954,0.6,4,1,True
+1,NHNN_755,Radiologist #11,Presurgical glioma,NHNN,,,0.9998571873,1,1,1,0.9998571873,0.8738871779,0.4,4,1,True
+1,NHNN_762,Radiologist #10,Presurgical glioma,NHNN,,,0.9999870062,1,1,1,0.9999870062,0.805740612,0.3,7,0.2928932188,True
+1,NHNN_762,Radiologist #2,Presurgical glioma,NHNN,,,0.9999870062,1,1,1,0.9999870062,0.916740612,0.7,7,0.2928932188,True
+1,NHNN_953,Radiologist #2,Presurgical glioma,NHNN,,,0.9997063279,1,1,1,0.9997063279,0.8947679991,0.5,5,1,True
+1,UCSF-PDGM-0095,Radiologist #3,Presurgical glioma,Unknown,,,0.9999969006,1,1,1,0.9999969006,0.9167477607,0.7,7,1,True
+1,UCSF-PDGM-0315,Radiologist #10,Presurgical glioma,Unknown,,,0.9999984503,1,1,1,0.9999984503,0.9069988106,0.6,6,1,True
+1,UCSF-PDGM-0315,Radiologist #2,Presurgical glioma,Unknown,,,0.9999984503,1,1,1,0.9999984503,0.9354989501,0.8,8,1,True
+1,UCSF-PDGM-0320,Radiologist #4,Presurgical glioma,Unknown,,,0.9999998808,1,1,1,0.9999998808,0.9069999085,0.6,6,1,True
+1,UCSF-PDGM-0344,Radiologist #11,Presurgical glioma,Unknown,,,0.9999191761,1,1,1,0.9999191761,0.9999506974,1,10,1,True
+1,UCSF-PDGM-0446,Radiologist #2,Presurgical glioma,Unknown,,,0.9996958583,0,0,0,0.0003041416931,0.0003041416931,0.7,7,0.4522774425,False
+1,UCSF-PDGM-0446,Radiologist #11,Presurgical glioma,Unknown,,,0.9996958583,0,0,0,0.0003041416931,0.0003041416931,0.9,9,0.4522774425,False
+1,UCSF-PDGM-0446,Radiologist #7,Presurgical glioma,Unknown,,,0.9996958583,0,0,0,0.0003041416931,0.0003041416931,0.6,4,0.4522774425,False
+1,UCSF-PDGM-0446,Radiologist #8,Presurgical glioma,Unknown,,,0.9996958583,0,0,0,0.0003041416931,0.0003041416931,0.7,7,0.4522774425,False
+1,UCSF-PDGM-0446,Radiologist #4,Presurgical glioma,Unknown,,,0.9996958583,0,0,0,0.0003041416931,0.0003041416931,0.4,6,0.4522774425,False
+1,UPENN-GBM-00012_11,Radiologist #4,Presurgical glioma,Unknown,,,0.9999836683,1,1,1,0.9999836683,0.9632396702,0.9,9,1,True
+1,UPENN-GBM-00121_11,Radiologist #4,Presurgical glioma,Unknown,,,0.9999843836,1,1,1,0.9999843836,0.9632401226,0.9,9,1,True
+1,UPENN-GBM-00166_11,Radiologist #10,Presurgical glioma,Unknown,,,0.9999998808,1,1,1,0.9999998808,0.9999999273,1,10,1,True
+1,UPENN-GBM-00208_11,Radiologist #1,Presurgical glioma,Unknown,,,0.9999939203,1,1,1,0.9999939203,0.9999962914,1,10,1,True
+1,UPENN-GBM-00301_21,Radiologist #8,Presurgical glioma,Unknown,,,0.9999988079,1,1,1,0.9999988079,0.963249246,0.9,9,1,True
+1,UPENN-GBM-00304_11,Radiologist #5,Presurgical glioma,Unknown,,,0.9999969006,1,1,1,0.9999969006,0.9632480396,0.9,9,1,True
+1,UPENN-GBM-00304_11,Radiologist #11,Presurgical glioma,Unknown,,,0.9999969006,1,1,1,0.9999969006,0.9999981093,1,10,1,True
+1,UPENN-GBM-00366_11,Radiologist #1,Presurgical glioma,Unknown,,,0.9999979734,1,1,1,0.9999979734,0.9632487182,0.9,9,1,True
+1,UPENN-GBM-00366_11,Radiologist #11,Presurgical glioma,Unknown,,,0.9999979734,1,1,1,0.9999979734,0.9167485358,0.7,7,1,True
+1,UPENN-GBM-00391_11,Radiologist #4,Presurgical glioma,Unknown,,,0.9999767542,1,1,1,0.9999767542,0.9167332049,0.7,7,1,True
+1,UPENN-GBM-00562_11,Radiologist #2,Presurgical glioma,Unknown,,,0.9997493625,1,1,1,0.9997493625,0.9630914718,0.9,9,1,True
+1,UPENN-GBM-00562_11,Radiologist #6,Presurgical glioma,Unknown,,,0.9997493625,1,1,1,0.9997493625,0.9165689144,0.7,7,1,True
+2,BraTS-GLI-02063-105,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.999999404,1,1,0,0.999999404,0.5814996811,0.1,9,1,True
+2,BraTS-GLI-02063-105,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.999999404,1,1,1,0.999999404,0.9369995291,0.7,3,1,True
+2,BraTS-GLI-02063-105,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.999999404,1,1,1,0.999999404,0.8124996275,0.5,5,1,True
+2,BraTS-GLI-02145-100,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.999997139,1,1,0,0.999997139,0.5117491345,0.3,7,1,True
+2,BraTS-GLI-02149-103,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,1,1,1,0,1,0.51175,0.3,7,1,True
+2,BraTS-GLI-02149-103,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,1,1,1,1,1,0.70975,0.1,9,1,True
+2,BraTS-GLI-02175-101,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9994630218,1,1,1,0.9994630218,0.752228826,0.5,5,1,True
+2,BraTS-GLI-02177-101,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9999513626,1,1,1,0.9999513626,0.9624696016,0.9,9,1,True
+2,BraTS-GLI-02205-103,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9999945904,1,0,0,5.409642199e-06,5.409642199e-06,0.1,9,1,False
+2,BraTS-GLI-02213-102,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9997652578,0,0,0,0.0002347421832,0.0002347421832,0.4,6,1,False
+2,BraTS-GLI-02213-102,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9997652578,0,0,0,0.0002347421832,0.0002347421832,0.5,5,1,False
+2,BraTS-GLI-02213-102,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9997652578,0,0,0,0.0002347421832,0.0002347421832,0.4,6,1,False
+2,BraTS-GLI-02213-102,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9997652578,0,0,0,0.0002347421832,0.0002347421832,0.3,7,1,False
+2,BraTS-GLI-02330-100,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.999997139,1,1,1,0.999997139,0.8,0.8,8,1,True
+2,BraTS-GLI-02375-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9999189377,1,1,1,0.9999189377,0.9399351501,0.7,7,1,True
+2,BraTS-GLI-02659-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9997858873,1,0,0,0.0002141127043,0.0002141127043,0.3,7,1,False
+2,BraTS-GLI-02714-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.8468066901,1,0,0,0.1531933099,0.1531933099,0.6,6,1,False
+2,BraTS-GLI-02770-101,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9999700785,1,1,1,0.9999700785,0.6114866849,0.3,7,0.2928932188,True
+2,BraTS-GLI-02770-101,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9999700785,1,1,1,0.9999700785,0.8739826455,0.7,7,0.2928932188,True
+2,BraTS-GLI-02866-100,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9781712014,0,0,0,0.02182879858,0.02182879858,0.3,7,0.4226497308,False
+2,BraTS-GLI-02866-100,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9781712014,0,0,0,0.02182879858,0.02182879858,0.6,6,0.4226497308,False
+2,BraTS-GLI-02866-100,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9781712014,0,0,0,0.02182879858,0.02182879858,0.2,8,0.4226497308,False
+2,BraTS-GLI-02866-100,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9781712014,0,0,0,0.02182879858,0.02182879858,0.8,8,0.4226497308,False
+2,BraTS-GLI-02880-101,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9992539287,1,1,0,0.9992539287,0.5115243134,0.3,7,1,True
+2,BraTS-GLI-02943-100,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9874277515,0,0,0,0.01257224847,0.01257224847,0.8,8,0.622035527,False
+2,BraTS-GLI-02943-100,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9874277515,0,0,0,0.01257224847,0.01257224847,0.6,6,0.622035527,False
+2,BraTS-GLI-02943-100,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9874277515,0,0,0,0.01257224847,0.01257224847,0.7,3,0.622035527,False
+2,BraTS-GLI-02943-100,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9874277515,0,0,0,0.01257224847,0.01257224847,0.7,7,0.622035527,False
+2,BraTS-GLI-02943-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9874277515,0,0,0,0.01257224847,0.01257224847,0.6,6,0.622035527,False
+2,BraTS-GLI-02943-100,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9874277515,0,0,0,0.01257224847,0.01257224847,0.9,9,0.622035527,False
+2,BraTS-GLI-02943-100,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9874277515,0,0,0,0.01257224847,0.01257224847,0.8,8,0.622035527,False
+2,BraTS-GLI-02957-101,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9999038294,0,0,0,9.617058095e-05,9.617058095e-05,0.3,7,1,False
+2,BraTS-GLI-02957-101,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9999038294,0,0,0,9.617058095e-05,9.617058095e-05,0.4,6,1,False
+2,BraTS-GLI-02957-101,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9999038294,0,0,0,9.617058095e-05,9.617058095e-05,0.4,6,1,False
+2,BraTS-GLI-02996-101,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9998295307,1,1,1,0.9998295307,0.9391140507,0.7,7,1,True
+2,BraTS-GLI-03011-100,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9999927282,1,1,1,0.9999927282,0.8784956733,0.7,3,1,True
+2,BraTS-GLI-03031-101,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9999660254,1,1,1,0.9999660254,0.8499787658,0.6,6,1,True
+2,BraTS-GLI-03051-101,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9998114705,1,1,1,0.9998114705,0.8738906529,0.7,7,1,True
+2,BraTS-GLI-03060-101,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9999427795,1,1,1,0.9999427795,0.7974814034,0.7,7,1,True
+2,BraTS-MEN-00230-000,Radiologist #8,Meningioma,BraTS-MEN,,,1,1,1,0,1,0.3925,0.1,9,1,True
+2,BraTS-MEN-00470-000,Radiologist #5,Meningioma,BraTS-MEN,,,0.9999998808,1,1,1,0.9999998808,0.8604999639,0.8,8,1,True
+2,BraTS-MEN-00606-000,Radiologist #6,Meningioma,BraTS-MEN,,,1,1,1,1,1,0.874,0.7,3,1,True
+2,BraTS-MEN-00737-000,Radiologist #2,Meningioma,BraTS-MEN,,,1,1,1,1,1,0.838,0.6,6,1,True
+2,BraTS-MEN-00789-000,Radiologist #7,Meningioma,BraTS-MEN,,,1,1,1,1,1,1,1,10,1,True
+2,BraTS-MEN-00789-000,Radiologist #4,Meningioma,BraTS-MEN,,,1,1,1,1,1,0.9535,0.9,9,1,True
+2,BraTS-MEN-00897-000,Radiologist #3,Meningioma,BraTS-MEN,,,1,1,1,1,1,0.8515,0.8,8,1,True
+2,BraTS-MEN-00897-000,Radiologist #5,Meningioma,BraTS-MEN,,,1,1,1,1,1,1,1,10,1,True
+2,BraTS-MEN-00935-000,Radiologist #4,Meningioma,BraTS-MEN,,,1,1,1,1,1,0.93025,0.9,9,1,True
+2,BraTS-MEN-00947-000,Radiologist #1,Meningioma,BraTS-MEN,,,1,1,1,1,1,0.9445,0.9,9,1,True
+2,BraTS-MEN-00947-000,Radiologist #11,Meningioma,BraTS-MEN,,,1,1,1,1,1,1,1,10,1,True
+2,BraTS-MEN-00947-000,Radiologist #8,Meningioma,BraTS-MEN,,,1,1,1,1,1,1,1,10,1,True
+2,BraTS-MEN-00977-000,Radiologist #8,Meningioma,BraTS-MEN,,,0.9998521805,1,1,1,0.9998521805,1,1,10,1,True
+2,BraTS-MEN-01329-000,Radiologist #1,Meningioma,BraTS-MEN,,,1,1,1,1,1,0.8335,0.7,7,1,True
+2,BraTS-MET-00116-000,Radiologist #6,Metastases,BraTS-MET,,,0.9997646213,1,1,1,0.9997646213,0.8109129099,0.7,7,1,True
+2,BraTS-MET-00573-000,Radiologist #2,Metastases,BraTS-MET,,,1,1,1,1,1,0.8785,0.4,6,1,True
+2,BraTS-MET-00573-000,Radiologist #3,Metastases,BraTS-MET,,,1,1,1,1,1,0.802,0.6,4,1,True
+2,BraTS-MET-00613-000,Radiologist #2,Metastases,BraTS-MET,,,1,1,1,1,1,0.919,0.6,4,1,True
+2,BraTS-MET-00645-000,Radiologist #1,Metastases,BraTS-MET,,,0.8696704507,1,0,0,0.1303295493,0.1303295493,0.2,8,1,False
+2,BraTS-MET-00702-002,Radiologist #1,Metastases,BraTS-MET,,,0.9999992847,1,1,1,0.9999992847,0.8334996817,0.7,7,1,True
+2,BraTS-MET-00848-000,Radiologist #3,Metastases,BraTS-MET,,,1,1,1,1,1,0.802,0.6,6,1,True
+2,BraTS-PED-00014-000,Radiologist #9,Paediatric presurgical tumour,BraTS-PED,,,0.943772696,1,0,0,0.05622730404,0.05622730404,0.9,9,1,False
+2,BraTS-PED-00150-000,Radiologist #9,Paediatric presurgical tumour,BraTS-PED,,,0.9755833149,0,1,1,0.9755833149,0.8649658265,0.8,8,0.4226497308,True
+2,BraTS-PED-00150-000,Radiologist #2,Paediatric presurgical tumour,BraTS-PED,,,0.9755833149,0,1,1,0.9755833149,0.9044720724,0.8,8,0.4226497308,True
+2,BraTS-PED-00150-000,Radiologist #8,Paediatric presurgical tumour,BraTS-PED,,,0.9755833149,0,1,0,0.9755833149,0.4520645773,0.2,8,0.4226497308,True
+2,BraTS-PED-00350-000,Radiologist #11,Paediatric presurgical tumour,BraTS-PED,,,0.999815542,0,0,0,0.000184457982,0.000184457982,1,10,0.2928932188,False
+2,BraTS-PED-00350-000,Radiologist #8,Paediatric presurgical tumour,BraTS-PED,,,0.999815542,0,0,0,0.000184457982,0.000184457982,0.1,9,0.2928932188,False
+2,BraTS-SSA-00123-000,Radiologist #10,Presurgical glioma,BraTS-SSA,,,0.9994478822,1,1,1,0.9994478822,0.9996714899,1,10,1,True
+2,BraTS-SSA-00148-000,Radiologist #8,Presurgical glioma,BraTS-SSA,,,0.9989395738,1,1,1,0.9989395738,1,1,10,1,True
+2,BraTS2021_00313,Radiologist #7,Presurgical glioma,BraTS-OTHER,,,0.9999996424,1,1,1,0.9999996424,0.9354997577,0.8,8,1,True
+2,BraTS2021_00543,Radiologist #11,Presurgical glioma,BraTS-OTHER,,,0.9999998808,1,1,1,0.9999998808,0.9999999478,1,10,1,True
+2,BraTS2021_00610,Radiologist #2,Presurgical glioma,BraTS-OTHER,,,0.9999995232,1,1,1,0.9999995232,0.7569998128,0.6,6,1,True
+2,BraTS2021_00705,Radiologist #6,Presurgical glioma,BraTS-OTHER,,,0.9999998808,1,1,1,0.9999998808,0.6219999559,0.4,4,1,True
+2,BraTS2021_00789,Radiologist #11,Presurgical glioma,BraTS-OTHER,,,0.99995327,1,1,1,0.99995327,0.9999795556,1,10,1,True
+2,BraTS2021_01076,Radiologist #8,Presurgical glioma,BraTS-OTHER,,,0.9999997616,1,1,1,0.9999997616,0.8,0.8,8,1,True
+2,BraTS2021_01156,Radiologist #3,Presurgical glioma,BraTS-OTHER,,,0.9999667406,1,1,1,0.9999667406,0.8514914357,0.8,8,1,True
+2,BraTS2021_01265,Radiologist #10,Presurgical glioma,BraTS-OTHER,,,0.9999904633,1,1,1,0.9999904633,0.9594943256,0.9,9,1,True
+2,BraTS2021_01265,Radiologist #7,Presurgical glioma,BraTS-OTHER,,,0.9999904633,1,1,1,0.9999904633,0.9354966145,0.9,9,1,True
+2,BraTS2021_01371,Radiologist #8,Presurgical glioma,BraTS-OTHER,,,0.9999622107,1,1,1,0.9999622107,0.9,0.9,9,1,True
+2,BraTS2021_01407,Radiologist #11,Presurgical glioma,BraTS-OTHER,,,1,1,1,1,1,0.8875,0.7,7,1,True
+2,BraTS2021_01518,Radiologist #11,Presurgical glioma,BraTS-OTHER,,,0.9992973804,1,1,1,0.9992973804,0.9996926039,1,10,1,True
+2,BraTS2021_01564,Radiologist #10,Presurgical glioma,BraTS-OTHER,,,0.9999469519,1,1,1,0.9999469519,0.9999684364,1,10,1,True
+2,BraTS2021_01564,Radiologist #2,Presurgical glioma,BraTS-OTHER,,,0.9999469519,1,1,1,0.9999469519,0.8784791786,0.8,8,1,True
+2,BraTS2021_01604,Radiologist #10,Presurgical glioma,BraTS-OTHER,,,0.9999927282,1,1,1,0.9999927282,0.9594942008,0.8,8,1,True
+2,BraTS2021_01723,Radiologist #5,Presurgical glioma,BraTS-OTHER,,,0.9999163151,1,1,1,0.9999163151,0.6512246853,0.5,5,1,True
+2,EGD-0221,Radiologist #5,Presurgical glioma,EGD,,,0.9998697976,0,0,0,0.000130202432,0.000130202432,0.2,8,0.2928932188,False
+2,EGD-0221,Radiologist #6,Presurgical glioma,EGD,,,0.9998697976,0,0,0,0.000130202432,0.000130202432,0.2,2,0.2928932188,False
+2,EGD-0340,Radiologist #5,Presurgical glioma,EGD,,,0.9766603075,0,0,0,0.0233396925,0.0233396925,0.7,7,1,False
+2,EGD-0340,Radiologist #6,Presurgical glioma,EGD,,,0.9766603075,0,0,0,0.0233396925,0.0233396925,0.3,3,1,False
+2,EGD-0340,Radiologist #11,Presurgical glioma,EGD,,,0.9766603075,0,0,0,0.0233396925,0.0233396925,0.8,8,1,False
+2,EGD-0340,Radiologist #4,Presurgical glioma,EGD,,,0.9766603075,0,0,0,0.0233396925,0.0233396925,0.6,6,1,False
+2,EGD-0445,Radiologist #5,Presurgical glioma,EGD,,,0.9995194674,1,1,1,0.9995194674,0.7208546389,0.6,6,1,True
+2,EGD-0622,Radiologist #6,Presurgical glioma,EGD,,,0.9997989535,1,1,1,0.9997989535,0.747883393,0.4,4,1,True
+2,EGD-0673,Radiologist #5,Presurgical glioma,EGD,,,0.9997527003,1,1,1,0.9997527003,0.9301751918,0.9,9,1,True
+2,EGD-0771,Radiologist #10,Presurgical glioma,EGD,,,0.9975778332,0,0,0,0.002422166755,0.002422166755,0.8,8,0.5527864045,False
+2,EGD-0771,Radiologist #2,Presurgical glioma,EGD,,,0.9975778332,0,0,0,0.002422166755,0.002422166755,0.7,3,0.5527864045,False
+2,EGD-0771,Radiologist #3,Presurgical glioma,EGD,,,0.9975778332,0,0,0,0.002422166755,0.002422166755,0.9,9,0.5527864045,False
+2,EGD-0771,Radiologist #5,Presurgical glioma,EGD,,,0.9975778332,0,0,0,0.002422166755,0.002422166755,0.7,7,0.5527864045,False
+2,EGD-0771,Radiologist #8,Presurgical glioma,EGD,,,0.9975778332,0,0,0,0.002422166755,0.002422166755,0.8,8,0.5527864045,False
+2,NHNN_1015,Radiologist #9,Presurgical glioma,NHNN,,,0.9948506472,1,0,0,0.00514935283,0.00514935283,0.5,5,1,False
+2,NHNN_1039,Radiologist #9,Presurgical glioma,NHNN,,,0.9999985695,1,1,1,0.9999985695,0.8109994707,0.7,7,0.2928932188,True
+2,NHNN_1039,Radiologist #7,Presurgical glioma,NHNN,,,0.9999985695,1,1,1,0.9999985695,0.8709990308,0.6,4,0.2928932188,True
+2,NHNN_1046,Radiologist #7,Presurgical glioma,NHNN,,,0.9999991655,1,1,1,0.9999991655,0.9999994346,1,10,1,True
+2,NHNN_1165_scan1,Radiologist #10,Presurgical glioma,NHNN,,,0.9998862743,1,1,1,0.9998862743,0.8784323332,0.7,7,1,True
+2,NHNN_1224,Radiologist #5,Presurgical glioma,NHNN,,,0.7248760164,1,0,0,0.2751239836,0.2751239836,0.3,7,1,False
+2,NHNN_126,Radiologist #1,Presurgical glioma,NHNN,,,0.9999989271,1,1,1,0.9999989271,0.6669998203,0.6,6,1,True
+2,NHNN_135,Radiologist #3,Presurgical glioma,NHNN,,,0.9999911785,1,1,1,0.9999911785,0.8019955451,0.6,4,1,True
+2,NHNN_1444,Radiologist #6,Presurgical glioma,NHNN,,,1,1,1,1,1,0.874,0.8,8,1,True
+2,NHNN_1490,Radiologist #4,Presurgical glioma,NHNN,,,0.9995961785,1,1,1,0.9995961785,0.6742839555,0.3,7,1,True
+2,NHNN_1647,Radiologist #11,Presurgical glioma,NHNN,,,0.9678351879,1,0,0,0.03216481209,0.03216481209,0.5,5,1,False
+2,NHNN_1666,Radiologist #11,Presurgical glioma,NHNN,,,0.9953593677,1,0,0,0.004640632309,0.004640632309,0.6,6,1,False
+2,NHNN_1736,Radiologist #10,Presurgical glioma,NHNN,,,0.9991502762,1,1,1,0.9991502762,0.9184944143,0.8,8,1,True
+2,NHNN_1736,Radiologist #3,Presurgical glioma,NHNN,,,0.9991502762,1,1,1,0.9991502762,0.9255311961,0.9,9,1,True
+2,NHNN_1736,Radiologist #7,Presurgical glioma,NHNN,,,0.9991502762,1,1,1,0.9991502762,0.9671743121,0.9,9,1,True
+2,NHNN_1743_scan1,Radiologist #3,Presurgical glioma,NHNN,,,0.7956562042,1,1,1,0.7956562042,0.6503814726,0.6,6,1,True
+2,NHNN_1743_scan2,Radiologist #3,Presurgical glioma,NHNN,,,0.9999674559,0,1,1,0.9999674559,0.7029835652,0.4,4,0.4522774425,True
+2,NHNN_1743_scan2,Radiologist #1,Presurgical glioma,NHNN,,,0.9999674559,0,1,1,0.9999674559,0.9167264869,0.7,7,0.4522774425,True
+2,NHNN_1743_scan2,Radiologist #6,Presurgical glioma,NHNN,,,0.9999674559,0,1,1,0.9999674559,0.8739811244,0.7,3,0.4522774425,True
+2,NHNN_1743_scan2,Radiologist #7,Presurgical glioma,NHNN,,,0.9999674559,0,1,1,0.9999674559,0.8387279513,0.5,5,0.4522774425,True
+2,NHNN_1743_scan2,Radiologist #4,Presurgical glioma,NHNN,,,0.9999674559,0,1,1,0.9999674559,0.7209825889,0.4,6,0.4522774425,True
+2,NHNN_175,Radiologist #9,Presurgical glioma,NHNN,,,0.9999479055,1,1,1,0.9999479055,0.684980725,0.5,5,1,True
+2,NHNN_1781_scan1,Radiologist #4,Presurgical glioma,NHNN,,,0.9999831915,1,1,1,0.9999831915,0.8372370995,0.3,7,1,True
+2,NHNN_181_scan2,Radiologist #7,Presurgical glioma,NHNN,,,1,1,1,1,1,0.742,0.2,8,1,True
+2,NHNN_181_scan3,Radiologist #11,Presurgical glioma,NHNN,,,0.9999929667,1,1,1,0.9999929667,0.8499956042,0.6,6,1,True
+2,NHNN_1832,Radiologist #10,Presurgical glioma,NHNN,,,0.9999699148,0,0,0,3.008523527e-05,3.008523527e-05,0.4,6,1,False
+2,NHNN_1832,Radiologist #2,Presurgical glioma,NHNN,,,0.9999699148,0,0,0,3.008523527e-05,3.008523527e-05,0.2,8,1,False
+2,NHNN_1832,Radiologist #5,Presurgical glioma,NHNN,,,0.9999699148,0,0,0,3.008523527e-05,3.008523527e-05,0.3,7,1,False
+2,NHNN_1832,Radiologist #1,Presurgical glioma,NHNN,,,0.9999699148,0,0,0,3.008523527e-05,3.008523527e-05,0.3,7,1,False
+2,NHNN_1832,Radiologist #7,Presurgical glioma,NHNN,,,0.9999699148,0,0,0,3.008523527e-05,3.008523527e-05,0.7,3,1,False
+2,NHNN_1890,Radiologist #6,Presurgical glioma,NHNN,,,1,0,1,1,1,0.937,0.7,3,1,True
+2,NHNN_1925,Radiologist #2,Presurgical glioma,NHNN,,,0.6268983483,0,1,0,0.6268983483,0.4945045173,0.3,7,0.5120499635,True
+2,NHNN_1925,Radiologist #3,Presurgical glioma,NHNN,,,0.6268983483,0,1,1,0.6268983483,0.6135836659,0.6,6,0.5120499635,True
+2,NHNN_1925,Radiologist #5,Presurgical glioma,NHNN,,,0.6268983483,0,1,0,0.6268983483,0.3988867504,0.3,7,0.5120499635,True
+2,NHNN_1925,Radiologist #6,Presurgical glioma,NHNN,,,0.6268983483,0,1,1,0.6268983483,0.6729523889,0.7,3,0.5120499635,True
+2,NHNN_1925,Radiologist #11,Presurgical glioma,NHNN,,,0.6268983483,0,1,1,0.6268983483,0.6117680274,0.6,6,0.5120499635,True
+2,NHNN_1925,Radiologist #7,Presurgical glioma,NHNN,,,0.6268983483,0,1,0,0.6268983483,0.553723631,0.4,6,0.5120499635,True
+2,NHNN_1925,Radiologist #8,Presurgical glioma,NHNN,,,0.6268983483,0,1,0,0.6268983483,0.3387419632,0.2,8,0.5120499635,True
+2,NHNN_202_scan2,Radiologist #9,Presurgical glioma,NHNN,,,0.9999998808,0,1,0,0.9999998808,0.4959999559,0.2,8,1,True
+2,NHNN_202_scan2,Radiologist #10,Presurgical glioma,NHNN,,,0.9999998808,0,1,1,0.9999998808,0.6759999291,0.2,8,1,True
+2,NHNN_202_scan2,Radiologist #5,Presurgical glioma,NHNN,,,0.9999998808,0,1,0,0.9999998808,0.4419999639,0.2,8,1,True
+2,NHNN_202_scan2,Radiologist #1,Presurgical glioma,NHNN,,,0.9999998808,0,1,1,0.9999998808,0.722499947,0.5,5,1,True
+2,NHNN_202_scan2,Radiologist #6,Presurgical glioma,NHNN,,,0.9999998808,0,1,1,0.9999998808,0.7479999309,0.4,6,1,True
+2,NHNN_202_scan2,Radiologist #11,Presurgical glioma,NHNN,,,0.9999998808,0,1,1,0.9999998808,0.8799999046,0.4,6,1,True
+2,NHNN_202_scan2,Radiologist #7,Presurgical glioma,NHNN,,,0.9999998808,0,1,1,0.9999998808,0.7419999192,0.2,8,1,True
+2,NHNN_220,Radiologist #5,Presurgical glioma,NHNN,,,0.9998572074,0,0,0,0.0001427925599,0.0001427925599,0.7,3,0.4226497308,False
+2,NHNN_220,Radiologist #11,Presurgical glioma,NHNN,,,0.9998572074,0,0,0,0.0001427925599,0.0001427925599,1,10,0.4226497308,False
+2,NHNN_220,Radiologist #8,Presurgical glioma,NHNN,,,0.9998572074,0,0,0,0.0001427925599,0.0001427925599,0.9,9,0.4226497308,False
+2,NHNN_256_scan2,Radiologist #9,Presurgical glioma,NHNN,,,0.9999427884,0,0,0,5.721158959e-05,5.721158959e-05,0.3,7,1,False
+2,NHNN_256_scan2,Radiologist #2,Presurgical glioma,NHNN,,,0.9999427884,0,0,0,5.721158959e-05,5.721158959e-05,0.3,7,1,False
+2,NHNN_256_scan2,Radiologist #3,Presurgical glioma,NHNN,,,0.9999427884,0,0,0,5.721158959e-05,5.721158959e-05,0.5,5,1,False
+2,NHNN_256_scan2,Radiologist #5,Presurgical glioma,NHNN,,,0.9999427884,0,0,0,5.721158959e-05,5.721158959e-05,0.3,7,1,False
+2,NHNN_256_scan2,Radiologist #1,Presurgical glioma,NHNN,,,0.9999427884,0,0,0,5.721158959e-05,5.721158959e-05,0.5,5,1,False
+2,NHNN_256_scan2,Radiologist #11,Presurgical glioma,NHNN,,,0.9999427884,0,0,0,5.721158959e-05,5.721158959e-05,0.3,7,1,False
+2,NHNN_256_scan2,Radiologist #7,Presurgical glioma,NHNN,,,0.9999427884,0,0,0,5.721158959e-05,5.721158959e-05,0.2,8,1,False
+2,NHNN_258,Radiologist #9,Presurgical glioma,NHNN,,,1,1,1,1,1,0.8425,0.5,5,1,True
+2,NHNN_323_scan1,Radiologist #6,Presurgical glioma,NHNN,,,0.9999300241,1,1,1,0.9999300241,0.873959414,0.7,7,1,True
+2,NHNN_374_scan1,Radiologist #2,Presurgical glioma,NHNN,,,1,1,1,1,1,0.89875,0.5,5,1,True
+2,NHNN_401,Radiologist #8,Presurgical glioma,NHNN,,,0.9999725819,1,1,1,0.9999725819,0.9999910891,1,10,1,True
+2,NHNN_4_scan2,Radiologist #10,Presurgical glioma,NHNN,,,0.9999359846,1,1,1,0.9999359846,0.8379489477,0.2,2,1,True
+2,NHNN_4_scan2,Radiologist #11,Presurgical glioma,NHNN,,,0.9999359846,1,1,1,0.9999359846,0.6999599904,0.2,2,1,True
+2,NHNN_508,Radiologist #9,Presurgical glioma,NHNN,,,0.9997676015,1,1,1,0.9997676015,0.8109140126,0.7,7,1,True
+2,NHNN_529_scan2,Radiologist #10,Presurgical glioma,NHNN,,,0.9999996424,1,1,1,0.9999996424,0.8582497148,0.3,3,1,True
+2,NHNN_587,Radiologist #2,Presurgical glioma,NHNN,,,0.9977663755,1,1,1,0.9977663755,0.8366709934,0.6,6,1,True
+2,NHNN_626,Radiologist #6,Presurgical glioma,NHNN,,,0.8336803913,1,1,1,0.8336803913,0.7216075091,0.3,7,1,True
+2,NHNN_634_scan1,Radiologist #2,Presurgical glioma,NHNN,,,0.9906822611,0,0,0,0.009317738935,0.009317738935,0.5,5,0.4226497308,False
+2,NHNN_634_scan1,Radiologist #1,Presurgical glioma,NHNN,,,0.9906822611,0,0,0,0.009317738935,0.009317738935,0.9,9,0.4226497308,False
+2,NHNN_634_scan1,Radiologist #8,Presurgical glioma,NHNN,,,0.9906822611,0,0,0,0.009317738935,0.009317738935,0.1,9,0.4226497308,False
+2,NHNN_767,Radiologist #4,Presurgical glioma,NHNN,,,0.9999159575,1,1,1,0.9999159575,0.8139550372,0.6,6,1,True
+2,NHNN_818,Radiologist #9,Presurgical glioma,NHNN,,,0.9977897264,0,0,0,0.00221027364,0.00221027364,0.5,5,0.5527864045,False
+2,NHNN_818,Radiologist #10,Presurgical glioma,NHNN,,,0.9977897264,0,0,0,0.00221027364,0.00221027364,0.4,6,0.5527864045,False
+2,NHNN_818,Radiologist #1,Presurgical glioma,NHNN,,,0.9977897264,0,0,0,0.00221027364,0.00221027364,0.2,8,0.5527864045,False
+2,NHNN_818,Radiologist #8,Presurgical glioma,NHNN,,,0.9977897264,0,0,0,0.00221027364,0.00221027364,0.2,8,0.5527864045,False
+2,NHNN_818,Radiologist #4,Presurgical glioma,NHNN,,,0.9977897264,0,0,0,0.00221027364,0.00221027364,0.5,5,0.5527864045,False
+2,NHNN_821,Radiologist #6,Presurgical glioma,NHNN,,,1,1,1,1,1,0.874,0.4,4,1,True
+2,NHNN_838,Radiologist #9,Presurgical glioma,NHNN,,,0.9999855757,1,1,1,0.9999855757,0.621994663,0.4,6,1,True
+2,NHNN_850,Radiologist #8,Presurgical glioma,NHNN,,,1,1,1,0,1,0.46,0.2,8,1,True
+2,NHNN_898,Radiologist #6,Presurgical glioma,NHNN,,,0.9999380112,1,1,1,0.9999380112,0.8739640465,0.7,7,1,True
+2,NHNN_908,Radiologist #9,Presurgical glioma,NHNN,,,0.8261516988,1,0,0,0.1738483012,0.1738483012,0.5,5,1,False
+2,NHNN_911,Radiologist #10,Presurgical glioma,NHNN,,,0.8811791912,0,0,0,0.1188208088,0.1188208088,0.2,8,1,False
+2,NHNN_911,Radiologist #6,Presurgical glioma,NHNN,,,0.8811791912,0,0,0,0.1188208088,0.1188208088,0.6,4,1,False
+2,NHNN_911,Radiologist #7,Presurgical glioma,NHNN,,,0.8811791912,0,0,0,0.1188208088,0.1188208088,0.1,9,1,False
+2,NHNN_911,Radiologist #8,Presurgical glioma,NHNN,,,0.8811791912,0,0,0,0.1188208088,0.1188208088,0.2,8,1,False
+2,UCSF-PDGM-0019,Radiologist #10,Presurgical glioma,Unknown,,,0.9999504089,1,1,1,0.9999504089,0.9999805355,1,10,1,True
+2,UCSF-PDGM-0190,Radiologist #5,Presurgical glioma,Unknown,,,0.999997735,1,1,0,0.999997735,0.5814993148,0.4,6,1,True
+2,UCSF-PDGM-0254,Radiologist #9,Presurgical glioma,Unknown,,,0.8774783388,0,0,0,0.1225216612,0.1225216612,0.5,5,1,False
+2,UCSF-PDGM-0254,Radiologist #3,Presurgical glioma,Unknown,,,0.8774783388,0,0,0,0.1225216612,0.1225216612,0.7,7,1,False
+2,UCSF-PDGM-0254,Radiologist #7,Presurgical glioma,Unknown,,,0.8774783388,0,0,0,0.1225216612,0.1225216612,0.8,8,1,False
+2,UCSF-PDGM-0254,Radiologist #4,Presurgical glioma,Unknown,,,0.8774783388,0,0,0,0.1225216612,0.1225216612,0.7,7,1,False
+2,UCSF-PDGM-0308,Radiologist #6,Presurgical glioma,Unknown,,,0.9997367263,1,1,1,0.9997367263,0.9158473012,0.8,8,1,True
+2,UCSF-PDGM-0345,Radiologist #9,Presurgical glioma,Unknown,,,1,1,1,0,1,0.244,0.2,8,1,True
+2,UCSF-PDGM-0406,Radiologist #4,Presurgical glioma,Unknown,,,0.9998801947,1,1,1,0.9998801947,0.9301580494,0.7,7,1,True
+2,UCSF-PDGM-0503,Radiologist #5,Presurgical glioma,Unknown,,,0.999971509,1,1,1,0.999971509,0.9999913815,1,10,1,True
+2,UPENN-GBM-00442_11,Radiologist #5,Presurgical glioma,Unknown,,,0.9999992847,1,1,1,0.9999992847,0.9069996173,0.8,8,1,True
+2,UPENN-GBM-00442_11,Radiologist #11,Presurgical glioma,Unknown,,,0.9999992847,1,1,1,0.9999992847,0.849999553,0.6,6,1,True
+2,UPENN-GBM-00499_11,Radiologist #5,Presurgical glioma,Unknown,,,1,1,1,1,1,0.93025,0.9,9,1,True
+2,UPENN-GBM-00601_11,Radiologist #5,Presurgical glioma,Unknown,,,0.9999960661,1,1,1,0.9999960661,0.99999881,1,10,1,True
+2,UPENN-GBM-00601_11,Radiologist #7,Presurgical glioma,Unknown,,,0.9999960661,1,1,1,0.9999960661,0.9999973348,1,10,1,True
+3,BraTS-GLI-00472-101,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9999885877,0,0,0,1.141234588e-05,1.141234588e-05,0.7,7,0.4226497308,False
+3,BraTS-GLI-00472-101,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9999885877,0,0,0,1.141234588e-05,1.141234588e-05,0.3,7,0.4226497308,False
+3,BraTS-GLI-00472-101,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9999885877,0,0,0,1.141234588e-05,1.141234588e-05,0.4,6,0.4226497308,False
+3,BraTS-GLI-00491-101,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9999876022,1,1,1,0.9999876022,0.9219924374,0.8,2,1,True
+3,BraTS-GLI-00549-100,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9902733862,0,0,0,0.00972661376,0.00972661376,0.3,7,0.622035527,False
+3,BraTS-GLI-00549-100,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9902733862,0,0,0,0.00972661376,0.00972661376,0.6,6,0.622035527,False
+3,BraTS-GLI-00549-100,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9902733862,0,0,0,0.00972661376,0.00972661376,0.1,9,0.622035527,False
+3,BraTS-GLI-00549-100,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9902733862,0,0,0,0.00972661376,0.00972661376,0.5,5,0.622035527,False
+3,BraTS-GLI-00549-100,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9902733862,0,0,0,0.00972661376,0.00972661376,0.5,5,0.622035527,False
+3,BraTS-GLI-00549-100,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9902733862,0,0,0,0.00972661376,0.00972661376,0.2,8,0.622035527,False
+3,BraTS-GLI-00549-100,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9902733862,0,0,0,0.00972661376,0.00972661376,0.4,6,0.622035527,False
+3,BraTS-GLI-02066-101,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9999867678,1,1,1,0.9999867678,0.8439919283,0.6,6,1,True
+3,BraTS-GLI-02130-100,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9929061392,0,0,0,0.007093860768,0.007093860768,0.5,5,0.4729537233,False
+3,BraTS-GLI-02130-100,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9929061392,0,0,0,0.007093860768,0.007093860768,1,10,0.4729537233,False
+3,BraTS-GLI-02130-100,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9929061392,0,0,0,0.007093860768,0.007093860768,0.6,6,0.4729537233,False
+3,BraTS-GLI-02130-100,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9929061392,0,0,0,0.007093860768,0.007093860768,0.8,8,0.4729537233,False
+3,BraTS-GLI-02130-100,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9929061392,0,0,0,0.007093860768,0.007093860768,0.6,4,0.4729537233,False
+3,BraTS-GLI-02130-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9929061392,0,0,0,0.007093860768,0.007093860768,0.9,9,0.4729537233,False
+3,BraTS-GLI-02130-100,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9929061392,0,0,0,0.007093860768,0.007093860768,0.4,6,0.4729537233,False
+3,BraTS-GLI-02130-100,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9929061392,0,0,0,0.007093860768,0.007093860768,0.3,7,0.4729537233,False
+3,BraTS-GLI-02130-100,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9929061392,0,0,0,0.007093860768,0.007093860768,0.4,6,0.4729537233,False
+3,BraTS-GLI-02138-100,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9999991655,1,1,1,0.9999991655,0.648999491,0.1,9,1,True
+3,BraTS-GLI-02198-100,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.768868193,1,0,0,0.231131807,0.231131807,0.3,7,1,False
+3,BraTS-GLI-02198-100,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.768868193,1,0,0,0.231131807,0.231131807,0,10,1,False
+3,BraTS-GLI-02218-104,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9999749284,0,0,0,2.507155295e-05,2.507155295e-05,0.5,5,0.5590414482,False
+3,BraTS-GLI-02218-104,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9999749284,0,0,0,2.507155295e-05,2.507155295e-05,0.8,8,0.5590414482,False
+3,BraTS-GLI-02218-104,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9999749284,0,0,0,2.507155295e-05,2.507155295e-05,0.7,7,0.5590414482,False
+3,BraTS-GLI-02218-104,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9999749284,0,0,0,2.507155295e-05,2.507155295e-05,0.1,9,0.5590414482,False
+3,BraTS-GLI-02218-104,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9999749284,0,0,0,2.507155295e-05,2.507155295e-05,0.2,8,0.5590414482,False
+3,BraTS-GLI-02218-104,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9999749284,0,0,0,2.507155295e-05,2.507155295e-05,0.8,2,0.5590414482,False
+3,BraTS-GLI-02218-104,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9999749284,0,0,0,2.507155295e-05,2.507155295e-05,0.2,8,0.5590414482,False
+3,BraTS-GLI-02218-104,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9999749284,0,0,0,2.507155295e-05,2.507155295e-05,0.3,7,0.5590414482,False
+3,BraTS-GLI-02218-104,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9999749284,0,0,0,2.507155295e-05,2.507155295e-05,0.3,7,0.5590414482,False
+3,BraTS-GLI-02290-102,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9996832609,1,1,1,0.9996832609,0.9998067892,1,10,1,True
+3,BraTS-GLI-02664-100,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9889366096,0,0,0,0.01106339041,0.01106339041,0.3,7,0.5917517095,False
+3,BraTS-GLI-02664-100,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9889366096,0,0,0,0.01106339041,0.01106339041,0.6,6,0.5917517095,False
+3,BraTS-GLI-02664-100,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9889366096,0,0,0,0.01106339041,0.01106339041,0.7,3,0.5917517095,False
+3,BraTS-GLI-02664-100,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9889366096,0,0,0,0.01106339041,0.01106339041,0.2,8,0.5917517095,False
+3,BraTS-GLI-02664-100,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9889366096,0,0,0,0.01106339041,0.01106339041,0.3,7,0.5917517095,False
+3,BraTS-GLI-02664-100,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9889366096,0,0,0,0.01106339041,0.01106339041,0.2,8,0.5917517095,False
+3,BraTS-GLI-02787-100,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9980489523,0,0,0,0.001951047685,0.001951047685,0.3,7,0.4836022205,False
+3,BraTS-GLI-02787-100,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9980489523,0,0,0,0.001951047685,0.001951047685,0.5,5,0.4836022205,False
+3,BraTS-GLI-02787-100,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9980489523,0,0,0,0.001951047685,0.001951047685,0.1,9,0.4836022205,False
+3,BraTS-GLI-02787-100,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9980489523,0,0,0,0.001951047685,0.001951047685,0.4,6,0.4836022205,False
+3,BraTS-GLI-02787-100,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9980489523,0,0,0,0.001951047685,0.001951047685,0.3,3,0.4836022205,False
+3,BraTS-GLI-02787-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9980489523,0,0,0,0.001951047685,0.001951047685,0.4,6,0.4836022205,False
+3,BraTS-GLI-02830-100,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,1,0,1,1,1,0.727,0.3,7,1,True
+3,BraTS-GLI-02830-100,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,1,0,1,1,1,0.766,0.4,6,1,True
+3,BraTS-GLI-02830-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,1,0,1,1,1,0.766,0.4,6,1,True
+3,BraTS-GLI-02831-101,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9999462719,0,0,0,5.372812302e-05,5.372812302e-05,0.2,8,1,False
+3,BraTS-GLI-02831-101,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9999462719,0,0,0,5.372812302e-05,5.372812302e-05,0.5,5,1,False
+3,BraTS-GLI-02831-101,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9999462719,0,0,0,5.372812302e-05,5.372812302e-05,0.3,7,1,False
+3,BraTS-GLI-02831-101,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9999462719,0,0,0,5.372812302e-05,5.372812302e-05,0.4,6,1,False
+3,BraTS-GLI-02831-101,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9999462719,0,0,0,5.372812302e-05,5.372812302e-05,0.1,9,1,False
+3,BraTS-GLI-02839-100,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9999892059,0,0,0,1.079412141e-05,1.079412141e-05,0.4,6,0.4226497308,False
+3,BraTS-GLI-02839-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9999892059,0,0,0,1.079412141e-05,1.079412141e-05,0.5,5,0.4226497308,False
+3,BraTS-GLI-02839-100,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9999892059,0,0,0,1.079412141e-05,1.079412141e-05,0.1,9,0.4226497308,False
+3,BraTS-GLI-02849-100,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9988783472,0,0,0,0.001121652778,0.001121652778,0.3,7,0.4522774425,False
+3,BraTS-GLI-02849-100,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9988783472,0,0,0,0.001121652778,0.001121652778,0.2,8,0.4522774425,False
+3,BraTS-GLI-02849-100,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9988783472,0,0,0,0.001121652778,0.001121652778,0.5,5,0.4522774425,False
+3,BraTS-GLI-02849-100,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9988783472,0,0,0,0.001121652778,0.001121652778,0.5,5,0.4522774425,False
+3,BraTS-GLI-02849-100,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9988783472,0,0,0,0.001121652778,0.001121652778,0.6,6,0.4522774425,False
+3,BraTS-GLI-02858-101,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9999899388,0,0,0,1.006120783e-05,1.006120783e-05,0.2,8,0.5527864045,False
+3,BraTS-GLI-02858-101,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9999899388,0,0,0,1.006120783e-05,1.006120783e-05,0.6,6,0.5527864045,False
+3,BraTS-GLI-02858-101,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9999899388,0,0,0,1.006120783e-05,1.006120783e-05,0.2,8,0.5527864045,False
+3,BraTS-GLI-02858-101,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9999899388,0,0,0,1.006120783e-05,1.006120783e-05,0.3,7,0.5527864045,False
+3,BraTS-GLI-02858-101,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9999899388,0,0,0,1.006120783e-05,1.006120783e-05,0.2,8,0.5527864045,False
+3,BraTS-GLI-02862-101,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.99998347,0,0,0,1.653003164e-05,1.653003164e-05,0.2,8,1,False
+3,BraTS-GLI-02862-101,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.99998347,0,0,0,1.653003164e-05,1.653003164e-05,0.2,8,1,False
+3,BraTS-GLI-02862-101,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.99998347,0,0,0,1.653003164e-05,1.653003164e-05,0.2,8,1,False
+3,BraTS-GLI-02862-101,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.99998347,0,0,0,1.653003164e-05,1.653003164e-05,0.2,8,1,False
+3,BraTS-GLI-02862-101,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.99998347,0,0,0,1.653003164e-05,1.653003164e-05,0.6,4,1,False
+3,BraTS-GLI-02862-101,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.99998347,0,0,0,1.653003164e-05,1.653003164e-05,0.2,8,1,False
+3,BraTS-GLI-02862-101,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.99998347,0,0,0,1.653003164e-05,1.653003164e-05,0.3,7,1,False
+3,BraTS-GLI-02889-100,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9999794198,0,0,0,2.058020073e-05,2.058020073e-05,0.3,7,1,False
+3,BraTS-GLI-02889-100,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9999794198,0,0,0,2.058020073e-05,2.058020073e-05,0.5,5,1,False
+3,BraTS-GLI-02889-100,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9999794198,0,0,0,2.058020073e-05,2.058020073e-05,0.2,8,1,False
+3,BraTS-GLI-02904-100,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9999893636,0,0,0,1.063643413e-05,1.063643413e-05,0.3,7,0.5,False
+3,BraTS-GLI-02904-100,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9999893636,0,0,0,1.063643413e-05,1.063643413e-05,0.3,7,0.5,False
+3,BraTS-GLI-02904-100,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9999893636,0,0,0,1.063643413e-05,1.063643413e-05,0.3,3,0.5,False
+3,BraTS-GLI-02904-100,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9999893636,0,0,0,1.063643413e-05,1.063643413e-05,0.2,8,0.5,False
+3,BraTS-GLI-03033-100,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.6834315658,0,0,0,0.3165684342,0.3165684342,0.9,9,1,False
+3,BraTS-GLI-03033-100,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.6834315658,0,0,0,0.3165684342,0.3165684342,0.7,7,1,False
+3,BraTS-GLI-03033-100,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.6834315658,0,0,0,0.3165684342,0.3165684342,0.7,7,1,False
+3,BraTS-GLI-03033-100,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.6834315658,0,0,0,0.3165684342,0.3165684342,0.9,9,1,False
+3,BraTS-GLI-03033-100,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.6834315658,0,0,0,0.3165684342,0.3165684342,0.7,7,1,False
+3,BraTS-MEN-00070-000,Radiologist #10,Meningioma,BraTS-MEN,,,1,1,1,1,1,1,1,10,1,True
+3,BraTS-MEN-00085-000,Radiologist #1,Meningioma,BraTS-MEN,,,0.9999747276,1,1,1,0.9999747276,0.9999845839,1,10,1,True
+3,BraTS-MEN-00200-000,Radiologist #7,Meningioma,BraTS-MEN,,,1,1,1,1,1,1,1,10,1,True
+3,BraTS-MEN-00481-000,Radiologist #7,Meningioma,BraTS-MEN,,,0.9999951124,1,1,1,0.9999951124,0.9219970186,0.8,8,1,True
+3,BraTS-MEN-00524-000,Radiologist #3,Meningioma,BraTS-MEN,,,1,1,1,1,1,0.805,0.5,5,1,True
+3,BraTS-MEN-00821-000,Radiologist #1,Meningioma,BraTS-MEN,,,1,1,1,1,1,0.727,0.3,7,1,True
+3,BraTS-MEN-00840-000,Radiologist #9,Meningioma,BraTS-MEN,,,1,1,1,1,1,0.961,0.9,9,1,True
+3,BraTS-MEN-00904-000,Radiologist #6,Meningioma,BraTS-MEN,,,0.9999998808,1,1,1,0.9999998808,0.9999999273,1,10,1,True
+3,BraTS-MEN-01003-007,Radiologist #6,Meningioma,BraTS-MEN,,,1,1,1,1,1,0.649,0.1,9,1,True
+3,BraTS-MET-00211-000,Radiologist #6,Metastases,BraTS-MET,,,0.9999996424,1,1,1,0.9999996424,0.8439997818,0.6,4,1,True
+3,BraTS-MET-00281-000,Radiologist #3,Metastases,BraTS-MET,,,1,1,1,1,1,0.766,0.4,4,1,True
+3,BraTS-MET-00548-000,Radiologist #10,Metastases,BraTS-MET,,,1,1,1,1,1,0.688,0.2,8,0.2928932188,True
+3,BraTS-MET-00548-000,Radiologist #7,Metastases,BraTS-MET,,,1,1,1,1,1,0.844,0.6,6,0.2928932188,True
+3,BraTS-MET-00551-000,Radiologist #1,Metastases,BraTS-MET,,,0.9886895688,1,0,0,0.01131043117,0.01131043117,0.3,7,1,False
+3,BraTS-MET-00626-000,Radiologist #2,Metastases,BraTS-MET,,,1,1,1,1,1,0.961,0.9,9,1,True
+3,BraTS-MET-00712-001,Radiologist #10,Metastases,BraTS-MET,,,0.9999984503,1,1,1,0.9999984503,0.8049990547,0.5,5,1,True
+3,BraTS-MET-00712-001,Radiologist #6,Metastases,BraTS-MET,,,0.9999984503,1,1,1,0.9999984503,0.9219990547,0.8,8,1,True
+3,BraTS-PED-00147-000,Radiologist #10,Paediatric presurgical tumour,BraTS-PED,,,1,1,1,1,1,0.922,0.8,8,1,True
+3,BraTS-PED-00170-000,Radiologist #8,Paediatric presurgical tumour,BraTS-PED,,,0.9992067218,1,1,1,0.9992067218,0.9605161003,0.9,9,1,True
+3,BraTS-PED-00249-000,Radiologist #9,Paediatric presurgical tumour,BraTS-PED,,,0.9944559159,0,0,0,0.005544084124,0.005544084124,0.8,8,0.5,False
+3,BraTS-PED-00249-000,Radiologist #2,Paediatric presurgical tumour,BraTS-PED,,,0.9944559159,0,0,0,0.005544084124,0.005544084124,0.9,9,0.5,False
+3,BraTS-PED-00249-000,Radiologist #1,Paediatric presurgical tumour,BraTS-PED,,,0.9944559159,0,0,0,0.005544084124,0.005544084124,0.8,8,0.5,False
+3,BraTS-PED-00249-000,Radiologist #8,Paediatric presurgical tumour,BraTS-PED,,,0.9944559159,0,0,0,0.005544084124,0.005544084124,0.3,7,0.5,False
+3,BraTS-PED-00279-000,Radiologist #2,Paediatric presurgical tumour,BraTS-PED,,,0.9746294245,0,0,0,0.02537057549,0.02537057549,0.7,7,0.4654775162,False
+3,BraTS-PED-00279-000,Radiologist #3,Paediatric presurgical tumour,BraTS-PED,,,0.9746294245,0,0,0,0.02537057549,0.02537057549,0.5,5,0.4654775162,False
+3,BraTS-PED-00279-000,Radiologist #5,Paediatric presurgical tumour,BraTS-PED,,,0.9746294245,0,0,0,0.02537057549,0.02537057549,0.7,3,0.4654775162,False
+3,BraTS-PED-00279-000,Radiologist #1,Paediatric presurgical tumour,BraTS-PED,,,0.9746294245,0,0,0,0.02537057549,0.02537057549,0.7,7,0.4654775162,False
+3,BraTS-PED-00279-000,Radiologist #6,Paediatric presurgical tumour,BraTS-PED,,,0.9746294245,0,0,0,0.02537057549,0.02537057549,0.3,3,0.4654775162,False
+3,BraTS-PED-00279-000,Radiologist #8,Paediatric presurgical tumour,BraTS-PED,,,0.9746294245,0,0,0,0.02537057549,0.02537057549,0.2,8,0.4654775162,False
+3,BraTS-PED-00279-000,Radiologist #4,Paediatric presurgical tumour,BraTS-PED,,,0.9746294245,0,0,0,0.02537057549,0.02537057549,0.5,5,0.4654775162,False
+3,BraTS-PED-00302-000,Radiologist #9,Paediatric presurgical tumour,BraTS-PED,,,0.9996024269,0,0,0,0.0003975731379,0.0003975731379,0.4,6,0.4226497308,False
+3,BraTS-PED-00302-000,Radiologist #2,Paediatric presurgical tumour,BraTS-PED,,,0.9996024269,0,0,0,0.0003975731379,0.0003975731379,0.5,5,0.4226497308,False
+3,BraTS-PED-00302-000,Radiologist #1,Paediatric presurgical tumour,BraTS-PED,,,0.9996024269,0,0,0,0.0003975731379,0.0003975731379,0.8,8,0.4226497308,False
+3,BraTS-PED-00338-000,Radiologist #3,Paediatric presurgical tumour,BraTS-PED,,,0.9999508858,0,1,1,0.9999508858,0.9219700403,0.8,8,1,True
+3,BraTS-PED-00338-000,Radiologist #1,Paediatric presurgical tumour,BraTS-PED,,,0.9999508858,0,1,1,0.9999508858,0.9609700403,0.9,9,1,True
+3,BraTS-PED-00338-000,Radiologist #7,Paediatric presurgical tumour,BraTS-PED,,,0.9999508858,0,1,1,0.9999508858,0.9219700403,0.8,8,1,True
+3,BraTS-PED-00338-000,Radiologist #4,Paediatric presurgical tumour,BraTS-PED,,,0.9999508858,0,1,1,0.9999508858,0.8829700403,0.7,7,1,True
+3,BraTS-SSA-00096-000,Radiologist #2,Presurgical glioma,BraTS-SSA,,,0.9993540645,1,1,1,0.9993540645,0.8826059793,0.7,7,1,True
+3,BraTS-SSA-00097-000,Radiologist #6,Presurgical glioma,BraTS-SSA,,,0.999777019,1,1,1,0.999777019,0.9998639816,1,10,1,True
+3,BraTS-SSA-00192-000,Radiologist #3,Presurgical glioma,BraTS-SSA,,,0.9992827773,1,1,1,0.9992827773,0.9995624942,1,10,1,True
+3,BraTS2021_00122,Radiologist #9,Presurgical glioma,BraTS-OTHER,,,0.9999798536,1,1,1,0.9999798536,0.8829877107,0.7,7,1,True
+3,BraTS2021_00139,Radiologist #1,Presurgical glioma,BraTS-OTHER,,,0.9997213483,1,1,1,0.9997213483,0.9998300225,1,10,1,True
+3,BraTS2021_00239,Radiologist #8,Presurgical glioma,BraTS-OTHER,,,0.9999997616,1,1,1,0.9999997616,0.9219998546,0.8,8,1,True
+3,BraTS2021_00264,Radiologist #4,Presurgical glioma,BraTS-OTHER,,,0.999990344,1,1,1,0.999990344,0.9219941099,0.8,8,1,True
+3,BraTS2021_00335,Radiologist #11,Presurgical glioma,BraTS-OTHER,,,0.9998550415,1,1,1,0.9998550415,0.9999115753,1,10,1,True
+3,BraTS2021_00392,Radiologist #7,Presurgical glioma,BraTS-OTHER,,,0.9999769926,1,1,1,0.9999769926,0.9999859655,1,10,1,True
+3,BraTS2021_00480,Radiologist #3,Presurgical glioma,BraTS-OTHER,,,0.9999556541,1,1,1,0.9999556541,0.882972949,0.7,7,1,True
+3,BraTS2021_00480,Radiologist #5,Presurgical glioma,BraTS-OTHER,,,0.9999556541,1,1,1,0.9999556541,0.960972949,0.9,9,1,True
+3,BraTS2021_00676,Radiologist #6,Presurgical glioma,BraTS-OTHER,,,0.9999680519,1,1,1,0.9999680519,0.9609805117,0.9,9,1,True
+3,BraTS2021_00676,Radiologist #4,Presurgical glioma,BraTS-OTHER,,,0.9999680519,1,1,1,0.9999680519,0.9609805117,0.9,9,1,True
+3,BraTS2021_01148,Radiologist #1,Presurgical glioma,BraTS-OTHER,,,0.9999606609,1,1,1,0.9999606609,0.9999760032,1,10,1,True
+3,BraTS2021_01163,Radiologist #7,Presurgical glioma,BraTS-OTHER,,,0.9998158813,1,1,1,0.9998158813,0.9218876876,0.8,8,1,True
+3,BraTS2021_01227,Radiologist #4,Presurgical glioma,BraTS-OTHER,,,0.9999809265,1,1,1,0.9999809265,0.9609883652,0.9,9,1,True
+3,BraTS2021_01338,Radiologist #9,Presurgical glioma,BraTS-OTHER,,,0.9999308586,1,1,1,0.9999308586,0.9609578238,0.9,9,1,True
+3,BraTS2021_01434,Radiologist #2,Presurgical glioma,BraTS-OTHER,,,0.9992214027,0,0,0,0.0007785973139,0.0007785973139,0.5,5,0.4226497308,False
+3,BraTS2021_01434,Radiologist #11,Presurgical glioma,BraTS-OTHER,,,0.9992214027,0,0,0,0.0007785973139,0.0007785973139,0.9,9,0.4226497308,False
+3,BraTS2021_01434,Radiologist #7,Presurgical glioma,BraTS-OTHER,,,0.9992214027,0,0,0,0.0007785973139,0.0007785973139,0.5,5,0.4226497308,False
+3,BraTS2021_01539,Radiologist #10,Presurgical glioma,BraTS-OTHER,,,0.9999907017,1,1,1,0.9999907017,0.999994328,1,10,1,True
+3,BraTS2021_01587,Radiologist #1,Presurgical glioma,BraTS-OTHER,,,0.9995592237,1,1,1,0.9995592237,0.9997311264,1,10,1,True
+3,BraTS2021_01637,Radiologist #9,Presurgical glioma,BraTS-OTHER,,,0.9991272343,0,0,0,0.0008727656677,0.0008727656677,0.2,8,1,False
+3,BraTS2021_01637,Radiologist #10,Presurgical glioma,BraTS-OTHER,,,0.9991272343,0,0,0,0.0008727656677,0.0008727656677,0,10,1,False
+3,BraTS2021_01637,Radiologist #3,Presurgical glioma,BraTS-OTHER,,,0.9991272343,0,0,0,0.0008727656677,0.0008727656677,0.1,9,1,False
+3,BraTS2021_01637,Radiologist #6,Presurgical glioma,BraTS-OTHER,,,0.9991272343,0,0,0,0.0008727656677,0.0008727656677,0.5,5,1,False
+3,BraTS2021_01637,Radiologist #11,Presurgical glioma,BraTS-OTHER,,,0.9991272343,0,0,0,0.0008727656677,0.0008727656677,0.3,7,1,False
+3,BraTS2021_01637,Radiologist #8,Presurgical glioma,BraTS-OTHER,,,0.9991272343,0,0,0,0.0008727656677,0.0008727656677,0.1,9,1,False
+3,BraTS2021_01673,Radiologist #6,Presurgical glioma,BraTS-OTHER,,,0.9999998808,1,1,1,0.9999998808,0.7269999273,0.3,3,1,True
+3,BraTS2021_01735,Radiologist #2,Presurgical glioma,BraTS-OTHER,,,0.9735919237,1,1,1,0.9735919237,0.8278910735,0.6,6,1,True
+3,EGD-0007,Radiologist #4,Presurgical glioma,EGD,,,0.9998745918,1,1,1,0.9998745918,0.882923501,0.7,7,1,True
+3,EGD-0157,Radiologist #3,Presurgical glioma,EGD,,,0.9967270438,0,0,0,0.003272956237,0.003272956237,0.5,5,0.2928932188,False
+3,EGD-0157,Radiologist #4,Presurgical glioma,EGD,,,0.9967270438,0,0,0,0.003272956237,0.003272956237,0.4,6,0.2928932188,False
+3,EGD-0271,Radiologist #10,Presurgical glioma,EGD,,,0.9991667271,1,1,1,0.9991667271,0.9994917035,1,10,1,True
+3,EGD-0271,Radiologist #6,Presurgical glioma,EGD,,,0.9991667271,1,1,1,0.9991667271,0.9604917035,0.9,9,1,True
+3,EGD-0283,Radiologist #11,Presurgical glioma,EGD,,,0.9999786615,1,1,1,0.9999786615,0.9609869835,0.9,9,1,True
+3,EGD-0289,Radiologist #10,Presurgical glioma,EGD,,,0.9066205025,1,1,1,0.9066205025,0.9040385065,0.9,9,1,True
+3,EGD-0289,Radiologist #1,Presurgical glioma,EGD,,,0.9066205025,1,1,1,0.9066205025,0.7870385065,0.6,6,1,True
+3,EGD-0372,Radiologist #3,Presurgical glioma,EGD,,,0.6399160028,1,0,0,0.3600839972,0.3600839972,0.6,6,1,False
+3,EGD-0372,Radiologist #8,Presurgical glioma,EGD,,,0.6399160028,1,0,0,0.3600839972,0.3600839972,0.8,8,1,False
+3,EGD-0583,Radiologist #10,Presurgical glioma,EGD,,,0.9991283208,1,0,0,0.0008716791635,0.0008716791635,0.9,9,1,False
+3,EGD-0653,Radiologist #10,Presurgical glioma,EGD,,,0.99999547,1,1,1,0.99999547,0.8439972367,0.6,6,1,True
+3,NHNN_1025,Radiologist #4,Presurgical glioma,NHNN,,,0.9999967813,1,1,1,0.9999967813,0.8439980366,0.6,6,1,True
+3,NHNN_1068,Radiologist #1,Presurgical glioma,NHNN,,,0.999912262,1,1,1,0.999912262,0.9219464798,0.8,8,1,True
+3,NHNN_1258,Radiologist #6,Presurgical glioma,NHNN,,,0.9999998808,1,1,1,0.9999998808,0.8439999273,0.6,6,1,True
+3,NHNN_1263,Radiologist #6,Presurgical glioma,NHNN,,,0.9999614954,1,1,1,0.9999614954,0.7269765122,0.3,3,1,True
+3,NHNN_127,Radiologist #2,Presurgical glioma,NHNN,,,1,1,1,1,1,0.883,0.7,7,1,True
+3,NHNN_134,Radiologist #6,Presurgical glioma,NHNN,,,0.9999759197,0,1,1,0.9999759197,0.804985311,0.5,5,1,True
+3,NHNN_134,Radiologist #11,Presurgical glioma,NHNN,,,0.9999759197,0,1,1,0.9999759197,0.804985311,0.5,5,1,True
+3,NHNN_134,Radiologist #8,Presurgical glioma,NHNN,,,0.9999759197,0,1,1,0.9999759197,0.648985311,0.1,9,1,True
+3,NHNN_134,Radiologist #4,Presurgical glioma,NHNN,,,0.9999759197,0,1,1,0.9999759197,0.687985311,0.2,8,1,True
+3,NHNN_1442,Radiologist #5,Presurgical glioma,NHNN,,,0.8587274998,1,0,0,0.1412725002,0.1412725002,0.5,5,0.2928932188,False
+3,NHNN_1442,Radiologist #4,Presurgical glioma,NHNN,,,0.8587274998,1,0,0,0.1412725002,0.1412725002,0.5,5,0.2928932188,False
+3,NHNN_146_scan3,Radiologist #2,Presurgical glioma,NHNN,,,0.9999365762,0,0,0,6.342383131e-05,6.342383131e-05,0.2,8,1,False
+3,NHNN_146_scan3,Radiologist #5,Presurgical glioma,NHNN,,,0.9999365762,0,0,0,6.342383131e-05,6.342383131e-05,0.3,7,1,False
+3,NHNN_146_scan3,Radiologist #6,Presurgical glioma,NHNN,,,0.9999365762,0,0,0,6.342383131e-05,6.342383131e-05,0.4,6,1,False
+3,NHNN_146_scan3,Radiologist #7,Presurgical glioma,NHNN,,,0.9999365762,0,0,0,6.342383131e-05,6.342383131e-05,0.2,8,1,False
+3,NHNN_158_scan1,Radiologist #3,Presurgical glioma,NHNN,,,0.9999763137,0,0,0,2.368631431e-05,2.368631431e-05,0.7,7,0.5527864045,False
+3,NHNN_158_scan1,Radiologist #1,Presurgical glioma,NHNN,,,0.9999763137,0,0,0,2.368631431e-05,2.368631431e-05,0.3,7,0.5527864045,False
+3,NHNN_158_scan1,Radiologist #6,Presurgical glioma,NHNN,,,0.9999763137,0,0,0,2.368631431e-05,2.368631431e-05,0.5,5,0.5527864045,False
+3,NHNN_158_scan1,Radiologist #8,Presurgical glioma,NHNN,,,0.9999763137,0,0,0,2.368631431e-05,2.368631431e-05,0.1,9,0.5527864045,False
+3,NHNN_158_scan1,Radiologist #4,Presurgical glioma,NHNN,,,0.9999763137,0,0,0,2.368631431e-05,2.368631431e-05,0.3,7,0.5527864045,False
+3,NHNN_158_scan3,Radiologist #9,Presurgical glioma,NHNN,,,0.9679546915,0,0,0,0.0320453085,0.0320453085,0.2,8,0.5917517095,False
+3,NHNN_158_scan3,Radiologist #2,Presurgical glioma,NHNN,,,0.9679546915,0,0,0,0.0320453085,0.0320453085,0.2,8,0.5917517095,False
+3,NHNN_158_scan3,Radiologist #3,Presurgical glioma,NHNN,,,0.9679546915,0,0,0,0.0320453085,0.0320453085,0.3,7,0.5917517095,False
+3,NHNN_158_scan3,Radiologist #5,Presurgical glioma,NHNN,,,0.9679546915,0,0,0,0.0320453085,0.0320453085,0.2,8,0.5917517095,False
+3,NHNN_158_scan3,Radiologist #1,Presurgical glioma,NHNN,,,0.9679546915,0,0,0,0.0320453085,0.0320453085,0.6,6,0.5917517095,False
+3,NHNN_158_scan3,Radiologist #4,Presurgical glioma,NHNN,,,0.9679546915,0,0,0,0.0320453085,0.0320453085,0.4,6,0.5917517095,False
+3,NHNN_1783,Radiologist #9,Presurgical glioma,NHNN,,,0.9999172688,1,1,1,0.9999172688,0.7269495339,0.3,7,1,True
+3,NHNN_1787,Radiologist #9,Presurgical glioma,NHNN,,,0.9999672174,1,1,1,0.9999672174,0.9219800026,0.8,8,1,True
+3,NHNN_1787,Radiologist #5,Presurgical glioma,NHNN,,,0.9999672174,1,1,1,0.9999672174,0.8439800026,0.6,6,1,True
+3,NHNN_1787,Radiologist #4,Presurgical glioma,NHNN,,,0.9999672174,1,1,1,0.9999672174,0.8439800026,0.6,6,1,True
+3,NHNN_1900,Radiologist #9,Presurgical glioma,NHNN,,,0.9999887943,1,1,1,0.9999887943,0.8829931645,0.7,7,1,True
+3,NHNN_1956,Radiologist #4,Presurgical glioma,NHNN,,,0.9999992847,1,1,1,0.9999992847,0.8439995637,0.6,4,1,True
+3,NHNN_237,Radiologist #11,Presurgical glioma,NHNN,,,1,1,1,1,1,0.727,0.3,7,1,True
+3,NHNN_281,Radiologist #2,Presurgical glioma,NHNN,,,0.999962437,0,0,0,3.756300794e-05,3.756300794e-05,0.5,5,0.4522774425,False
+3,NHNN_281,Radiologist #3,Presurgical glioma,NHNN,,,0.999962437,0,0,0,3.756300794e-05,3.756300794e-05,0.6,6,0.4522774425,False
+3,NHNN_281,Radiologist #1,Presurgical glioma,NHNN,,,0.999962437,0,0,0,3.756300794e-05,3.756300794e-05,0.2,8,0.4522774425,False
+3,NHNN_281,Radiologist #7,Presurgical glioma,NHNN,,,0.999962437,0,0,0,3.756300794e-05,3.756300794e-05,0.5,5,0.4522774425,False
+3,NHNN_281,Radiologist #4,Presurgical glioma,NHNN,,,0.999962437,0,0,0,3.756300794e-05,3.756300794e-05,0.5,5,0.4522774425,False
+3,NHNN_309_scan2,Radiologist #2,Presurgical glioma,NHNN,,,1,1,1,1,1,0.883,0.7,7,1,True
+3,NHNN_323_scan2,Radiologist #8,Presurgical glioma,NHNN,,,0.9999722242,1,1,1,0.9999722242,0.9219830568,0.8,8,1,True
+3,NHNN_328_scan1,Radiologist #5,Presurgical glioma,NHNN,,,0.999999404,1,1,1,0.999999404,0.7269996364,0.3,7,1,True
+3,NHNN_328_scan1,Radiologist #4,Presurgical glioma,NHNN,,,0.999999404,1,1,1,0.999999404,0.8049996364,0.5,5,1,True
+3,NHNN_341_scan1,Radiologist #6,Presurgical glioma,NHNN,,,0.999979726,1,0,0,2.027395749e-05,2.027395749e-05,0.8,2,1,False
+3,NHNN_363,Radiologist #4,Presurgical glioma,NHNN,,,1,1,1,1,1,0.805,0.5,5,1,True
+3,NHNN_374_scan2,Radiologist #10,Presurgical glioma,NHNN,,,1,1,1,1,1,0.688,0.2,8,1,True
+3,NHNN_389,Radiologist #7,Presurgical glioma,NHNN,,,0.9999992847,1,1,1,0.9999992847,0.9219995637,0.8,2,1,True
+3,NHNN_393,Radiologist #9,Presurgical glioma,NHNN,,,0.9994928837,1,1,1,0.9994928837,0.921690659,0.8,8,1,True
+3,NHNN_412,Radiologist #1,Presurgical glioma,NHNN,,,0.9800876975,1,1,1,0.9800876975,0.7928534955,0.5,5,1,True
+3,NHNN_424,Radiologist #3,Presurgical glioma,NHNN,,,0.9999417067,1,1,1,0.9999417067,0.9219644411,0.8,8,1,True
+3,NHNN_424,Radiologist #7,Presurgical glioma,NHNN,,,0.9999417067,1,1,1,0.9999417067,0.9609644411,0.9,9,1,True
+3,NHNN_447,Radiologist #3,Presurgical glioma,NHNN,,,0.9999998808,1,1,1,0.9999998808,0.8829999273,0.7,3,0.2928932188,True
+3,NHNN_447,Radiologist #8,Presurgical glioma,NHNN,,,0.9999998808,1,1,1,0.9999998808,0.9609999273,0.9,9,0.2928932188,True
+3,NHNN_453,Radiologist #5,Presurgical glioma,NHNN,,,0.9912429648,1,0,0,0.008757035248,0.008757035248,0.5,5,1,False
+3,NHNN_453,Radiologist #6,Presurgical glioma,NHNN,,,0.9912429648,1,0,0,0.008757035248,0.008757035248,0.6,6,1,False
+3,NHNN_474,Radiologist #10,Presurgical glioma,NHNN,,,0.9999780655,1,1,1,0.9999780655,0.6879866199,0.2,2,1,True
+3,NHNN_505,Radiologist #2,Presurgical glioma,NHNN,,,0.9994871616,1,1,1,0.9994871616,0.8436871686,0.6,6,1,True
+3,NHNN_518,Radiologist #6,Presurgical glioma,NHNN,,,0.9979405999,1,1,1,0.9979405999,0.764743766,0.4,6,1,True
+3,NHNN_529_scan1,Radiologist #10,Presurgical glioma,NHNN,,,1,1,1,1,1,0.883,0.7,7,1,True
+3,NHNN_556,Radiologist #3,Presurgical glioma,NHNN,,,0.9999965429,1,1,1,0.9999965429,0.8439978912,0.6,6,1,True
+3,NHNN_580,Radiologist #2,Presurgical glioma,NHNN,,,0.9998255372,1,1,1,0.9998255372,0.9218935777,0.8,2,1,True
+3,NHNN_596,Radiologist #3,Presurgical glioma,NHNN,,,1,1,1,1,1,0.766,0.4,6,1,True
+3,NHNN_634_scan2,Radiologist #1,Presurgical glioma,NHNN,,,0.9180621803,1,0,0,0.08193781972,0.08193781972,0.5,5,1,False
+3,NHNN_634_scan2,Radiologist #8,Presurgical glioma,NHNN,,,0.9180621803,1,0,0,0.08193781972,0.08193781972,1,10,1,False
+3,NHNN_645,Radiologist #10,Presurgical glioma,NHNN,,,0.9994911118,0,0,0,0.0005088882172,0.0005088882172,0.3,3,1,False
+3,NHNN_645,Radiologist #1,Presurgical glioma,NHNN,,,0.9994911118,0,0,0,0.0005088882172,0.0005088882172,0.5,5,1,False
+3,NHNN_645,Radiologist #11,Presurgical glioma,NHNN,,,0.9994911118,0,0,0,0.0005088882172,0.0005088882172,0.7,7,1,False
+3,NHNN_645,Radiologist #8,Presurgical glioma,NHNN,,,0.9994911118,0,0,0,0.0005088882172,0.0005088882172,0.8,8,1,False
+3,NHNN_696,Radiologist #3,Presurgical glioma,NHNN,,,1,1,1,1,1,0.805,0.5,5,1,True
+3,NHNN_696,Radiologist #5,Presurgical glioma,NHNN,,,1,1,1,1,1,0.961,0.9,1,1,True
+3,NHNN_724,Radiologist #9,Presurgical glioma,NHNN,,,0.9999963045,1,1,1,0.9999963045,0.9609977458,0.9,9,1,True
+3,NHNN_797,Radiologist #2,Presurgical glioma,NHNN,,,0.9995201826,1,1,1,0.9995201826,0.8437073114,0.6,6,1,True
+3,NHNN_804,Radiologist #8,Presurgical glioma,NHNN,,,0.9998954535,1,1,1,0.9998954535,0.9219362266,0.8,8,0.2928932188,True
+3,NHNN_804,Radiologist #4,Presurgical glioma,NHNN,,,0.9998954535,1,1,1,0.9998954535,0.8049362266,0.5,5,0.2928932188,True
+3,NHNN_805,Radiologist #9,Presurgical glioma,NHNN,,,0.9999553413,0,0,0,4.465870734e-05,4.465870734e-05,0.5,5,0.5917517095,False
+3,NHNN_805,Radiologist #10,Presurgical glioma,NHNN,,,0.9999553413,0,0,0,4.465870734e-05,4.465870734e-05,0.2,8,0.5917517095,False
+3,NHNN_805,Radiologist #3,Presurgical glioma,NHNN,,,0.9999553413,0,0,0,4.465870734e-05,4.465870734e-05,0.3,7,0.5917517095,False
+3,NHNN_805,Radiologist #5,Presurgical glioma,NHNN,,,0.9999553413,0,0,0,4.465870734e-05,4.465870734e-05,0.2,8,0.5917517095,False
+3,NHNN_805,Radiologist #1,Presurgical glioma,NHNN,,,0.9999553413,0,0,0,4.465870734e-05,4.465870734e-05,0.3,7,0.5917517095,False
+3,NHNN_805,Radiologist #8,Presurgical glioma,NHNN,,,0.9999553413,0,0,0,4.465870734e-05,4.465870734e-05,0.3,7,0.5917517095,False
+3,NHNN_814,Radiologist #9,Presurgical glioma,NHNN,,,0.9998893738,1,1,1,0.9998893738,0.921932518,0.8,8,1,True
+3,NHNN_814,Radiologist #6,Presurgical glioma,NHNN,,,0.9998893738,1,1,1,0.9998893738,0.843932518,0.6,6,1,True
+3,NHNN_836,Radiologist #11,Presurgical glioma,NHNN,,,0.9999951124,1,1,1,0.9999951124,0.9999970186,1,10,1,True
+3,NHNN_915,Radiologist #5,Presurgical glioma,NHNN,,,0.9994605184,1,1,1,0.9994605184,0.9996709162,1,10,1,True
+3,NHNN_947,Radiologist #11,Presurgical glioma,NHNN,,,0.9999642621,1,0,0,3.573789218e-05,3.573789218e-05,0.5,5,1,False
+3,UCSF-PDGM-0167,Radiologist #9,Presurgical glioma,Unknown,,,0.9998797178,1,1,1,0.9998797178,0.9609266279,0.9,9,1,True
+3,UCSF-PDGM-0170,Radiologist #3,Presurgical glioma,Unknown,,,0.9999563694,1,1,1,0.9999563694,0.9219733853,0.8,8,1,True
+3,UCSF-PDGM-0358,Radiologist #5,Presurgical glioma,Unknown,,,0.9999637604,1,1,1,0.9999637604,0.9219778938,0.8,8,1,True
+3,UCSF-PDGM-0537,Radiologist #7,Presurgical glioma,Unknown,,,0.9945519678,1,0,0,0.005448032171,0.005448032171,0.5,5,1,False
+3,UPENN-GBM-00051_21,Radiologist #5,Presurgical glioma,Unknown,,,0.9999976158,1,1,1,0.9999976158,0.8439985456,0.6,6,1,True
+3,UPENN-GBM-00180_11,Radiologist #4,Presurgical glioma,Unknown,,,0.999802053,1,1,1,0.999802053,0.9218792523,0.8,8,1,True
+3,UPENN-GBM-00307_21,Radiologist #10,Presurgical glioma,Unknown,,,0.9999963045,1,1,1,0.9999963045,0.7659977458,0.4,4,1,True
+3,UPENN-GBM-00339_11,Radiologist #11,Presurgical glioma,Unknown,,,0.9999821186,1,1,1,0.9999821186,0.9999890924,1,10,1,True
+3,UPENN-GBM-00420_11,Radiologist #1,Presurgical glioma,Unknown,,,1,1,1,1,1,0.922,0.8,8,1,True
+3,UPENN-GBM-00427_11,Radiologist #7,Presurgical glioma,Unknown,,,0.9997910857,1,1,1,0.9997910857,0.9998725623,1,10,1,True
+4,BraTS-GLI-00506-101,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9999555349,1,1,1,0.9999555349,0.8829728763,0.7,7,1,True
+4,BraTS-GLI-02130-102,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9999899817,0,0,0,1.001829878e-05,1.001829878e-05,0.5,5,0.4522774425,False
+4,BraTS-GLI-02130-102,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9999899817,0,0,0,1.001829878e-05,1.001829878e-05,0.7,7,0.4522774425,False
+4,BraTS-GLI-02130-102,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9999899817,0,0,0,1.001829878e-05,1.001829878e-05,0.9,9,0.4522774425,False
+4,BraTS-GLI-02130-102,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9999899817,0,0,0,1.001829878e-05,1.001829878e-05,0.2,8,0.4522774425,False
+4,BraTS-GLI-02130-102,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9999899817,0,0,0,1.001829878e-05,1.001829878e-05,0.3,7,0.4522774425,False
+4,BraTS-GLI-02191-101,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9214520901,0,0,0,0.07854790986,0.07854790986,0.1,9,0.5,False
+4,BraTS-GLI-02191-101,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9214520901,0,0,0,0.07854790986,0.07854790986,0.5,5,0.5,False
+4,BraTS-GLI-02191-101,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9214520901,0,0,0,0.07854790986,0.07854790986,0.3,7,0.5,False
+4,BraTS-GLI-02191-101,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9214520901,0,0,0,0.07854790986,0.07854790986,0.3,7,0.5,False
+4,BraTS-GLI-02216-104,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9996199608,1,1,1,0.9996199608,0.9217681761,0.8,8,1,True
+4,BraTS-GLI-02227-101,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9960068855,0,0,0,0.003993114457,0.003993114457,0.4,6,1,False
+4,BraTS-GLI-02227-101,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9960068855,0,0,0,0.003993114457,0.003993114457,0.5,5,1,False
+4,BraTS-GLI-02227-101,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9960068855,0,0,0,0.003993114457,0.003993114457,0.2,8,1,False
+4,BraTS-GLI-02227-101,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9960068855,0,0,0,0.003993114457,0.003993114457,0.3,7,1,False
+4,BraTS-GLI-02390-102,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,1,1,1,1,1,0.688,0.2,8,1,True
+4,BraTS-GLI-02551-102,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9976425767,0,1,1,0.9976425767,0.8035619718,0.5,5,0.5527864045,True
+4,BraTS-GLI-02551-102,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9976425767,0,1,1,0.9976425767,0.6865619718,0.2,8,0.5527864045,True
+4,BraTS-GLI-02551-102,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9976425767,0,1,1,0.9976425767,0.7645619718,0.4,4,0.5527864045,True
+4,BraTS-GLI-02551-102,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9976425767,0,1,1,0.9976425767,0.7645619718,0.4,6,0.5527864045,True
+4,BraTS-GLI-02551-102,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9976425767,0,1,1,0.9976425767,0.6085619718,0,10,0.5527864045,True
+4,BraTS-GLI-02598-102,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9999997616,1,1,1,0.9999997616,0.8049998546,0.5,5,1,True
+4,BraTS-GLI-02610-100,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9987700582,0,1,1,0.9987700582,0.8822497355,0.7,7,0.4654775162,True
+4,BraTS-GLI-02610-100,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9987700582,0,1,1,0.9987700582,0.8042497355,0.5,5,0.4654775162,True
+4,BraTS-GLI-02610-100,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9987700582,0,1,1,0.9987700582,0.7262497355,0.3,3,0.4654775162,True
+4,BraTS-GLI-02610-100,Radiologist #1,Postoperative glioma resection,BraTS-GLI,,,0.9987700582,0,1,1,0.9987700582,0.8822497355,0.7,7,0.4654775162,True
+4,BraTS-GLI-02610-100,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9987700582,0,1,1,0.9987700582,0.9602497355,0.9,1,0.4654775162,True
+4,BraTS-GLI-02610-100,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9987700582,0,1,1,0.9987700582,0.9212497355,0.8,8,0.4654775162,True
+4,BraTS-GLI-02610-100,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9987700582,0,1,1,0.9987700582,0.7262497355,0.3,7,0.4654775162,True
+4,BraTS-GLI-02722-100,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9878701568,0,1,1,0.9878701568,0.7976007956,0.5,5,1,True
+4,BraTS-GLI-02722-100,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9878701568,0,1,1,0.9878701568,0.8366007956,0.6,6,1,True
+4,BraTS-GLI-02722-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9878701568,0,1,1,0.9878701568,0.8366007956,0.6,6,1,True
+4,BraTS-GLI-02776-101,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9999821503,0,0,0,1.784972301e-05,1.784972301e-05,0.3,7,0.5527864045,False
+4,BraTS-GLI-02776-101,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9999821503,0,0,0,1.784972301e-05,1.784972301e-05,0.1,9,0.5527864045,False
+4,BraTS-GLI-02776-101,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.9999821503,0,0,0,1.784972301e-05,1.784972301e-05,0.6,4,0.5527864045,False
+4,BraTS-GLI-02776-101,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9999821503,0,0,0,1.784972301e-05,1.784972301e-05,0.7,7,0.5527864045,False
+4,BraTS-GLI-02776-101,Radiologist #8,Postoperative glioma resection,BraTS-GLI,,,0.9999821503,0,0,0,1.784972301e-05,1.784972301e-05,0.2,8,0.5527864045,False
+4,BraTS-GLI-02809-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9999838154,1,0,0,1.618458191e-05,1.618458191e-05,0.6,4,1,False
+4,BraTS-GLI-02817-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.999994278,1,1,1,0.999994278,0.7659965096,0.4,6,1,True
+4,BraTS-GLI-02859-100,Radiologist #2,Postoperative glioma resection,BraTS-GLI,,,0.999956727,0,1,1,0.999956727,0.8049736035,0.5,5,0.5,True
+4,BraTS-GLI-02859-100,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.999956727,0,1,1,0.999956727,0.6879736035,0.2,8,0.5,True
+4,BraTS-GLI-02859-100,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.999956727,0,1,1,0.999956727,0.7269736035,0.3,7,0.5,True
+4,BraTS-GLI-02859-100,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.999956727,0,1,1,0.999956727,0.7659736035,0.4,6,0.5,True
+4,BraTS-GLI-02868-101,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.999971509,1,1,1,0.999971509,0.7269826205,0.3,3,1,True
+4,BraTS-GLI-03010-101,Radiologist #9,Postoperative glioma resection,BraTS-GLI,,,0.9986075794,0,0,0,0.001392420614,0.001392420614,0.2,8,0.6464466094,False
+4,BraTS-GLI-03010-101,Radiologist #10,Postoperative glioma resection,BraTS-GLI,,,0.9986075794,0,0,0,0.001392420614,0.001392420614,0.4,6,0.6464466094,False
+4,BraTS-GLI-03010-101,Radiologist #3,Postoperative glioma resection,BraTS-GLI,,,0.9986075794,0,0,0,0.001392420614,0.001392420614,0.7,7,0.6464466094,False
+4,BraTS-GLI-03010-101,Radiologist #5,Postoperative glioma resection,BraTS-GLI,,,0.9986075794,0,0,0,0.001392420614,0.001392420614,0.2,8,0.6464466094,False
+4,BraTS-GLI-03010-101,Radiologist #6,Postoperative glioma resection,BraTS-GLI,,,0.9986075794,0,0,0,0.001392420614,0.001392420614,0.6,4,0.6464466094,False
+4,BraTS-GLI-03010-101,Radiologist #11,Postoperative glioma resection,BraTS-GLI,,,0.9986075794,0,0,0,0.001392420614,0.001392420614,0.4,6,0.6464466094,False
+4,BraTS-GLI-03010-101,Radiologist #7,Postoperative glioma resection,BraTS-GLI,,,0.9986075794,0,0,0,0.001392420614,0.001392420614,0.2,8,0.6464466094,False
+4,BraTS-GLI-03010-101,Radiologist #4,Postoperative glioma resection,BraTS-GLI,,,0.9986075794,0,0,0,0.001392420614,0.001392420614,0.3,7,0.6464466094,False
+4,BraTS-MEN-00052-000,Radiologist #7,Meningioma,BraTS-MEN,,,0.9999649525,1,1,1,0.9999649525,0.999978621,1,10,1,True
+4,BraTS-MEN-00284-000,Radiologist #10,Meningioma,BraTS-MEN,,,0.9999992847,1,1,1,0.9999992847,0.9999995637,1,10,1,True
+4,BraTS-MEN-00354-000,Radiologist #11,Meningioma,BraTS-MEN,,,0.9999271631,1,1,1,0.9999271631,0.9999555695,1,10,1,True
+4,BraTS-MEN-00824-000,Radiologist #11,Meningioma,BraTS-MEN,,,0.9999978542,1,1,1,0.9999978542,0.9999986911,1,10,1,True
+4,BraTS-MEN-00824-000,Radiologist #8,Meningioma,BraTS-MEN,,,0.9999978542,1,1,1,0.9999978542,0.9609986911,0.9,9,1,True
+4,BraTS-MEN-01028-000,Radiologist #10,Meningioma,BraTS-MEN,,,0.6815012097,1,1,0,0.6815012097,0.4157157379,0,10,1,True
+4,BraTS-MEN-01152-000,Radiologist #1,Meningioma,BraTS-MEN,,,0.9999947548,1,1,1,0.9999947548,0.9999968004,1,10,1,True
+4,BraTS-MEN-01367-000,Radiologist #4,Meningioma,BraTS-MEN,,,0.9999939203,1,1,1,0.9999939203,0.9609962914,0.9,9,1,True
+4,BraTS-MET-00154-000,Radiologist #11,Metastases,BraTS-MET,,,0.9999998808,1,1,1,0.9999998808,0.9609999273,0.9,1,1,True
+4,BraTS-MET-00210-000,Radiologist #7,Metastases,BraTS-MET,,,0.9996637106,1,1,1,0.9996637106,0.6877948635,0.2,8,1,True
+4,BraTS-MET-00210-000,Radiologist #4,Metastases,BraTS-MET,,,0.9996637106,1,1,1,0.9996637106,0.6877948635,0.2,8,1,True
+4,BraTS-MET-00293-000,Radiologist #2,Metastases,BraTS-MET,,,0.9968149066,1,1,1,0.9968149066,0.920057093,0.8,8,1,True
+4,BraTS-MET-00303-000,Radiologist #1,Metastases,BraTS-MET,,,0.9999958277,1,1,1,0.9999958277,0.9219974549,0.8,8,1,True
+4,BraTS-MET-00349-000,Radiologist #3,Metastases,BraTS-MET,,,0.9999992847,1,1,1,0.9999992847,0.8829995637,0.7,7,1,True
+4,BraTS-MET-00349-000,Radiologist #7,Metastases,BraTS-MET,,,0.9999992847,1,1,1,0.9999992847,0.9219995637,0.8,8,1,True
+4,BraTS-MET-00585-000,Radiologist #11,Metastases,BraTS-MET,,,1,1,1,1,1,0.883,0.7,7,1,True
+4,BraTS-MET-00632-000,Radiologist #9,Metastases,BraTS-MET,,,0.9999996424,1,1,1,0.9999996424,0.9219997818,0.8,8,1,True
+4,BraTS-MET-00632-000,Radiologist #7,Metastases,BraTS-MET,,,0.9999996424,1,1,1,0.9999996424,0.9219997818,0.8,8,1,True
+4,BraTS-MET-00663-000,Radiologist #10,Metastases,BraTS-MET,,,0.9999983311,1,1,1,0.9999983311,0.804998982,0.5,5,0.2928932188,True
+4,BraTS-MET-00663-000,Radiologist #1,Metastases,BraTS-MET,,,0.9999983311,1,1,1,0.9999983311,0.882998982,0.7,7,0.2928932188,True
+4,BraTS-PED-00132-000,Radiologist #9,Paediatric presurgical tumour,BraTS-PED,,,0.9999963904,0,0,0,3.609581881e-06,3.609581881e-06,0.3,7,0.5527864045,False
+4,BraTS-PED-00132-000,Radiologist #10,Paediatric presurgical tumour,BraTS-PED,,,0.9999963904,0,0,0,3.609581881e-06,3.609581881e-06,0.6,6,0.5527864045,False
+4,BraTS-PED-00132-000,Radiologist #5,Paediatric presurgical tumour,BraTS-PED,,,0.9999963904,0,0,0,3.609581881e-06,3.609581881e-06,0.2,8,0.5527864045,False
+4,BraTS-PED-00132-000,Radiologist #6,Paediatric presurgical tumour,BraTS-PED,,,0.9999963904,0,0,0,3.609581881e-06,3.609581881e-06,0.5,5,0.5527864045,False
+4,BraTS-PED-00132-000,Radiologist #8,Paediatric presurgical tumour,BraTS-PED,,,0.9999963904,0,0,0,3.609581881e-06,3.609581881e-06,0.1,9,0.5527864045,False
+4,BraTS-PED-00134-000,Radiologist #2,Paediatric presurgical tumour,BraTS-PED,,,0.9658946991,1,1,1,0.9658946991,0.8231957664,0.6,6,1,True
+4,BraTS-PED-00187-000,Radiologist #5,Paediatric presurgical tumour,BraTS-PED,,,0.9944013953,0,1,1,0.9944013953,0.8405848511,0.6,4,1,True
+4,BraTS-PED-00187-000,Radiologist #6,Paediatric presurgical tumour,BraTS-PED,,,0.9944013953,0,1,1,0.9944013953,0.8795848511,0.7,3,1,True
+4,BraTS-PED-00187-000,Radiologist #7,Paediatric presurgical tumour,BraTS-PED,,,0.9944013953,0,1,1,0.9944013953,0.6845848511,0.2,8,1,True
+4,BraTS-PED-00194-000,Radiologist #9,Paediatric presurgical tumour,BraTS-PED,,,0.9737283215,0,0,0,0.02627167851,0.02627167851,0.5,5,1,False
+4,BraTS-PED-00194-000,Radiologist #6,Paediatric presurgical tumour,BraTS-PED,,,0.9737283215,0,0,0,0.02627167851,0.02627167851,0.6,4,1,False
+4,BraTS-PED-00194-000,Radiologist #4,Paediatric presurgical tumour,BraTS-PED,,,0.9737283215,0,0,0,0.02627167851,0.02627167851,0.6,4,1,False
+4,BraTS-PED-00251-000,Radiologist #9,Paediatric presurgical tumour,BraTS-PED,,,0.999702117,0,0,0,0.0002978830307,0.0002978830307,0.5,5,1,False
+4,BraTS-PED-00251-000,Radiologist #10,Paediatric presurgical tumour,BraTS-PED,,,0.999702117,0,0,0,0.0002978830307,0.0002978830307,0.9,9,1,False
+4,BraTS-PED-00251-000,Radiologist #2,Paediatric presurgical tumour,BraTS-PED,,,0.999702117,0,0,0,0.0002978830307,0.0002978830307,0.9,9,1,False
+4,BraTS-PED-00251-000,Radiologist #11,Paediatric presurgical tumour,BraTS-PED,,,0.999702117,0,0,0,0.0002978830307,0.0002978830307,1,10,1,False
+4,BraTS2021_00343,Radiologist #9,Presurgical glioma,BraTS-OTHER,,,0.9999996424,1,1,1,0.9999996424,0.9609997818,0.9,9,1,True
+4,BraTS2021_00343,Radiologist #8,Presurgical glioma,BraTS-OTHER,,,0.9999996424,1,1,1,0.9999996424,0.9999997818,1,10,1,True
+4,BraTS2021_00403,Radiologist #3,Presurgical glioma,BraTS-OTHER,,,0.9999934435,1,1,1,0.9999934435,0.8439960005,0.6,6,1,True
+4,BraTS2021_00639,Radiologist #7,Presurgical glioma,BraTS-OTHER,,,0.9999964237,1,1,1,0.9999964237,0.9999978185,1,10,1,True
+4,BraTS2021_00640,Radiologist #2,Presurgical glioma,BraTS-OTHER,,,0.9998725653,1,1,1,0.9998725653,0.9219222648,0.8,8,1,True
+4,BraTS2021_00792,Radiologist #5,Presurgical glioma,BraTS-OTHER,,,0.9997679591,1,1,1,0.9997679591,0.9608584551,0.9,9,1,True
+4,BraTS2021_00811,Radiologist #1,Presurgical glioma,BraTS-OTHER,,,0.999928236,1,1,1,0.999928236,0.999956224,1,10,1,True
+4,BraTS2021_01237,Radiologist #7,Presurgical glioma,BraTS-OTHER,,,0.999825418,1,1,1,0.999825418,0.999893505,1,10,1,True
+4,BraTS2021_01273,Radiologist #7,Presurgical glioma,BraTS-OTHER,,,0.9999998808,1,1,1,0.9999998808,0.8049999273,0.5,5,1,True
+4,BraTS2021_01385,Radiologist #6,Presurgical glioma,BraTS-OTHER,,,0.9999268055,1,1,1,0.9999268055,0.9999553514,1,10,1,True
+4,BraTS2021_01435,Radiologist #10,Presurgical glioma,BraTS-OTHER,,,0.9956251979,0,1,1,0.9956251979,0.7633313707,0.4,4,0.5,True
+4,BraTS2021_01435,Radiologist #2,Presurgical glioma,BraTS-OTHER,,,0.9956251979,0,1,1,0.9956251979,0.8803313707,0.7,7,0.5,True
+4,BraTS2021_01435,Radiologist #7,Presurgical glioma,BraTS-OTHER,,,0.9956251979,0,1,1,0.9956251979,0.8413313707,0.6,6,0.5,True
+4,BraTS2021_01435,Radiologist #4,Presurgical glioma,BraTS-OTHER,,,0.9956251979,0,1,1,0.9956251979,0.8803313707,0.7,3,0.5,True
+4,BraTS2021_01462,Radiologist #9,Presurgical glioma,BraTS-OTHER,,,0.9994620681,1,1,1,0.9994620681,0.9606718615,0.9,9,1,True
+4,BraTS2021_01554,Radiologist #9,Presurgical glioma,BraTS-OTHER,,,0.9992582202,1,1,1,0.9992582202,0.9605475143,0.9,9,1,True
+4,BraTS2021_01613,Radiologist #9,Presurgical glioma,BraTS-OTHER,,,0.9929559231,1,1,1,0.9929559231,0.8397031131,0.6,6,1,True
+4,BraTS2021_01613,Radiologist #6,Presurgical glioma,BraTS-OTHER,,,0.9929559231,1,1,1,0.9929559231,0.8007031131,0.5,5,1,True
+4,BraTS2021_01675,Radiologist #6,Presurgical glioma,BraTS-OTHER,,,0.9999976158,1,1,1,0.9999976158,0.9999985456,1,10,1,True
+4,BraTS2021_01706,Radiologist #10,Presurgical glioma,BraTS-OTHER,,,0.9999432564,1,1,1,0.9999432564,0.9609653864,0.9,9,1,True
+4,BraTS2021_01753,Radiologist #8,Presurgical glioma,BraTS-OTHER,,,0.9977703094,1,1,1,0.9977703094,0.9206398888,0.8,8,1,True
+4,EGD-0079,Radiologist #2,Presurgical glioma,EGD,,,0.999548018,1,1,1,0.999548018,0.921724291,0.8,8,1,True
+4,EGD-0096,Radiologist #11,Presurgical glioma,EGD,,,0.9999275208,1,1,1,0.9999275208,0.9999557877,1,10,1,True
+4,EGD-0096,Radiologist #8,Presurgical glioma,EGD,,,0.9999275208,1,1,1,0.9999275208,0.9999557877,1,10,1,True
+4,EGD-0302,Radiologist #8,Presurgical glioma,EGD,,,0.9997355342,1,1,1,0.9997355342,0.9998386759,1,10,1,True
+4,EGD-0414,Radiologist #2,Presurgical glioma,EGD,,,0.9999338388,1,1,1,0.9999338388,0.8439596417,0.6,6,1,True
+4,EGD-0469,Radiologist #8,Presurgical glioma,EGD,,,0.9986090064,1,1,1,0.9986090064,0.9211514939,0.8,8,1,True
+4,EGD-0486,Radiologist #3,Presurgical glioma,EGD,,,0.9999753082,1,0,0,2.46918371e-05,2.46918371e-05,0.3,7,1,False
+4,EGD-0486,Radiologist #4,Presurgical glioma,EGD,,,0.9999753082,1,0,0,2.46918371e-05,2.46918371e-05,0.3,7,1,False
+4,EGD-0556,Radiologist #2,Presurgical glioma,EGD,,,0.9999423027,1,1,1,0.9999423027,0.9219648046,0.8,8,1,True
+4,EGD-0578,Radiologist #1,Presurgical glioma,EGD,,,0.9999997616,1,1,1,0.9999997616,0.9219998546,0.8,8,1,True
+4,EGD-0578,Radiologist #4,Presurgical glioma,EGD,,,0.9999997616,1,1,1,0.9999997616,0.8049998546,0.5,5,1,True
+4,EGD-0705,Radiologist #9,Presurgical glioma,EGD,,,0.9835969992,0,0,0,0.0164030008,0.0164030008,0.3,7,0.4836022205,False
+4,EGD-0705,Radiologist #1,Presurgical glioma,EGD,,,0.9835969992,0,0,0,0.0164030008,0.0164030008,0.7,7,0.4836022205,False
+4,EGD-0705,Radiologist #6,Presurgical glioma,EGD,,,0.9835969992,0,0,0,0.0164030008,0.0164030008,0.3,7,0.4836022205,False
+4,EGD-0705,Radiologist #11,Presurgical glioma,EGD,,,0.9835969992,0,0,0,0.0164030008,0.0164030008,0.4,6,0.4836022205,False
+4,EGD-0705,Radiologist #7,Presurgical glioma,EGD,,,0.9835969992,0,0,0,0.0164030008,0.0164030008,0.5,5,0.4836022205,False
+4,EGD-0705,Radiologist #4,Presurgical glioma,EGD,,,0.9835969992,0,0,0,0.0164030008,0.0164030008,0.4,6,0.4836022205,False
+4,EGD-0739,Radiologist #4,Presurgical glioma,EGD,,,0.9999631775,0,0,0,3.682248644e-05,3.682248644e-05,0.2,8,1,False
+4,NHNN_1001,Radiologist #1,Presurgical glioma,NHNN,,,0.9999381304,1,1,1,0.9999381304,0.8439622595,0.6,6,1,True
+4,NHNN_1001,Radiologist #6,Presurgical glioma,NHNN,,,0.9999381304,1,1,1,0.9999381304,0.7659622595,0.4,4,1,True
+4,NHNN_1096,Radiologist #9,Presurgical glioma,NHNN,,,0.515858233,0,1,0,0.484141767,0.3733264779,0.2,8,0.5527864045,True
+4,NHNN_1096,Radiologist #2,Presurgical glioma,NHNN,,,0.515858233,0,1,0,0.484141767,0.5293264779,0.6,4,0.5527864045,True
+4,NHNN_1096,Radiologist #1,Presurgical glioma,NHNN,,,0.515858233,0,1,0,0.484141767,0.4903264779,0.5,5,0.5527864045,True
+4,NHNN_1096,Radiologist #11,Presurgical glioma,NHNN,,,0.515858233,0,1,0,0.484141767,0.4903264779,0.5,5,0.5527864045,True
+4,NHNN_1096,Radiologist #8,Presurgical glioma,NHNN,,,0.515858233,0,1,1,0.484141767,0.6073264779,0.8,8,0.5527864045,True
+4,NHNN_1165_scan2,Radiologist #10,Presurgical glioma,NHNN,,,0.9999474287,1,1,1,0.9999474287,0.9219679315,0.8,8,1,True
+4,NHNN_146_scan1,Radiologist #3,Presurgical glioma,NHNN,,,0.999926305,1,0,0,7.369495142e-05,7.369495142e-05,0.6,4,1,False
+4,NHNN_152,Radiologist #10,Presurgical glioma,NHNN,,,0.9710770901,1,0,0,0.02892290987,0.02892290987,0.2,8,1,False
+4,NHNN_1616,Radiologist #9,Presurgical glioma,NHNN,,,0.9999290705,1,1,1,0.9999290705,0.882956733,0.7,7,1,True
+4,NHNN_164_scan2,Radiologist #6,Presurgical glioma,NHNN,,,1,1,1,1,1,0.883,0.7,7,1,True
+4,NHNN_1784,Radiologist #9,Presurgical glioma,NHNN,,,0.8974641412,0,0,0,0.1025358588,0.1025358588,0.4,6,0.4226497308,False
+4,NHNN_1784,Radiologist #1,Presurgical glioma,NHNN,,,0.8974641412,0,0,0,0.1025358588,0.1025358588,0.6,6,0.4226497308,False
+4,NHNN_1784,Radiologist #4,Presurgical glioma,NHNN,,,0.8974641412,0,0,0,0.1025358588,0.1025358588,0.5,5,0.4226497308,False
+4,NHNN_1800,Radiologist #5,Presurgical glioma,NHNN,,,1,1,1,1,1,0.805,0.5,5,0.2928932188,True
+4,NHNN_1800,Radiologist #7,Presurgical glioma,NHNN,,,1,1,1,1,1,0.805,0.5,5,0.2928932188,True
+4,NHNN_1835,Radiologist #9,Presurgical glioma,NHNN,,,0.9997010231,1,1,1,0.9997010231,0.9218176241,0.8,8,1,True
+4,NHNN_1836,Radiologist #10,Presurgical glioma,NHNN,,,0.9999902248,1,1,1,0.9999902248,0.7269940372,0.3,7,1,True
+4,NHNN_1846,Radiologist #9,Presurgical glioma,NHNN,,,0.9999921864,0,0,0,7.81363633e-06,7.81363633e-06,0.5,5,0.4522774425,False
+4,NHNN_1846,Radiologist #3,Presurgical glioma,NHNN,,,0.9999921864,0,0,0,7.81363633e-06,7.81363633e-06,0.4,6,0.4522774425,False
+4,NHNN_1846,Radiologist #11,Presurgical glioma,NHNN,,,0.9999921864,0,0,0,7.81363633e-06,7.81363633e-06,0.6,6,0.4522774425,False
+4,NHNN_1846,Radiologist #8,Presurgical glioma,NHNN,,,0.9999921864,0,0,0,7.81363633e-06,7.81363633e-06,0.8,8,0.4522774425,False
+4,NHNN_1846,Radiologist #4,Presurgical glioma,NHNN,,,0.9999921864,0,0,0,7.81363633e-06,7.81363633e-06,0.5,5,0.4522774425,False
+4,NHNN_1905,Radiologist #11,Presurgical glioma,NHNN,,,0.9999976158,1,1,1,0.9999976158,0.8829985456,0.7,7,1,True
+4,NHNN_1933,Radiologist #10,Presurgical glioma,NHNN,,,0.8966801763,1,1,1,0.8966801763,0.6639749075,0.3,7,1,True
+4,NHNN_1933,Radiologist #1,Presurgical glioma,NHNN,,,0.8966801763,1,1,1,0.8966801763,0.7419749075,0.5,5,1,True
+4,NHNN_203,Radiologist #5,Presurgical glioma,NHNN,,,1,1,1,1,1,0.649,0.1,1,1,True
+4,NHNN_265,Radiologist #9,Presurgical glioma,NHNN,,,1,1,1,1,1,0.766,0.4,6,0.2928932188,True
+4,NHNN_265,Radiologist #1,Presurgical glioma,NHNN,,,1,1,1,1,1,0.922,0.8,8,0.2928932188,True
+4,NHNN_290,Radiologist #9,Presurgical glioma,NHNN,,,0.9890130963,0,0,0,0.01098690368,0.01098690368,0.3,7,1,False
+4,NHNN_290,Radiologist #10,Presurgical glioma,NHNN,,,0.9890130963,0,0,0,0.01098690368,0.01098690368,0.4,6,1,False
+4,NHNN_290,Radiologist #3,Presurgical glioma,NHNN,,,0.9890130963,0,0,0,0.01098690368,0.01098690368,0.5,5,1,False
+4,NHNN_290,Radiologist #5,Presurgical glioma,NHNN,,,0.9890130963,0,0,0,0.01098690368,0.01098690368,0.3,7,1,False
+4,NHNN_290,Radiologist #6,Presurgical glioma,NHNN,,,0.9890130963,0,0,0,0.01098690368,0.01098690368,0.5,5,1,False
+4,NHNN_290,Radiologist #7,Presurgical glioma,NHNN,,,0.9890130963,0,0,0,0.01098690368,0.01098690368,0.7,3,1,False
+4,NHNN_300,Radiologist #7,Presurgical glioma,NHNN,,,0.9999617338,1,1,1,0.9999617338,0.6879766576,0.2,8,1,True
+4,NHNN_328_scan2,Radiologist #3,Presurgical glioma,NHNN,,,0.998524954,0,0,0,0.00147504604,0.00147504604,0.4,6,1,False
+4,NHNN_328_scan2,Radiologist #5,Presurgical glioma,NHNN,,,0.998524954,0,0,0,0.00147504604,0.00147504604,0.3,7,1,False
+4,NHNN_328_scan2,Radiologist #11,Presurgical glioma,NHNN,,,0.998524954,0,0,0,0.00147504604,0.00147504604,0.5,5,1,False
+4,NHNN_328_scan2,Radiologist #7,Presurgical glioma,NHNN,,,0.998524954,0,0,0,0.00147504604,0.00147504604,0.2,8,1,False
+4,NHNN_440,Radiologist #11,Presurgical glioma,NHNN,,,0.9999998808,1,1,1,0.9999998808,0.8049999273,0.5,5,1,True
+4,NHNN_440,Radiologist #8,Presurgical glioma,NHNN,,,0.9999998808,1,1,1,0.9999998808,0.9219999273,0.8,8,1,True
+4,NHNN_481,Radiologist #2,Presurgical glioma,NHNN,,,0.6645446122,1,0,0,0.3354553878,0.3354553878,0.4,6,1,False
+4,NHNN_515,Radiologist #3,Presurgical glioma,NHNN,,,0.9999943972,1,1,1,0.9999943972,0.8439965823,0.6,6,1,True
+4,NHNN_557,Radiologist #7,Presurgical glioma,NHNN,,,0.9999959469,1,1,1,0.9999959469,0.7659975276,0.4,6,1,True
+4,NHNN_576,Radiologist #2,Presurgical glioma,NHNN,,,0.9995902181,1,1,1,0.9995902181,0.843750033,0.6,6,1,True
+4,NHNN_576,Radiologist #6,Presurgical glioma,NHNN,,,0.9995902181,1,1,1,0.9995902181,0.882750033,0.7,7,1,True
+4,NHNN_611,Radiologist #1,Presurgical glioma,NHNN,,,0.9999828339,1,1,1,0.9999828339,0.9219895287,0.8,8,1,True
+4,NHNN_624,Radiologist #3,Presurgical glioma,NHNN,,,0.9996855784,0,0,0,0.0003144216025,0.0003144216025,0.5,5,0.4226497308,False
+4,NHNN_624,Radiologist #7,Presurgical glioma,NHNN,,,0.9996855784,0,0,0,0.0003144216025,0.0003144216025,0.2,8,0.4226497308,False
+4,NHNN_624,Radiologist #8,Presurgical glioma,NHNN,,,0.9996855784,0,0,0,0.0003144216025,0.0003144216025,0.3,7,0.4226497308,False
+4,NHNN_774,Radiologist #4,Presurgical glioma,NHNN,,,0.9998840094,1,1,1,0.9998840094,0.9219292457,0.8,8,1,True
+4,NHNN_780,Radiologist #10,Presurgical glioma,NHNN,,,1,1,1,1,1,0.727,0.3,3,1,True
+4,NHNN_813,Radiologist #10,Presurgical glioma,NHNN,,,0.916383028,1,1,1,0.916383028,0.6369936471,0.2,2,1,True
+4,NHNN_921,Radiologist #4,Presurgical glioma,NHNN,,,0.8955558538,1,1,1,0.8955558538,0.7802890708,0.6,6,1,True
+4,NHNN_973,Radiologist #9,Presurgical glioma,NHNN,,,0.9993601441,1,1,1,0.9993601441,0.8826096879,0.7,7,1,True
+4,NHNN_9,Radiologist #9,Presurgical glioma,NHNN,,,0.9995183945,0,1,1,0.9995183945,0.7267062206,0.3,7,1,True
+4,NHNN_9,Radiologist #2,Presurgical glioma,NHNN,,,0.9995183945,0,1,1,0.9995183945,0.8047062206,0.5,5,1,True
+4,NHNN_9,Radiologist #3,Presurgical glioma,NHNN,,,0.9995183945,0,1,1,0.9995183945,0.8437062206,0.6,4,1,True
+4,NHNN_9,Radiologist #1,Presurgical glioma,NHNN,,,0.9995183945,0,1,1,0.9995183945,0.8047062206,0.5,5,1,True
+4,NHNN_9,Radiologist #8,Presurgical glioma,NHNN,,,0.9995183945,0,1,1,0.9995183945,0.6877062206,0.2,8,1,True
+4,UCSF-PDGM-0449,Radiologist #9,Presurgical glioma,Unknown,,,0.998065546,0,0,0,0.001934453961,0.001934453961,0.6,6,1,False
+4,UCSF-PDGM-0449,Radiologist #10,Presurgical glioma,Unknown,,,0.998065546,0,0,0,0.001934453961,0.001934453961,1,10,1,False
+4,UCSF-PDGM-0449,Radiologist #3,Presurgical glioma,Unknown,,,0.998065546,0,0,0,0.001934453961,0.001934453961,0.7,7,1,False
+4,UCSF-PDGM-0449,Radiologist #1,Presurgical glioma,Unknown,,,0.998065546,0,0,0,0.001934453961,0.001934453961,0.8,8,1,False
+4,UCSF-PDGM-0449,Radiologist #6,Presurgical glioma,Unknown,,,0.998065546,0,0,0,0.001934453961,0.001934453961,0.2,2,1,False
+4,UCSF-PDGM-0449,Radiologist #11,Presurgical glioma,Unknown,,,0.998065546,0,0,0,0.001934453961,0.001934453961,1,10,1,False
+4,UCSF-PDGM-0449,Radiologist #7,Presurgical glioma,Unknown,,,0.998065546,0,0,0,0.001934453961,0.001934453961,0.8,8,1,False
+4,UCSF-PDGM-0452,Radiologist #10,Presurgical glioma,Unknown,,,0.9998625517,1,1,1,0.9998625517,0.8049161565,0.5,5,1,True
+4,UCSF-PDGM-0500,Radiologist #9,Presurgical glioma,Unknown,,,0.6020518839,0,1,0,0.3979481161,0.3597483508,0.3,7,1,True
+4,UCSF-PDGM-0500,Radiologist #5,Presurgical glioma,Unknown,,,0.6020518839,0,1,0,0.3979481161,0.3597483508,0.3,7,1,True
+4,UCSF-PDGM-0500,Radiologist #1,Presurgical glioma,Unknown,,,0.6020518839,0,1,0,0.3979481161,0.3987483508,0.4,6,1,True
+4,UCSF-PDGM-0500,Radiologist #6,Presurgical glioma,Unknown,,,0.6020518839,0,1,0,0.3979481161,0.3987483508,0.4,6,1,True
+4,UCSF-PDGM-0500,Radiologist #11,Presurgical glioma,Unknown,,,0.6020518839,0,1,0,0.3979481161,0.3987483508,0.4,6,1,True
+4,UPENN-GBM-00104_11,Radiologist #10,Presurgical glioma,Unknown,,,0.9997470975,1,1,1,0.9997470975,0.8828457295,0.7,7,1,True
+4,UPENN-GBM-00398_11,Radiologist #2,Presurgical glioma,Unknown,,,0.9999781847,1,1,1,0.9999781847,0.7659866927,0.4,4,1,True
+4,UPENN-GBM-00398_11,Radiologist #4,Presurgical glioma,Unknown,,,0.9999781847,1,1,1,0.9999781847,0.9219866927,0.8,8,1,True
+4,UPENN-GBM-00464_11,Radiologist #4,Presurgical glioma,Unknown,,,1,1,1,1,1,0.844,0.6,6,1,True
+4,UPENN-GBM-00497_11,Radiologist #6,Presurgical glioma,Unknown,,,0.9999916553,1,1,1,0.9999916553,0.9999949098,1,10,1,True
+4,UPENN-GBM-00600_11,Radiologist #1,Presurgical glioma,Unknown,,,0.9999992847,1,1,1,0.9999992847,0.8829995637,0.7,7,1,True
+4,UPENN-GBM-00624_21,Radiologist #4,Presurgical glioma,Unknown,,,0.9999985695,1,1,1,0.9999985695,0.8439991274,0.6,6,1,True
+4,UPENN-GBM-00629_21,Radiologist #7,Presurgical glioma,Unknown,,,0.9999734163,1,1,1,0.9999734163,0.960983784,0.9,9,1,True

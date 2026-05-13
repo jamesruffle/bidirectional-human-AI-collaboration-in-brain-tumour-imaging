@@ -1,0 +1,14 @@
+{
+  "total_gpu_hours": 2001.56,
+  "cost_per_hour_gbp": 2.40,
+  "n_folds": 5,
+  "calendar_hours_per_year": 8760,
+  "working_hours_per_year": 2000,
+  "_provenance": {
+    "total_gpu_hours": "Actual nnUNet 5-fold training time aggregated from cluster job logs",
+    "cost_per_hour_gbp": "Contemporary on-demand cloud GPU pricing (assumption; pre-tax, pre-overhead)",
+    "n_folds": "Number of cross-validation folds in the training pipeline",
+    "calendar_hours_per_year": "Used to convert measured GPU-hours into model-equivalent calendar years",
+    "working_hours_per_year": "Standard UK clinical full-time-equivalent assumption used to convert radiologist career years into hours-equivalent for paragraph 121"
+  }
+}

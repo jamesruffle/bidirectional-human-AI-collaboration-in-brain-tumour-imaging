@@ -1,0 +1,30 @@
+Computing fig_5 panel inputs live from /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/figure_1/csv_v2/radiologist_df.csv...
+  experience_summary: 22 rows (live-derived)
+  calibration_bins:   20 rows (live-derived)
+Fig_5 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_5.png
+Fig_5 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_5.svg
+
+──────────────────────────────────────────────────────────────────────────────
+Fig 5 regression statistics (matching figure panel labels):
+──────────────────────────────────────────────────────────────────────────────
+  Years vs accuracy — without model                        r = +0.395  R² = 0.156  p = 0.230  AIC = -25.594
+  Years vs accuracy — with model                           r = +0.615  R² = 0.378  p = 0.044  AIC = -34.168
+  Years vs mean confidence — without model                 r = +0.715  R² = 0.511  p = 0.013  AIC = 22.765
+  Years vs mean confidence — with model                    r = +0.869  R² = 0.756  p = 0.000507  AIC = 14.259
+  Years vs mean response time — without model              r = +0.259  R² = 0.067  p = 0.443  AIC = 101.933
+  Years vs mean response time — with model                 r = +0.268  R² = 0.072  p = 0.425  AIC = 86.798
+  Confidence vs response time — without model              r = +0.278  R² = 0.077  p = 0.408  AIC = 101.810
+  Confidence vs response time — with model                 r = +0.243  R² = 0.059  p = 0.472  AIC = 86.952
+
+Per-reader-summary regression (mean confidence/10 vs mean accuracy, fitted-line residual):
+  Without model                   slope = +0.129 per unit conf  intercept = +0.610  fitted-line residual = 0.060
+  With model                      slope = +0.350 per unit conf  intercept = +0.490  fitted-line residual = 0.038
+
+Per-reader calibration (case-level slope, bin-level deviation from perfect line):
+  Without model                   n_readers=11  slope = +0.054 ± 0.031  bin deviation = 0.179 ± 0.077
+  With model                      n_readers=11  slope = +0.085 ± 0.024  bin deviation = 0.135 ± 0.044
+
+Pooled-across-readers bin deviation from perfect calibration (matches Fig 5 panels e/f legend):
+  Without model                   pooled bin deviation = 0.170
+  With model                      pooled bin deviation = 0.089
+──────────────────────────────────────────────────────────────────────────────

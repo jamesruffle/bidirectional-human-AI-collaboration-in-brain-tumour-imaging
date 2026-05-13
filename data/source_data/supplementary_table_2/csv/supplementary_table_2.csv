@@ -1,0 +1,33 @@
+Condition,Country,Pathology,N cases,TP,FP,TN,FN,Balanced accuracy,Sensitivity,Specificity,Precision,F1 score
+Model (Without radiologist),Netherlands,Presurgical glioma,28,17,0,7,4,0.905,0.810,1.000,1.000,0.895
+Model (Without radiologist),Sub-Saharan Africa,Presurgical glioma,12,12,0,0,0,0.500,1.000,0.000,1.000,1.000
+Model (Without radiologist),UK,Presurgical glioma,208,142,14,33,19,0.792,0.882,0.702,0.910,0.896
+Model (Without radiologist),USA,Meningioma,45,44,0,0,1,0.489,0.978,0.000,1.000,0.989
+Model (Without radiologist),USA,Metastases,32,29,0,0,3,0.453,0.906,0.000,1.000,0.951
+Model (Without radiologist),USA,Paediatric presurgical tumour,20,8,3,8,1,0.808,0.889,0.727,0.727,0.800
+Model (Without radiologist),USA,Postoperative glioma resection,94,44,11,33,6,0.815,0.880,0.750,0.800,0.838
+Model (Without radiologist),USA,Presurgical glioma,125,116,2,6,1,0.871,0.991,0.750,0.983,0.987
+Model (With radiologist),Netherlands,Presurgical glioma,28,17,0,7,4,0.905,0.810,1.000,1.000,0.895
+Model (With radiologist),Sub-Saharan Africa,Presurgical glioma,12,12,0,0,0,0.500,1.000,0.000,1.000,1.000
+Model (With radiologist),UK,Presurgical glioma,208,141,10,37,20,0.832,0.876,0.787,0.934,0.904
+Model (With radiologist),USA,Meningioma,45,43,0,0,2,0.478,0.956,0.000,1.000,0.977
+Model (With radiologist),USA,Metastases,32,29,0,0,3,0.453,0.906,0.000,1.000,0.951
+Model (With radiologist),USA,Paediatric presurgical tumour,20,8,3,8,1,0.808,0.889,0.727,0.727,0.800
+Model (With radiologist),USA,Postoperative glioma resection,94,44,10,34,6,0.826,0.880,0.773,0.815,0.846
+Model (With radiologist),USA,Presurgical glioma,125,116,1,7,1,0.933,0.991,0.875,0.991,0.991
+Radiologist (With model),Netherlands,Presurgical glioma,56,25,17,10,4,0.616,0.862,0.370,0.595,0.704
+Radiologist (With model),Sub-Saharan Africa,Presurgical glioma,14,14,0,0,0,0.500,1.000,0.000,1.000,1.000
+Radiologist (With model),UK,Presurgical glioma,423,151,47,176,49,0.772,0.755,0.789,0.763,0.759
+Radiologist (With model),USA,Meningioma,54,50,0,0,4,0.463,0.926,0.000,1.000,0.962
+Radiologist (With model),USA,Metastases,44,28,0,0,16,0.318,0.636,0.000,1.000,0.778
+Radiologist (With model),USA,Paediatric presurgical tumour,52,11,21,20,0,0.744,1.000,0.488,0.344,0.512
+Radiologist (With model),USA,Postoperative glioma resection,287,40,76,147,24,0.642,0.625,0.659,0.345,0.444
+Radiologist (With model),USA,Presurgical glioma,170,130,21,15,4,0.693,0.970,0.417,0.861,0.912
+Radiologist (Without model),Netherlands,Presurgical glioma,56,25,17,10,4,0.616,0.862,0.370,0.595,0.704
+Radiologist (Without model),Sub-Saharan Africa,Presurgical glioma,14,12,0,0,2,0.429,0.857,0.000,1.000,0.923
+Radiologist (Without model),UK,Presurgical glioma,423,135,61,162,65,0.701,0.675,0.726,0.689,0.682
+Radiologist (Without model),USA,Meningioma,54,45,0,0,9,0.417,0.833,0.000,1.000,0.909
+Radiologist (Without model),USA,Metastases,44,24,0,0,20,0.273,0.545,0.000,1.000,0.706
+Radiologist (Without model),USA,Paediatric presurgical tumour,52,11,21,20,0,0.744,1.000,0.488,0.344,0.512
+Radiologist (Without model),USA,Postoperative glioma resection,287,31,75,148,33,0.574,0.484,0.664,0.292,0.365
+Radiologist (Without model),USA,Presurgical glioma,170,129,20,16,5,0.704,0.963,0.444,0.866,0.912
