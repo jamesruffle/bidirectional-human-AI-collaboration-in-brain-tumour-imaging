@@ -1,4 +1,4 @@
-Run started: 2026-05-26T18:22:25Z
+Run started: 2026-05-26T18:51:59Z
 Script:      code/figures/extended_data_fig_5.py
 Host CPUs:   128
 ----
@@ -10,5 +10,5 @@ Valid pathologies (>= 5 cases): ['Meningioma', 'Metastases', 'Paediatric presurg
 Extended_Data_Fig_5 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_5.png
 Extended_Data_Fig_5 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_5.svg
 ----
-Run ended:   2026-05-26T18:22:29Z
+Run ended:   2026-05-26T18:52:03Z
 Wall clock:  4.5s
