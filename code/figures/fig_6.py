@@ -752,7 +752,7 @@ if True:
                     total_exp = current_exp + gained_exp
                     max_stacked_exp = max(max_stacked_exp, total_exp)
 
-            # Set right y-axis to 7000 (in £1000s) as requested
+            # Set right y-axis to 7000 (in £1000s)
             # Scale left y-axis proportionally to maintain visual correspondence
             max_total_value = financial_df_sorted['total_value'].max() / 1000  # Convert to thousands
             if max_total_value > 0:
@@ -1578,7 +1578,7 @@ if combined_data:
         for pc in ax_2_0_right.collections:
             pc.set_alpha(0.7)
 
-        # Note: Jitter has been added to zero-variance data for visualization
+        # Jitter applied to zero-variance data for visualization
 
         # Add grid for consistency
         ax_2_0_right.grid(True, alpha=0.3)
@@ -1659,7 +1659,7 @@ if True:
         ax_2_1.scatter(condition_data['conf_acc_corr'], condition_data['calibration_diff'],
                       alpha=0.7, s=100, color=colors_seg[i], label=['Without support', 'With support'][i], zorder=2)
 
-        # Remove radiologist labels (annotations) as requested
+        # Hide radiologist annotations
 
     # Calculate mean radiologist values for each condition
     mean_rad_without = confidence_analysis_df[confidence_analysis_df['with_segmentation'] == False][['conf_acc_corr', 'calibration_diff']].mean()
@@ -2008,7 +2008,7 @@ if True:
         ax_2_2.set_xticklabels(xtick_labels_with_exp, rotation=45, ha='right')
         ax_2_2.axhline(y=0, color='black', linestyle='-', linewidth=0.5)
 
-        # Set y-axis to start at 0 and set top to 0.75 as requested
+        # Set y-axis from 0 to 0.7
         y_min, y_max = ax_2_2.get_ylim()
         ax_2_2.set_ylim(bottom=min(0, y_min), top=0.7)
         ax_2_2.grid(True, alpha=0.3)

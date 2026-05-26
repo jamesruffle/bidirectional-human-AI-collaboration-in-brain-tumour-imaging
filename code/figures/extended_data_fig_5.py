@@ -309,7 +309,7 @@ fig.text(
 
 plt.tight_layout()
 
-# Save as both PNG and SVG with new name
+# Save as both PNG and SVG
 plt.savefig(os.path.join(FIGURES_OUTPUT_PATH, 'Extended_Data_Fig_5.png'),
             dpi=300, bbox_inches='tight')
 plt.savefig(os.path.join(FIGURES_OUTPUT_PATH, 'Extended_Data_Fig_5.svg'),

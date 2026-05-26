@@ -1504,7 +1504,7 @@ all_rads = sorted(all_rads, key=lambda r: radiologist_gains.get(r, 0), reverse=T
 all_rads.append('Model')
 n_rads = len(all_rads)
 
-# Create matrix for heatmap (now includes model)
+# Create matrix for heatmap (including model)
 kappa_without_matrix = np.full((n_rads, n_rads), np.nan)
 
 # Fill matrix for radiologist-radiologist pairs

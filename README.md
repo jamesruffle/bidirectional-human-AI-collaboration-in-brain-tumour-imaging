@@ -35,6 +35,11 @@ code/figures/           One self-contained Python script per published figure.
 code/tables/            One script per Table 1 / supplementary table.
 code/run_all.sh         Parallel runner — executes every figure and table script
                         concurrently with timing captured in each log.
+code/regenerate_seed_predictions.py
+                        Internal bridge script that rebuilds seed_predictions.csv
+                        from the canonical CV cache. Requires a non-bundled
+                        data/cv_cache_backup/*.pkl.original input; users do not
+                        need to run this (seed_predictions.csv is already bundled).
 data/source_data/       CSV / JSON inputs consumed by the figure / table scripts.
 data/figures/           Reproduced PNG + SVG outputs from running the scripts.
 data/logs/              stdout captured from each script (numerical values printed

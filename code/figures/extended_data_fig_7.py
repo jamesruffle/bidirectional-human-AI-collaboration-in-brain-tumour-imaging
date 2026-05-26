@@ -516,10 +516,10 @@ def _render(radiologist_df, FIGURES_OUTPUT_PATH):
     fig.suptitle('Pathology, size, and radiomic assessment of radiologist performance',
                  fontsize=16, y=0.98)
 
-    # Increased top margin from 0.97 to 0.95 for more spacing
+    # Top margin set to 0.95 for spacing
     plt.tight_layout(rect=[0, 0, 1, 0.95])
 
-    # Save figure as both PNG and SVG with new name
+    # Save figure as both PNG and SVG
     output_path_png = os.path.join(FIGURES_OUTPUT_PATH, 'Extended_Data_Fig_7.png')
     output_path_svg = os.path.join(FIGURES_OUTPUT_PATH, 'Extended_Data_Fig_7.svg')
     plt.savefig(output_path_png, dpi=300, bbox_inches='tight')
