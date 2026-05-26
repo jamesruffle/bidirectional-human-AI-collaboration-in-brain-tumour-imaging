@@ -1110,22 +1110,22 @@ if True:
         if rad_name == 'Model':
             if gained_exp and not pd.isna(gained_exp):
                 leveraged_exp = years_exp + gained_exp
-                xtick_labels_a.append(f'Model ({int(years_exp)}->{int(leveraged_exp)}yrs)')
+                xtick_labels_a.append(f'Model ({years_exp:.0f}->{leveraged_exp:.0f}yrs)')
             else:
-                xtick_labels_a.append(f'Model ({int(years_exp)}yrs)')
+                xtick_labels_a.append(f'Model ({years_exp:.0f}yrs)')
         elif 'Radiologist #' in rad_name:
             rad_num = rad_name.split('#')[1]
             if gained_exp and not pd.isna(gained_exp):
                 leveraged_exp = years_exp + gained_exp
-                xtick_labels_a.append(f'R#{rad_num} ({int(years_exp)}->{int(leveraged_exp)}yrs)')
+                xtick_labels_a.append(f'R#{rad_num} ({years_exp:.0f}->{leveraged_exp:.0f}yrs)')
             else:
-                xtick_labels_a.append(f'R#{rad_num} ({int(years_exp)}yrs)')
+                xtick_labels_a.append(f'R#{rad_num} ({years_exp:.0f}yrs)')
         else:
             if gained_exp and not pd.isna(gained_exp):
                 leveraged_exp = years_exp + gained_exp
-                xtick_labels_a.append(f'R#{rad_name[:3]} ({int(years_exp)}->{int(leveraged_exp)}yrs)')
+                xtick_labels_a.append(f'R#{rad_name[:3]} ({years_exp:.0f}->{leveraged_exp:.0f}yrs)')
             else:
-                xtick_labels_a.append(f'R#{rad_name[:3]} ({int(years_exp)}yrs)')
+                xtick_labels_a.append(f'R#{rad_name[:3]} ({years_exp:.0f}yrs)')
     ax_1_0.set_xticklabels(xtick_labels_a, rotation=45, ha='right')
 
     # Create custom legend with generic Agent labels
@@ -1208,22 +1208,22 @@ if True:
         if rad_name == 'Model':
             if gained_exp and not pd.isna(gained_exp):
                 leveraged_exp = years_exp + gained_exp
-                xtick_labels_b.append(f'Model ({int(years_exp)}->{int(leveraged_exp)}yrs)')
+                xtick_labels_b.append(f'Model ({years_exp:.0f}->{leveraged_exp:.0f}yrs)')
             else:
-                xtick_labels_b.append(f'Model ({int(years_exp)}yrs)')
+                xtick_labels_b.append(f'Model ({years_exp:.0f}yrs)')
         elif 'Radiologist #' in rad_name:
             rad_num = rad_name.split('#')[1]
             if gained_exp and not pd.isna(gained_exp):
                 leveraged_exp = years_exp + gained_exp
-                xtick_labels_b.append(f'R#{rad_num} ({int(years_exp)}->{int(leveraged_exp)}yrs)')
+                xtick_labels_b.append(f'R#{rad_num} ({years_exp:.0f}->{leveraged_exp:.0f}yrs)')
             else:
-                xtick_labels_b.append(f'R#{rad_num} ({int(years_exp)}yrs)')
+                xtick_labels_b.append(f'R#{rad_num} ({years_exp:.0f}yrs)')
         else:
             if gained_exp and not pd.isna(gained_exp):
                 leveraged_exp = years_exp + gained_exp
-                xtick_labels_b.append(f'R#{rad_name[:3]} ({int(years_exp)}->{int(leveraged_exp)}yrs)')
+                xtick_labels_b.append(f'R#{rad_name[:3]} ({years_exp:.0f}->{leveraged_exp:.0f}yrs)')
             else:
-                xtick_labels_b.append(f'R#{rad_name[:3]} ({int(years_exp)}yrs)')
+                xtick_labels_b.append(f'R#{rad_name[:3]} ({years_exp:.0f}yrs)')
     ax_1_1.set_xticklabels(xtick_labels_b, rotation=45, ha='right')
 
     # Create custom legend with generic Agent labels
@@ -1305,22 +1305,22 @@ if True:
         if rad_name == 'Model':
             if gained_exp and not pd.isna(gained_exp):
                 leveraged_exp = years_exp + gained_exp
-                xtick_labels_c.append(f'Model ({int(years_exp)}->{int(leveraged_exp)}yrs)')
+                xtick_labels_c.append(f'Model ({years_exp:.0f}->{leveraged_exp:.0f}yrs)')
             else:
-                xtick_labels_c.append(f'Model ({int(years_exp)}yrs)')
+                xtick_labels_c.append(f'Model ({years_exp:.0f}yrs)')
         elif 'Radiologist #' in rad_name:
             rad_num = rad_name.split('#')[1]
             if gained_exp and not pd.isna(gained_exp):
                 leveraged_exp = years_exp + gained_exp
-                xtick_labels_c.append(f'R#{rad_num} ({int(years_exp)}->{int(leveraged_exp)}yrs)')
+                xtick_labels_c.append(f'R#{rad_num} ({years_exp:.0f}->{leveraged_exp:.0f}yrs)')
             else:
-                xtick_labels_c.append(f'R#{rad_num} ({int(years_exp)}yrs)')
+                xtick_labels_c.append(f'R#{rad_num} ({years_exp:.0f}yrs)')
         else:
             if gained_exp and not pd.isna(gained_exp):
                 leveraged_exp = years_exp + gained_exp
-                xtick_labels_c.append(f'R#{rad_name[:3]} ({int(years_exp)}->{int(leveraged_exp)}yrs)')
+                xtick_labels_c.append(f'R#{rad_name[:3]} ({years_exp:.0f}->{leveraged_exp:.0f}yrs)')
             else:
-                xtick_labels_c.append(f'R#{rad_name[:3]} ({int(years_exp)}yrs)')
+                xtick_labels_c.append(f'R#{rad_name[:3]} ({years_exp:.0f}yrs)')
     ax_1_2.set_xticklabels(xtick_labels_c, rotation=45, ha='right')
 
     # Create custom legend with generic Agent labels
@@ -1980,9 +1980,9 @@ if True:
                 gained_exp = model_equiv_years_gained if model_equiv_years_gained is not None else 0
                 if gained_exp and not pd.isna(gained_exp):
                     leveraged_exp = years_exp + gained_exp
-                    xtick_labels_with_exp.append(f'Model ({int(years_exp)}->{int(leveraged_exp)}yrs)')
+                    xtick_labels_with_exp.append(f'Model ({years_exp:.0f}->{leveraged_exp:.0f}yrs)')
                 else:
-                    xtick_labels_with_exp.append(f'Model ({int(years_exp)}yrs)')
+                    xtick_labels_with_exp.append(f'Model ({years_exp:.0f}yrs)')
             else:
                 years_exp = radiologist_exp_dict.get(rad, 0)
                 # Get gained experience from equiv_df
@@ -1995,15 +1995,15 @@ if True:
                     rad_num = rad.split('#')[1]
                     if gained_exp and not pd.isna(gained_exp):
                         leveraged_exp = years_exp + gained_exp
-                        xtick_labels_with_exp.append(f'R#{rad_num} ({int(years_exp)}->{int(leveraged_exp)}yrs)')
+                        xtick_labels_with_exp.append(f'R#{rad_num} ({years_exp:.0f}->{leveraged_exp:.0f}yrs)')
                     else:
-                        xtick_labels_with_exp.append(f'R#{rad_num} ({int(years_exp)}yrs)')
+                        xtick_labels_with_exp.append(f'R#{rad_num} ({years_exp:.0f}yrs)')
                 else:
                     if gained_exp and not pd.isna(gained_exp):
                         leveraged_exp = years_exp + gained_exp
-                        xtick_labels_with_exp.append(f'R#{rad[:3]} ({int(years_exp)}->{int(leveraged_exp)}yrs)')
+                        xtick_labels_with_exp.append(f'R#{rad[:3]} ({years_exp:.0f}->{leveraged_exp:.0f}yrs)')
                     else:
-                        xtick_labels_with_exp.append(f'R#{rad[:3]} ({int(years_exp)}yrs)')
+                        xtick_labels_with_exp.append(f'R#{rad[:3]} ({years_exp:.0f}yrs)')
 
         ax_2_2.set_xticklabels(xtick_labels_with_exp, rotation=45, ha='right')
         ax_2_2.axhline(y=0, color='black', linestyle='-', linewidth=0.5)
