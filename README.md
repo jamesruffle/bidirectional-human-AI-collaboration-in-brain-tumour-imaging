@@ -72,9 +72,9 @@ PNG outputs are byte-identical across runs; SVG outputs may differ by matplotlib
 
 ## Expected runtimes (128-CPU host, parallel)
 
-Most scripts complete in a few seconds. `extended_data_fig_4.py` is the longest path because it runs five 5,000-iter Cohen's κ bootstraps over the inter-rater agreement contrasts — that script alone takes ~15 minutes on a single core. `fig_1.py` and `table_1.py` each do ~40 s of paired bootstrap work for the Δ-metric CIs.
+Most scripts complete in a few seconds. `extended_data_fig_4.py` runs three 5,000-iter Cohen's κ bootstraps over the inter-rater agreement contrasts; these are parallelised via `joblib`, so the script completes in ~35 s on a multi-core host (~15 minutes single-threaded). `fig_1.py` and `table_1.py` each do ~40 s of paired bootstrap work for the Δ-metric CIs.
 
-When run through `code/run_all.sh` on a multi-core host, total wall clock is **bounded by the slowest script (~15 min)** — every other script finishes inside that window. See the `data/logs/*.log` files for measured wall-clock times.
+When run through `code/run_all.sh` on a multi-core host, total wall clock is **bounded by the slowest script (~46 s, currently `fig_1.py`)** — every other script finishes inside that window. See the `data/logs/*.log` files for measured wall-clock times.
 
 ## Source-data layout
 
