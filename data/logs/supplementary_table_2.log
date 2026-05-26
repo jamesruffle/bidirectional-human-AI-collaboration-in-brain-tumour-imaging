@@ -1,4 +1,4 @@
-Run started: 2026-05-26T18:49:45Z
+Run started: 2026-05-26T20:16:54Z
 Script:      code/tables/supplementary_table_2.py
 Host CPUs:   128
 ----
@@ -42,5 +42,5 @@ Radiologist (Without model)      USA                    Presurgical glioma      
 
 Saved: /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/supplementary_table_2/csv/supplementary_table_2.csv
 ----
-Run ended:   2026-05-26T18:49:46Z
+Run ended:   2026-05-26T20:16:55Z
 Wall clock:  0.3s

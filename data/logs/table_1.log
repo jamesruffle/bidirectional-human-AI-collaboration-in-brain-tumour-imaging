@@ -1,4 +1,4 @@
-Run started: 2026-05-26T18:49:45Z
+Run started: 2026-05-26T20:16:54Z
 Script:      code/tables/table_1.py
 Host CPUs:   128
 ----
@@ -25,5 +25,5 @@ Saved: /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/tabl
 
 Note: The Cohen's κ row is read from the extended_data_fig_4.log fixture; it is computed there (not duplicated here) because the reader-pair κ bootstrap is ~15 min long. Other rows are computed live from radiologist_df.csv + bundled fig_6 CSVs + upstream_metadata.json.
 ----
-Run ended:   2026-05-26T18:50:28Z
-Wall clock:  42.2s
+Run ended:   2026-05-26T20:17:39Z
+Wall clock:  44.7s
