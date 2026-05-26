@@ -93,13 +93,13 @@ Model calibration_diff (high - low confidence accuracy):
   Model + radiologist (Q3/Q1 split):       +0.276
 
 Agent-level (n=12: 11 radiologists + 1 model) calibration metrics (manuscript Para 126):
-  Sentence 1 — confidence-accuracy correlation (paired t=-4.347, p<0.01; manuscript: p<0.01):
+  Sentence 1 — confidence-accuracy correlation (paired t=-4.347, p=0.0012; manuscript: p<0.01):
     Without support  mean = 0.166 ± 0.117
     With support     mean = 0.331 ± 0.122
-  Sentence 2 — calibration difference (paired t=-3.406, p<0.01; manuscript: p<0.01):
+  Sentence 2 — calibration difference (paired t=-3.406, p=0.0059; manuscript: p<0.01):
     Without support  mean = 0.155 ± 0.144
     With support     mean = 0.334 ± 0.121
-  Sentence 3 — confidence bias (paired t=-3.804, p<0.01; manuscript: p<0.01):
+  Sentence 3 — confidence bias (paired t=-3.804, p=0.0029; manuscript: p<0.01):
     Without support  mean = 0.626 ± 0.456
     With support     mean = 1.457 ± 0.834
 

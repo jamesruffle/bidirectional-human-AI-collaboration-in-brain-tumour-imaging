@@ -1049,11 +1049,13 @@ _n12_bias_wm = np.concatenate([_bias_wm, [_MODEL_BIAS_WITH]])
 print("\nAgent-level (n=12: 11 radiologists + 1 model) calibration metrics (manuscript Para 126):")
 
 def _para126_sig(p):
-    if p < 0.0001: return 'p<0.0001'
-    if p < 0.001:  return 'p<0.001'
-    if p < 0.01:   return 'p<0.01'
-    if p < 0.05:   return 'p<0.05'
-    return f'p={p:.3f} (ns)'
+    if p < 0.0001:
+        return f'p<0.0001 (exact={p:.3g})'
+    if p < 0.001:
+        return f'p={p:.4f}'
+    if p < 0.05:
+        return f'p={p:.4f}'
+    return f'p={p:.4f} (ns)'
 
 _t1, _p1 = _scipy_stats.ttest_rel(_n12_corr_w,  _n12_corr_wm)
 _t2, _p2 = _scipy_stats.ttest_rel(_n12_calib_w, _n12_calib_wm)
