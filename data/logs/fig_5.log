@@ -10,7 +10,7 @@ Fig 5 regression statistics (matching figure panel labels):
   Years vs accuracy — without model                        r = +0.395  R² = 0.156  p = 0.230  AIC = -25.594
   Years vs accuracy — with model                           r = +0.615  R² = 0.378  p = 0.044  AIC = -34.168
   Years vs mean confidence — without model                 r = +0.715  R² = 0.511  p = 0.013  AIC = 22.765
-  Years vs mean confidence — with model                    r = +0.869  R² = 0.756  p = 0.000507  AIC = 14.259
+  Years vs mean confidence — with model                    r = +0.869  R² = 0.756  p = 0.0005  AIC = 14.259
   Years vs mean response time — without model              r = +0.259  R² = 0.067  p = 0.443  AIC = 101.933
   Years vs mean response time — with model                 r = +0.268  R² = 0.072  p = 0.425  AIC = 86.798
   Confidence vs response time — without model              r = +0.278  R² = 0.077  p = 0.408  AIC = 101.810

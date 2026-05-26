@@ -104,7 +104,9 @@ corr, p_val = stats.pearsonr(condition_data['years_experience'], condition_data[
 
 x_line = np.linspace(condition_data['years_experience'].min(),
                    condition_data['years_experience'].max(), 100)
-p_str = 'p<0.001' if p_val <= 0.001 else f'p={p_val:.3f}'
+p_str = (r'$\it{p}$<0.0001' if p_val < 0.0001
+         else fr'$\it{{p}}$={p_val:.4f}' if p_val < 0.001
+         else fr'$\it{{p}}$={p_val:.3f}')
 ax1.plot(x_line, p(x_line), color=colors_seg[0], linestyle='-',
         alpha=0.8, linewidth=2, label=f'R²={corr**2:.3f}, {p_str}')
 
@@ -155,7 +157,9 @@ corr, p_val = stats.pearsonr(condition_data['years_experience'], condition_data[
 
 x_line = np.linspace(condition_data['years_experience'].min(),
                    condition_data['years_experience'].max(), 100)
-p_str = 'p<0.001' if p_val <= 0.001 else f'p={p_val:.3f}'
+p_str = (r'$\it{p}$<0.0001' if p_val < 0.0001
+         else fr'$\it{{p}}$={p_val:.4f}' if p_val < 0.001
+         else fr'$\it{{p}}$={p_val:.3f}')
 ax2.plot(x_line, p(x_line), color=colors_seg[1], linestyle='-',
         alpha=0.8, linewidth=2, label=f'R²={corr**2:.3f}, {p_str}')
 
@@ -206,7 +210,9 @@ corr, p_val = stats.pearsonr(condition_data['years_experience'], condition_data[
 
 x_line = np.linspace(condition_data['years_experience'].min(),
                    condition_data['years_experience'].max(), 100)
-p_str = 'p<0.001' if p_val <= 0.001 else f'p={p_val:.3f}'
+p_str = (r'$\it{p}$<0.0001' if p_val < 0.0001
+         else fr'$\it{{p}}$={p_val:.4f}' if p_val < 0.001
+         else fr'$\it{{p}}$={p_val:.3f}')
 ax3.plot(x_line, p(x_line), color=colors_seg[0], linestyle='-',
         alpha=0.8, linewidth=2, label=f'R²={corr**2:.3f}, {p_str}')
 
@@ -257,7 +263,9 @@ corr, p_val = stats.pearsonr(condition_data['years_experience'], condition_data[
 
 x_line = np.linspace(condition_data['years_experience'].min(),
                    condition_data['years_experience'].max(), 100)
-p_str = 'p<0.001' if p_val <= 0.001 else f'p={p_val:.3f}'
+p_str = (r'$\it{p}$<0.0001' if p_val < 0.0001
+         else fr'$\it{{p}}$={p_val:.4f}' if p_val < 0.001
+         else fr'$\it{{p}}$={p_val:.3f}')
 ax4.plot(x_line, p(x_line), color=colors_seg[1], linestyle='-',
         alpha=0.8, linewidth=2, label=f'R²={corr**2:.3f}, {p_str}')
 
@@ -440,9 +448,12 @@ def _reg_stats(x, y, label):
         n = len(x)
         aic = n * np.log(rss / n) + 2 * 2
         slope = float(z[0]); intercept = float(z[1])
-    # Print p with sub-millisecond precision when p<0.001 so the manuscript's
-    # `p<0.001` claim cannot be misread as the rounded `p=0.001`.
-    p_str = f"{p:.3g}" if p < 0.001 else f"{p:.3f}"
+    if p < 0.0001:
+        p_str = "<0.0001"
+    elif p < 0.001:
+        p_str = f"{p:.4f}"
+    else:
+        p_str = f"{p:.3f}"
     print(f"  {label:55s}  r = {r:+.3f}  R² = {r**2:.3f}  p = {p_str}  AIC = {aic:.3f}")
     return {'r': r, 'r2': r**2, 'p': p, 'aic': aic, 'slope': slope, 'intercept': intercept}
 
