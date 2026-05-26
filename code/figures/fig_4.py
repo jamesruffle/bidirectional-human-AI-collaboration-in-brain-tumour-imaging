@@ -123,7 +123,7 @@ def main():
     recall_unique = recall[unique_indices]
     precision_unique = precision[unique_indices]
 
-    # Calculate AUC using the original sklearn implementation
+    # Calculate AUPRC via sklearn average_precision_score
     pr_auc = average_precision_score(y_true, y_scores)
     print(f"  Model alone AUPRC (unique-case, n={len(y_true)}): {pr_auc:.3f}")
 

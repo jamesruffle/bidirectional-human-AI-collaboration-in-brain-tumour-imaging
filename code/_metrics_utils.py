@@ -6,8 +6,7 @@ downstream script that needs the canonical Model-alone / Model+Rad
 metric dicts. Every metric in the manuscript is traceable to a single
 Python computation on the bundled CSV data.
 
-Procedure (matches `multi_radiologist_analysis.py:32070-32287` and
-`generate_aggregates.py`):
+Procedure:
 
     seed_predictions.csv (5,500 rows = 5 seeds × 1,100 pairs)
       └─→ optimistic_dedup_seed_predictions()
@@ -42,8 +41,7 @@ def optimistic_dedup_seed_predictions(df_seeds):
 
     For each unique (case_id, radiologist) pair, gather rows from every
     seed and pick one: prefer rows where cv_pred == gt; otherwise take
-    the first row encountered (matches `multi_radiologist_analysis.py`
-    lines 32079-32095).
+    the first row encountered.
 
     Returns a DataFrame of N pair-level predictions where N = number of
     unique (case_id, radiologist) pairs (1,100 for the canonical run).
@@ -382,15 +380,13 @@ def compute_pair_count_weighted_kappa_aggregate(radiologist_df):
     Mirrors the convention in extended_data_fig_4.py — weights the rad-rad
     component (n=1289 case-pairs across the 55 unique rad-rad pairs) and the
     rad-model component (n=1100 case-pairs across the 11 reader-model pairs)
-    by their underlying case-pair counts, giving the same aggregate cited in
-    Table 1 row 11 and in the inter-rater agreement Results paragraph
-    (0.324 without support; 0.484 with support).
+    by their underlying case-pair counts, giving the aggregate cited in
+    Table 1 row 11 and in the inter-rater agreement Results paragraph.
 
-    Differs from a simple unweighted mean of the 66 per-pair Cohen's kappas:
-    the latter weights every reader-pair equally regardless of how many
-    case-pairs back its estimate (and yields 0.338 / 0.484 on the bundled
-    data), whereas the pair-count-weighted aggregate gives more weight to
-    pairs with more common cases.
+    Differs from a simple unweighted mean of the 66 per-pair Cohen's kappas
+    in that the latter weights every reader-pair equally regardless of how
+    many case-pairs back its estimate, whereas this aggregate gives more
+    weight to pairs with more common cases.
 
     Returns
     -------

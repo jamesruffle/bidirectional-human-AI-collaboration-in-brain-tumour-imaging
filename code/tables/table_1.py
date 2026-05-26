@@ -56,7 +56,7 @@ B = 5000
 SEED = 20260505
 
 
-# ----- helpers (transplanted verbatim from fig_1.py) ------------------------
+# ----- helpers (shared with fig_1.py) ---------------------------------------
 
 def _reader_bootstrap_ci(arr, B=B, seed=SEED):
     a = np.asarray(arr, dtype=float)
@@ -165,7 +165,7 @@ def _fold_delta_bootstrap(fn_name, gt, pred_w, pred_wm, fold_idx, B=B, seed=SEED
 
 def _per_reader_metrics(rdf, with_seg):
     """Per-reader (auroc, auprc, sensitivity, specificity) using MRMC-style
-    confidence-weighted predictions for sens/spec — verbatim from fig_1.py."""
+    confidence-weighted predictions for sens/spec (shared with fig_1.py)."""
     sub = rdf[rdf['with_segmentation'] == with_seg]
     rows = []
     for r, grp in sub.groupby('radiologist'):
@@ -521,13 +521,10 @@ def main():
                          - _mc_w_arr[_mp_w_arr < _med_w].mean())
     mod_calib_lo, mod_calib_hi = _bootstrap_pair(_stat_calib_w)
 
-    # Q3/Q1 quartile split for the AI+Human (radiologist-supported) model arm.
-    # Mirrors fig_1.py and fig_6.py panel j: high = scores at-or-above the 75th
-    # percentile of the bootstrap sample, low = scores at-or-below the 25th.
-    # The radiologist-supported probability distribution is bimodal-but-not
-    # saturated, so a fixed threshold (e.g. 7.0 on the 0–10 rescale) discarded
-    # the upper tail. The bootstrap recomputes Q3/Q1 per replicate for paired
-    # uncertainty on the same statistic.
+    # Q3/Q1 quartile split for the AI+Human (radiologist-supported) model arm
+    # (high = at-or-above the 75th percentile of the bootstrap sample; low =
+    # at-or-below the 25th). The bootstrap recomputes Q3/Q1 per replicate to
+    # propagate paired uncertainty on the same statistic.
     def _stat_calib_m(ix):
         p = _mp_m_arr[ix]; c = _mc_m_arr[ix]
         q3 = float(np.quantile(p, 0.75))

@@ -31,7 +31,7 @@ from sklearn.metrics import (
 
 
 def aggregate_by_case_fig1(df, pred_col, gt_col='has_enhancement_gt', case_col='case_id'):
-    """Verbatim copy of monolith helper (Fig 1 case-level aggregation)."""
+    """Case-level aggregation for Fig 1 (mode prediction + mean probability per case)."""
     case_results = {}
     for _, row in df.iterrows():
         case_id = row[case_col]
@@ -66,7 +66,7 @@ FIGURES_OUTPUT_PATH = os.path.join(R1_ROOT, 'data', 'figures')
 
 
 def load_state_from_csv():
-    """Reconstruct the 14-key master state dict from CSV/JSON inputs."""
+    """Load the 14 input arrays/frames for Fig 1 from the bundled CSV/JSON inputs."""
     state = {}
 
     state['radiologist_df'] = pd.read_csv(
@@ -140,8 +140,7 @@ def load_state_from_csv():
     state['model_results'] = data.get('model_results', {})
 
     # Pair-level and case-level model metrics are computed *live* from
-    # seed_predictions.csv via _metrics_utils — no JSON lookup. This
-    # mirrors `multi_radiologist_analysis.py:32070-32287` and ensures every
+    # seed_predictions.csv via _metrics_utils — no JSON lookup. Every
     # number in panel B / Table 1 is reproducible from bundled CSVs.
     import sys as _sys
     _here = os.path.dirname(os.path.abspath(__file__))
@@ -238,7 +237,7 @@ os.makedirs(FIGURES_OUTPUT_PATH, exist_ok=True)
 
 print(f"Loading Fig 1 inputs from {SRC_DIR}...")
 _state = load_state_from_csv()
-print(f"  Loaded {len(_state)} master variables from CSV/JSON")
+print(f"  Loaded {len(_state)} variables from CSV/JSON")
 
 derive_subsets(_state)
 print(f"  Derived {len(_state)} variables total (subsets + paired_data + plot_df + experience_df)")
@@ -482,7 +481,7 @@ print(f"  Model+Radiologist (pair-level CV): n={pair_level_cv_metrics['n_pairs']
 x = np.arange(len(metrics_names))
 width = 0.18  # Reduced width to fit 4 bars
 
-# Define colors from reference notebook
+# Panel colour palette
 colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd']
 
 # Bootstrap parameters
@@ -1020,10 +1019,7 @@ _calib_wm = _per_reader_calib_diff(radiologist_df, True)
 _n12_calib_w  = np.concatenate([_calib_w,  [_MODEL_CALIB_WITHOUT]])
 _n12_calib_wm = np.concatenate([_calib_wm, [_MODEL_CALIB_WITH]])
 
-# Echo the model calibration_diff values so the Table 1 row 9 AI columns
-# (-0.112 alone, 0.276 with radiologist) are traceable to this log. Without
-# this print the values existed only inside the bootstrap statistic, leaving
-# no audit trail between fig_1 and the manuscript / table.
+# Echo the model calibration_diff values for the Table 1 row 9 AI columns.
 print(
     f"\nModel calibration_diff (high - low confidence accuracy):"
     f"\n  Model alone (median split):              {_MODEL_CALIB_WITHOUT:+.3f}"
@@ -1138,10 +1134,25 @@ print(
     f"  (paragraph 88)"
 )
 
-# Note: Table 1 rows 9-10 model arms (conf-acc corr -0.078/0.290 and
-# calibration_diff -0.112/0.273) are computed in fig_6.py, not here. fig_1
-# focuses on radiologist-level metrics and the AI-arm summary numbers
-# downstream of the existing Brier-based CQS print further down.
+# ── Paired t-test on per-review RTAT (paragraph 88, '*p*<0.0001') ──
+# Pair the without-model and with-model reviews by (case_id, radiologist) so
+# that every reader's repeat of the same case contributes one paired observation.
+_rt_w_pivot = (radiologist_df[radiologist_df['with_segmentation'] == False]
+               .set_index(['case_id', 'radiologist'])['response_time'])
+_rt_m_pivot = (radiologist_df[radiologist_df['with_segmentation'] == True]
+               .set_index(['case_id', 'radiologist'])['response_time'])
+_rt_paired = pd.concat([_rt_w_pivot.rename('without'), _rt_m_pivot.rename('with_m')],
+                       axis=1, join='inner').dropna()
+_rt_tstat, _rt_pval = _scipy_stats.ttest_rel(_rt_paired['without'], _rt_paired['with_m'])
+print(
+    f"  Paired t-test on per-review RTAT (n={len(_rt_paired)} pairs):"
+    f"  t={_rt_tstat:+.3f}, p={_rt_pval:.3g}"
+)
+
+# Note: Table 1 rows 9-10 model arms (confidence-accuracy correlation and
+# calibration difference) are computed in fig_6.py; fig_1 focuses on
+# radiologist-level metrics and the AI-arm summary numbers downstream of
+# the existing Brier-based CQS print further down.
 
 # ── Para 123 calibration sub-metric (per-reader correct/incorrect Δ confidence) ──
 print("\nPer-reader Δ confidence (correct − incorrect) (para 123 sentence 3):")
@@ -1556,7 +1567,7 @@ for rad in all_rads:
 # Calculate mean kappa for title
 kappa_without = np.nanmean(kappa_without_matrix[~np.eye(n_rads, dtype=bool)])
 
-# Create heatmap with same aesthetics as inter_rater_agreement_analysis.png
+# Create heatmap (inferno colourmap, kappa range 0–1.0)
 sns.heatmap(kappa_without_matrix, annot=False, cmap='inferno',
             vmin=0, vmax=1.0, ax=ax, cbar=False,
             xticklabels=rad_labels,
@@ -1692,7 +1703,7 @@ np.fill_diagonal(kappa_with_matrix, 1.0)
 # Calculate mean kappa for title
 kappa_with = np.nanmean(kappa_with_matrix[~np.eye(n_rads, dtype=bool)])
 
-# Create heatmap with same aesthetics as inter_rater_agreement_analysis.png
+# Create heatmap (inferno colourmap, kappa range 0–1.0)
 # Create colorbar axes to the right with some spacing
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 divider = make_axes_locatable(ax)
@@ -2007,6 +2018,16 @@ print(f"  Without radiologist support: {model_conf_without:.2f} ± {_model_conf_
 print(f"  With radiologist support:    {model_conf_with:.2f} ± {_model_conf_with_std:.2f}")
 print(f"  Δ AI (with vs without):       {model_conf_with - model_conf_without:+.2f}  "
       f"(Table 1 R12 col 7)")
+# ── Paired t-test on per-review AI calibrated confidence (paragraph 86, '*p*<0.0001') ──
+# Pair the without-rad and with-rad per-review CQS at the case-reader pair level.
+# CQS_per_pair = 1 + (1 - brier_per_pair) * 9.
+_cqs_w = 1.0 + (1.0 - cv_pred_df_with_human_e['model_brier'].values) * 9.0
+_cqs_m = 1.0 + (1.0 - cv_pred_df_with_human_e['combined_brier'].values) * 9.0
+_ai_conf_tstat, _ai_conf_pval = _scipy_stats.ttest_rel(_cqs_w, _cqs_m)
+print(
+    f"  Paired t-test on per-review AI calibrated confidence (n={len(_cqs_w)} pairs):"
+    f"  t={_ai_conf_tstat:+.3f}, p={_ai_conf_pval:.3g}"
+)
 
 # Plot model scatterpoint
 ax.scatter(model_conf_without, model_conf_with, s=300, alpha=1.0,

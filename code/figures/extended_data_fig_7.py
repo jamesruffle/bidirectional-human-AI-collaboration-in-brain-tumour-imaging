@@ -48,7 +48,7 @@ def main():
 def _render(radiologist_df, FIGURES_OUTPUT_PATH):
     def add_radar_subplot(ax, categories, values_without, values_with, title, ylim=(0, 1.0)):
         """Add a radar subplot to the figure."""
-        # Define reference color palette from nnunet_enhancement_prediction_article_figures.ipynb
+        # Radar palette
         reference_colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd']
 
         N = len(categories)
@@ -214,7 +214,7 @@ def _render(radiologist_df, FIGURES_OUTPUT_PATH):
     # Create new 3x3 figure for radar plots with increased height for row spacing
     fig = plt.figure(figsize=(18, 20))
 
-    # Define reference color palette from nnunet_enhancement_prediction_article_figures.ipynb
+    # Figure palette
     reference_colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd']
 
     # Define pathology categories

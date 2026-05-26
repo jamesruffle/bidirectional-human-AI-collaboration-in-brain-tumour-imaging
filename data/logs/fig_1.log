@@ -1,5 +1,9 @@
+Run started: 2026-05-26T16:01:37Z
+Script:      code/figures/fig_1.py
+Host CPUs:   128
+----
 Loading Fig 1 inputs from /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/figure_1/csv_v2...
-  Loaded 16 master variables from CSV/JSON
+  Loaded 16 variables from CSV/JSON
   Derived 24 variables total (subsets + paired_data + plot_df + experience_df)
 Rendering Fig 1...
 Panel a: Using reader-averaged balanced accuracy for radiologist alone: 0.698
@@ -122,6 +126,7 @@ Pooled-review summary (raw 2200-row pool, paragraphs 86 + 88):
   Throughput without model:  mean=79 ± 71.7 cases/hour  (delta-method SD; paragraph 88)
   Throughput with model:     mean=118 ± 116.4 cases/hour  (delta-method SD; paragraph 88)
   Reporting-efficiency gain: 49%  (paragraph 88)
+  Paired t-test on per-review RTAT (n=1100 pairs):  t=+11.170, p=1.63e-27
 
 Per-reader Δ confidence (correct − incorrect) (para 123 sentence 3):
   Radiologist alone             mean = 0.700 ± 0.396  (n=11)
@@ -169,8 +174,12 @@ Model calibrated confidence (Brier-derived CQS, paragraph 86):
   Without radiologist support: 8.20 ± 3.44
   With radiologist support:    8.67 ± 2.19
   Δ AI (with vs without):       +0.47  (Table 1 R12 col 7)
+  Paired t-test on per-review AI calibrated confidence (n=656 pairs):  t=-7.710, p=4.7e-14
 
 Model throughput (paragraph 88 / Table 1 R13 cols 4-5):
   878 cases/hour (4.10s per case)
 Figure_1 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_1.png
 Figure_1 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_1.svg
+----
+Run ended:   2026-05-26T16:02:22Z
+Wall clock:  45.0s

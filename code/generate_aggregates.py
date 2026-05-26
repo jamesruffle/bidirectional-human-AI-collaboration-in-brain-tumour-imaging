@@ -15,7 +15,7 @@ Input (bundled, public, plain-text):
     The seeds are exported from the canonical 5-seed cross-validation
     run; the CSV is the public-shareable form of those predictions.
 
-Procedure (mirrors `multi_radiologist_analysis.py:32070-32287`):
+Procedure:
 
 1. Read seed_predictions.csv (5,500 rows).
 2. For each unique (case_id, radiologist) pair, dedup across the 5 seeds
@@ -26,8 +26,8 @@ Procedure (mirrors `multi_radiologist_analysis.py:32070-32287`):
    and combined_prob across all reviews of each case.
 
 Outputs:
-  data/source_data/figure_1/csv_v2/aggregates.json   (derived; keys
-    mirror prior schema: pair_level_model_metrics, pair_level_cv_metrics,
+  data/source_data/figure_1/csv_v2/aggregates.json   (derived; keys:
+    pair_level_model_metrics, pair_level_cv_metrics,
     unique_case_model_metrics, unique_case_cv_metrics)
   data/source_data/figure_1/csv_v2/best_cv_predictions.csv  (derived;
     1,100 deduped pair-level predictions)
@@ -59,12 +59,11 @@ OUT_DIR = os.path.join(R1_ROOT, 'data', 'source_data', 'figure_1', 'csv_v2')
 
 
 def optimistic_dedup_seed_predictions(df_seeds):
-    """Apply master's prefer-correct dedup across all seeds.
+    """Apply prefer-correct dedup across all seeds.
 
     For each unique (case_id, radiologist) pair, gather rows from every
     seed and pick one: prefer rows where cv_pred == gt; otherwise take
-    the first row encountered (matches `multi_radiologist_analysis.py`
-    line 32079-32095 logic).
+    the first row encountered.
 
     Returns a DataFrame of 1,100 deduped pair-level predictions.
     """

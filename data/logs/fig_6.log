@@ -1,3 +1,7 @@
+Run started: 2026-05-26T16:01:37Z
+Script:      code/figures/fig_6.py
+Host CPUs:   128
+----
 Loading CSV/JSON inputs from /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/figure_6/csv...
 
 Median additional radiologist experience leveraged by model (paragraph 118):
@@ -134,3 +138,6 @@ Fisher's exact test — panel h optimal-calibration quadrant (paragraph 127):
 Fig_6 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_6.png
 
 Figure 6 saved to /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_6.png
+----
+Run ended:   2026-05-26T16:01:52Z
+Wall clock:  15.4s

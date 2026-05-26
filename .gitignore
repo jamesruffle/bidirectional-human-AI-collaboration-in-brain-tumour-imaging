@@ -223,3 +223,6 @@ __marimo__/
 data/cv_cache_backup/
 *.pkl
 *.pkl.original
+
+# Ad-hoc log backups
+*.log.bak*

@@ -2,9 +2,9 @@
 """Extended Data Figure 4 - Agreement comparisons (model vs radiologist, radiologist vs radiologist).
 
 Self-contained reproduction script. Inputs:
-  - data/source_data/extended_data_figure_4/csv/agreement_inputs.csv
-    (2200 rows x 5 cols: case_id, radiologist, with_segmentation,
-     predicted_enhancement, model_predicted_enhancement)
+  - data/source_data/figure_1/csv_v2/radiologist_df.csv
+    (the canonical radiologist reviews; 2200 rows × case_id, radiologist,
+     with_segmentation, predicted_enhancement, model_predicted_enhancement)
 
 Output: data/figures/Extended_Data_Fig_4.png  (and .svg)
 
@@ -304,7 +304,7 @@ def main():
     # ── Per-pair κ direction split for paragraph 84 sentence ──
     # For each unique radiologist pair (rad-rad) and each radiologist (rad-model),
     # compute κ on shared cases with vs without support, and tally how many have
-    # κ_with > κ_without. Manuscript claim: "77% higher with support, 23% without".
+    # κ_with > κ_without.
     print(f"\nPer-pair κ direction split (paragraph 84, '% higher with support'):")
     pair_results = []  # list of (pair_label, kappa_w, kappa_m)
     # Rad-rad pairs

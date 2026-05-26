@@ -1,3 +1,7 @@
+Run started: 2026-05-26T16:01:37Z
+Script:      code/figures/fig_5.py
+Host CPUs:   128
+----
 Computing fig_5 panel inputs live from /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/figure_1/csv_v2/radiologist_df.csv...
   experience_summary: 22 rows (live-derived)
   calibration_bins:   20 rows (live-derived)
@@ -28,3 +32,6 @@ Pooled-across-readers bin deviation from perfect calibration (matches Fig 5 pane
   Without model                   pooled bin deviation = 0.170
   With model                      pooled bin deviation = 0.089
 ──────────────────────────────────────────────────────────────────────────────
+----
+Run ended:   2026-05-26T16:01:40Z
+Wall clock:  3.1s

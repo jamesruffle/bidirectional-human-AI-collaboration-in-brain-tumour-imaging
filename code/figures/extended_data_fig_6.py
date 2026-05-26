@@ -222,8 +222,7 @@ def main():
                                          markerfacecolor='gray', markeredgecolor='black',
                                          markersize=markersize, label=label))
 
-    # Place size legend centered at the bottom with 5 columns as requested
-    # Maintain Y position at 0.20 as in original
+    # Place size legend centred at the bottom with 5 columns, Y=0.20.
     fig.legend(handles=size_legend_elements, loc='center',
               bbox_to_anchor=(0.5, 0.20), title='Lesion size',
               fontsize=10, title_fontsize=10, ncol=5)

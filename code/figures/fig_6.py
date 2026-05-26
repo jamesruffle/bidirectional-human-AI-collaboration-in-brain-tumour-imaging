@@ -1771,7 +1771,7 @@ if True:
     x_range = ax_2_1.get_xlim()
     y_range = ax_2_1.get_ylim()
     
-    # Define quadrant colors based on the original text box colors
+    # Quadrant colour palette
     quadrant_colors = {
         'top_left': reference_colors[4],     # Purple - High calibration, Low self-awareness
         'top_right': reference_colors[2],    # Green - High calibration, High self-awareness (IDEAL)

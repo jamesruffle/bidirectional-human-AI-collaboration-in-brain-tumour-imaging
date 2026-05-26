@@ -77,9 +77,9 @@ When run through `code/run_all.sh` on a multi-core host, total wall clock is **b
 |---|---|
 | `fig_1.py` | `data/source_data/figure_1/csv_v2/` |
 | `fig_4.py` | `data/source_data/figure_4/csv/` |
-| `fig_5.py` | `data/source_data/figure_5/csv/` |
-| `fig_6.py` | `data/source_data/figure_6/` |
-| `extended_data_fig_4.py` | `data/source_data/extended_data_figure_4/` |
+| `fig_5.py` | `data/source_data/figure_1/csv_v2/radiologist_df.csv` |
+| `fig_6.py` | `data/source_data/figure_6/` (+ `data/source_data/figure_1/csv_v2/radiologist_df.csv`) |
+| `extended_data_fig_4.py` | `data/source_data/figure_1/csv_v2/radiologist_df.csv` |
 | `extended_data_fig_5.py` | `data/source_data/extended_data_figure_5/csv/` |
 | `extended_data_fig_6.py` | `data/source_data/extended_data_figure_6/csv/` |
 | `extended_data_fig_7.py` | `data/source_data/extended_data_figure_7/` |
