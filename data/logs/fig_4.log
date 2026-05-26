@@ -1,4 +1,4 @@
-Run started: 2026-05-26T18:51:59Z
+Run started: 2026-05-26T19:27:25Z
 Script:      code/figures/fig_4.py
 Host CPUs:   128
 ----
@@ -17,5 +17,5 @@ Using pre-extracted prob_data_dict (564 cases)
 Fig_4 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_4.png
 Fig_4 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_4.svg
 ----
-Run ended:   2026-05-26T18:52:02Z
-Wall clock:  3.0s
+Run ended:   2026-05-26T19:27:28Z
+Wall clock:  3.1s

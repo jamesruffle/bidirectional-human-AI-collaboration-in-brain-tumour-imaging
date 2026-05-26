@@ -18,6 +18,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
+from joblib import Parallel, delayed
 from sklearn.metrics import cohen_kappa_score, confusion_matrix
 
 sns.set_palette("husl")
@@ -26,6 +27,63 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 R1_ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 RDF_PATH = os.path.join(R1_ROOT, 'data', 'source_data', 'figure_1', 'csv_v2', 'radiologist_df.csv')
 FIGURES_OUTPUT_PATH = os.path.join(R1_ROOT, 'data', 'figures')
+
+
+def _kappa_mr_iter(ix, common_cases, w_idx, m_idx, w_model, w_rad, m_model, m_rad):
+    cases = common_cases[ix]
+    rows_w = []
+    rows_m = []
+    for c in cases:
+        rows_w.extend(w_idx[c])
+        rows_m.extend(m_idx[c])
+    kw = cohen_kappa_score(w_model[rows_w], w_rad[rows_w])
+    km = cohen_kappa_score(m_model[rows_m], m_rad[rows_m])
+    return km - kw
+
+
+def _kappa_rr_iter(ix, common_cases, w_pairs_by_case, m_pairs_by_case):
+    cases = common_cases[ix]
+    pairs_w = []
+    pairs_m = []
+    for c in cases:
+        pairs_w.extend(w_pairs_by_case[c])
+        pairs_m.extend(m_pairs_by_case[c])
+    a_w = np.asarray(pairs_w)
+    a_m = np.asarray(pairs_m)
+    kw = cohen_kappa_score(a_w[:, 0], a_w[:, 1])
+    km = cohen_kappa_score(a_m[:, 0], a_m[:, 1])
+    return km - kw
+
+
+def _kappa_agg_iter(ix, common_all, mr_w_idx, mr_m_idx, mr_w_model, mr_w_rad,
+                    mr_m_model, mr_m_rad, rr_w_by_case, rr_m_by_case):
+    cases = common_all[ix]
+    mr_rows_w = []
+    mr_rows_m = []
+    rr_pw = []
+    rr_pm = []
+    for c in cases:
+        if c in mr_w_idx:
+            mr_rows_w.extend(mr_w_idx[c])
+            mr_rows_m.extend(mr_m_idx[c])
+        if c in rr_w_by_case:
+            rr_pw.extend(rr_w_by_case[c])
+            rr_pm.extend(rr_m_by_case[c])
+    if not (mr_rows_w and mr_rows_m and rr_pw and rr_pm):
+        return float('nan')
+    n_mrw = len(mr_rows_w)
+    n_mrm = len(mr_rows_m)
+    n_rrw = len(rr_pw)
+    n_rrm = len(rr_pm)
+    kmr_w = cohen_kappa_score(mr_w_model[mr_rows_w], mr_w_rad[mr_rows_w])
+    kmr_m = cohen_kappa_score(mr_m_model[mr_rows_m], mr_m_rad[mr_rows_m])
+    a_rr_w = np.asarray(rr_pw)
+    a_rr_m = np.asarray(rr_pm)
+    krr_w = cohen_kappa_score(a_rr_w[:, 0], a_rr_w[:, 1])
+    krr_m = cohen_kappa_score(a_rr_m[:, 0], a_rr_m[:, 1])
+    agg_w_b = (krr_w * n_rrw + kmr_w * n_mrw) / (n_rrw + n_mrw)
+    agg_m_b = (krr_m * n_rrm + kmr_m * n_mrm) / (n_rrm + n_mrm)
+    return agg_m_b - agg_w_b
 
 
 def main():
@@ -207,25 +265,24 @@ def main():
     B = 5000
 
     # 1) Rad-model contrast: bootstrap unique cases, recompute κ on resampled (model_pred, rad_pred) pairs
-    mr_w = without_support_data[['case_id', 'predicted_enhancement', 'model_predicted_enhancement']].dropna().copy()
-    mr_m = with_support_data[['case_id', 'predicted_enhancement', 'model_predicted_enhancement']].dropna().copy()
+    mr_w = without_support_data[['case_id', 'predicted_enhancement', 'model_predicted_enhancement']].dropna().reset_index(drop=True).copy()
+    mr_m = with_support_data[['case_id', 'predicted_enhancement', 'model_predicted_enhancement']].dropna().reset_index(drop=True).copy()
     mr_w_cases = mr_w['case_id'].unique(); mr_m_cases = mr_m['case_id'].unique()
     common_mr_cases = np.array(sorted(set(mr_w_cases) & set(mr_m_cases)))
     n_mr_cases = len(common_mr_cases)
     delta_mr_pt = kappa_with - kappa_without
-    boot_mr = np.empty(B)
     mr_w_idx = {c: mr_w.index[mr_w['case_id'] == c].tolist() for c in common_mr_cases}
     mr_m_idx = {c: mr_m.index[mr_m['case_id'] == c].tolist() for c in common_mr_cases}
-    for b in range(B):
-        ix = rng.choice(n_mr_cases, size=n_mr_cases, replace=True)
-        cases = common_mr_cases[ix]
-        rows_w = []; rows_m = []
-        for c in cases:
-            rows_w.extend(mr_w_idx[c]); rows_m.extend(mr_m_idx[c])
-        sub_w = mr_w.loc[rows_w]; sub_m = mr_m.loc[rows_m]
-        kw = cohen_kappa_score(sub_w['model_predicted_enhancement'].values, sub_w['predicted_enhancement'].values)
-        km = cohen_kappa_score(sub_m['model_predicted_enhancement'].values, sub_m['predicted_enhancement'].values)
-        boot_mr[b] = km - kw
+    mr_w_model = mr_w['model_predicted_enhancement'].to_numpy()
+    mr_w_rad = mr_w['predicted_enhancement'].to_numpy()
+    mr_m_model = mr_m['model_predicted_enhancement'].to_numpy()
+    mr_m_rad = mr_m['predicted_enhancement'].to_numpy()
+    idx_sets_mr = [rng.choice(n_mr_cases, size=n_mr_cases, replace=True) for _ in range(B)]
+    boot_mr = np.array(Parallel(n_jobs=-1)(
+        delayed(_kappa_mr_iter)(ix, common_mr_cases, mr_w_idx, mr_m_idx,
+                                mr_w_model, mr_w_rad, mr_m_model, mr_m_rad)
+        for ix in idx_sets_mr
+    ))
     p_mr = 2 * float(min((boot_mr <= 0).mean(), (boot_mr >= 0).mean()))
     lo_mr, hi_mr = float(np.percentile(boot_mr, 2.5)), float(np.percentile(boot_mr, 97.5))
     print(f"  Rad-model    Δκ = {delta_mr_pt:+.3f} [{lo_mr:+.3f}, {hi_mr:+.3f}]  Bootstrap p = {p_mr:.4f}  (n={n_mr_cases} common cases)")
@@ -253,17 +310,11 @@ def main():
     n_rr_cases = len(common_rr_cases)
     delta_rr_pt = kappa_rad_with - kappa_rad_without
     rng2 = np.random.RandomState(20260505)
-    boot_rr = np.empty(B)
-    for b in range(B):
-        ix = rng2.choice(n_rr_cases, size=n_rr_cases, replace=True)
-        cases = common_rr_cases[ix]
-        pairs_w = []; pairs_m = []
-        for c in cases:
-            pairs_w.extend(rr_w_by_case[c]); pairs_m.extend(rr_m_by_case[c])
-        a_w = np.array(pairs_w); a_m = np.array(pairs_m)
-        kw = cohen_kappa_score(a_w[:, 0], a_w[:, 1])
-        km = cohen_kappa_score(a_m[:, 0], a_m[:, 1])
-        boot_rr[b] = km - kw
+    idx_sets_rr = [rng2.choice(n_rr_cases, size=n_rr_cases, replace=True) for _ in range(B)]
+    boot_rr = np.array(Parallel(n_jobs=-1)(
+        delayed(_kappa_rr_iter)(ix, common_rr_cases, rr_w_by_case, rr_m_by_case)
+        for ix in idx_sets_rr
+    ))
     p_rr = 2 * float(min((boot_rr <= 0).mean(), (boot_rr >= 0).mean()))
     lo_rr, hi_rr = float(np.percentile(boot_rr, 2.5)), float(np.percentile(boot_rr, 97.5))
     print(f"  Rad-rad      Δκ = {delta_rr_pt:+.3f} [{lo_rr:+.3f}, {hi_rr:+.3f}]  Bootstrap p = {p_rr:.4f}  (n={n_rr_cases} common cases)")
@@ -271,31 +322,15 @@ def main():
     # 3) Aggregate contrast
     delta_agg_pt = agg_m - agg_w
     rng3 = np.random.RandomState(20260505)
-    boot_agg = np.empty(B)
     common_all = np.array(sorted(set(common_mr_cases) | set(common_rr_cases)))
     n_all = len(common_all)
-    for b in range(B):
-        ix = rng3.choice(n_all, size=n_all, replace=True)
-        cases = common_all[ix]
-        mr_pw = []; mr_pm = []; rr_pw = []; rr_pm = []
-        for c in cases:
-            if c in mr_w_idx:
-                rows_w = mr_w_idx[c]; rows_m = mr_m_idx[c]
-                mr_pw.extend(zip(mr_w.loc[rows_w, 'model_predicted_enhancement'].astype(int).tolist(),
-                                 mr_w.loc[rows_w, 'predicted_enhancement'].astype(int).tolist()))
-                mr_pm.extend(zip(mr_m.loc[rows_m, 'model_predicted_enhancement'].astype(int).tolist(),
-                                 mr_m.loc[rows_m, 'predicted_enhancement'].astype(int).tolist()))
-            if c in rr_w_by_case:
-                rr_pw.extend(rr_w_by_case[c]); rr_pm.extend(rr_m_by_case[c])
-        if not (mr_pw and mr_pm and rr_pw and rr_pm):
-            boot_agg[b] = np.nan; continue
-        a_mr_w = np.array(mr_pw); a_mr_m = np.array(mr_pm); a_rr_w = np.array(rr_pw); a_rr_m = np.array(rr_pm)
-        kmr_w = cohen_kappa_score(a_mr_w[:, 0], a_mr_w[:, 1]); kmr_m = cohen_kappa_score(a_mr_m[:, 0], a_mr_m[:, 1])
-        krr_w = cohen_kappa_score(a_rr_w[:, 0], a_rr_w[:, 1]); krr_m = cohen_kappa_score(a_rr_m[:, 0], a_rr_m[:, 1])
-        n_mrw = len(a_mr_w); n_mrm = len(a_mr_m); n_rrw = len(a_rr_w); n_rrm = len(a_rr_m)
-        agg_w_b = (krr_w * n_rrw + kmr_w * n_mrw) / (n_rrw + n_mrw)
-        agg_m_b = (krr_m * n_rrm + kmr_m * n_mrm) / (n_rrm + n_mrm)
-        boot_agg[b] = agg_m_b - agg_w_b
+    idx_sets_all = [rng3.choice(n_all, size=n_all, replace=True) for _ in range(B)]
+    boot_agg = np.array(Parallel(n_jobs=-1)(
+        delayed(_kappa_agg_iter)(ix, common_all, mr_w_idx, mr_m_idx,
+                                 mr_w_model, mr_w_rad, mr_m_model, mr_m_rad,
+                                 rr_w_by_case, rr_m_by_case)
+        for ix in idx_sets_all
+    ))
     boot_agg = boot_agg[~np.isnan(boot_agg)]
     p_agg = 2 * float(min((boot_agg <= 0).mean(), (boot_agg >= 0).mean()))
     lo_agg, hi_agg = float(np.percentile(boot_agg, 2.5)), float(np.percentile(boot_agg, 97.5))

@@ -1,4 +1,4 @@
-Run started: 2026-05-26T18:51:59Z
+Run started: 2026-05-26T19:27:25Z
 Script:      code/figures/extended_data_fig_7.py
 Host CPUs:   128
 ----
@@ -67,5 +67,5 @@ Overall improvements:
 
 EDF 7 saved to /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_7.png
 ----
-Run ended:   2026-05-26T18:52:02Z
-Wall clock:  3.6s
+Run ended:   2026-05-26T19:27:29Z
+Wall clock:  4.0s
