@@ -555,12 +555,11 @@ def main():
           f"{row9['Δ Radiologist (with vs without model)']:<39} {row9['Δ Model (with vs without radiologist)']:<39}")
     rows_out.append(row9)
 
-    # Row 10 (Cohen's κ aggregate) requires a B=5000 bootstrap over
-    # reader-pair κ values; this is implemented in extended_data_fig_4.py
-    # and runs ~15 min. To keep table_1.py fast and deterministic, we read
-    # the rendered values from the EDF 4 log fixture if present, otherwise
-    # emit a placeholder note. The values themselves are computed live by
-    # EDF 4 from radiologist_df.csv, not hardcoded.
+    # Row 10 (Cohen's κ aggregate) is computed by extended_data_fig_4.py
+    # from radiologist_df.csv (B=5000 reader-pair bootstrap); we read its
+    # log fixture to avoid duplicating the bootstrap here. If EDF 4 has
+    # not finished yet under the parallel runner, this row emits a
+    # placeholder.
     _edf4_log = os.path.join(R1_ROOT, 'data', 'logs', 'extended_data_fig_4.log')
     cohen_w = cohen_wm = cohen_dh = None
     if os.path.isfile(_edf4_log):
@@ -689,9 +688,9 @@ def main():
     print(f"\nSaved: {out_csv}")
     print(
         "\nNote: The Cohen's κ row is read from the extended_data_fig_4.log "
-        "fixture; it is computed there (not duplicated here) because the "
-        "reader-pair κ bootstrap is ~15 min long. Other rows are computed "
-        "live from radiologist_df.csv + bundled fig_6 CSVs + upstream_metadata.json."
+        "fixture to avoid duplicating its B=5000 reader-pair bootstrap. "
+        "Other rows are computed live from radiologist_df.csv + bundled fig_6 "
+        "CSVs + upstream_metadata.json."
     )
 
 

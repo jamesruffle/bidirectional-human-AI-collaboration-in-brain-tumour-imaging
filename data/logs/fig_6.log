@@ -1,4 +1,4 @@
-Run started: 2026-05-26T20:16:54Z
+Run started: 2026-05-27T11:27:14Z
 Script:      code/figures/fig_6.py
 Host CPUs:   128
 ----
@@ -139,5 +139,5 @@ Fig_6 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures
 
 Figure 6 saved to /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_6.png
 ----
-Run ended:   2026-05-26T20:17:10Z
-Wall clock:  15.6s
+Run ended:   2026-05-27T11:27:30Z
+Wall clock:  16.2s

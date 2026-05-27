@@ -1,4 +1,4 @@
-Run started: 2026-05-26T20:16:54Z
+Run started: 2026-05-27T11:27:14Z
 Script:      code/tables/table_1.py
 Host CPUs:   128
 ----
@@ -23,7 +23,7 @@ RTAT (s/case)                           45.6 [35.0, 60.9]            30.6 [24.7,
 
 Saved: /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/table_1/csv/table_1.csv
 
-Note: The Cohen's κ row is read from the extended_data_fig_4.log fixture; it is computed there (not duplicated here) because the reader-pair κ bootstrap is ~15 min long. Other rows are computed live from radiologist_df.csv + bundled fig_6 CSVs + upstream_metadata.json.
+Note: The Cohen's κ row is read from the extended_data_fig_4.log fixture to avoid duplicating its B=5000 reader-pair bootstrap. Other rows are computed live from radiologist_df.csv + bundled fig_6 CSVs + upstream_metadata.json.
 ----
-Run ended:   2026-05-26T20:17:39Z
-Wall clock:  44.7s
+Run ended:   2026-05-27T11:27:57Z
+Wall clock:  43.8s

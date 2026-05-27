@@ -259,7 +259,7 @@ def main():
 
     # ── Bootstrap p-values for Cohen κ contrasts (paragraph 84) ──
     # Case-level paired bootstrap on the κ contrast for each comparison stream.
-    # B=5000 with seed=20260505 to match other R1 bootstraps.
+    # B=5000 with seed=20260505 to match the other bootstraps in this codebase.
     print(f"\nBootstrap p-values for Cohen κ contrasts (paragraph 84, B=5000, seed=20260505):")
     rng = np.random.RandomState(20260505)
     B = 5000
