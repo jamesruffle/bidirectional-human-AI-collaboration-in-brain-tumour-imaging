@@ -1,4 +1,4 @@
-Run started: 2026-07-23T15:06:15Z
+Run started: 2026-07-23T20:37:51Z
 Script:      code/figures/extended_data_fig_4.py
 Host CPUs:   128
 ----
@@ -30,5 +30,5 @@ Per-pair κ direction split (paragraph 84, '% higher with support'):
     κ higher WITH support:    51 (77.3%)
     κ higher WITHOUT support: 15 (22.7%)
 ----
-Run ended:   2026-07-23T15:06:51Z
-Wall clock:  36.6s
+Run ended:   2026-07-23T20:38:29Z
+Wall clock:  37.4s

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fig 5: strengthening the relationship between accuracy, experience, and confidence.
+"""Fig 5: the relationship between accuracy, experience, and confidence in radiologists, with and without model support.
 
 Self-contained reproduction script. Reads two minimal CSV inputs
 (experience_df 22x6 + per-confidence-bin aggregate 20x5) and renders
@@ -63,7 +63,7 @@ print(f"  calibration_bins:   {len(bins_df)} rows (live-derived)")
 fig4 = plt.figure(figsize=(16, 18))
 
 # Add overall title
-fig4.suptitle('Strengthening the relationship between accuracy, experience, and confidence in radiologists', fontsize=16, y=0.92)
+fig4.suptitle('The relationship between accuracy, experience, and confidence in radiologists, with and without model support', fontsize=16, y=0.92)
 
 # Define the grid layout - 3 rows, 2 columns
 gs = fig4.add_gridspec(3, 2, hspace=0.3, wspace=0.3)
