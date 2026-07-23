@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fig 6 - Exploratory economic estimates for human-AI partnership.
+"""Fig 6 - Metacognitive and economic estimates for human-AI partnership.
 
 Self-contained reproduction script.
 
@@ -133,7 +133,7 @@ else:
 fig6 = plt.figure(figsize=(20, 18))
 
 # Add overall title with reduced y position
-fig6.suptitle('Exploratory economic estimates for human-AI partnership', fontsize=16, y=0.92)
+fig6.suptitle('Metacognitive and economic estimates for human-AI partnership', fontsize=16, y=0.92)
 
 gs = fig6.add_gridspec(3, 3, hspace=0.45, wspace=0.35)
 

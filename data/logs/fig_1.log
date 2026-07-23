@@ -1,4 +1,4 @@
-Run started: 2026-07-23T14:50:02Z
+Run started: 2026-07-23T14:57:50Z
 Script:      code/figures/fig_1.py
 Host CPUs:   128
 ----
@@ -181,5 +181,5 @@ Model throughput (paragraph 88 / Table 1 R13 cols 4-5):
 Figure_1 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_1.png
 Figure_1 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_1.svg
 ----
-Run ended:   2026-07-23T14:50:49Z
-Wall clock:  46.5s
+Run ended:   2026-07-23T14:58:36Z
+Wall clock:  46.4s
