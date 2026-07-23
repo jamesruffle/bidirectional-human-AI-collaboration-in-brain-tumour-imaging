@@ -132,8 +132,12 @@ else:
 
 fig6 = plt.figure(figsize=(20, 18))
 
-# Add overall title with reduced y position
-fig6.suptitle('Metacognitive and economic estimates for human-AI partnership', fontsize=16, y=0.92)
+# Add overall title with reduced y position. x is nudged right of 0.5 because the
+# figure is saved with bbox_inches='tight': the crop is driven by the content extents,
+# which sit right of figure centre (gridspec margins are left=0.125, right=0.9), so a
+# title centred at 0.5 lands ~1% left of centre in the saved image.
+fig6.suptitle('Metacognitive and economic estimates for human-AI partnership',
+              fontsize=16, x=0.50875, y=0.92)
 
 gs = fig6.add_gridspec(3, 3, hspace=0.45, wspace=0.35)
 

@@ -1,4 +1,4 @@
-Run started: 2026-07-23T14:57:50Z
+Run started: 2026-07-23T15:06:15Z
 Script:      code/analysis/interaction_power_diagnostic.py
 Host CPUs:   128
 ----
@@ -41,5 +41,5 @@ uninformative rather than evidence against an interaction. The manuscript theref
 narrows to the descriptive per-condition statement and does not claim 'strengthening'.
 ==============================================================================
 ----
-Run ended:   2026-07-23T14:57:51Z
-Wall clock:  0.7s
+Run ended:   2026-07-23T15:06:15Z
+Wall clock:  0.6s
