@@ -1,0 +1,45 @@
+Run started: 2026-07-23T14:50:02Z
+Script:      code/analysis/interaction_power_diagnostic.py
+Host CPUs:   128
+----
+==============================================================================
+EXPERIENCE x ASSISTANCE INTERACTION — estimate, uncertainty, and power
+Data: data/source_data/figure_1/csv_v2/radiologist_df.csv -> compute_individual_perf  |  22 rows, 11 readers x 2 conditions
+==============================================================================
+
+### rad_accuracy   (n=11 readers, interaction df=9)
+  Per-condition (manuscript sanity check): without R2=0.156 p=0.230 | with R2=0.378 p=0.044
+  INTERACTION slope (delta-vs-experience) = +0.00091 per year
+      SE = 0.00262   95% CI [-0.00501, +0.00683]   p = 0.735
+  Minimum detectable interaction slope at 80% power = |0.00823| per year
+  Ratio |MDE| / |observed| = 9.0x
+  Power to detect the OBSERVED interaction = 6.1%
+  -> UNDERPOWERED: at n=11, the observed interaction is far below the effect this design could reliably detect.
+
+### mean_confidence   (n=11 readers, interaction df=9)
+  Per-condition (manuscript sanity check): without R2=0.511 p=0.013 | with R2=0.756 p=0.001
+  INTERACTION slope (delta-vs-experience) = +0.01445 per year
+      SE = 0.01884   95% CI [-0.02817, +0.05708]   p = 0.463
+  Minimum detectable interaction slope at 80% power = |0.05927| per year
+  Ratio |MDE| / |observed| = 4.1x
+  Power to detect the OBSERVED interaction = 10.6%
+  -> UNDERPOWERED: at n=11, the observed interaction is far below the effect this design could reliably detect.
+
+### mean_response_time   (n=11 readers, interaction df=9)
+  Per-condition (manuscript sanity check): without R2=0.067 p=0.443 | with R2=0.072 p=0.425
+  INTERACTION slope (delta-vs-experience) = -0.39080 per year
+      SE = 0.70592   95% CI [-1.98770, +1.20610]   p = 0.593
+  Minimum detectable interaction slope at 80% power = |2.22051| per year
+  Ratio |MDE| / |observed| = 5.7x
+  Power to detect the OBSERVED interaction = 7.9%
+  -> UNDERPOWERED: at n=11, the observed interaction is far below the effect this design could reliably detect.
+
+==============================================================================
+SUMMARY: The interaction tests are non-significant, but the design is severely
+underpowered (observed power well below 80%), so a non-significant result is
+uninformative rather than evidence against an interaction. The manuscript therefore
+narrows to the descriptive per-condition statement and does not claim 'strengthening'.
+==============================================================================
+----
+Run ended:   2026-07-23T14:50:03Z
+Wall clock:  0.7s

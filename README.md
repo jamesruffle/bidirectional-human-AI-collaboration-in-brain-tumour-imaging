@@ -33,8 +33,13 @@ code/_metrics_utils.py  Shared analysis helpers used by every figure + table scr
                         calibration, equivalent-experience regression).
 code/figures/           One self-contained Python script per published figure.
 code/tables/            One script per Table 1 / supplementary table.
-code/run_all.sh         Parallel runner — executes every figure and table script
-                        concurrently with timing captured in each log.
+code/analysis/          Standalone diagnostic analyses that support statements in
+                        the manuscript without producing a published figure or
+                        table (e.g. the experience x assistance interaction and
+                        its power/MDE calculation).
+code/run_all.sh         Parallel runner — executes every figure, table, and
+                        analysis script concurrently with timing captured in
+                        each log.
 code/regenerate_seed_predictions.py
                         Internal bridge script that rebuilds seed_predictions.csv
                         from the canonical CV cache. Requires a non-bundled
@@ -50,16 +55,17 @@ figures/                Static, non-script-reproducible figures referenced from
                         this README (e.g. the EDF 1 paradigm illustration).
 ```
 
-## Running figures and tables
+## Running figures, tables, and analyses
 
 Every figure and table is regenerated **live from the bundled CSVs** — no static aggregate caches. Shared analysis logic (per-reader metrics, optimistic-dedup, case-level ensembles, paired bootstrap deltas) lives in `code/_metrics_utils.py` and is imported by both the figure and table scripts, so every printed value is traceable to a Python computation on the CSV inputs in `data/source_data/`.
 
 The repo includes a parallel runner that runs everything concurrently and writes a timed log under `data/logs/<script>.log`:
 
 ```bash
-bash code/run_all.sh             # all 8 figure scripts + 4 table scripts in parallel
+bash code/run_all.sh             # all 8 figure + 4 table + 1 analysis script in parallel
 bash code/run_all.sh figures     # figures only
 bash code/run_all.sh tables      # tables only
+bash code/run_all.sh analysis    # standalone analyses only
 ```
 
 To run a single script:

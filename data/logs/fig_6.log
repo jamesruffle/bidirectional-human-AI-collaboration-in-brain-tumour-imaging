@@ -1,4 +1,4 @@
-Run started: 2026-05-27T11:27:14Z
+Run started: 2026-07-23T14:50:02Z
 Script:      code/figures/fig_6.py
 Host CPUs:   128
 ----
@@ -131,13 +131,15 @@ Quadrant placement (including Model, excluding R mean):
     Y-axis (calibration_diff): 0.276 ≥ 50th percentile/median (0.243)
     Model is in TOP RIGHT quadrant (IDEAL: Higher self-awareness, Higher calibration)
 
-Fisher's exact test — panel h optimal-calibration quadrant (paragraph 127):
-  Without model: 2/12 (16.7%) in optimal quadrant
-  With model:    9/12 (75.0%) in optimal quadrant
-  Odds ratio = 15.000, 95% CI [2.02, 111.18], p = 0.0123
+McNemar's exact test — panel j optimal-calibration quadrant (paragraph 127):
+  Without support: 2/12 (16.7%) in optimal quadrant
+  With support:    9/12 (75.0%) in optimal quadrant
+  Paired transitions across 12 agents: both optimal = 2, moved in (c) = 7, moved out (b) = 0, neither = 3
+  McNemar exact two-sided p = 0.0156  (discordant n = 7)
+  Odds ratio not reported — paired OR (c/b) is undefined with b = 0.
 Fig_6 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_6.png
 
 Figure 6 saved to /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_6.png
 ----
-Run ended:   2026-05-27T11:27:30Z
-Wall clock:  16.2s
+Run ended:   2026-07-23T14:50:18Z
+Wall clock:  16.1s

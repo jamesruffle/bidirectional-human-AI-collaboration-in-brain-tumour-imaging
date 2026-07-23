@@ -1,4 +1,4 @@
-Run started: 2026-05-27T11:27:14Z
+Run started: 2026-07-23T14:50:02Z
 Script:      code/tables/supplementary_table_3.py
 Host CPUs:   128
 ----
@@ -21,5 +21,5 @@ Model        Model (With radiologist)     Male       45  37   0   4   4   0.911 
 
 Saved: /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/supplementary_table_3/csv/supplementary_table_3.csv
 ----
-Run ended:   2026-05-27T11:27:14Z
-Wall clock:  0.6s
+Run ended:   2026-07-23T14:50:03Z
+Wall clock:  0.8s

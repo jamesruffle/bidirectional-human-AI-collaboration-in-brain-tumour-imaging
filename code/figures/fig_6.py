@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fig 6 - Enhancing healthcare value with artificial intelligence.
+"""Fig 6 - Exploratory economic estimates for human-AI partnership.
 
 Self-contained reproduction script.
 
@@ -8,6 +8,7 @@ Output: data/figures/Fig_6.png (and .svg)
 from __future__ import annotations
 
 import json
+from math import comb
 import os
 import random as _pyrandom
 import sys
@@ -19,7 +20,7 @@ import pandas as pd
 import scipy
 import scipy.stats
 from scipy.stats import (
-    pearsonr, ttest_rel, ttest_ind, fisher_exact,
+    pearsonr, ttest_rel, ttest_ind,
 )
 import matplotlib
 matplotlib.use('Agg')
@@ -132,7 +133,7 @@ else:
 fig6 = plt.figure(figsize=(20, 18))
 
 # Add overall title with reduced y position
-fig6.suptitle('Enhancing healthcare value with artificial intelligence', fontsize=16, y=0.92)
+fig6.suptitle('Exploratory economic estimates for human-AI partnership', fontsize=16, y=0.92)
 
 gs = fig6.add_gridspec(3, 3, hspace=0.45, wspace=0.35)
 
@@ -466,7 +467,7 @@ if True:
     # Create second y-axis for financial value
     ax2 = ax_0_1.twinx()
     color2 = reference_colors[1]
-    ax2.set_ylabel('Value gained (in £1000s)', color='black')
+    ax2.set_ylabel('Salary-equivalent (in £1000s)', color='black')
 
     # Use same line plot colors for all (model and radiologists)
     line_colors = [color2 for i in range(len(merged_df))]
@@ -478,11 +479,11 @@ if True:
 
     # Connect all points with lines
     ax2.plot(range(len(merged_df)), merged_df['ai_leveraged_value'].values / 1000,
-             color=color2, linewidth=2.5, alpha=0.8, label='Value gained (in £1000s)')
+             color=color2, linewidth=2.5, alpha=0.8, label='Salary-equivalent (in £1000s)')
 
     ax2.tick_params(axis='y', labelcolor='black')
 
-    ax_0_1.set_title('c) Experience and financial value gained from support')
+    ax_0_1.set_title('c) Estimated experience and salary-equivalent gain from support')
     
     # Align y-axes so both start at 0
     ax_0_1.set_ylim(bottom=0)
@@ -672,18 +673,18 @@ if True:
         Patch(facecolor=gained_exp_color, alpha=0.8, edgecolor='black', label='Agent-leveraged experience'),
         # Financial scatter points (right axis) - shape indicates base vs total
         Line2D([0], [0], marker='o', color='w', markerfacecolor='black',
-               markersize=8, label='Base value',
+               markersize=8, label='Base salary-equivalent',
                linestyle='None'),
         Line2D([0], [0], marker='D', color='w', markerfacecolor='black',
-               markersize=8, label='Agent-leveraged value',
+               markersize=8, label='Agent-leveraged salary-equivalent',
                linestyle='None')
     ]
 
     ax_0_2.set_xlabel('Agent')
     # Match y-axis label styling to Panel C (no bold, black color)
     ax_0_2.set_ylabel('Equivalent experience (years) [bars]', color='black')
-    ax2_0_2.set_ylabel('Value (in £1000s) [points]', color='black')
-    ax_0_2.set_title('d) Cumulative experience and financial value leveraged')
+    ax2_0_2.set_ylabel('Salary-equivalent (in £1000s) [points]', color='black')
+    ax_0_2.set_title('d) Cumulative estimated experience and salary-equivalent')
 
     # Match y-axis tick styling to Panel C
     ax_0_2.tick_params(axis='y', labelcolor='black')
@@ -1868,35 +1869,56 @@ if True:
         else:
             print(f"    Model is in TOP RIGHT quadrant (IDEAL: Higher self-awareness, Higher calibration)")
     
-    # Run Fisher's exact test
-    from scipy.stats import fisher_exact
-    # Create 2x2 contingency table
-    # Rows: without model, with model
-    # Columns: not in optimal quadrant, in optimal quadrant
-    contingency_table = np.array([
-        [without_total - without_optimal, without_optimal],
-        [with_total - with_optimal, with_optimal]
-    ])
-    
-    odds_ratio, fisher_p = fisher_exact(contingency_table)
+    # Run McNemar's exact test. The same 12 agents (11 radiologists + the model)
+    # are measured twice, so the design is paired and a pooled 2x2 Fisher's exact
+    # test would treat 24 paired observations as independent. McNemar's conditions
+    # on the discordant pairs: b = optimal without support only ("moved out"),
+    # c = optimal with support only ("moved in").
+    def _is_optimal(corr, calib):
+        return bool(corr >= median_threshold_corr and calib >= median_threshold_calib)
 
-    # 95% Wald CI on log-OR for the sample OR returned by fisher_exact
-    # (paired with the Fisher exact p-value; common reporting convention).
-    # SE(log OR) = sqrt(1/a + 1/b + 1/c + 1/d); requires every cell > 0.
-    _cells = contingency_table.flatten()
-    if (_cells > 0).all() and odds_ratio > 0:
-        _se_log_or = float(np.sqrt(np.sum(1.0 / _cells)))
-        _log_or = float(np.log(odds_ratio))
-        _ci_lo = float(np.exp(_log_or - 1.96 * _se_log_or))
-        _ci_hi = float(np.exp(_log_or + 1.96 * _se_log_or))
-        _ci_str = f", 95% CI [{_ci_lo:.2f}, {_ci_hi:.2f}]"
+    # One (without, with) pair per agent.
+    _pairs = []
+    for _rad in confidence_analysis_df['radiologist'].unique():
+        _wo = without_model_data[without_model_data['radiologist'] == _rad]
+        _wi = with_model_data[with_model_data['radiologist'] == _rad]
+        if len(_wo) > 0 and len(_wi) > 0:
+            _pairs.append((
+                _is_optimal(_wo['conf_acc_corr'].iloc[0], _wo['calibration_diff'].iloc[0]),
+                _is_optimal(_wi['conf_acc_corr'].iloc[0], _wi['calibration_diff'].iloc[0]),
+            ))
+    if model_conf_metrics.get('without') and model_conf_metrics.get('with'):
+        _pairs.append((
+            _is_optimal(model_conf_metrics['without']['conf_acc_corr'],
+                        model_conf_metrics['without']['calibration_diff']),
+            _is_optimal(model_conf_metrics['with']['conf_acc_corr'],
+                        model_conf_metrics['with']['calibration_diff']),
+        ))
+
+    _both = _pairs.count((True, True))
+    _b_moved_out = _pairs.count((True, False))
+    _c_moved_in = _pairs.count((False, True))
+    _neither = _pairs.count((False, False))
+
+    # Exact (binomial) two-sided p on the discordant pairs.
+    _n_discordant = _b_moved_out + _c_moved_in
+    if _n_discordant == 0:
+        mcnemar_p = 1.0
     else:
-        _ci_str = "  (CI undefined — zero cell in contingency table)"
+        _k = min(_b_moved_out, _c_moved_in)
+        _tail = sum(comb(_n_discordant, _i) for _i in range(_k + 1)) * (0.5 ** _n_discordant)
+        mcnemar_p = min(1.0, 2 * _tail)
 
-    print(f"\nFisher's exact test — panel h optimal-calibration quadrant (paragraph 127):")
-    print(f"  Without model: {without_optimal}/{without_total} ({without_pct:.1f}%) in optimal quadrant")
-    print(f"  With model:    {with_optimal}/{with_total} ({with_pct:.1f}%) in optimal quadrant")
-    print(f"  Odds ratio = {odds_ratio:.3f}{_ci_str}, p = {fisher_p:.4f}")
+    print(f"\nMcNemar's exact test — panel j optimal-calibration quadrant (paragraph 127):")
+    print(f"  Without support: {without_optimal}/{without_total} ({without_pct:.1f}%) in optimal quadrant")
+    print(f"  With support:    {with_optimal}/{with_total} ({with_pct:.1f}%) in optimal quadrant")
+    print(f"  Paired transitions across {len(_pairs)} agents:"
+          f" both optimal = {_both}, moved in (c) = {_c_moved_in},"
+          f" moved out (b) = {_b_moved_out}, neither = {_neither}")
+    print(f"  McNemar exact two-sided p = {mcnemar_p:.4f}  (discordant n = {_n_discordant})")
+    # The paired odds ratio is c/b, undefined when b = 0; the unpaired OR does not apply.
+    if _b_moved_out == 0:
+        print("  Odds ratio not reported — paired OR (c/b) is undefined with b = 0.")
     
     # Add legend for scatter points with percentage optimally calibrated
     scatter_handles, scatter_labels = ax_2_1.get_legend_handles_labels()
