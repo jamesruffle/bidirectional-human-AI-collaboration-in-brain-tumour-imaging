@@ -549,6 +549,46 @@ def calc_sensitivity(y_true, y_pred):
 # Order: Accuracy, Sensitivity, Specificity, Precision, F1
 metric_funcs = [calc_accuracy, calc_sensitivity, calc_specificity, calc_precision, calc_f1]
 
+def _per_reader_metrics(rdf, with_seg):
+    """Per-reader AUROC / AUPRC / balanced accuracy / sens / spec / prec / F1.
+
+    Methodology (matches the canonical Panel B point estimates):
+    • AUROC / AUPRC: confidence-direction-adjusted continuous score
+    • Sensitivity / Specificity: MRMC binary_rating (continuous score ≥ 0.5)
+    • Accuracy: balanced_accuracy_score on raw predicted_enhancement
+      (matches group_avg['balanced_accuracy'] used in Panel A and as the
+      'accuracy' bar in Panel B for radiologist arms)
+    • Precision / F1: sklearn on raw predicted_enhancement
+    """
+    sub = rdf[rdf['with_segmentation'] == with_seg]
+    rows = []
+    for rad, grp in sub.groupby('radiologist'):
+        gt = grp['has_enhancement_gt'].astype(int).values
+        raw_pred = grp['predicted_enhancement'].astype(int).values
+        score = np.where(raw_pred == 1, grp['confidence'].values / 10.0,
+                         1 - grp['confidence'].values / 10.0)
+        mrmc_pred = (score >= 0.5).astype(int)
+        try:
+            au = roc_auc_score(gt, score)
+            ap = average_precision_score(gt, score)
+        except Exception:
+            au = ap = np.nan
+        tn_m = int(((mrmc_pred == 0) & (gt == 0)).sum())
+        fp_m = int(((mrmc_pred == 1) & (gt == 0)).sum())
+        rows.append({
+            'radiologist': rad,
+            'auroc': au, 'auprc': ap,
+            'accuracy': balanced_accuracy_score(gt, raw_pred),
+            'sensitivity': recall_score(gt, mrmc_pred, zero_division=0),
+            'specificity': tn_m / (tn_m + fp_m) if (tn_m + fp_m) > 0 else 0.0,
+            'precision': precision_score(gt, raw_pred, zero_division=0),
+            'f1': f1_score(gt, raw_pred, zero_division=0),
+        })
+    return pd.DataFrame(rows).sort_values('radiologist').reset_index(drop=True)
+
+_reader_w  = _per_reader_metrics(radiologist_df, False)
+_reader_wm = _per_reader_metrics(radiologist_df, True)
+
 # Calculate confidence intervals
 model_ci = []
 rad_without_ci = []
@@ -568,12 +608,12 @@ model_ci = _pair_level_bootstrap_cis(y_pair_model, y_pair_gt, metric_funcs)
 # Order: [Accuracy, Sensitivity, Specificity, Precision, F1]
 # All metrics use SE = SD / sqrt(n_radiologists) from GROUP 1
 # 95% CI: mean ± 1.96 * SE
-n_rads = len(group1_metrics)
-se_acc = group1_avg['balanced_accuracy_std'] / np.sqrt(n_rads)
-se_sens = group1_avg['recall_std'] / np.sqrt(n_rads)
-se_spec = group1_avg['specificity_std'] / np.sqrt(n_rads)
-se_prec = group1_avg['precision_std'] / np.sqrt(n_rads)
-se_f1 = group1_avg['f1_std'] / np.sqrt(n_rads)
+n_rads = len(_reader_w)
+se_acc = _reader_w['accuracy'].std(ddof=0) / np.sqrt(n_rads)
+se_sens = _reader_w['sensitivity'].std(ddof=0) / np.sqrt(n_rads)
+se_spec = _reader_w['specificity'].std(ddof=0) / np.sqrt(n_rads)
+se_prec = _reader_w['precision'].std(ddof=0) / np.sqrt(n_rads)
+se_f1 = _reader_w['f1'].std(ddof=0) / np.sqrt(n_rads)
 
 # Index 0: Accuracy
 ci_lower = max(0, rad_without_acc - 1.96 * se_acc)
@@ -604,12 +644,12 @@ rad_without_ci.append((ci_lower, ci_upper))
 # Order: [Accuracy, Sensitivity, Specificity, Precision, F1]
 # All metrics use SE = SD / sqrt(n_radiologists) from GROUP 2
 # 95% CI: mean ± 1.96 * SE
-n_rads = len(group2_metrics)
-se_acc = group2_avg['balanced_accuracy_std'] / np.sqrt(n_rads)
-se_sens = group2_avg['recall_std'] / np.sqrt(n_rads)
-se_spec = group2_avg['specificity_std'] / np.sqrt(n_rads)
-se_prec = group2_avg['precision_std'] / np.sqrt(n_rads)
-se_f1 = group2_avg['f1_std'] / np.sqrt(n_rads)
+n_rads = len(_reader_wm)
+se_acc = _reader_wm['accuracy'].std(ddof=0) / np.sqrt(n_rads)
+se_sens = _reader_wm['sensitivity'].std(ddof=0) / np.sqrt(n_rads)
+se_spec = _reader_wm['specificity'].std(ddof=0) / np.sqrt(n_rads)
+se_prec = _reader_wm['precision'].std(ddof=0) / np.sqrt(n_rads)
+se_f1 = _reader_wm['f1'].std(ddof=0) / np.sqrt(n_rads)
 
 # Index 0: Accuracy
 ci_lower = max(0, rad_with_acc - 1.96 * se_acc)
@@ -710,45 +750,6 @@ print("─" * 78)
 
 from scipy import stats as _scipy_stats
 
-def _per_reader_metrics(rdf, with_seg):
-    """Per-reader AUROC / AUPRC / balanced accuracy / sens / spec / prec / F1.
-
-    Methodology (matches the canonical Panel B point estimates):
-    • AUROC / AUPRC: confidence-direction-adjusted continuous score
-    • Sensitivity / Specificity: MRMC binary_rating (continuous score ≥ 0.5)
-    • Accuracy: balanced_accuracy_score on raw predicted_enhancement
-      (matches group_avg['balanced_accuracy'] used in Panel A and as the
-      'accuracy' bar in Panel B for radiologist arms)
-    • Precision / F1: sklearn on raw predicted_enhancement
-    """
-    sub = rdf[rdf['with_segmentation'] == with_seg]
-    rows = []
-    for rad, grp in sub.groupby('radiologist'):
-        gt = grp['has_enhancement_gt'].astype(int).values
-        raw_pred = grp['predicted_enhancement'].astype(int).values
-        score = np.where(raw_pred == 1, grp['confidence'].values / 10.0,
-                         1 - grp['confidence'].values / 10.0)
-        mrmc_pred = (score >= 0.5).astype(int)
-        try:
-            au = roc_auc_score(gt, score)
-            ap = average_precision_score(gt, score)
-        except Exception:
-            au = ap = np.nan
-        tn_m = int(((mrmc_pred == 0) & (gt == 0)).sum())
-        fp_m = int(((mrmc_pred == 1) & (gt == 0)).sum())
-        rows.append({
-            'radiologist': rad,
-            'auroc': au, 'auprc': ap,
-            'accuracy': balanced_accuracy_score(gt, raw_pred),
-            'sensitivity': recall_score(gt, mrmc_pred, zero_division=0),
-            'specificity': tn_m / (tn_m + fp_m) if (tn_m + fp_m) > 0 else 0.0,
-            'precision': precision_score(gt, raw_pred, zero_division=0),
-            'f1': f1_score(gt, raw_pred, zero_division=0),
-        })
-    return pd.DataFrame(rows).sort_values('radiologist').reset_index(drop=True)
-
-_reader_w  = _per_reader_metrics(radiologist_df, False)
-_reader_wm = _per_reader_metrics(radiologist_df, True)
 
 # Per-case unique aggregation for model arms — 5-seed mean-prob ensemble.
 # Reads seed_predictions.csv (5,500 rows) and means model_prob /
@@ -1082,15 +1083,27 @@ _mc_delta_pt, _mc_delta_lo, _mc_delta_hi = _reader_paired_delta(_mc_w, _mc_wm)
 print(f"  Δ Human (with vs without)        {_mc_delta_pt:+.2f} [{_mc_delta_lo:+.2f}, {_mc_delta_hi:+.2f}]")
 # Reader-level paired bootstrap p for Δ Human confidence
 # (matches B/seed used for the κ contrasts; cited in manuscript paragraph 86)
-_mc_B = 5000
+# A two-sided bootstrap p is 2*k/B for k replicates on the crossing side, so at
+# B=5000 it is quantised to steps of 4e-4 and a p near that floor rests on a
+# handful of replicates. B is raised here so the p resolves; the replicates are
+# drawn in blocks rather than one at a time to keep that cheap. This affects
+# only the p — the Δ confidence interval above comes from _reader_paired_delta
+# and is unchanged.
+_mc_B = 5_000_000
 _mc_rng = np.random.default_rng(20260505)
 _mc_n = len(_mc_w)
 _mc_boot = np.empty(_mc_B)
-for _b in range(_mc_B):
-    _ix = _mc_rng.integers(0, _mc_n, size=_mc_n)
-    _mc_boot[_b] = _mc_wm[_ix].mean() - _mc_w[_ix].mean()
-_mc_p_boot = 2 * float(min((_mc_boot <= 0).mean(), (_mc_boot >= 0).mean()))
-print(f"  Δ Human confidence bootstrap p (reader-level, B={_mc_B}, seed=20260505): p={_mc_p_boot:.4f}")
+_mc_done = 0
+while _mc_done < _mc_B:
+    _mc_k = min(200_000, _mc_B - _mc_done)
+    _ix = _mc_rng.integers(0, _mc_n, size=(_mc_k, _mc_n))
+    _mc_boot[_mc_done:_mc_done + _mc_k] = _mc_wm[_ix].mean(1) - _mc_w[_ix].mean(1)
+    _mc_done += _mc_k
+_mc_k_cross = int(min((_mc_boot <= 0).sum(), (_mc_boot >= 0).sum()))
+_mc_p_boot = 2 * _mc_k_cross / _mc_B
+_mc_p_str = f"< {2 / _mc_B:.1e}" if _mc_k_cross == 0 else f"{_mc_p_boot:.5f}"
+print(f"  Δ Human confidence bootstrap p (reader-level, B={_mc_B}, seed=20260505): "
+      f"p={_mc_p_str}  ({_mc_k_cross} crossing replicates)")
 
 # RTAT per arm (Table 1 row 13)
 print("\nRTAT (response time per case, seconds; reader-level bootstrap CI on the per-reader mean):")
@@ -1278,7 +1291,28 @@ if cv_model_rad_values and any(v > 0 for v in cv_model_rad_values):
            alpha=0.8, color=colors[4], yerr=[cv_model_rad_errors_lower, cv_model_rad_errors_upper],
            capsize=5, error_kw={'linewidth': 1.5, 'ecolor': 'black'}, edgecolor='black', linewidth=0.5)
 
+# Overlay the underlying data distribution on the two radiologist bars: one dot
+# per reader (n=11), jittered within the bar width. The values plotted are the
+# per-reader metrics from `_per_reader_metrics`, which is the same source the
+# bar heights average — accuracy, precision and F1 on the raw prediction, and
+# sensitivity and specificity on the MRMC binary rating (score >= 0.5). Their
+# means reproduce all five bar heights exactly, so every dot cloud centres on
+# its bar.
+_panel_b_keys = ['accuracy', 'sensitivity', 'specificity', 'precision', 'f1']
+_dot_rng = np.random.RandomState(20260505)
+for _offset, _reader_metrics in [(-1.5 * width, _reader_w), (-0.5 * width, _reader_wm)]:
+    for _i, _key in enumerate(_panel_b_keys):
+        _vals = _reader_metrics[_key].to_numpy(dtype=float)
+        _jit = _dot_rng.uniform(-width * 0.28, width * 0.28, size=len(_vals))
+        ax.scatter(x[_i] + _offset + _jit, _vals, s=18, color='black',
+                   alpha=0.85, zorder=5)
 
+# The model conditions have one deterministic value per metric rather than a
+# distribution over readers, so they carry a single overlaid marker.
+for _offset, _vals in [(0.5 * width, model_values), (1.5 * width, cv_model_rad_values)]:
+    if _vals and any(v > 0 for v in _vals):
+        ax.scatter(x + _offset, _vals, s=22, marker='D', color='black',
+                   alpha=0.85, zorder=5)
 
 ax.set_ylabel('Metric score', fontsize=12)
 ax.set_title('b) Performance metrics', fontsize=14)
@@ -1355,7 +1389,7 @@ for _, row in paired_data.iterrows():
         color = 'red'
     
     # Size based on experience
-    size = row['years_experience'] * 12  # Reduced to match R/M point size (max 300)
+    size = row['years_experience'] * 9  # area scale; keys in the legend use the same factor
     
     ax.plot([0, 1], [row['accuracy_without'], row['accuracy_with']], 
             color=color, alpha=0.7, linewidth=2, marker='o', markersize=8)
@@ -1462,7 +1496,7 @@ red_line = mlines.Line2D([], [], color='red', marker='o', linestyle='-',
 # Experience legend elements
 exp_elements = []
 for size, label in zip([5, 15, 25], ['5 years', '15 years', '25 years']):
-    exp_elements.append(plt.scatter([], [], s=size*7, alpha=0.8,  # Reduced proportionally with actual points
+    exp_elements.append(plt.scatter([], [], s=size*9, alpha=0.8,  # same years -> area scale as the plotted points
                                    edgecolors='black', linewidth=0.5,
                                    label=label, color='gray'))
 
@@ -1566,6 +1600,11 @@ for rad in all_rads:
 
 # Calculate mean kappa for title
 kappa_without = np.nanmean(kappa_without_matrix[~np.eye(n_rads, dtype=bool)])
+# Emitted so the value the panel title displays is verifiable from the bundled log.
+# Note this is the UNWEIGHTED mean of the off-diagonal agent x agent matrix, which is a
+# different quantity from the pair-count-weighted aggregate κ reported in the Results
+# and printed by extended_data_fig_4.py.
+print(f"\nPanel g title κ̄ (unweighted off-diagonal matrix mean): {kappa_without:.4f}")
 
 # Create heatmap (inferno colourmap, kappa range 0–1.0)
 sns.heatmap(kappa_without_matrix, annot=False, cmap='inferno',
@@ -1702,6 +1741,7 @@ np.fill_diagonal(kappa_with_matrix, 1.0)
 
 # Calculate mean kappa for title
 kappa_with = np.nanmean(kappa_with_matrix[~np.eye(n_rads, dtype=bool)])
+print(f"Panel h title κ̄ (unweighted off-diagonal matrix mean): {kappa_with:.4f}")
 
 # Create heatmap (inferno colourmap, kappa range 0–1.0)
 # Create colorbar axes to the right with some spacing
@@ -1820,7 +1860,7 @@ ax.fill_between(x_range, np.clip(x_range * 0.67, y_min, y_max), np.clip(x_range 
 ax.fill_between(x_range, y_min, np.clip(x_range * 0.67, y_min, y_max), alpha=0.15, color='#FFB347')
 
 # Scatter plot
-experience_sizes = plot_df['years_experience'] * 12  # Reduced to match R/M point size (max 300)
+experience_sizes = plot_df['years_experience'] * 9  # area scale; keys in the legend use the same factor
 for i, row in plot_df.iterrows():
     ax.scatter(row['accuracy_without'], row['accuracy_with'], 
                s=experience_sizes[i], alpha=0.7, color=colors[0], edgecolors='black', linewidth=0.5)
@@ -1905,7 +1945,7 @@ legend_sizes = [5, 15, 25]
 legend_labels = ['5 years', '15 years', '25 years']
 legend_elements = []
 for size, label in zip(legend_sizes, legend_labels):
-    legend_elements.append(plt.scatter([], [], s=size*7, alpha=0.7, edgecolors='black',  # Reduced proportionally with actual points
+    legend_elements.append(plt.scatter([], [], s=size*9, alpha=0.7, edgecolors='black',  # same years -> area scale as the plotted points
                                      linewidth=0.5, label=label, color=colors[0]))
 ax.add_artist(area_legend)
 ax.legend(handles=legend_elements, loc='lower right', title='Experience', framealpha=0.9, borderaxespad=0.8)
@@ -2077,7 +2117,7 @@ area_legend = ax.legend(handles=area_elements, loc='upper left', framealpha=0.9)
 # Add bubble size legend separately
 legend_elements = []
 for size, label in zip(legend_sizes, legend_labels):
-    legend_elements.append(plt.scatter([], [], s=size*7, alpha=0.7, edgecolors='black',  # Reduced proportionally with actual points
+    legend_elements.append(plt.scatter([], [], s=size*9, alpha=0.7, edgecolors='black',  # same years -> area scale as the plotted points
                                      linewidth=0.5, label=label, color=colors[1]))
 ax.add_artist(area_legend)
 ax.legend(handles=legend_elements, loc='lower right', title='Experience', framealpha=0.9, borderaxespad=0.8)
@@ -2199,7 +2239,7 @@ area_legend = ax.legend(handles=area_elements, loc='upper left', framealpha=0.9)
 # Add bubble size legend separately
 legend_elements = []
 for size, label in zip(legend_sizes, legend_labels):
-    legend_elements.append(plt.scatter([], [], s=size*7, alpha=0.7, edgecolors='black',  # Reduced proportionally with actual points
+    legend_elements.append(plt.scatter([], [], s=size*9, alpha=0.7, edgecolors='black',  # same years -> area scale as the plotted points
                                      linewidth=0.5, label=label, color=colors[2]))
 ax.add_artist(area_legend)
 ax.legend(handles=legend_elements, loc='lower right', title='Experience', framealpha=0.9, borderaxespad=0.8)
@@ -2218,6 +2258,13 @@ print(f"Figure_1 saved to: {fig1_path}")
 fig1_svg_path = os.path.join(FIGURES_OUTPUT_PATH, 'Fig_1.svg')
 plt.savefig(fig1_svg_path, format='svg', bbox_inches='tight', facecolor='white')
 print(f"Figure_1 saved to: {fig1_svg_path}")
+# Vector PDF with live (non-outlined) text, for journal production.
+# pdf.fonttype 42 embeds TrueType outlines as a real font so the text
+# stays selectable and editable rather than being converted to paths.
+plt.rcParams['pdf.fonttype'] = 42
+fig1_pdf_path = os.path.join(FIGURES_OUTPUT_PATH, 'Fig_1.pdf')
+plt.savefig(fig1_pdf_path, format='pdf', bbox_inches='tight', facecolor='white')
+print(f"Figure_1 saved to: {fig1_pdf_path}")
 
 # Show the figure
 plt.show()

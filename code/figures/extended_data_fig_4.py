@@ -18,7 +18,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-from joblib import Parallel, delayed
 from sklearn.metrics import cohen_kappa_score, confusion_matrix
 
 sns.set_palette("husl")
@@ -29,61 +28,70 @@ RDF_PATH = os.path.join(R1_ROOT, 'data', 'source_data', 'figure_1', 'csv_v2', 'r
 FIGURES_OUTPUT_PATH = os.path.join(R1_ROOT, 'data', 'figures')
 
 
-def _kappa_mr_iter(ix, common_cases, w_idx, m_idx, w_model, w_rad, m_model, m_rad):
-    cases = common_cases[ix]
-    rows_w = []
-    rows_m = []
-    for c in cases:
-        rows_w.extend(w_idx[c])
-        rows_m.extend(m_idx[c])
-    kw = cohen_kappa_score(w_model[rows_w], w_rad[rows_w])
-    km = cohen_kappa_score(m_model[rows_m], m_rad[rows_m])
-    return km - kw
+def _kappa_from_counts(c):
+    """Cohen's κ from a 2x2 contingency expressed as [n00, n01, n10, n11].
+
+    Algebraically identical to `sklearn.metrics.cohen_kappa_score` on the
+    corresponding label vectors, but it takes counts rather than labels, so a
+    whole array of bootstrap replicates can be evaluated at once.
+    """
+    c = np.asarray(c, dtype=float)
+    n = c.sum(-1)
+    po = (c[..., 0] + c[..., 3]) / n
+    pa = (c[..., 2] + c[..., 3]) / n
+    pb = (c[..., 1] + c[..., 3]) / n
+    pe = pa * pb + (1.0 - pa) * (1.0 - pb)
+    return (po - pe) / (1.0 - pe)
 
 
-def _kappa_rr_iter(ix, common_cases, w_pairs_by_case, m_pairs_by_case):
-    cases = common_cases[ix]
-    pairs_w = []
-    pairs_m = []
-    for c in cases:
-        pairs_w.extend(w_pairs_by_case[c])
-        pairs_m.extend(m_pairs_by_case[c])
-    a_w = np.asarray(pairs_w)
-    a_m = np.asarray(pairs_m)
-    kw = cohen_kappa_score(a_w[:, 0], a_w[:, 1])
-    km = cohen_kappa_score(a_m[:, 0], a_m[:, 1])
-    return km - kw
+def _counts(a, b):
+    """2x2 counts of paired binary ratings, ordered [n00, n01, n10, n11]."""
+    return np.bincount(2 * np.asarray(a, dtype=int) + np.asarray(b, dtype=int), minlength=4)
 
 
-def _kappa_agg_iter(ix, common_all, mr_w_idx, mr_m_idx, mr_w_model, mr_w_rad,
-                    mr_m_model, mr_m_rad, rr_w_by_case, rr_m_by_case):
-    cases = common_all[ix]
-    mr_rows_w = []
-    mr_rows_m = []
-    rr_pw = []
-    rr_pm = []
-    for c in cases:
-        if c in mr_w_idx:
-            mr_rows_w.extend(mr_w_idx[c])
-            mr_rows_m.extend(mr_m_idx[c])
-        if c in rr_w_by_case:
-            rr_pw.extend(rr_w_by_case[c])
-            rr_pm.extend(rr_m_by_case[c])
-    if not (mr_rows_w and mr_rows_m and rr_pw and rr_pm):
-        return float('nan')
-    n_mrw = len(mr_rows_w)
-    n_mrm = len(mr_rows_m)
-    n_rrw = len(rr_pw)
-    n_rrm = len(rr_pm)
-    kmr_w = cohen_kappa_score(mr_w_model[mr_rows_w], mr_w_rad[mr_rows_w])
-    kmr_m = cohen_kappa_score(mr_m_model[mr_rows_m], mr_m_rad[mr_rows_m])
-    a_rr_w = np.asarray(rr_pw)
-    a_rr_m = np.asarray(rr_pm)
-    krr_w = cohen_kappa_score(a_rr_w[:, 0], a_rr_w[:, 1])
-    krr_m = cohen_kappa_score(a_rr_m[:, 0], a_rr_m[:, 1])
-    agg_w_b = (krr_w * n_rrw + kmr_w * n_mrw) / (n_rrw + n_mrw)
-    agg_m_b = (krr_m * n_rrm + kmr_m * n_mrm) / (n_rrm + n_mrm)
-    return agg_m_b - agg_w_b
+def _bootstrap_delta(count_arrays, B, seed, agg=False, chunk=20000):
+    """Case-level bootstrap of a κ contrast, resampling cases with replacement.
+
+    `count_arrays` holds one (n_cases, 4) count matrix per stream. Resampling
+    cases and re-tallying is a sum of that case's counts, so a block of
+    replicates is a single matrix product against the per-case multiplicities.
+    That is what makes B large enough to resolve a p-value below the 2/B floor
+    a five-thousand-replicate run is limited to.
+    """
+    n = count_arrays[0].shape[0]
+    rng = np.random.RandomState(seed)
+    out = np.empty(B)
+    done = 0
+    while done < B:
+        k = min(chunk, B - done)
+        mult = np.stack([np.bincount(rng.choice(n, size=n, replace=True), minlength=n)
+                         for _ in range(k)])
+        sums = [mult @ A for A in count_arrays]
+        if agg:
+            mw, mm, rw, rm = sums
+            n_mw, n_mm = mw.sum(-1), mm.sum(-1)
+            n_rw, n_rm = rw.sum(-1), rm.sum(-1)
+            a_w = (_kappa_from_counts(rw) * n_rw + _kappa_from_counts(mw) * n_mw) / (n_rw + n_mw)
+            a_m = (_kappa_from_counts(rm) * n_rm + _kappa_from_counts(mm) * n_mm) / (n_rm + n_mm)
+            out[done:done + k] = a_m - a_w
+        else:
+            out[done:done + k] = _kappa_from_counts(sums[1]) - _kappa_from_counts(sums[0])
+        done += k
+    return out[np.isfinite(out)]
+
+
+def _boot_p(boot, B):
+    """Two-sided bootstrap p and the crossing count it rests on.
+
+    Returns the printable p alongside the number of replicates on the crossing
+    side, because a p of 2k/B is only as trustworthy as k is large; k = 0 means
+    the p is below the resolution of the run rather than equal to zero.
+    """
+    k = int(min((boot <= 0).sum(), (boot >= 0).sum()))
+    if k == 0:
+        return f"< {2.0 / B:.1e}", k
+    p = 2.0 * k / B
+    return (f"{p:.2e}" if p < 1e-3 else f"{p:.5f}"), k
 
 
 def main():
@@ -259,10 +267,15 @@ def main():
 
     # ── Bootstrap p-values for Cohen κ contrasts (paragraph 84) ──
     # Case-level paired bootstrap on the κ contrast for each comparison stream.
-    # B=5000 with seed=20260505 to match the other bootstraps in this codebase.
-    print(f"\nBootstrap p-values for Cohen κ contrasts (paragraph 84, B=5000, seed=20260505):")
-    rng = np.random.RandomState(20260505)
-    B = 5000
+    # A two-sided bootstrap p is 2·k/B for k replicates on the crossing side, so
+    # its smallest expressible non-zero value is 2/B. At the B=5000 used for the
+    # confidence intervals elsewhere in this codebase two of these three
+    # contrasts return zero crossings, which reports only "below 4e-4" and not
+    # the p itself. B is therefore raised here so the p values resolve; κ is
+    # evaluated from 2x2 counts (see `_kappa_from_counts`) to keep that
+    # tractable. Seed unchanged.
+    B = 5_000_000
+    print(f"\nBootstrap p-values for Cohen κ contrasts (paragraph 84, B={B}, seed=20260505):")
 
     # 1) Rad-model contrast: bootstrap unique cases, recompute κ on resampled (model_pred, rad_pred) pairs
     mr_w = without_support_data[['case_id', 'predicted_enhancement', 'model_predicted_enhancement']].dropna().reset_index(drop=True).copy()
@@ -277,15 +290,12 @@ def main():
     mr_w_rad = mr_w['predicted_enhancement'].to_numpy()
     mr_m_model = mr_m['model_predicted_enhancement'].to_numpy()
     mr_m_rad = mr_m['predicted_enhancement'].to_numpy()
-    idx_sets_mr = [rng.choice(n_mr_cases, size=n_mr_cases, replace=True) for _ in range(B)]
-    boot_mr = np.array(Parallel(n_jobs=-1)(
-        delayed(_kappa_mr_iter)(ix, common_mr_cases, mr_w_idx, mr_m_idx,
-                                mr_w_model, mr_w_rad, mr_m_model, mr_m_rad)
-        for ix in idx_sets_mr
-    ))
-    p_mr = 2 * float(min((boot_mr <= 0).mean(), (boot_mr >= 0).mean()))
+    MRW = np.stack([_counts(mr_w_model[mr_w_idx[c]], mr_w_rad[mr_w_idx[c]]) for c in common_mr_cases])
+    MRM = np.stack([_counts(mr_m_model[mr_m_idx[c]], mr_m_rad[mr_m_idx[c]]) for c in common_mr_cases])
+    boot_mr = _bootstrap_delta([MRW, MRM], B, 20260505)
+    p_mr, k_mr = _boot_p(boot_mr, B)
     lo_mr, hi_mr = float(np.percentile(boot_mr, 2.5)), float(np.percentile(boot_mr, 97.5))
-    print(f"  Rad-model    Δκ = {delta_mr_pt:+.3f} [{lo_mr:+.3f}, {hi_mr:+.3f}]  Bootstrap p = {p_mr:.4f}  (n={n_mr_cases} common cases)")
+    print(f"  Rad-model    Δκ = {delta_mr_pt:+.3f} [{lo_mr:+.3f}, {hi_mr:+.3f}]  Bootstrap p = {p_mr}  ({k_mr} crossing replicates; n={n_mr_cases} common cases)")
 
     # 2) Rad-rad contrast: bootstrap unique cases, recompute κ on resampled rad-rad pair set
     rr_w_by_case = {}
@@ -309,32 +319,29 @@ def main():
     common_rr_cases = np.array(sorted(set(rr_w_by_case.keys()) & set(rr_m_by_case.keys())))
     n_rr_cases = len(common_rr_cases)
     delta_rr_pt = kappa_rad_with - kappa_rad_without
-    rng2 = np.random.RandomState(20260505)
-    idx_sets_rr = [rng2.choice(n_rr_cases, size=n_rr_cases, replace=True) for _ in range(B)]
-    boot_rr = np.array(Parallel(n_jobs=-1)(
-        delayed(_kappa_rr_iter)(ix, common_rr_cases, rr_w_by_case, rr_m_by_case)
-        for ix in idx_sets_rr
-    ))
-    p_rr = 2 * float(min((boot_rr <= 0).mean(), (boot_rr >= 0).mean()))
+    RRW = np.stack([_counts([x[0] for x in rr_w_by_case[c]], [x[1] for x in rr_w_by_case[c]])
+                    for c in common_rr_cases])
+    RRM = np.stack([_counts([x[0] for x in rr_m_by_case[c]], [x[1] for x in rr_m_by_case[c]])
+                    for c in common_rr_cases])
+    boot_rr = _bootstrap_delta([RRW, RRM], B, 20260505)
+    p_rr, k_rr = _boot_p(boot_rr, B)
     lo_rr, hi_rr = float(np.percentile(boot_rr, 2.5)), float(np.percentile(boot_rr, 97.5))
-    print(f"  Rad-rad      Δκ = {delta_rr_pt:+.3f} [{lo_rr:+.3f}, {hi_rr:+.3f}]  Bootstrap p = {p_rr:.4f}  (n={n_rr_cases} common cases)")
+    print(f"  Rad-rad      Δκ = {delta_rr_pt:+.3f} [{lo_rr:+.3f}, {hi_rr:+.3f}]  Bootstrap p = {p_rr}  ({k_rr} crossing replicates; n={n_rr_cases} common cases)")
 
     # 3) Aggregate contrast
     delta_agg_pt = agg_m - agg_w
-    rng3 = np.random.RandomState(20260505)
     common_all = np.array(sorted(set(common_mr_cases) | set(common_rr_cases)))
-    n_all = len(common_all)
-    idx_sets_all = [rng3.choice(n_all, size=n_all, replace=True) for _ in range(B)]
-    boot_agg = np.array(Parallel(n_jobs=-1)(
-        delayed(_kappa_agg_iter)(ix, common_all, mr_w_idx, mr_m_idx,
-                                 mr_w_model, mr_w_rad, mr_m_model, mr_m_rad,
-                                 rr_w_by_case, rr_m_by_case)
-        for ix in idx_sets_all
-    ))
-    boot_agg = boot_agg[~np.isnan(boot_agg)]
-    p_agg = 2 * float(min((boot_agg <= 0).mean(), (boot_agg >= 0).mean()))
+    zero = np.zeros(4, dtype=int)
+    mr_pos = {c: i for i, c in enumerate(common_mr_cases)}
+    rr_pos = {c: i for i, c in enumerate(common_rr_cases)}
+    AMRW = np.stack([MRW[mr_pos[c]] if c in mr_pos else zero for c in common_all])
+    AMRM = np.stack([MRM[mr_pos[c]] if c in mr_pos else zero for c in common_all])
+    ARRW = np.stack([RRW[rr_pos[c]] if c in rr_pos else zero for c in common_all])
+    ARRM = np.stack([RRM[rr_pos[c]] if c in rr_pos else zero for c in common_all])
+    boot_agg = _bootstrap_delta([AMRW, AMRM, ARRW, ARRM], B, 20260505, agg=True)
+    p_agg, k_agg = _boot_p(boot_agg, B)
     lo_agg, hi_agg = float(np.percentile(boot_agg, 2.5)), float(np.percentile(boot_agg, 97.5))
-    print(f"  Aggregate    Δκ = {delta_agg_pt:+.3f} [{lo_agg:+.3f}, {hi_agg:+.3f}]  Bootstrap p = {p_agg:.4f}  (n={len(boot_agg)} valid replicates)")
+    print(f"  Aggregate    Δκ = {delta_agg_pt:+.3f} [{lo_agg:+.3f}, {hi_agg:+.3f}]  Bootstrap p = {p_agg}  ({k_agg} crossing replicates; n={len(boot_agg)} valid replicates)")
 
     # ── Per-pair κ direction split for paragraph 84 sentence ──
     # For each unique radiologist pair (rad-rad) and each radiologist (rad-model),

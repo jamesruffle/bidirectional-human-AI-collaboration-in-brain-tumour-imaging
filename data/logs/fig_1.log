@@ -1,4 +1,4 @@
-Run started: 2026-07-23T20:37:51Z
+Run started: 2026-09-02T21:01:05Z
 Script:      code/figures/fig_1.py
 Host CPUs:   128
 ----
@@ -35,13 +35,13 @@ Bootstrapping pair-level CIs for Model+Radiologist (CV) metrics (B=5000)...
 
 Panel B figure-displayed values (point estimate [95% CI]):
   Radiologist alone        Accuracy     0.698 [0.658-0.739]
-  Radiologist alone        Sensitivity  0.798 [0.756-0.841]
-  Radiologist alone        Specificity  0.515 [0.429-0.600]
+  Radiologist alone        Sensitivity  0.798 [0.760-0.836]
+  Radiologist alone        Specificity  0.515 [0.418-0.611]
   Radiologist alone        Precision    0.693 [0.641-0.744]
   Radiologist alone        F1           0.714 [0.682-0.745]
   Radiologist with model   Accuracy     0.743 [0.711-0.775]
-  Radiologist with model   Sensitivity  0.893 [0.852-0.934]
-  Radiologist with model   Specificity  0.567 [0.520-0.615]
+  Radiologist with model   Sensitivity  0.893 [0.870-0.915]
+  Radiologist with model   Specificity  0.567 [0.492-0.643]
   Radiologist with model   Precision    0.714 [0.681-0.746]
   Radiologist with model   F1           0.760 [0.729-0.791]
   Model alone              Accuracy     0.824 [0.802-0.845]
@@ -111,7 +111,7 @@ Mean confidence per arm (case-level, with reader-level bootstrap CI on the per-r
   Radiologist alone               Mean = 6.88 [6.39, 7.34]  (per-reader range: 5.12-8.41)
   Radiologist with model          Mean = 7.23 [6.81, 7.73]  (per-reader range: 6.36-9.07)
   Δ Human (with vs without)        +0.35 [+0.13, +0.60]
-  Δ Human confidence bootstrap p (reader-level, B=5000, seed=20260505): p=0.0020
+  Δ Human confidence bootstrap p (reader-level, B=5000000, seed=20260505): p=0.00146  (3641 crossing replicates)
 
 RTAT (response time per case, seconds; reader-level bootstrap CI on the per-reader mean):
   Radiologist alone               Mean = 45.6 s [35.0, 60.9]  (per-reader range: 26.4-105.7)
@@ -163,6 +163,9 @@ Panel c: Using consistent metrics from Panel A
   Model alone (pair-level accuracy): 0.8236
   Model with radiologist support (pair-level CV accuracy): 0.8418
 
+Panel g title κ̄ (unweighted off-diagonal matrix mean): 0.3380
+Panel h title κ̄ (unweighted off-diagonal matrix mean): 0.4837
+
 Panel d: Using pair-level accuracy from Panel A
   Model alone (pair-level accuracy): 0.8236
   Model with radiologist support (pair-level CV accuracy): 0.8418
@@ -180,6 +183,7 @@ Model throughput (paragraph 88 / Table 1 R13 cols 4-5):
   878 cases/hour (4.10s per case)
 Figure_1 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_1.png
 Figure_1 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_1.svg
+Figure_1 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_1.pdf
 ----
-Run ended:   2026-07-23T20:38:38Z
-Wall clock:  46.9s
+Run ended:   2026-09-02T21:01:51Z
+Wall clock:  46.6s

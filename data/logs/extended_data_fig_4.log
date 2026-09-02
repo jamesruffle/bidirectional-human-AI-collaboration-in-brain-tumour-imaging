@@ -1,4 +1,4 @@
-Run started: 2026-07-23T20:37:51Z
+Run started: 2026-09-02T20:57:28Z
 Script:      code/figures/extended_data_fig_4.py
 Host CPUs:   128
 ----
@@ -20,15 +20,15 @@ Aggregate pairwise Cohen κ across all comparisons (paragraph 84):
   Without support  κ_aggregate = 0.324  (rad-rad n=1289 + rad-model n=1100 = 2389 pairs)
   With support     κ_aggregate = 0.484  (rad-rad n=1289 + rad-model n=1100 = 2389 pairs)
 
-Bootstrap p-values for Cohen κ contrasts (paragraph 84, B=5000, seed=20260505):
-  Rad-model    Δκ = +0.168 [+0.110, +0.222]  Bootstrap p = 0.0000  (n=564 common cases)
-  Rad-rad      Δκ = +0.153 [+0.042, +0.260]  Bootstrap p = 0.0060  (n=205 common cases)
-  Aggregate    Δκ = +0.160 [+0.096, +0.224]  Bootstrap p = 0.0000  (n=5000 valid replicates)
+Bootstrap p-values for Cohen κ contrasts (paragraph 84, B=5000000, seed=20260505):
+  Rad-model    Δκ = +0.168 [+0.111, +0.224]  Bootstrap p = 4.00e-07  (1 crossing replicates; n=564 common cases)
+  Rad-rad      Δκ = +0.153 [+0.047, +0.260]  Bootstrap p = 0.00436  (10900 crossing replicates; n=205 common cases)
+  Aggregate    Δκ = +0.160 [+0.097, +0.224]  Bootstrap p = < 4.0e-07  (0 crossing replicates; n=5000000 valid replicates)
 
 Per-pair κ direction split (paragraph 84, '% higher with support'):
   Of 66 unique reader-pair κ comparisons:
     κ higher WITH support:    51 (77.3%)
     κ higher WITHOUT support: 15 (22.7%)
 ----
-Run ended:   2026-07-23T20:38:29Z
-Wall clock:  37.4s
+Run ended:   2026-09-02T21:01:05Z
+Wall clock:  217.0s

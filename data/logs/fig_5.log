@@ -1,4 +1,4 @@
-Run started: 2026-07-23T20:37:51Z
+Run started: 2026-09-02T21:01:05Z
 Script:      code/figures/fig_5.py
 Host CPUs:   128
 ----
@@ -7,6 +7,7 @@ Computing fig_5 panel inputs live from /home/jruffle/Downloads/radiologist_enhan
   calibration_bins:   20 rows (live-derived)
 Fig_5 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_5.png
 Fig_5 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_5.svg
+Fig_5 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_5.pdf
 
 ──────────────────────────────────────────────────────────────────────────────
 Fig 5 regression statistics (matching figure panel labels):
@@ -33,5 +34,5 @@ Pooled-across-readers bin deviation from perfect calibration (matches Fig 5 pane
   With model                      pooled bin deviation = 0.089
 ──────────────────────────────────────────────────────────────────────────────
 ----
-Run ended:   2026-07-23T20:37:55Z
-Wall clock:  3.6s
+Run ended:   2026-09-02T21:01:08Z
+Wall clock:  3.7s

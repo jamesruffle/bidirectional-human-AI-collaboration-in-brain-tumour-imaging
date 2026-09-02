@@ -71,7 +71,18 @@ export -f run_one
 export LOG_DIR
 
 t0=$(date +%s.%N)
-printf '%s\n' "${SCRIPTS[@]}" | xargs -P 0 -I{} bash -c 'run_one "$@"' _ {}
+# extended_data_fig_4.py must complete before table_1.py: Table 1's Cohen's kappa row is
+# read from the EDF 4 log rather than recomputed, so running them concurrently races the
+# 215 s bootstrap against the 45 s table and emits placeholders. Run it first, then the rest.
+EDF4=code/figures/extended_data_fig_4.py
+REST=()
+for s in "${SCRIPTS[@]}"; do [ "$s" = "$EDF4" ] || REST+=("$s"); done
+for s in "${SCRIPTS[@]}"; do
+    if [ "$s" = "$EDF4" ]; then run_one "$EDF4"; break; fi
+done
+if [ ${#REST[@]} -gt 0 ]; then
+    printf '%s\n' "${REST[@]}" | xargs -P 0 -I{} bash -c 'run_one "$@"' _ {}
+fi
 t1=$(date +%s.%N)
 total=$(awk -v a="$t0" -v b="$t1" 'BEGIN { printf "%.1f", b - a }')
 echo "----"

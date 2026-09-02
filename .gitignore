@@ -226,3 +226,21 @@ data/cv_cache_backup/
 
 # Ad-hoc log backups
 *.log.bak*
+
+# Never publish: reader identities.
+# The root-level subspecialty audit file maps each Reader_ID to a real name, and the
+# archived pre-refactor analysis scripts carry the same mapping inline. Published
+# alongside radiologist_df.csv, which holds every reader's per-case accuracy,
+# confidence and response time, either would attach named clinicians to their
+# individual performance.
+radiologist_subspecialty_audit.csv
+archive/
+
+# Manuscript and revision working files — not part of the code bundle.
+nature_comms/
+jobs.md
+health_economics_parameter_justification.md
+
+# Local editor/agent configuration and OS cruft.
+.DS_Store
+**/.DS_Store

@@ -57,7 +57,7 @@ Each log header records the start timestamp and host CPU count; the trailing `Wa
 | Δ AUROC / AUPRC (AI side) | Case-level paired bootstrap on n=564 unique cases; B=5,000; seed=20260505 |
 | Δ accuracy-family (Human side) | Reader-level paired bootstrap on n=11 readers; B=5,000; seed=20260505 |
 | Δ accuracy-family (AI side) | Fold-Δ bootstrap of per-fold Δ across the 5 CV folds; B=5,000; seed=20260505; CI centre-shifted to the canonical macro-averaged Δ |
-| Cohen's κ contrasts | Pair-level bootstrap on the 2,389 pairwise comparisons (1,289 rad-rad + 1,100 rad-model); B=5,000; seed=20260505 |
+| Cohen's κ contrasts | Case-level bootstrap: cases are resampled with replacement and κ recomputed over all pairwise comparisons belonging to the resampled cases (2,389 comparisons in total; 1,289 rad-rad + 1,100 rad-model); B=5,000,000; seed=20260505. The higher B resolves the contrast p-values below the 2/B floor of a 5,000-resample run; because the interval and the p-value are two readings of the same replicates, the Δκ CI is likewise a 5,000,000-resample estimate. |
 | Point CIs (radiologist accuracy-family) | Normal approximation: mean ± 1.96 × (per-reader SD / √n_readers) |
 | Point CIs (radiologist AUROC/AUPRC/sens/spec) | MRMCaov ORH variance estimate (via the figure-rendering pipeline; values cached in source-data CSVs) |
 | Point CIs (model accuracy-family) | Reviewer-case-pair-level percentile bootstrap (n=1,100); B=5,000; seed=20260505 |

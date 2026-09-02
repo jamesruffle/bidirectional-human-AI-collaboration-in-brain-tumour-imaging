@@ -280,6 +280,9 @@ x_pos = np.arange(len(x_labels))
 # GPU hours converted to years using actual calendar time (365 days * 24 hours = 8760 hours/year)
 # Radiologist hours use working year (2000 hours/year)
 years_data = [gpu_hours / _CALENDAR_HOURS_PER_YEAR, avg_actual_hours / _WORKING_HOURS_PER_YEAR]
+# Emitted so the mean the panel a bar annotates is verifiable from the bundled log.
+print(f"\nPanel a bar values: model {years_data[0]:.4f} years, "
+      f"radiologist mean {years_data[1]:.4f} years (n={len(equiv_df)} readers)")
 
 # Plot years bars with texture for Model
 bars_years = []
@@ -2050,6 +2053,13 @@ fig6_path = os.path.join(FIGURES_OUTPUT_PATH, 'Fig_6.png')
 fig6_svg_path = os.path.join(FIGURES_OUTPUT_PATH, 'Fig_6.svg')
 plt.savefig(fig6_path, dpi=300, bbox_inches='tight', facecolor='white')
 plt.savefig(fig6_svg_path, format='svg', bbox_inches='tight', facecolor='white')
+# Vector PDF with live (non-outlined) text, for journal production.
+# pdf.fonttype 42 embeds TrueType outlines as a real font so the text
+# stays selectable and editable rather than being converted to paths.
+plt.rcParams['pdf.fonttype'] = 42
+fig6_pdf_path = os.path.join(FIGURES_OUTPUT_PATH, 'Fig_6.pdf')
+plt.savefig(fig6_pdf_path, format='pdf', bbox_inches='tight', facecolor='white')
+print(f"Fig_6 saved to: {fig6_pdf_path}")
 print(f"Fig_6 saved to: {fig6_path}")
 
 print(f"\nFigure 6 saved to {FIGURES_OUTPUT_PATH}/Fig_6.png")

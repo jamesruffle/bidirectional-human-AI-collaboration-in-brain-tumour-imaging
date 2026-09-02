@@ -1,4 +1,4 @@
-Run started: 2026-07-23T20:37:51Z
+Run started: 2026-09-02T21:01:05Z
 Script:      code/figures/fig_6.py
 Host CPUs:   128
 ----
@@ -29,6 +29,8 @@ GPU training time (paragraph 118):
   Total training:   2001.6 hours (83.4 days)
   Per-fold (5-fold): 400.3 hours/fold (16.7 days/fold)
   Estimated cost:    £4,804  (rounded to nearest £1,000: £5,000)
+
+Panel a bar values: model 0.2285 years, radiologist mean 13.5455 years (n=11 readers)
 
 Median staff experience with vs without model support (paragraph 118):
 
@@ -137,9 +139,10 @@ McNemar's exact test — panel j optimal-calibration quadrant (paragraph 127):
   Paired transitions across 12 agents: both optimal = 2, moved in (c) = 7, moved out (b) = 0, neither = 3
   McNemar exact two-sided p = 0.0156  (discordant n = 7)
   Odds ratio not reported — paired OR (c/b) is undefined with b = 0.
+Fig_6 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_6.pdf
 Fig_6 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_6.png
 
 Figure 6 saved to /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_6.png
 ----
-Run ended:   2026-07-23T20:38:08Z
-Wall clock:  16.2s
+Run ended:   2026-09-02T21:01:21Z
+Wall clock:  15.9s

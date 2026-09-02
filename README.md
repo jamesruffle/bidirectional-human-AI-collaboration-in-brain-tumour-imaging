@@ -114,7 +114,8 @@ repository:
 - Python: 3.10.12
 - numpy: 1.26.4
 - pandas: 2.2.3
-- matplotlib: 3.10.1
+- matplotlib: 3.10.9
+- scikit-learn: 1.6.1
 - seaborn: 0.13.2
 - scipy: 1.15.2
 

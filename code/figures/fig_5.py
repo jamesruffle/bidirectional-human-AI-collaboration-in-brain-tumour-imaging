@@ -128,13 +128,14 @@ ax1.set_title('a) Experience vs accuracy - without model', fontsize=14)
 ax1.grid(True, alpha=0.3)
 
 # Add legends for cases per hour
-cases_sizes = [120, 60, 30]  # cases per hour (3600/30, 3600/60, 3600/120)
+cases_sizes = [200, 100, 50]  # cases per hour; spans the plotted range (34-193)
 cases_elements = []
 for cases in cases_sizes:
     cases_elements.append(plt.scatter([], [], s=cases*2, alpha=0.7,
                                    color='gray', label=f'{cases}'))
 cases_legend = ax1.legend(cases_elements, [f'{c}' for c in cases_sizes],
-                       loc='lower right', title='Cases reported /hr', framealpha=0.9)
+                       loc='lower right', title='Cases reported /hr', framealpha=0.9,
+                       labelspacing=1.1)
 
 handles, labels = ax1.get_legend_handles_labels()
 reg_handles = [h for h, l in zip(handles, labels) if 'R²=' in l]
@@ -181,13 +182,14 @@ ax2.set_title('b) Experience vs accuracy - with model', fontsize=14)
 ax2.grid(True, alpha=0.3)
 
 # Add legends for cases per hour
-cases_sizes = [120, 60, 30]  # cases per hour
+cases_sizes = [200, 100, 50]  # cases per hour
 cases_elements = []
 for cases in cases_sizes:
     cases_elements.append(plt.scatter([], [], s=cases*2, alpha=0.7,
                                    color='gray', label=f'{cases}'))
 cases_legend = ax2.legend(cases_elements, [f'{c}' for c in cases_sizes],
-                       loc='lower right', title='Cases reported /hr', framealpha=0.9)
+                       loc='lower right', title='Cases reported /hr', framealpha=0.9,
+                       labelspacing=1.1)
 
 handles, labels = ax2.get_legend_handles_labels()
 reg_handles = [h for h, l in zip(handles, labels) if 'R²=' in l]
@@ -234,13 +236,14 @@ ax3.set_title('c) Experience vs confidence - without model', fontsize=14)
 ax3.grid(True, alpha=0.3)
 
 # Add legends for cases per hour
-cases_sizes = [120, 60, 30]  # cases per hour
+cases_sizes = [200, 100, 50]  # cases per hour
 cases_elements = []
 for cases in cases_sizes:
     cases_elements.append(plt.scatter([], [], s=cases*2, alpha=0.7,
                                    color='gray', label=f'{cases}'))
 cases_legend = ax3.legend(cases_elements, [f'{c}' for c in cases_sizes],
-                       loc='lower right', title='Cases reported /hr', framealpha=0.9)
+                       loc='lower right', title='Cases reported /hr', framealpha=0.9,
+                       labelspacing=1.1)
 
 handles, labels = ax3.get_legend_handles_labels()
 reg_handles = [h for h, l in zip(handles, labels) if 'R²=' in l]
@@ -287,13 +290,14 @@ ax4.set_title('d) Experience vs confidence - with model', fontsize=14)
 ax4.grid(True, alpha=0.3)
 
 # Add legends for cases per hour
-cases_sizes = [120, 60, 30]  # cases per hour
+cases_sizes = [200, 100, 50]  # cases per hour
 cases_elements = []
 for cases in cases_sizes:
     cases_elements.append(plt.scatter([], [], s=cases*2, alpha=0.7,
                                    color='gray', label=f'{cases}'))
 cases_legend = ax4.legend(cases_elements, [f'{c}' for c in cases_sizes],
-                       loc='lower right', title='Cases reported /hr', framealpha=0.9)
+                       loc='lower right', title='Cases reported /hr', framealpha=0.9,
+                       labelspacing=1.1)
 
 handles, labels = ax4.get_legend_handles_labels()
 reg_handles = [h for h, l in zip(handles, labels) if 'R²=' in l]
@@ -341,13 +345,14 @@ ax5.set_ylim(-0.05, 1.05)
 ax5.grid(True, alpha=0.3)
 
 # Add cases per hour legend
-cases_sizes = [120, 60, 30]  # cases per hour
+cases_sizes = [200, 100, 50]  # cases per hour
 cases_elements = []
 for cases in cases_sizes:
     cases_elements.append(plt.scatter([], [], s=cases*2, alpha=0.7,
                                    color='gray', label=f'{cases}'))
 cases_legend = ax5.legend(cases_elements, [f'{c}' for c in cases_sizes],
-                       loc='lower right', title='Cases reported /hr', framealpha=0.9)
+                       loc='lower right', title='Cases reported /hr', framealpha=0.9,
+                       labelspacing=1.1)
 
 # Add main legend with Perfect calibration and statistics
 handles, labels = ax5.get_legend_handles_labels()
@@ -392,13 +397,14 @@ ax6.set_ylim(-0.05, 1.05)
 ax6.grid(True, alpha=0.3)
 
 # Add cases per hour legend
-cases_sizes = [120, 60, 30]  # cases per hour
+cases_sizes = [200, 100, 50]  # cases per hour
 cases_elements = []
 for cases in cases_sizes:
     cases_elements.append(plt.scatter([], [], s=cases*2, alpha=0.7,
                                    color='gray', label=f'{cases}'))
 cases_legend = ax6.legend(cases_elements, [f'{c}' for c in cases_sizes],
-                       loc='lower right', title='Cases reported /hr', framealpha=0.9)
+                       loc='lower right', title='Cases reported /hr', framealpha=0.9,
+                       labelspacing=1.1)
 
 # Add main legend with Perfect calibration and statistics
 handles, labels = ax6.get_legend_handles_labels()
@@ -418,6 +424,13 @@ print(f"Fig_5 saved to: {fig_5_path}")
 fig_5_svg_path = os.path.join(FIGURES_OUTPUT_PATH, 'Fig_5.svg')
 plt.savefig(fig_5_svg_path, format='svg', bbox_inches='tight', facecolor='white')
 print(f"Fig_5 saved to: {fig_5_svg_path}")
+# Vector PDF with live (non-outlined) text, for journal production.
+# pdf.fonttype 42 embeds TrueType outlines as a real font so the text
+# stays selectable and editable rather than being converted to paths.
+plt.rcParams['pdf.fonttype'] = 42
+fig_5_pdf_path = os.path.join(FIGURES_OUTPUT_PATH, 'Fig_5.pdf')
+plt.savefig(fig_5_pdf_path, format='pdf', bbox_inches='tight', facecolor='white')
+print(f"Fig_5 saved to: {fig_5_pdf_path}")
 
 # ── Figure-displayed regression statistics (printed for table/text consistency) ──
 # Recompute the exact R²/p-value pairs that appear as regression labels in

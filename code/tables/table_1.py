@@ -355,20 +355,15 @@ def main():
                 col_g1 = g1['balanced_accuracy'].astype(float).values
                 col_g2 = g2['balanced_accuracy'].astype(float).values
             elif key == 'sensitivity':
-                # Point: mean of conf-weighted per-reader sens (= MRMC FOM).
-                # CI half-width uses the *raw* per-reader recall SD (matches
-                # the method used by fig_1.py panel B and the published
-                # Table 1, where the SE is derived from the raw per-reader
-                # recall column rather than the conf-weighted column).
+                # Point and CI both come from the conf-weighted per-reader
+                # column (mean = MRMC FOM), so the interval is the spread of
+                # the same values the point averages and the same values
+                # overlaid on fig_1.py panel B.
                 col_g1 = reader_w['sensitivity'].values
                 col_g2 = reader_wm['sensitivity'].values
-                sd_g1 = float(g1['recall'].std(ddof=0))
-                sd_g2 = float(g2['recall'].std(ddof=0))
             elif key == 'specificity':
                 col_g1 = reader_w['specificity'].values
                 col_g2 = reader_wm['specificity'].values
-                sd_g1 = float(g1['specificity'].std(ddof=0))
-                sd_g2 = float(g2['specificity'].std(ddof=0))
             else:  # precision, f1
                 col_g1 = g1[key].astype(float).values
                 col_g2 = g2[key].astype(float).values
@@ -556,9 +551,9 @@ def main():
     rows_out.append(row9)
 
     # Row 10 (Cohen's κ aggregate) is computed by extended_data_fig_4.py
-    # from radiologist_df.csv (B=5000 reader-pair bootstrap); we read its
-    # log fixture to avoid duplicating the bootstrap here. If EDF 4 has
-    # not finished yet under the parallel runner, this row emits a
+    # from radiologist_df.csv (case-level bootstrap, B=5,000,000); we read its log
+    # rather than repeat a bootstrap of that size here. run_all.sh runs EDF 4 before
+    # the other scripts for that reason; if its log is absent this row emits a
     # placeholder.
     _edf4_log = os.path.join(R1_ROOT, 'data', 'logs', 'extended_data_fig_4.log')
     cohen_w = cohen_wm = cohen_dh = None
@@ -688,7 +683,7 @@ def main():
     print(f"\nSaved: {out_csv}")
     print(
         "\nNote: The Cohen's κ row is read from the extended_data_fig_4.log "
-        "fixture to avoid duplicating its B=5000 reader-pair bootstrap. "
+        "rather than repeating its B=5,000,000 case-level bootstrap. "
         "Other rows are computed live from radiologist_df.csv + bundled fig_6 "
         "CSVs + upstream_metadata.json."
     )

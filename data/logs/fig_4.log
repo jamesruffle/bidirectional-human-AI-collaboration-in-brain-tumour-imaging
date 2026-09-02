@@ -1,4 +1,4 @@
-Run started: 2026-07-23T20:37:51Z
+Run started: 2026-09-02T21:01:05Z
 Script:      code/figures/fig_4.py
 Host CPUs:   128
 ----
@@ -16,6 +16,7 @@ Using pre-extracted prob_data_dict (564 cases)
   Radiologist+Model AUPRC (reader-averaged, n=11): 0.832
 Fig_4 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_4.png
 Fig_4 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_4.svg
+Fig_4 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_4.pdf
 ----
-Run ended:   2026-07-23T20:37:55Z
-Wall clock:  4.0s
+Run ended:   2026-09-02T21:01:08Z
+Wall clock:  3.6s

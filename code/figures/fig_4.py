@@ -427,6 +427,13 @@ def main():
     fig_4_svg_path = os.path.join(FIGURES_OUTPUT_PATH, 'Fig_4.svg')
     plt.savefig(fig_4_svg_path, format='svg', bbox_inches='tight', facecolor='white')
     print(f"Fig_4 saved to: {fig_4_svg_path}")
+    # Vector PDF with live (non-outlined) text, for journal production.
+    # pdf.fonttype 42 embeds TrueType outlines as a real font so the text
+    # stays selectable and editable rather than being converted to paths.
+    plt.rcParams['pdf.fonttype'] = 42
+    fig_4_pdf_path = os.path.join(FIGURES_OUTPUT_PATH, 'Fig_4.pdf')
+    plt.savefig(fig_4_pdf_path, format='pdf', bbox_inches='tight', facecolor='white')
+    print(f"Fig_4 saved to: {fig_4_pdf_path}")
 
 
 if __name__ == '__main__':

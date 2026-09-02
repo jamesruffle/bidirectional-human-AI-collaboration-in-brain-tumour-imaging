@@ -49,15 +49,15 @@ The bundled `data/logs/<script>.log` files document the wall-clock runtime of ea
 |---|---|---|
 | `fig_4.py` | ~3 s | Pre-computed CV ensemble + radiomic CSVs; mostly plotting |
 | `fig_5.py` | ~3 s | Live `groupby` over 2,200 reviews; small plotting overhead |
-| `fig_1.py` | ~45 s | 6 reader-level + 6 case-level bootstrap CIs (B=5,000); pair-level model bootstrap |
+| `fig_1.py` | ~60 s | 6 reader-level + 6 case-level bootstrap CIs (B=5,000); pair-level model bootstrap; Δ-confidence bootstrap *p* at B=5,000,000 |
 | `fig_6.py` | ~15 s | Live confidence-calibration + equivalent-experience regression + bootstrap CIs |
-| `extended_data_fig_4.py` | ~35 s | 3 bootstrap loops × 5,000 iters of Cohen's κ, parallelised via `joblib` |
+| `extended_data_fig_4.py` | ~4.5 min | 3 κ-contrast bootstraps at B=5,000,000, evaluated from per-case 2×2 counts so the *p* values resolve below the 2/B floor of a 5,000-replicate run |
 | `extended_data_fig_5.py` | ~5 s | Per-pathology stratified plotting |
 | `extended_data_fig_6.py` | ~15 s | UMAP coordinates pre-computed; matplotlib only |
 | `extended_data_fig_7.py` | ~3 s | Pre-binned aggregates |
 | `table_1.py` | ~40 s | Reader-level + case-level paired bootstrap deltas across 7 metrics |
 | `supplementary_table_*.py` | <1 s | Direct CSV groupby |
-| **Parallel total** (`bash code/run_all.sh`) | **~46 s** (bounded by `fig_1.py` / `table_1.py`) | All 12 scripts in parallel; CPU-bound with no contention on a multi-core host |
+| **Parallel total** (`bash code/run_all.sh`) | **~4.4 min** | All 13 scripts; `extended_data_fig_4.py` runs first because `table_1.py` reads its log, then the remaining 12 in parallel |
 
 ## Source-data dependencies
 
