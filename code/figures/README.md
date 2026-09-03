@@ -14,9 +14,9 @@ All shared analysis logic — per-reader metrics, optimistic-dedup, case-level e
 | **Fig 4** | Performance curves with/without support | `fig_4.py` | `Fig_4.{png,svg}` | reproducible |
 | **Fig 5** | Strengthening accuracy / experience / confidence | `fig_5.py` | `Fig_5.{png,svg}` | reproducible from `radiologist_df.csv` (live `groupby`) |
 | **Fig 6** | Enhancing healthcare value | `fig_6.py` | `Fig_6.{png,svg}` | reproducible from `radiologist_df.csv` + `salary_progression.csv` (live regression) |
-| **EDF 1** | Paradigms of evaluating AI value | (none — illustrator schematic) | — | not script-reproducible |
-| **EDF 2** | Human-AI collaboration paradigms | (none — illustrator schematic) | — | not script-reproducible |
-| **EDF 3** | Study schematic | (none — illustrator schematic) | — | not script-reproducible |
+| **EDF 1** | Paradigms of evaluating AI value | (none — schematic) | — | not script-reproducible; ships as a rendered image only |
+| **EDF 2** | Human-AI collaboration paradigms | `human_ai_paradigm.jsx` | — | source deposited; rendered in a browser, not by the Python pipeline |
+| **EDF 3** | Study schematic | (none — Inkscape schematic) | — | not script-reproducible; ships as a rendered image only |
 | **EDF 4** | Agreement comparisons | `extended_data_fig_4.py` | `Extended_Data_Fig_4.{png,svg}` | reproducible from `radiologist_df.csv` |
 | **EDF 5** | Performance by pathology dataset | `extended_data_fig_5.py` | `Extended_Data_Fig_5.{png,svg}` | reproducible from `radiologist_df.csv` + `edf5_radiologist_meta.csv` |
 | **EDF 6** | Effect of lesion morphology (UMAP) | `extended_data_fig_6.py` | `Extended_Data_Fig_6.{png,svg}` | reproducible from `umap_analysis_results.csv` (UMAP coordinates pre-computed; UMAP is non-deterministic across machines and is therefore bundled rather than re-run) |
@@ -78,7 +78,13 @@ Composed from T1 / T2 / FLAIR / segmentation NIfTI volumes from the held-out tes
 
 ## Schematic figures (EDF 1, EDF 2, EDF 3)
 
-Illustrator-rendered figures (paradigm / collaboration / study-design diagrams) — not reproducible from data. The published renditions are embedded in the manuscript Word document; no per-figure script ships for these.
+Diagrams, not derived from data, so none is reproducible from the bundled CSVs. The published renditions are embedded in the manuscript Word document.
+
+**EDF 2** is the one with deposited source. It is a React component, `human_ai_paradigm.jsx`, rendered in a browser and screen-captured at 144 dpi; the capture is what appears in the manuscript. The component was co-developed with an AI agent — deliberately, as an instance of the human-assisted AI agent paradigm the figure itself illustrates — and the source is deposited here so the figure can be regenerated and inspected like any other. Its six pictograms (car, plane, user, cpu, shield, eye) come from the open-source [Lucide](https://lucide.dev) icon set via `lucide-react`, used under the ISC licence; the component embeds no raster imagery, no stock photography and no external assets of any other kind.
+
+To re-render: drop the component into any React + Tailwind CSS project with `lucide-react` installed and screenshot the rendered output.
+
+**EDF 1** and **EDF 3** ship as rendered images only, with no generating source deposited. EDF 3's PNG metadata records Inkscape as the tool that produced it.
 
 ## How each figure is reproduced
 
