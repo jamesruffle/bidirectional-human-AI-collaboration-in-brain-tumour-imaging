@@ -1,4 +1,4 @@
-Run started: 2026-09-02T21:01:05Z
+Run started: 2026-09-03T16:09:09Z
 Script:      code/figures/extended_data_fig_6.py
 Host CPUs:   128
 ----
@@ -8,5 +8,5 @@ Loading UMAP results from /home/jruffle/Downloads/radiologist_enhancement_rct/da
 Extended_Data_Fig_6 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_6.png
 Extended_Data_Fig_6 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_6.svg
 ----
-Run ended:   2026-09-02T21:01:19Z
-Wall clock:  14.6s
+Run ended:   2026-09-03T16:09:23Z
+Wall clock:  14.5s

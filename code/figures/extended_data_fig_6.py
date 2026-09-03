@@ -197,18 +197,18 @@ def main():
     voxel_min = umap_df['nonzero_voxels'].min()
     voxel_max = umap_df['nonzero_voxels'].max()
 
-    # Calculate percentiles to use actual data range
-    voxel_percentiles = [
-        (10, 'Micro (<0.5cm³)'),
-        (25, 'Small (0.5-1cm³)'),
-        (50, 'Medium (1-5cm³)'),
-        (75, 'Large (5-10cm³)'),
-        (90, 'Very Large (>10cm³)')
-    ]
+    # Marker area is a continuous linear function of reference-mask voxel count, not a
+    # five-level size class, so the key samples that scale at five percentiles of the
+    # observed distribution and is labelled with the volume each sample actually
+    # represents. Masks are registered to 1x1x1 mm isotropic MNI space (see Methods), so
+    # one voxel is 1 mm3 and volume in cm3 is the voxel count divided by 1000.
+    voxel_percentiles = [10, 25, 50, 75, 90]
 
-    for percentile, label in voxel_percentiles:
+    for percentile in voxel_percentiles:
         # Use actual percentile values from the data
         voxel_count = np.percentile(umap_df['nonzero_voxels'], percentile)
+        volume_cm3 = voxel_count / 1000.0
+        label = (f'{volume_cm3:.1f} cm³' if volume_cm3 < 10 else f'{volume_cm3:.0f} cm³')
 
         # Calculate the exact scatter plot size for this voxel count
         # Using the same formula as the scatter plots: sizes = 50 + 200 * (x - min) / (max - min)
@@ -224,7 +224,7 @@ def main():
 
     # Place size legend centred at the bottom with 5 columns, Y=0.20.
     fig.legend(handles=size_legend_elements, loc='center',
-              bbox_to_anchor=(0.5, 0.20), title='Lesion size',
+              bbox_to_anchor=(0.5, 0.20), title='Reference-mask volume (10th–90th percentile)',
               fontsize=10, title_fontsize=10, ncol=5)
 
     # Adjust layout to accommodate colorbars and legends
