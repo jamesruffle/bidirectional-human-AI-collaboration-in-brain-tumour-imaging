@@ -4,6 +4,22 @@ Per Nature Communications source-data requirements, every script-reproducible fi
 
 All shared analysis logic — per-reader metrics, optimistic-dedup, case-level ensembles, calibration metrics, equivalent-experience regression, NHS salary integration, paired-agreement Cohen's κ — lives in `code/_metrics_utils.py`. Both `code/figures/` and `code/tables/` import from this module so every figure and table number derives from the same primary CSVs by the same code path.
 
+## Naming: "Extended Data" in this repository = "Supplementary" in the paper
+
+At acceptance the journal asked for the Extended Data items to be renamed Supplementary
+Figures. This README uses the **published** names. The script and output **filenames**
+deliberately keep the legacy `extended_data_fig_*` / `Extended_Data_Fig_*` prefix,
+because the bundled logs in `data/logs/`, the input directories under
+`data/source_data/`, and `run_all.sh` are all keyed to those names; renaming the files
+would invalidate the shipped logs without changing a single number.
+
+| Published name | Script | Output |
+|---|---|---|
+| Supplementary Figure 4 | `extended_data_fig_4.py` | `Extended_Data_Fig_4.{png,svg}` |
+| Supplementary Figure 5 | `extended_data_fig_5.py` | `Extended_Data_Fig_5.{png,svg}` |
+| Supplementary Figure 6 | `extended_data_fig_6.py` | `Extended_Data_Fig_6.{png,svg}` |
+| Supplementary Figure 7 | `extended_data_fig_7.py` | `Extended_Data_Fig_7.{png,svg}` |
+
 ## Figure inventory
 
 | Manuscript figure | Title | Script | Output | Status |
@@ -14,13 +30,13 @@ All shared analysis logic — per-reader metrics, optimistic-dedup, case-level e
 | **Fig 4** | Performance curves with/without support | `fig_4.py` | `Fig_4.{png,svg}` | reproducible |
 | **Fig 5** | Strengthening accuracy / experience / confidence | `fig_5.py` | `Fig_5.{png,svg}` | reproducible from `radiologist_df.csv` (live `groupby`) |
 | **Fig 6** | Enhancing healthcare value | `fig_6.py` | `Fig_6.{png,svg}` | reproducible from `radiologist_df.csv` + `salary_progression.csv` (live regression) |
-| **EDF 1** | Paradigms of evaluating AI value | (none — schematic) | — | not script-reproducible; ships as a rendered image only |
-| **EDF 2** | Human-AI collaboration paradigms | `human_ai_paradigm.jsx` | — | source deposited; rendered in a browser, not by the Python pipeline |
-| **EDF 3** | Study schematic | (none — Inkscape schematic) | — | not script-reproducible; ships as a rendered image only |
-| **EDF 4** | Agreement comparisons | `extended_data_fig_4.py` | `Extended_Data_Fig_4.{png,svg}` | reproducible from `radiologist_df.csv` |
-| **EDF 5** | Performance by pathology dataset | `extended_data_fig_5.py` | `Extended_Data_Fig_5.{png,svg}` | reproducible from `radiologist_df.csv` + `edf5_radiologist_meta.csv` |
-| **EDF 6** | Effect of lesion morphology (UMAP) | `extended_data_fig_6.py` | `Extended_Data_Fig_6.{png,svg}` | reproducible from `umap_analysis_results.csv` (UMAP coordinates pre-computed; UMAP is non-deterministic across machines and is therefore bundled rather than re-run) |
-| **EDF 7** | Pathology, size, radiomic assessment | `extended_data_fig_7.py` | `Extended_Data_Fig_7.{png,svg}` | reproducible |
+| **Supp Fig 1** | Paradigms of evaluating AI value | (none — schematic) | — | not script-reproducible; ships as a rendered image only |
+| **Supp Fig 2** | Human-AI collaboration paradigms | `human_ai_paradigm.jsx` | — | source deposited; rendered in a browser, not by the Python pipeline |
+| **Supp Fig 3** | Study schematic | (none — Inkscape schematic) | — | not script-reproducible; ships as a rendered image only |
+| **Supp Fig 4** | Agreement comparisons | `extended_data_fig_4.py` | `Extended_Data_Fig_4.{png,svg}` | reproducible from `radiologist_df.csv` |
+| **Supp Fig 5** | Performance by pathology dataset | `extended_data_fig_5.py` | `Extended_Data_Fig_5.{png,svg}` | reproducible from `radiologist_df.csv` + `edf5_radiologist_meta.csv` |
+| **Supp Fig 6** | Effect of lesion morphology (UMAP) | `extended_data_fig_6.py` | `Extended_Data_Fig_6.{png,svg}` | reproducible from `umap_analysis_results.csv` (UMAP coordinates pre-computed; UMAP is non-deterministic across machines and is therefore bundled rather than re-run) |
+| **Supp Fig 7** | Pathology, size, radiomic assessment | `extended_data_fig_7.py` | `Extended_Data_Fig_7.{png,svg}` | reproducible |
 
 ## Reproducing all figures
 
@@ -76,15 +92,15 @@ The bundled `data/logs/<script>.log` files document the wall-clock runtime of ea
 
 Composed from T1 / T2 / FLAIR / segmentation NIfTI volumes from the held-out test set. NIfTI imaging is held under controlled access (the institutional ethics framework precludes redistribution beyond the original consent scope) and is therefore not bundled. Reviewers needing to regenerate these figures can obtain source datasets from the public sources cited in the manuscript.
 
-## Schematic figures (EDF 1, EDF 2, EDF 3)
+## Schematic figures (Supplementary Figures 1, 2, 3)
 
 Diagrams, not derived from data, so none is reproducible from the bundled CSVs. The published renditions are embedded in the manuscript Word document.
 
-**EDF 2** is the one with deposited source. It is a React component, `human_ai_paradigm.jsx`, rendered in a browser and screen-captured at 144 dpi; the capture is what appears in the manuscript. The component was co-developed with an AI agent — deliberately, as an instance of the human-assisted AI agent paradigm the figure itself illustrates — and the source is deposited here so the figure can be regenerated and inspected like any other. Its six pictograms (car, plane, user, cpu, shield, eye) come from the open-source [Lucide](https://lucide.dev) icon set via `lucide-react`, used under the ISC licence; the component embeds no raster imagery, no stock photography and no external assets of any other kind.
+**Supplementary Figure 2** is the one with deposited source. It is a React component, `human_ai_paradigm.jsx`, rendered in a browser and screen-captured at 144 dpi; the capture is what appears in the manuscript. The component was co-developed with an AI agent — deliberately, as an instance of the human-assisted AI agent paradigm the figure itself illustrates — and the source is deposited here so the figure can be regenerated and inspected like any other. Its six pictograms (car, plane, user, cpu, shield, eye) come from the open-source [Lucide](https://lucide.dev) icon set via `lucide-react`, used under the ISC licence; the component embeds no raster imagery, no stock photography and no external assets of any other kind.
 
 To re-render: drop the component into any React + Tailwind CSS project with `lucide-react` installed and screenshot the rendered output.
 
-**EDF 1** and **EDF 3** ship as rendered images only, with no generating source deposited. EDF 3's PNG metadata records Inkscape as the tool that produced it.
+**Supplementary Figures 1 and 3** ship as rendered images only, with no generating source deposited. Supplementary Figure 3's PNG metadata records Inkscape as the tool that produced it.
 
 ## How each figure is reproduced
 
@@ -93,4 +109,4 @@ Each `code/figures/<script>.py` is self-contained:
 1. Reads the bundled inputs (CSV / JSON) under `data/source_data/<dir>/`. Where required for byte-identical scatter-jitter reproduction (Fig 6 only), a small JSON RNG-state file is also bundled and restored at runtime.
 2. Computes derived intermediates live via `_metrics_utils` from the upstream primary CSVs.
 3. Renders the figure in-process using matplotlib.
-4. Writes a PNG + SVG to `data/figures/` using the manuscript-aligned filenames (`Fig_<N>.{png,svg}`, `Extended_Data_Fig_<N>.{png,svg}`).
+4. Writes a PNG + SVG to `data/figures/` (`Fig_<N>.{png,svg}` for main figures, `Extended_Data_Fig_<N>.{png,svg}` for supplementary figures — see the naming note above).

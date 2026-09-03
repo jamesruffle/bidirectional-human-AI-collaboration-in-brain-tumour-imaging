@@ -6,13 +6,19 @@ All shared analysis logic — per-reader metrics, optimistic-dedup, case-level e
 
 ## Table inventory
 
+> **Naming.** The paper's published table numbers differ from these script names. The
+> geography × pathology table became **Supplementary Data 1** at acceptance rather than a
+> numbered table, so published Supplementary Table *N* is produced by
+> `supplementary_table_`*N+1*`.py`. Filenames are left unchanged so the bundled logs and
+> source-data directories stay valid.
+
 | Table | Title | Script | CSV output | Log |
 |---|---|---|---|---|
 | **Main Table 1** | Primary results — paired comparisons of agent performance on the 564-case radiologist-reviewed cohort | `table_1.py` | `data/source_data/table_1/csv/table_1.csv` | `data/logs/table_1.log` |
 | **Supp Table 1** | Reader subspecialty roster | (none — static reader→subspecialty lookup) | — | — |
-| **Supp Table 2** | False-positive and false-negative geography and pathology distribution | `supplementary_table_2.py` | `data/source_data/supplementary_table_2/csv/supplementary_table_2.csv` | `data/logs/supplementary_table_2.log` |
-| **Supp Table 3** | Patient-sex disaggregation of agent performance on the 82-case sex-metadata subset | `supplementary_table_3.py` | `data/source_data/supplementary_table_3/csv/supplementary_table_3.csv` | `data/logs/supplementary_table_3.log` |
-| **Supp Table 4** | Female–male performance gaps (Δ = female − male) across the 82-case subset | `supplementary_table_4.py` | `data/source_data/supplementary_table_4/csv/supplementary_table_4.csv` | `data/logs/supplementary_table_4.log` |
+| **Supp Data 1** | False-positive and false-negative geography and pathology distribution | `supplementary_table_2.py` | `data/source_data/supplementary_table_2/csv/supplementary_table_2.csv` | `data/logs/supplementary_table_2.log` |
+| **Supp Table 2** | Patient-sex disaggregation of agent performance on the 82-case sex-metadata subset | `supplementary_table_3.py` | `data/source_data/supplementary_table_3/csv/supplementary_table_3.csv` | `data/logs/supplementary_table_3.log` |
+| **Supp Table 3** | Female–male performance gaps (Δ = female − male) across the 82-case subset | `supplementary_table_4.py` | `data/source_data/supplementary_table_4/csv/supplementary_table_4.csv` | `data/logs/supplementary_table_4.log` |
 
 ## Reproducing all tables
 
@@ -59,12 +65,13 @@ Each log header records the start timestamp and host CPU count; the trailing `Wa
 | Δ accuracy-family (AI side) | Fold-Δ bootstrap of per-fold Δ across the 5 CV folds; B=5,000; seed=20260505; CI centre-shifted to the canonical macro-averaged Δ |
 | Cohen's κ contrasts | Case-level bootstrap: cases are resampled with replacement and κ recomputed over all pairwise comparisons belonging to the resampled cases (2,389 comparisons in total; 1,289 rad-rad + 1,100 rad-model); B=5,000,000; seed=20260505. The higher B resolves the contrast p-values below the 2/B floor of a 5,000-resample run; because the interval and the p-value are two readings of the same replicates, the Δκ CI is likewise a 5,000,000-resample estimate. |
 | Point CIs (radiologist accuracy-family) | Normal approximation: mean ± 1.96 × (per-reader SD / √n_readers) |
-| Point CIs (radiologist AUROC/AUPRC/sens/spec) | MRMCaov ORH variance estimate (via the figure-rendering pipeline; values cached in source-data CSVs) |
+| Point CIs (radiologist sens/spec) | Normal approximation: mean ± 1.96 × (per-reader SD / √n_readers) — `_reader_normal_ci`, `table_1.py:71` |
+| Point CIs (radiologist AUROC/AUPRC) | Reader-level percentile bootstrap of the mean over the n=11 readers; B=5,000; seed=20260505 — `_reader_bootstrap_ci`, `table_1.py:61`. MRMCaov contributes the point FOMs only; its variance/CI fields in `aggregates.json` are unpopulated sentinels and no R code ships in this repository. |
 | Point CIs (model accuracy-family) | Reviewer-case-pair-level percentile bootstrap (n=1,100); B=5,000; seed=20260505 |
 | Point CIs (model AUROC/AUPRC) | Case-level percentile bootstrap (n=564); B=5,000; seed=20260505 |
 
 ## Verification
 
-- **Supp Tables 2–4**: every script-produced value matches the corresponding manuscript cell to within 3-decimal rounding. Supp Table 1 (reader subspecialty roster) is a static metadata table reproduced verbatim from the trial recruitment record.
+- **Supp Tables 2–3 and Supp Data 1**: every script-produced value matches the corresponding manuscript cell to within 3-decimal rounding. Supp Table 1 (reader subspecialty roster) is a static metadata table reproduced verbatim from the trial recruitment record.
 - **Main Table 1** (`table_1.py`): every point estimate and 95% CI matches the published Table 1 cell-for-cell. The sampling unit and bootstrap procedure used to generate each cell are listed in the "Bootstrap procedures used in `table_1.py`" table above.
-- **Inter-rater agreement (Cohen's κ)** row of Table 1 is sourced from `extended_data_fig_4.py` (paired bootstrap at the reader-pair × case-pair sampling unit). `table_1.py` itself produces rows 1–9 (accuracy family + confidence-accuracy correlation + calibration difference), row 12 (mean confidence) and row 13 (RTAT) using paired reader-level / pair-level / case-level bootstraps at B=5,000, seed=20260505. See the "Bootstrap procedures used in `table_1.py`" table above for the sampling unit used per row.
+- **Inter-rater agreement (Cohen's κ)** row of Table 1 is sourced from `extended_data_fig_4.py` (Supplementary Figure 4) (paired bootstrap at the reader-pair × case-pair sampling unit). `table_1.py` itself produces rows 1–9 (accuracy family + confidence-accuracy correlation + calibration difference), row 12 (mean confidence) and row 13 (RTAT) using paired reader-level / pair-level / case-level bootstraps at B=5,000, seed=20260505. See the "Bootstrap procedures used in `table_1.py`" table above for the sampling unit used per row.
