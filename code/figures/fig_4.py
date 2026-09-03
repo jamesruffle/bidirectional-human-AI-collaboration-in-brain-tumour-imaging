@@ -256,8 +256,9 @@ def main():
     overall_fpr, overall_tpr, _ = roc_curve(overall_y_true, overall_y_scores)
 
     # Reader-averaged AUROC (MRMC FOM) — matches fig_1 mrmc_auroc.fom_without and the
-    # manuscript-cited value. The pooled "overall" trace is still drawn as the visual
-    # mean curve, but the reported AUROC is the MRMC reader-average.
+    # manuscript-cited value. The black trace is the pooled curve over all reader-case
+    # observations, shown as the visual mean; the AUROC reported alongside it is the
+    # reader-average. The two agree to within 0.002 on these data.
     rad_alone_auroc = float(np.mean(radiologist_aucs))
     print(f"  Radiologist alone AUROC (reader-averaged, n={len(radiologist_aucs)}): {rad_alone_auroc:.3f}")
 
