@@ -268,12 +268,13 @@ def main():
     # ── Bootstrap p-values for Cohen κ contrasts (paragraph 84) ──
     # Case-level paired bootstrap on the κ contrast for each comparison stream.
     # A two-sided bootstrap p is 2·k/B for k replicates on the crossing side, so
-    # its smallest expressible non-zero value is 2/B. At the B=5000 used for the
-    # confidence intervals elsewhere in this codebase two of these three
-    # contrasts return zero crossings, which reports only "below 4e-4" and not
-    # the p itself. B is therefore raised here so the p values resolve; κ is
-    # evaluated from 2x2 counts (see `_kappa_from_counts`) to keep that
-    # tractable. Seed unchanged.
+    # the smallest value the estimator can express, other than zero, is 2/B. At
+    # B = 5,000 that floor is 4e-4, which is larger than the p values two of these
+    # three contrasts actually have; B is set to 5,000,000 here so that the
+    # estimator's resolution is finer than the quantities being estimated. This
+    # fixes the precision of the procedure in advance and is independent of the
+    # results: κ is evaluated from 2x2 counts (see `_kappa_from_counts`) to keep
+    # that many replicates tractable, and the seed is unchanged.
     B = 5_000_000
     print(f"\nBootstrap p-values for Cohen κ contrasts (paragraph 84, B={B}, seed=20260505):")
 
