@@ -78,9 +78,18 @@ PNG outputs are byte-identical across runs; SVG outputs may differ by matplotlib
 
 ## Expected runtimes (128-CPU host, parallel)
 
-Most scripts complete in a few seconds. `extended_data_fig_4.py` runs three 5,000-iter Cohen's κ bootstraps over the inter-rater agreement contrasts; these are parallelised via `joblib`, so the script completes in ~35 s on a multi-core host (~15 minutes single-threaded). `fig_1.py` and `table_1.py` each do ~40 s of paired bootstrap work for the Δ-metric CIs.
+Most scripts complete in a few seconds. `extended_data_fig_4.py` is the slowest by
+a wide margin: it runs the Cohen's κ contrast bootstraps at **B = 5,000,000**
+(`extended_data_fig_4.py:277`), computing κ from per-case 2×2 counts as chunked
+matrix products rather than one `sklearn` call per replicate, and takes **~217 s**.
+`fig_1.py` (~47 s) and `table_1.py` (~44 s) each do paired bootstrap work for the
+Δ-metric CIs.
 
-When run through `code/run_all.sh` on a multi-core host, total wall clock is **bounded by the slowest script (~46 s, currently `fig_1.py`)** — every other script finishes inside that window. See the `data/logs/*.log` files for measured wall-clock times.
+`code/run_all.sh` deliberately runs `extended_data_fig_4.py` to completion *before*
+the parallel block, because `table_1.py` reads the κ row from its log. Total wall
+clock is therefore **~217 s + the slowest remaining script (~47 s) ≈ 265 s**, not the
+duration of the parallel block alone. The bundled `data/logs/*.log` files record the
+measured wall-clock time of every script.
 
 ## Source-data layout
 
