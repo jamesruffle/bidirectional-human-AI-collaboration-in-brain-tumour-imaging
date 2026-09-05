@@ -399,7 +399,7 @@ def main():
 
     # ─────────── Rows 8-13: calibration / κ / confidence / RTAT ───────────
     # Computed live from radiologist_df + bundled fig_6 CSVs + upstream_metadata.json,
-    # mirroring the metric definitions in fig_1.py / fig_6.py / extended_data_fig_4.py.
+    # mirroring the metric definitions in fig_1.py / fig_6.py / supplementary_figure_4.py.
     # All values traceable to bundled CSV/JSON inputs — no hardcoded numerics.
     import scipy.stats as _stats
     from sklearn.metrics import brier_score_loss, cohen_kappa_score
@@ -550,24 +550,24 @@ def main():
           f"{row9['Δ Radiologist (with vs without model)']:<39} {row9['Δ Model (with vs without radiologist)']:<39}")
     rows_out.append(row9)
 
-    # Row 10 (Cohen's κ aggregate) is computed by extended_data_fig_4.py
+    # Row 10 (Cohen's κ aggregate) is computed by supplementary_figure_4.py
     # from radiologist_df.csv (case-level bootstrap, B=5,000,000); we read its log
-    # rather than repeat a bootstrap of that size here. run_all.sh runs EDF 4 before
+    # rather than repeat a bootstrap of that size here. run_all.sh runs Supplementary Figure 4 before
     # the other scripts for that reason; if its log is absent this row emits a
     # placeholder.
-    _edf4_log = os.path.join(R1_ROOT, 'data', 'logs', 'extended_data_fig_4.log')
+    _suppfig4_log = os.path.join(R1_ROOT, 'data', 'logs', 'supplementary_figure_4.log')
     cohen_w = cohen_wm = cohen_dh = None
-    if os.path.isfile(_edf4_log):
-        with open(_edf4_log) as _fh:
-            _edf4_text = _fh.read()
+    if os.path.isfile(_suppfig4_log):
+        with open(_suppfig4_log) as _fh:
+            _suppfig4_text = _fh.read()
         import re as _re
-        m = _re.search(r"Without support\s+κ_aggregate = ([\d.]+)", _edf4_text)
+        m = _re.search(r"Without support\s+κ_aggregate = ([\d.]+)", _suppfig4_text)
         if m:
             cohen_w = float(m.group(1))
-        m = _re.search(r"With support\s+κ_aggregate = ([\d.]+)", _edf4_text)
+        m = _re.search(r"With support\s+κ_aggregate = ([\d.]+)", _suppfig4_text)
         if m:
             cohen_wm = float(m.group(1))
-        m = _re.search(r"Aggregate\s+Δκ = ([+\-\d.]+) \[([+\-\d.]+), ([+\-\d.]+)\]", _edf4_text)
+        m = _re.search(r"Aggregate\s+Δκ = ([+\-\d.]+) \[([+\-\d.]+), ([+\-\d.]+)\]", _suppfig4_text)
         if m:
             cohen_dh = (float(m.group(1)), float(m.group(2)), float(m.group(3)))
 
@@ -682,7 +682,7 @@ def main():
     pd.DataFrame(rows_out).to_csv(out_csv, index=False)
     print(f"\nSaved: {out_csv}")
     print(
-        "\nNote: The Cohen's κ row is read from the extended_data_fig_4.log "
+        "\nNote: The Cohen's κ row is read from the supplementary_figure_4.log "
         "rather than repeating its B=5,000,000 case-level bootstrap. "
         "Other rows are computed live from radiologist_df.csv + bundled fig_6 "
         "CSVs + upstream_metadata.json."

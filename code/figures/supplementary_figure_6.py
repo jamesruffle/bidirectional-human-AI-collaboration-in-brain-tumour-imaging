@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Extended Data Figure 6: UMAP embedding (single-file self-contained).
+"""Supplementary Figure 6: UMAP embedding (single-file self-contained).
 
 Reads precomputed UMAP coordinates + per-case metric deltas from
-`data/source_data/extended_data_figure_6/csv/umap_analysis_results.csv`
-(~87 KB) and renders Extended_Data_Fig_6 directly.
+`data/source_data/supplementary_figure_6/csv/umap_analysis_results.csv`
+(~87 KB) and renders Supplementary_Figure_6 directly.
 
 N.B. this script uses pre-computed UMAP embeddings to preserve patient privacy and ensure byte-identical reproduction of the figure. The original UMAP was computed on a high-dimensional feature space derived from the imaging data, which cannot be shared directly due to privacy concerns. By using the pre-computed UMAP coordinates, we can reproduce the exact same figure without exposing any patient-level data.
 
-Output: data/figures/Extended_Data_Fig_6.png  (and .svg)
+Output: data/figures/Supplementary_Figure_6.png  (and .svg)
 """
 from __future__ import annotations
 
@@ -27,7 +27,7 @@ sns.set_palette("husl")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 R1_ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
-SRC_DIR = os.path.join(R1_ROOT, 'data', 'source_data', 'extended_data_figure_6', 'csv')
+SRC_DIR = os.path.join(R1_ROOT, 'data', 'source_data', 'supplementary_figure_6', 'csv')
 UMAP_CSV = os.path.join(SRC_DIR, 'umap_analysis_results.csv')
 FIGURES_OUTPUT_PATH = os.path.join(R1_ROOT, 'data', 'figures')
 
@@ -231,14 +231,14 @@ def main():
     plt.tight_layout(rect=[0, 0.14, 0.5, 0.90])
 
     # Save figure
-    output_path = os.path.join(output_dir, 'Extended_Data_Fig_6.png')
+    output_path = os.path.join(output_dir, 'Supplementary_Figure_6.png')
     plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor='white')
-    print(f"\nExtended_Data_Fig_6 saved to: {output_path}")
+    print(f"\nSupplementary_Figure_6 saved to: {output_path}")
 
     # Also save as SVG
-    output_path_svg = os.path.join(output_dir, 'Extended_Data_Fig_6.svg')
+    output_path_svg = os.path.join(output_dir, 'Supplementary_Figure_6.svg')
     plt.savefig(output_path_svg, format='svg', bbox_inches='tight', facecolor='white')
-    print(f"Extended_Data_Fig_6 saved to: {output_path_svg}")
+    print(f"Supplementary_Figure_6 saved to: {output_path_svg}")
 
 
 if __name__ == '__main__':

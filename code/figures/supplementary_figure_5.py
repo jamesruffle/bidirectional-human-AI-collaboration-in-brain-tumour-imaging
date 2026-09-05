@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Extended Data Figure 5: Human agent performance by pathology dataset.
+"""Supplementary Figure 5: Human agent performance by pathology dataset.
 
 Self-contained reproduction script. Reads two CSVs from
-`data/source_data/extended_data_figure_5/csv/` and renders
-`data/figures/Extended_Data_Fig_5.png` byte-identical to the canonical.
+`data/source_data/supplementary_figure_5/csv/` and renders
+`data/figures/Supplementary_Figure_5.png` byte-identical to the canonical.
 
 Inputs:
-  - edf5_panel_data.csv         : 110 rows of per-(rad, pathology, condition) aggregates
-  - edf5_radiologist_meta.csv   : 11 rows of radiologist experience metadata
+  - suppfig5_panel_data.csv         : 110 rows of per-(rad, pathology, condition) aggregates
+  - suppfig5_radiologist_meta.csv   : 11 rows of radiologist experience metadata
 
 """
 import os
@@ -31,8 +31,8 @@ plt.rcParams.update({
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 R1_ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
-SRC_DIR = os.path.join(R1_ROOT, 'data', 'source_data', 'extended_data_figure_5', 'csv')
-META_CSV = os.path.join(SRC_DIR, 'edf5_radiologist_meta.csv')
+SRC_DIR = os.path.join(R1_ROOT, 'data', 'source_data', 'supplementary_figure_5', 'csv')
+META_CSV = os.path.join(SRC_DIR, 'suppfig5_radiologist_meta.csv')
 RDF_CSV  = os.path.join(R1_ROOT, 'data', 'source_data', 'figure_1', 'csv_v2', 'radiologist_df.csv')
 FIGURES_OUTPUT_PATH = os.path.join(R1_ROOT, 'data', 'figures')
 
@@ -310,9 +310,9 @@ fig.text(
 plt.tight_layout()
 
 # Save as both PNG and SVG
-plt.savefig(os.path.join(FIGURES_OUTPUT_PATH, 'Extended_Data_Fig_5.png'),
+plt.savefig(os.path.join(FIGURES_OUTPUT_PATH, 'Supplementary_Figure_5.png'),
             dpi=300, bbox_inches='tight')
-plt.savefig(os.path.join(FIGURES_OUTPUT_PATH, 'Extended_Data_Fig_5.svg'),
+plt.savefig(os.path.join(FIGURES_OUTPUT_PATH, 'Supplementary_Figure_5.svg'),
             format='svg', bbox_inches='tight')
-print(f"Extended_Data_Fig_5 saved to: {os.path.join(FIGURES_OUTPUT_PATH, 'Extended_Data_Fig_5.png')}")
-print(f"Extended_Data_Fig_5 saved to: {os.path.join(FIGURES_OUTPUT_PATH, 'Extended_Data_Fig_5.svg')}")
+print(f"Supplementary_Figure_5 saved to: {os.path.join(FIGURES_OUTPUT_PATH, 'Supplementary_Figure_5.png')}")
+print(f"Supplementary_Figure_5 saved to: {os.path.join(FIGURES_OUTPUT_PATH, 'Supplementary_Figure_5.svg')}")

@@ -1,14 +1,14 @@
-Run started: 2026-09-02T20:57:28Z
-Script:      code/figures/extended_data_fig_4.py
+Run started: 2026-09-05T20:15:58Z
+Script:      code/figures/supplementary_figure_4.py
 Host CPUs:   128
 ----
 Computing minimal agreement inputs live from /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/figure_1/csv_v2/radiologist_df.csv...
   Loaded 2200 rows x 5 cols (live-derived)
 
-Generating Extended Data Figure 4...
+Generating Supplementary Figure 4...
 
-Extended_Data_Fig_4 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_4.png
-Extended_Data_Fig_4 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_4.svg
+Supplementary_Figure_4 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Supplementary_Figure_4.png
+Supplementary_Figure_4 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Supplementary_Figure_4.svg
 
 Figure-displayed Cohen κ values (panel titles):
   a) Model-radiologist agreement, without support  κ = 0.314
@@ -30,5 +30,5 @@ Per-pair κ direction split (paragraph 84, '% higher with support'):
     κ higher WITH support:    51 (77.3%)
     κ higher WITHOUT support: 15 (22.7%)
 ----
-Run ended:   2026-09-02T21:01:05Z
-Wall clock:  217.0s
+Run ended:   2026-09-05T20:19:32Z
+Wall clock:  213.5s

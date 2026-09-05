@@ -377,7 +377,7 @@ def compute_pair_count_weighted_kappa_aggregate(radiologist_df):
     """Pair-count-weighted Cohen's kappa aggregate across all reader-pairs
     (rad-rad + rad-model), separately for the without-AI and with-AI arms.
 
-    Mirrors the convention in extended_data_fig_4.py — weights the rad-rad
+    Mirrors the convention in supplementary_figure_4.py — weights the rad-rad
     component (n=1289 case-pairs across the 55 unique rad-rad pairs) and the
     rad-model component (n=1100 case-pairs across the 11 reader-model pairs)
     by their underlying case-pair counts, giving the aggregate cited in

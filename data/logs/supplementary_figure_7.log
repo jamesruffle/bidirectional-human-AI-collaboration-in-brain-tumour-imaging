@@ -1,10 +1,10 @@
-Run started: 2026-09-02T21:01:05Z
-Script:      code/figures/extended_data_fig_7.py
+Run started: 2026-09-05T20:22:35Z
+Script:      code/figures/supplementary_figure_7.py
 Host CPUs:   128
 ----
-Loading edf7_inputs from /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/extended_data_figure_7/edf7_inputs.csv...
+Loading suppfig7_inputs from /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/supplementary_figure_7/suppfig7_inputs.csv...
   2200 rows x 8 cols
-Rendering Extended Data Figure 7...
+Rendering Supplementary Figure 7...
 
 Calculating metrics for radar plots...
   Meningioma: without=0.833, with=0.926
@@ -50,8 +50,8 @@ Calculating metrics for radar plots...
   Infiltrative Single: without=83.1 cases/hr, with=128.0 cases/hr
   Multiple: without=78.1 cases/hr, with=110.6 cases/hr
 
-Extended_Data_Fig_7 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_7.png
-Extended_Data_Fig_7 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_7.svg
+Supplementary_Figure_7 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Supplementary_Figure_7.png
+Supplementary_Figure_7 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Supplementary_Figure_7.svg
 
 Radar analysis summary:
 Total cases analyzed: 1100
@@ -65,7 +65,7 @@ Overall improvements:
   Confidence: 6.9 to 7.2 (+0.4)
   Cases per hour: 78.9 to 117.8 (+38.9 cases/hr)
 
-EDF 7 saved to /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Extended_Data_Fig_7.png
+Supplementary Figure 7 saved to /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Supplementary_Figure_7.png
 ----
-Run ended:   2026-09-02T21:01:08Z
-Wall clock:  3.6s
+Run ended:   2026-09-05T20:22:38Z
+Wall clock:  3.3s

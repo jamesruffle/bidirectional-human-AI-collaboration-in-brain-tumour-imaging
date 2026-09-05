@@ -1603,7 +1603,7 @@ kappa_without = np.nanmean(kappa_without_matrix[~np.eye(n_rads, dtype=bool)])
 # Emitted so the value the panel title displays is verifiable from the bundled log.
 # Note this is the UNWEIGHTED mean of the off-diagonal agent x agent matrix, which is a
 # different quantity from the pair-count-weighted aggregate κ reported in the Results
-# and printed by extended_data_fig_4.py.
+# and printed by supplementary_figure_4.py.
 print(f"\nPanel g title κ̄ (unweighted off-diagonal matrix mean): {kappa_without:.4f}")
 
 # Create heatmap (inferno colourmap, kappa range 0–1.0)

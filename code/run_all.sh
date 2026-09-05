@@ -22,10 +22,10 @@ FIGS=(
     code/figures/fig_4.py
     code/figures/fig_5.py
     code/figures/fig_6.py
-    code/figures/extended_data_fig_4.py
-    code/figures/extended_data_fig_5.py
-    code/figures/extended_data_fig_6.py
-    code/figures/extended_data_fig_7.py
+    code/figures/supplementary_figure_4.py
+    code/figures/supplementary_figure_5.py
+    code/figures/supplementary_figure_6.py
+    code/figures/supplementary_figure_7.py
 )
 TABLES=(
     code/tables/table_1.py
@@ -71,14 +71,14 @@ export -f run_one
 export LOG_DIR
 
 t0=$(date +%s.%N)
-# extended_data_fig_4.py must complete before table_1.py: Table 1's Cohen's kappa row is
-# read from the EDF 4 log rather than recomputed, so running them concurrently races the
+# supplementary_figure_4.py must complete before table_1.py: Table 1's Cohen's kappa row is
+# read from the Supplementary Figure 4 log rather than recomputed, so running them concurrently races the
 # 215 s bootstrap against the 45 s table and emits placeholders. Run it first, then the rest.
-EDF4=code/figures/extended_data_fig_4.py
+SUPPFIG4=code/figures/supplementary_figure_4.py
 REST=()
-for s in "${SCRIPTS[@]}"; do [ "$s" = "$EDF4" ] || REST+=("$s"); done
+for s in "${SCRIPTS[@]}"; do [ "$s" = "$SUPPFIG4" ] || REST+=("$s"); done
 for s in "${SCRIPTS[@]}"; do
-    if [ "$s" = "$EDF4" ]; then run_one "$EDF4"; break; fi
+    if [ "$s" = "$SUPPFIG4" ]; then run_one "$SUPPFIG4"; break; fi
 done
 if [ ${#REST[@]} -gt 0 ]; then
     printf '%s\n' "${REST[@]}" | xargs -P 0 -I{} bash -c 'run_one "$@"' _ {}

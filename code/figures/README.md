@@ -4,21 +4,15 @@ Per Nature Communications source-data requirements, every script-reproducible fi
 
 All shared analysis logic — per-reader metrics, optimistic-dedup, case-level ensembles, calibration metrics, equivalent-experience regression, NHS salary integration, paired-agreement Cohen's κ — lives in `code/_metrics_utils.py`. Both `code/figures/` and `code/tables/` import from this module so every figure and table number derives from the same primary CSVs by the same code path.
 
-## Naming: "Extended Data" in this repository = "Supplementary" in the paper
+## Naming
 
-At acceptance the journal asked for the Extended Data items to be renamed Supplementary
-Figures. This README uses the **published** names. The script and output **filenames**
-deliberately keep the legacy `extended_data_fig_*` / `Extended_Data_Fig_*` prefix,
-because the bundled logs in `data/logs/`, the input directories under
-`data/source_data/`, and `run_all.sh` are all keyed to those names; renaming the files
-would invalidate the shipped logs without changing a single number.
-
-| Published name | Script | Output |
-|---|---|---|
-| Supplementary Figure 4 | `extended_data_fig_4.py` | `Extended_Data_Fig_4.{png,svg}` |
-| Supplementary Figure 5 | `extended_data_fig_5.py` | `Extended_Data_Fig_5.{png,svg}` |
-| Supplementary Figure 6 | `extended_data_fig_6.py` | `Extended_Data_Fig_6.{png,svg}` |
-| Supplementary Figure 7 | `extended_data_fig_7.py` | `Extended_Data_Fig_7.{png,svg}` |
+The journal renamed the Extended Data items to Supplementary Figures at acceptance and
+the repository followed, so script, output, log and source-data names all match the
+published name: `supplementary_figure_4.py` renders
+`data/figures/Supplementary_Figure_4.{png,svg}`, logs to
+`data/logs/supplementary_figure_4.log`, and reads from
+`data/source_data/supplementary_figure_*/`. In running prose the paper abbreviates these
+as "Supplementary Fig. N", which is Nature house style and not a separate item.
 
 ## Figure inventory
 
@@ -33,10 +27,10 @@ would invalidate the shipped logs without changing a single number.
 | **Supp Fig 1** | Paradigms of evaluating AI value | (none — schematic) | — | not script-reproducible; ships as a rendered image only |
 | **Supp Fig 2** | Human-AI collaboration paradigms | `human_ai_paradigm.jsx` | — | source deposited; rendered in a browser, not by the Python pipeline |
 | **Supp Fig 3** | Study schematic | (none — Inkscape schematic) | — | not script-reproducible; ships as a rendered image only |
-| **Supp Fig 4** | Agreement comparisons | `extended_data_fig_4.py` | `Extended_Data_Fig_4.{png,svg}` | reproducible from `radiologist_df.csv` |
-| **Supp Fig 5** | Performance by pathology dataset | `extended_data_fig_5.py` | `Extended_Data_Fig_5.{png,svg}` | reproducible from `radiologist_df.csv` + `edf5_radiologist_meta.csv` |
-| **Supp Fig 6** | Effect of lesion morphology (UMAP) | `extended_data_fig_6.py` | `Extended_Data_Fig_6.{png,svg}` | reproducible from `umap_analysis_results.csv` (UMAP coordinates pre-computed; UMAP is non-deterministic across machines and is therefore bundled rather than re-run) |
-| **Supp Fig 7** | Pathology, size, radiomic assessment | `extended_data_fig_7.py` | `Extended_Data_Fig_7.{png,svg}` | reproducible |
+| **Supp Fig 4** | Agreement comparisons | `supplementary_figure_4.py` | `Supplementary_Figure_4.{png,svg}` | reproducible from `radiologist_df.csv` |
+| **Supp Fig 5** | Performance by pathology dataset | `supplementary_figure_5.py` | `Supplementary_Figure_5.{png,svg}` | reproducible from `radiologist_df.csv` + `suppfig5_radiologist_meta.csv` |
+| **Supp Fig 6** | Effect of lesion morphology (UMAP) | `supplementary_figure_6.py` | `Supplementary_Figure_6.{png,svg}` | reproducible from `umap_analysis_results.csv` (UMAP coordinates pre-computed; UMAP is non-deterministic across machines and is therefore bundled rather than re-run) |
+| **Supp Fig 7** | Pathology, size, radiomic assessment | `supplementary_figure_7.py` | `Supplementary_Figure_7.{png,svg}` | reproducible |
 
 ## Reproducing all figures
 
@@ -67,13 +61,13 @@ The bundled `data/logs/<script>.log` files document the wall-clock runtime of ea
 | `fig_5.py` | ~3 s | Live `groupby` over 2,200 reviews; small plotting overhead |
 | `fig_1.py` | ~60 s | 6 reader-level + 6 case-level bootstrap CIs (B=5,000); pair-level model bootstrap; Δ-confidence bootstrap *p* at B=5,000,000 |
 | `fig_6.py` | ~15 s | Live confidence-calibration + equivalent-experience regression + bootstrap CIs |
-| `extended_data_fig_4.py` | ~4.5 min | 3 κ-contrast bootstraps at B=5,000,000, evaluated from per-case 2×2 counts so the *p* values resolve below the 2/B floor of a 5,000-replicate run |
-| `extended_data_fig_5.py` | ~5 s | Per-pathology stratified plotting |
-| `extended_data_fig_6.py` | ~15 s | UMAP coordinates pre-computed; matplotlib only |
-| `extended_data_fig_7.py` | ~3 s | Pre-binned aggregates |
+| `supplementary_figure_4.py` | ~4.5 min | 3 κ-contrast bootstraps at B=5,000,000, evaluated from per-case 2×2 counts so the *p* values resolve below the 2/B floor of a 5,000-replicate run |
+| `supplementary_figure_5.py` | ~5 s | Per-pathology stratified plotting |
+| `supplementary_figure_6.py` | ~15 s | UMAP coordinates pre-computed; matplotlib only |
+| `supplementary_figure_7.py` | ~3 s | Pre-binned aggregates |
 | `table_1.py` | ~40 s | Reader-level + case-level paired bootstrap deltas across 7 metrics |
 | `supplementary_table_*.py` | <1 s | Direct CSV groupby |
-| **Parallel total** (`bash code/run_all.sh`) | **~4.4 min** | All 13 scripts; `extended_data_fig_4.py` runs first because `table_1.py` reads its log, then the remaining 12 in parallel |
+| **Parallel total** (`bash code/run_all.sh`) | **~4.4 min** | All 13 scripts; `supplementary_figure_4.py` runs first because `table_1.py` reads its log, then the remaining 12 in parallel |
 
 ## Source-data dependencies
 
@@ -83,10 +77,10 @@ The bundled `data/logs/<script>.log` files document the wall-clock runtime of ea
 | `fig_4.py` | `source_data/figure_4/csv/` | 3 inputs: `model_per_case_scores.csv`, `cv_combined_predictions.csv` (5-seed mean-prob ensemble), `radiologist_reviews_minimal.csv`. |
 | `fig_5.py` | `source_data/figure_1/csv_v2/radiologist_df.csv` | Experience summary and confidence-calibration bins computed live via `groupby`. No cached intermediates. |
 | `fig_6.py` | `source_data/figure_6/csv/` (+ `radiologist_df.csv`) | 4 inputs: `cv_predictions_min.csv`, `model_case_confidence.csv`, `pair_level_metrics.json`, `salary_progression.csv`, plus the canonical `radiologist_df.csv` from `figure_1/csv_v2/`. Individual radiologist performance, confidence calibration (Q3/Q1 quartile split), equivalent-experience regression, and NHS salary integration are all computed live via `_metrics_utils.compute_individual_perf` / `compute_confidence_analysis` / `compute_equiv` / `compute_financial`. The `figure_6_rng_state.json` file (~5 KB) restores the matplotlib jitter RNG state so scatter dot positions match the published figure. |
-| `extended_data_fig_4.py` | `source_data/figure_1/csv_v2/radiologist_df.csv` | Reads the canonical primary frame and computes all agreement statistics live. No cached intermediates. |
-| `extended_data_fig_5.py` | `source_data/extended_data_figure_5/csv/edf5_radiologist_meta.csv` (+ `radiologist_df.csv`) | Per-pathology arm × radiologist accuracy aggregate computed live; radiologist subspecialty mapping kept as the lone cached metadata file. |
-| `extended_data_fig_6.py` | `source_data/extended_data_figure_6/csv/umap_analysis_results.csv` | UMAP is stochastic across machines/library versions; the 564-case 2D embedding is pre-computed once and bundled. |
-| `extended_data_fig_7.py` | `source_data/extended_data_figure_7/edf7_inputs.csv` | Pathology / lesion-volume / radiomic-category bins (5 categories each). |
+| `supplementary_figure_4.py` | `source_data/figure_1/csv_v2/radiologist_df.csv` | Reads the canonical primary frame and computes all agreement statistics live. No cached intermediates. |
+| `supplementary_figure_5.py` | `source_data/supplementary_figure_5/csv/suppfig5_radiologist_meta.csv` (+ `radiologist_df.csv`) | Per-pathology arm × radiologist accuracy aggregate computed live; radiologist subspecialty mapping kept as the lone cached metadata file. |
+| `supplementary_figure_6.py` | `source_data/supplementary_figure_6/csv/umap_analysis_results.csv` | UMAP is stochastic across machines/library versions; the 564-case 2D embedding is pre-computed once and bundled. |
+| `supplementary_figure_7.py` | `source_data/supplementary_figure_7/suppfig7_inputs.csv` | Pathology / lesion-volume / radiomic-category bins (5 categories each). |
 
 ## Brain-image figures (Fig 2, Fig 3)
 
@@ -109,4 +103,4 @@ Each `code/figures/<script>.py` is self-contained:
 1. Reads the bundled inputs (CSV / JSON) under `data/source_data/<dir>/`. Where required for byte-identical scatter-jitter reproduction (Fig 6 only), a small JSON RNG-state file is also bundled and restored at runtime.
 2. Computes derived intermediates live via `_metrics_utils` from the upstream primary CSVs.
 3. Renders the figure in-process using matplotlib.
-4. Writes a PNG + SVG to `data/figures/` (`Fig_<N>.{png,svg}` for main figures, `Extended_Data_Fig_<N>.{png,svg}` for supplementary figures — see the naming note above).
+4. Writes a PNG + SVG to `data/figures/` (`Fig_<N>.{png,svg}` for main figures, `Supplementary_Figure_<N>.{png,svg}` for supplementary figures — see the naming note above).

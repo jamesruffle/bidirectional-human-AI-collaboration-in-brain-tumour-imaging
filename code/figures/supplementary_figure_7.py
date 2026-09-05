@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Extended Data Figure 7: Pathology, size, and radiomic assessment.
+"""Supplementary Figure 7: Pathology, size, and radiomic assessment.
 
 Self-contained reproduction script (no runpy / sibling plotting block).
-Reads a single 171 KB pre-merged CSV (`edf7_inputs.csv`) holding only the
+Reads a single 171 KB pre-merged CSV (`suppfig7_inputs.csv`) holding only the
 8 columns the radar plotting actually consumes:
   radiologist, inferred_pathology, volume_category, radiomic_category,
   with_segmentation, correct_prediction, confidence, response_time
 
-Output: data/figures/Extended_Data_Fig_7.png  (and .svg)
+Output: data/figures/Supplementary_Figure_7.png  (and .svg)
 """
 from __future__ import annotations
 
@@ -26,23 +26,23 @@ sns.set_palette("husl")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 R1_ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
-SRC_DIR = os.path.join(R1_ROOT, 'data', 'source_data', 'extended_data_figure_7')
-EDF7_INPUTS_CSV = os.path.join(SRC_DIR, 'edf7_inputs.csv')
+SRC_DIR = os.path.join(R1_ROOT, 'data', 'source_data', 'supplementary_figure_7')
+SUPPFIG7_INPUTS_CSV = os.path.join(SRC_DIR, 'suppfig7_inputs.csv')
 FIGURES_OUTPUT_PATH = os.path.join(R1_ROOT, 'data', 'figures')
 
 
 def main():
-    if not os.path.isfile(EDF7_INPUTS_CSV):
-        print(f"ERROR: required input missing: {EDF7_INPUTS_CSV}")
+    if not os.path.isfile(SUPPFIG7_INPUTS_CSV):
+        print(f"ERROR: required input missing: {SUPPFIG7_INPUTS_CSV}")
         sys.exit(2)
     os.makedirs(FIGURES_OUTPUT_PATH, exist_ok=True)
 
-    print(f"Loading edf7_inputs from {EDF7_INPUTS_CSV}...")
-    radiologist_df = pd.read_csv(EDF7_INPUTS_CSV, float_precision='round_trip')
+    print(f"Loading suppfig7_inputs from {SUPPFIG7_INPUTS_CSV}...")
+    radiologist_df = pd.read_csv(SUPPFIG7_INPUTS_CSV, float_precision='round_trip')
     print(f"  {radiologist_df.shape[0]} rows x {radiologist_df.shape[1]} cols")
-    print("Rendering Extended Data Figure 7...")
+    print("Rendering Supplementary Figure 7...")
     _render(radiologist_df, FIGURES_OUTPUT_PATH)
-    print(f"\nEDF 7 saved to {FIGURES_OUTPUT_PATH}/Extended_Data_Fig_7.png")
+    print(f"\nSupplementary Figure 7 saved to {FIGURES_OUTPUT_PATH}/Supplementary_Figure_7.png")
 
 
 def _render(radiologist_df, FIGURES_OUTPUT_PATH):
@@ -520,13 +520,13 @@ def _render(radiologist_df, FIGURES_OUTPUT_PATH):
     plt.tight_layout(rect=[0, 0, 1, 0.95])
 
     # Save figure as both PNG and SVG
-    output_path_png = os.path.join(FIGURES_OUTPUT_PATH, 'Extended_Data_Fig_7.png')
-    output_path_svg = os.path.join(FIGURES_OUTPUT_PATH, 'Extended_Data_Fig_7.svg')
+    output_path_png = os.path.join(FIGURES_OUTPUT_PATH, 'Supplementary_Figure_7.png')
+    output_path_svg = os.path.join(FIGURES_OUTPUT_PATH, 'Supplementary_Figure_7.svg')
     plt.savefig(output_path_png, dpi=300, bbox_inches='tight')
     plt.savefig(output_path_svg, format='svg', bbox_inches='tight')
 
-    print(f"\nExtended_Data_Fig_7 saved to: {output_path_png}")
-    print(f"Extended_Data_Fig_7 saved to: {output_path_svg}")
+    print(f"\nSupplementary_Figure_7 saved to: {output_path_png}")
+    print(f"Supplementary_Figure_7 saved to: {output_path_svg}")
 
     # Print summary statistics
     print("\nRadar analysis summary:")

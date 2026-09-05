@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Extended Data Figure 4 - Agreement comparisons (model vs radiologist, radiologist vs radiologist).
+"""Supplementary Figure 4 - Agreement comparisons (model vs radiologist, radiologist vs radiologist).
 
 Self-contained reproduction script. Inputs:
   - data/source_data/figure_1/csv_v2/radiologist_df.csv
     (the canonical radiologist reviews; 2200 rows × case_id, radiologist,
      with_segmentation, predicted_enhancement, model_predicted_enhancement)
 
-Output: data/figures/Extended_Data_Fig_4.png  (and .svg)
+Output: data/figures/Supplementary_Figure_4.png  (and .svg)
 
 """
 from itertools import combinations
@@ -109,8 +109,8 @@ def main():
     ]]
     print(f"  Loaded {radiologist_df.shape[0]} rows x {radiologist_df.shape[1]} cols (live-derived)")
 
-    # Generate Extended Data Figure 4 (2x2 layout)
-    print("\nGenerating Extended Data Figure 4...")
+    # Generate Supplementary Figure 4 (2x2 layout)
+    print("\nGenerating Supplementary Figure 4...")
     fig_s1 = plt.figure(figsize=(10, 10))
 
     # Add overall title
@@ -242,12 +242,12 @@ def main():
     ax_d.set_xlabel('Radiologist 2 prediction')
     ax_d.set_ylabel('Radiologist 1 prediction')
 
-    edf4_path = os.path.join(FIGURES_OUTPUT_PATH, 'Extended_Data_Fig_4.png')
-    edf4_svg_path = os.path.join(FIGURES_OUTPUT_PATH, 'Extended_Data_Fig_4.svg')
-    plt.savefig(edf4_path, dpi=300, bbox_inches='tight', facecolor='white')
-    plt.savefig(edf4_svg_path, format='svg', bbox_inches='tight', facecolor='white')
-    print(f"\nExtended_Data_Fig_4 saved to: {edf4_path}")
-    print(f"Extended_Data_Fig_4 saved to: {edf4_svg_path}")
+    suppfig4_path = os.path.join(FIGURES_OUTPUT_PATH, 'Supplementary_Figure_4.png')
+    suppfig4_svg_path = os.path.join(FIGURES_OUTPUT_PATH, 'Supplementary_Figure_4.svg')
+    plt.savefig(suppfig4_path, dpi=300, bbox_inches='tight', facecolor='white')
+    plt.savefig(suppfig4_svg_path, format='svg', bbox_inches='tight', facecolor='white')
+    print(f"\nSupplementary_Figure_4 saved to: {suppfig4_path}")
+    print(f"Supplementary_Figure_4 saved to: {suppfig4_svg_path}")
 
     # ── Figure-displayed κ values ──
     print(f"\nFigure-displayed Cohen κ values (panel titles):")

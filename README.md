@@ -15,7 +15,7 @@ how AI is studied in healthcare today: most prior work sits in the lower-right
 upper-right "Model | Human" formulation in which the AI is supported by the
 human — is rarely evaluated.
 
-![Paradigms of evaluating AI value in healthcare](figures/Extended_Data_Fig_1_paradigms.png)
+![Paradigms of evaluating AI value in healthcare](figures/Supplementary_Figure_1_paradigms.png)
 
 **Impact of support on agent performance.** Headline results across the
 564-case radiologist-reviewed cohort: factorial accuracy evaluation,
@@ -78,44 +78,45 @@ PNG outputs are byte-identical across runs; SVG outputs may differ by matplotlib
 
 ## Expected runtimes (128-CPU host, parallel)
 
-Most scripts complete in a few seconds. `extended_data_fig_4.py` is the slowest by
+Most scripts complete in a few seconds. `supplementary_figure_4.py` is the slowest by
 a wide margin: it runs the Cohen's κ contrast bootstraps at **B = 5,000,000**
-(`extended_data_fig_4.py:277`), computing κ from per-case 2×2 counts as chunked
+(`supplementary_figure_4.py:277`), computing κ from per-case 2×2 counts as chunked
 matrix products rather than one `sklearn` call per replicate, and takes **~217 s**.
 `fig_1.py` (~47 s) and `table_1.py` (~44 s) each do paired bootstrap work for the
 Δ-metric CIs.
 
-`code/run_all.sh` deliberately runs `extended_data_fig_4.py` to completion *before*
+`code/run_all.sh` deliberately runs `supplementary_figure_4.py` to completion *before*
 the parallel block, because `table_1.py` reads the κ row from its log. Total wall
 clock is therefore **~217 s + the slowest remaining script (~47 s) ≈ 265 s**, not the
 duration of the parallel block alone. The bundled `data/logs/*.log` files record the
 measured wall-clock time of every script.
 
-## Naming: "Extended Data" here = "Supplementary" in the paper
+## Naming
 
-At acceptance the journal asked for the Extended Data items to be renamed. The paper
-now calls them **Supplementary Figures 1–7**, and this README uses those published
-names throughout. Script and output **filenames** deliberately keep the legacy
-`extended_data_fig_*` / `Extended_Data_Fig_*` prefix: the bundled logs in `data/logs/`,
-the input directories under `data/source_data/`, and `code/run_all.sh` are all keyed to
-those names, so renaming the files would invalidate the shipped logs without changing a
-single number.
+Repository names match the published names. At acceptance the journal renamed the
+Extended Data items to **Supplementary Figures 1–7**, and the repository followed:
+scripts, rendered outputs, logs and source-data directories all carry the
+`supplementary_figure_*` / `Supplementary_Figure_*` form, so a published item and the
+artefact that produces it share a name.
 
 | Published name | Repository artefact |
 |---|---|
 | Supplementary Figures 1–3 | schematics; only Supplementary Figure 2 has deposited source (`code/figures/human_ai_paradigm.jsx`) |
-| Supplementary Figure 4 | `code/figures/extended_data_fig_4.py` → `Extended_Data_Fig_4.{png,svg}` |
-| Supplementary Figure 5 | `code/figures/extended_data_fig_5.py` → `Extended_Data_Fig_5.{png,svg}` |
-| Supplementary Figure 6 | `code/figures/extended_data_fig_6.py` → `Extended_Data_Fig_6.{png,svg}` |
-| Supplementary Figure 7 | `code/figures/extended_data_fig_7.py` → `Extended_Data_Fig_7.{png,svg}` |
+| Supplementary Figure 4 | `code/figures/supplementary_figure_4.py` → `data/figures/Supplementary_Figure_4.{png,svg}` |
+| Supplementary Figure 5 | `code/figures/supplementary_figure_5.py` → `data/figures/Supplementary_Figure_5.{png,svg}` |
+| Supplementary Figure 6 | `code/figures/supplementary_figure_6.py` → `data/figures/Supplementary_Figure_6.{png,svg}` |
+| Supplementary Figure 7 | `code/figures/supplementary_figure_7.py` → `data/figures/Supplementary_Figure_7.{png,svg}` |
 | Supplementary Table 1 | reader subspecialty roster (no script) |
 | Supplementary Table 2 | `code/tables/supplementary_table_3.py` |
 | Supplementary Table 3 | `code/tables/supplementary_table_4.py` |
 | Supplementary Data 1 | `code/tables/supplementary_table_2.py` |
 
-Note the table offset in particular: the published Supplementary Table *N* is produced
-by `supplementary_table_`*N+1*`.py`, because the geography × pathology table became
-Supplementary Data 1 at acceptance rather than a numbered table.
+The supplementary **tables** are the one exception, and the offset is deliberate. The
+geography × pathology table became Supplementary Data 1 at acceptance rather than a
+numbered table, so the published Supplementary Table *N* is produced by
+`supplementary_table_`*N+1*`.py`. Those filenames are left unchanged: they are recorded in
+the bundled logs and in the source-data directory names, and renaming them would make the
+same filename refer to two different objects either side of a single commit.
 
 ## Source-data layout
 
@@ -125,10 +126,10 @@ Supplementary Data 1 at acceptance rather than a numbered table.
 | `fig_4.py` | `data/source_data/figure_4/csv/` |
 | `fig_5.py` | `data/source_data/figure_1/csv_v2/radiologist_df.csv` |
 | `fig_6.py` | `data/source_data/figure_6/` (+ `data/source_data/figure_1/csv_v2/radiologist_df.csv`) |
-| `extended_data_fig_4.py` | `data/source_data/figure_1/csv_v2/radiologist_df.csv` |
-| `extended_data_fig_5.py` | `data/source_data/extended_data_figure_5/csv/` |
-| `extended_data_fig_6.py` | `data/source_data/extended_data_figure_6/csv/` |
-| `extended_data_fig_7.py` | `data/source_data/extended_data_figure_7/` |
+| `supplementary_figure_4.py` | `data/source_data/figure_1/csv_v2/radiologist_df.csv` |
+| `supplementary_figure_5.py` | `data/source_data/supplementary_figure_5/csv/` |
+| `supplementary_figure_6.py` | `data/source_data/supplementary_figure_6/csv/` |
+| `supplementary_figure_7.py` | `data/source_data/supplementary_figure_7/` |
 
 See `code/figures/README.md` for a more detailed breakdown of the inputs.
 
