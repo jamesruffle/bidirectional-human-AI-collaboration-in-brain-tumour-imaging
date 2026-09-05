@@ -9,10 +9,11 @@ All shared analysis logic — per-reader metrics, optimistic-dedup, case-level e
 The journal renamed the Extended Data items to Supplementary Figures at acceptance and
 the repository followed, so script, output, log and source-data names all match the
 published name: `supplementary_figure_4.py` renders
-`data/figures/Supplementary_Figure_4.{png,svg}`, logs to
-`data/logs/supplementary_figure_4.log`, and reads from
-`data/source_data/supplementary_figure_*/`. In running prose the paper abbreviates these
-as "Supplementary Fig. N", which is Nature house style and not a separate item.
+`data/figures/Supplementary_Figure_4.{png,svg}` and logs to
+`data/logs/supplementary_figure_4.log`; `supplementary_figure_5..7.py` read their inputs
+from `data/source_data/supplementary_figure_5..7/`. In running prose the paper
+abbreviates these as "Supplementary Fig. N", which is Nature house style and not a
+separate item.
 
 ## Figure inventory
 
@@ -59,15 +60,15 @@ The bundled `data/logs/<script>.log` files document the wall-clock runtime of ea
 |---|---|---|
 | `fig_4.py` | ~3 s | Pre-computed CV ensemble + radiomic CSVs; mostly plotting |
 | `fig_5.py` | ~3 s | Live `groupby` over 2,200 reviews; small plotting overhead |
-| `fig_1.py` | ~60 s | 6 reader-level + 6 case-level bootstrap CIs (B=5,000); pair-level model bootstrap; Δ-confidence bootstrap *p* at B=5,000,000 |
+| `fig_1.py` | ~47 s | 6 reader-level + 6 case-level bootstrap CIs (B=5,000); pair-level model bootstrap; Δ-confidence bootstrap *p* at B=5,000,000 |
 | `fig_6.py` | ~15 s | Live confidence-calibration + equivalent-experience regression + bootstrap CIs |
-| `supplementary_figure_4.py` | ~4.5 min | 3 κ-contrast bootstraps at B=5,000,000, evaluated from per-case 2×2 counts so the *p* values resolve below the 2/B floor of a 5,000-replicate run |
+| `supplementary_figure_4.py` | ~215 s (~3.6 min) | 3 κ-contrast bootstraps at B=5,000,000, evaluated from per-case 2×2 counts so the *p* values resolve below the 2/B floor of a 5,000-replicate run |
 | `supplementary_figure_5.py` | ~5 s | Per-pathology stratified plotting |
 | `supplementary_figure_6.py` | ~15 s | UMAP coordinates pre-computed; matplotlib only |
 | `supplementary_figure_7.py` | ~3 s | Pre-binned aggregates |
 | `table_1.py` | ~40 s | Reader-level + case-level paired bootstrap deltas across 7 metrics |
 | `supplementary_table_*.py` | <1 s | Direct CSV groupby |
-| **Parallel total** (`bash code/run_all.sh`) | **~4.4 min** | All 13 scripts; `supplementary_figure_4.py` runs first because `table_1.py` reads its log, then the remaining 12 in parallel |
+| **Total** (`bash code/run_all.sh`) | **~260 s (~4.3 min)** | All 13 scripts; `supplementary_figure_4.py` runs first because `table_1.py` reads its log, then the remaining 12 in parallel |
 
 ## Source-data dependencies
 

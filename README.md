@@ -80,7 +80,7 @@ PNG outputs are byte-identical across runs; SVG outputs may differ by matplotlib
 
 Most scripts complete in a few seconds. `supplementary_figure_4.py` is the slowest by
 a wide margin: it runs the Cohen's κ contrast bootstraps at **B = 5,000,000**
-(`supplementary_figure_4.py:277`), computing κ from per-case 2×2 counts as chunked
+(`supplementary_figure_4.py:278`), computing κ from per-case 2×2 counts as chunked
 matrix products rather than one `sklearn` call per replicate, and takes **~217 s**.
 `fig_1.py` (~47 s) and `table_1.py` (~44 s) each do paired bootstrap work for the
 Δ-metric CIs.
