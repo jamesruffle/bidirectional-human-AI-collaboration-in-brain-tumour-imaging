@@ -3,7 +3,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2512.19707-b31b1b.svg)](https://arxiv.org/abs/2512.19707)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
-Reproducibility package for *"Bidirectional human-AI collaboration in brain tumour imaging assessments improves both expert human and AI agent performance"* (Ruffle et al.; manuscript under review at Nature Communications).
+Reproducibility package for *"Bidirectional human-AI collaboration in brain tumour assessment improves both expert human and AI agent performance"* (Ruffle et al., Nature Communications, 2026, in press).
 
 [Preprint on arXiv: 2512.19707](https://arxiv.org/abs/2512.19707)
 
@@ -160,6 +160,9 @@ repository:
 - scikit-learn: 1.6.1
 - seaborn: 0.13.2
 - scipy: 1.15.2
+- statsmodels: 0.14.6
+- joblib: 1.4.2
+- Pillow: 11.1.0
 
 No GPU or specialist medical-imaging libraries are required for any of the
 figure scripts in this repository. The full upstream analysis (model training

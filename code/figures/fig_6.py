@@ -1427,7 +1427,7 @@ if combined_data:
     print(f"  CORRECT   without model: {_rad_corr_wo.mean():.2f} ± {_rad_corr_wo.std():.2f}  (n={len(_rad_corr_wo)})")
     print(f"  CORRECT   with model:    {_rad_corr_ws.mean():.2f} ± {_rad_corr_ws.std():.2f}  (n={len(_rad_corr_ws)})  ttest_ind p={_p_corr_p125:.6g}")
     print(f"  INCORRECT without model: {_rad_inc_wo.mean():.2f} ± {_rad_inc_wo.std():.2f}  (n={len(_rad_inc_wo)})")
-    print(f"  INCORRECT with model:    {_rad_inc_ws.mean():.2f} ± {_rad_inc_ws.std():.2f}  (n={len(_rad_inc_ws)})  ttest_ind p={_p_inc_p125:.6g}  (paragraph 125: p={_p_inc_p125:.3f}, ns)")
+    print(f"  INCORRECT with model:    {_rad_inc_ws.mean():.2f} ± {_rad_inc_ws.std():.2f}  (n={len(_rad_inc_ws)})  ttest_ind p={_p_inc_p125:.6g}")
 
     # Add unpaired t-tests for each accuracy group using all observations
     from scipy import stats
@@ -2061,5 +2061,6 @@ fig6_pdf_path = os.path.join(FIGURES_OUTPUT_PATH, 'Fig_6.pdf')
 plt.savefig(fig6_pdf_path, format='pdf', bbox_inches='tight', facecolor='white')
 print(f"Fig_6 saved to: {fig6_pdf_path}")
 print(f"Fig_6 saved to: {fig6_path}")
+print(f"Fig_6 saved to: {fig6_svg_path}")
 
 print(f"\nFigure 6 saved to {FIGURES_OUTPUT_PATH}/Fig_6.png")

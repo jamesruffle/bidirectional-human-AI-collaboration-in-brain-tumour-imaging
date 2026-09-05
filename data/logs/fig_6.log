@@ -1,4 +1,4 @@
-Run started: 2026-09-05T20:19:32Z
+Run started: 2026-09-05T21:21:05Z
 Script:      code/figures/fig_6.py
 Host CPUs:   128
 ----
@@ -92,7 +92,7 @@ Radiologist confidence by correctness, per arm (paragraph 125):
   CORRECT   without model: 7.09 ± 1.89  (n=768)
   CORRECT   with model:    7.61 ± 1.80  (n=817)  ttest_ind p=1.89513e-08
   INCORRECT without model: 6.39 ± 1.92  (n=332)
-  INCORRECT with model:    6.12 ± 1.88  (n=283)  ttest_ind p=0.0823534  (paragraph 125: p=0.082, ns)
+  INCORRECT with model:    6.12 ± 1.88  (n=283)  ttest_ind p=0.0823534
   Paired t-test (n=206 pairs): T=2.060, p=0.040651
   Using PAIRED t-test p-value for significance markers
   Paired t-test (n=691 pairs): T=-8.714, p=0.000000
@@ -141,8 +141,9 @@ McNemar's exact test — panel j optimal-calibration quadrant (paragraph 127):
   Odds ratio not reported — paired OR (c/b) is undefined with b = 0.
 Fig_6 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_6.pdf
 Fig_6 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_6.png
+Fig_6 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_6.svg
 
 Figure 6 saved to /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_6.png
 ----
-Run ended:   2026-09-05T20:19:48Z
-Wall clock:  15.7s
+Run ended:   2026-09-05T21:21:21Z
+Wall clock:  15.3s

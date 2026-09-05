@@ -1637,13 +1637,12 @@ for rad_idx, rad in enumerate(all_rads[:-1]):  # Exclude Model itself
         common_cases = rad_data.dropna(subset=['model_predicted_enhancement'])
 
         if len(common_cases) > 0:
-            cv_preds = []
-            for idx, row in common_cases.iterrows():
-                case_id = row['case_id']
-                if case_id in best_cv_predictions:
-                    cv_preds.append(best_cv_predictions[case_id])
-                else:
-                    cv_preds.append(row['model_predicted_enhancement'])
+            # The model's comparator is its unassisted prediction in both the
+            # without- and with-support matrices, matching supplementary_figure_4.py.
+            # Agreement against the combined model-with-radiologist prediction would
+            # be circular, since that prediction already incorporates this same
+            # radiologist's read.
+            cv_preds = list(common_cases['model_predicted_enhancement'])
 
             if len(cv_preds) == len(common_cases):
                 from sklearn.metrics import cohen_kappa_score
@@ -1718,15 +1717,12 @@ for rad_idx, rad in enumerate(all_rads[:-1]):  # Exclude Model itself
         common_cases = rad_data.dropna(subset=['model_predicted_enhancement'])
 
         if len(common_cases) > 0:
-            # Create list of CV predictions for these cases
-            cv_preds = []
-            for idx, row in common_cases.iterrows():
-                case_id = row['case_id']
-                if case_id in best_cv_predictions:
-                    cv_preds.append(best_cv_predictions[case_id])
-                else:
-                    # Fallback to original model prediction
-                    cv_preds.append(row['model_predicted_enhancement'])
+            # The model's comparator is its unassisted prediction in both the
+            # without- and with-support matrices, matching supplementary_figure_4.py.
+            # Agreement against the combined model-with-radiologist prediction would
+            # be circular, since that prediction already incorporates this same
+            # radiologist's read.
+            cv_preds = list(common_cases['model_predicted_enhancement'])
 
             if len(cv_preds) == len(common_cases):
                 from sklearn.metrics import cohen_kappa_score
