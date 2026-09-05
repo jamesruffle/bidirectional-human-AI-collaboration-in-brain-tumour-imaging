@@ -1474,9 +1474,9 @@ if combined_data:
             # Use paired t-test p-value for significance markers
             if len(paired_confidence_without) > 0:
                 # Computed as without minus with; the manuscript reports paired t statistics
-            # signed as with-support minus without-support, i.e. the negative of t_stat.
-            # Magnitudes and p values are unaffected.
-            t_stat, p_value = stats.ttest_rel(paired_confidence_without, paired_confidence_with)
+                # signed as with-support minus without-support, i.e. the negative of t_stat.
+                # Magnitudes and p values are unaffected.
+                t_stat, p_value = stats.ttest_rel(paired_confidence_without, paired_confidence_with)
             else:
                 # Fallback to independent t-test if no paired data available
                 t_stat, p_value = t_stat_ind, p_value_ind
