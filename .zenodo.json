@@ -1,0 +1,98 @@
+{
+  "title": "Bidirectional human-AI collaboration in brain tumour assessment improves both expert human and AI agent performance: analysis code and source data",
+  "upload_type": "software",
+  "description": "<p>Analysis code, per-figure reproduction scripts and de-identified, aggregate source data for the multi-reader multi-case randomised crossover study reported in the paper of the same title (Nature Communications, 2026). Every figure and table in the paper is regenerated live from the bundled CSV inputs by the scripts in <code>code/</code>; the stdout of each script is captured in <code>data/logs/</code>. Raw patient imaging is not included and is held under controlled access. The trained model weights are deposited separately at <a href=\"https://doi.org/10.5281/zenodo.20055549\">10.5281/zenodo.20055549</a>.</p>",
+  "license": "Apache-2.0",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "human-AI collaboration",
+    "brain tumour",
+    "MRI",
+    "contrast enhancement",
+    "multi-reader multi-case study",
+    "radiology",
+    "deep learning",
+    "reproducibility"
+  ],
+  "creators": [
+    {
+      "name": "Ruffle, James K.",
+      "affiliation": "Queen Square Institute of Neurology, University College London, London, UK"
+    },
+    {
+      "name": "Mohinta, Samia",
+      "affiliation": "Queen Square Institute of Neurology, University College London, London, UK"
+    },
+    {
+      "name": "Pombo, Guilherme",
+      "affiliation": "NVIDIA, UK"
+    },
+    {
+      "name": "Biswas, Asthik",
+      "affiliation": "Great Ormond Street Hospital for Children, London, UK"
+    },
+    {
+      "name": "Campbell, Alan",
+      "affiliation": "Imaging Department, Royal National Orthopaedic Hospital, Stanmore, Middlesex, UK"
+    },
+    {
+      "name": "Davagnanam, Indran",
+      "affiliation": "Lysholm Department of Neuroradiology, National Hospital for Neurology and Neurosurgery, London, UK"
+    },
+    {
+      "name": "Doig, David",
+      "affiliation": "Lysholm Department of Neuroradiology, National Hospital for Neurology and Neurosurgery, London, UK"
+    },
+    {
+      "name": "Hammam, Ahmed",
+      "affiliation": "Lysholm Department of Neuroradiology, National Hospital for Neurology and Neurosurgery, London, UK"
+    },
+    {
+      "name": "Hyare, Harpreet",
+      "affiliation": "Queen Square Institute of Neurology, University College London, London, UK"
+    },
+    {
+      "name": "Jabeen, Farrah",
+      "affiliation": "Lysholm Department of Neuroradiology, National Hospital for Neurology and Neurosurgery, London, UK"
+    },
+    {
+      "name": "Lim, Emma",
+      "affiliation": "Department of Imaging, Imperial College Healthcare NHS Trust, London, UK"
+    },
+    {
+      "name": "Mallon, Dermot",
+      "affiliation": "Lysholm Department of Neuroradiology, National Hospital for Neurology and Neurosurgery, London, UK"
+    },
+    {
+      "name": "Owen, Stephanie",
+      "affiliation": "Lysholm Department of Neuroradiology, National Hospital for Neurology and Neurosurgery, London, UK"
+    },
+    {
+      "name": "Wilkinson, Sophie",
+      "affiliation": "Department of Radiology, University College Hospitals NHS Foundation Trust, London, UK"
+    },
+    {
+      "name": "Brandner, Sebastian",
+      "affiliation": "Queen Square Institute of Neurology, University College London, London, UK"
+    },
+    {
+      "name": "Nachev, Parashkev",
+      "affiliation": "Queen Square Institute of Neurology, University College London, London, UK"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.48550/arXiv.2512.19707",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.20055549",
+      "relation": "references",
+      "resource_type": "software",
+      "scheme": "doi"
+    }
+  ]
+}

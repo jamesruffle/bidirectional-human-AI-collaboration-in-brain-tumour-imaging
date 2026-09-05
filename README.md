@@ -179,12 +179,16 @@ If you use this code or the bundled data, please cite:
 
 ```bibtex
 @article{ruffle2026bidirectional,
-  title={Bidirectional human-AI collaboration in brain tumour imaging assessments improves both expert human and AI agent performance},
+  title={Bidirectional human-AI collaboration in brain tumour assessment improves both expert human and AI agent performance},
   author={Ruffle, James K and Mohinta, Samia and Pombo, Guilherme and Biswas, Asthik and Campbell, Alan and Davagnanam, Indran and Doig, David and Hammam, Ahmed and Hyare, Harpreet and Jabeen, Farrah and Lim, Emma and Mallon, Dermot and Owen, Stephanie and Wilkinson, Sophie and Brandner, Sebastian and Nachev, Parashkev},
-  journal={arXiv preprint arXiv:2512.19707},
-  year={2026}
+  journal={Nature Communications},
+  year={2026},
+  note={in press; preprint at arXiv:2512.19707}
 }
 ```
+
+The archived version of this repository is citable by its Zenodo DOI, given in the
+paper's Code availability statement and on the repository's GitHub page.
 
 ## Funding
 
