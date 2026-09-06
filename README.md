@@ -1,6 +1,7 @@
 # Bidirectional human–AI collaboration in brain tumour imaging assessments
 
 [![arXiv](https://img.shields.io/badge/arXiv-2512.19707-b31b1b.svg)](https://arxiv.org/abs/2512.19707)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22517094.svg)](https://doi.org/10.5281/zenodo.22517094)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
 Reproducibility package for *"Bidirectional human-AI collaboration in brain tumour assessment improves both expert human and AI agent performance"* (Ruffle et al., Nature Communications, 2026, in press).
@@ -190,8 +191,10 @@ If you use this code or the bundled data, please cite:
 }
 ```
 
-The archived version of this repository is citable by its Zenodo DOI, given in the
-paper's Code availability statement and on the repository's GitHub page.
+The version of this repository used in the paper is archived on Zenodo as release
+v1.0.0, DOI [10.5281/zenodo.22517094](https://doi.org/10.5281/zenodo.22517094). Cite
+that DOI for the code and source data; the concept DOI 10.5281/zenodo.22517093 always
+resolves to the latest release.
 
 ## Funding
 
