@@ -30,8 +30,9 @@ procedures cell-for-cell:
 
 Inputs:  data/source_data/figure_1/csv_v2/{radiologist_df.csv,
                                               best_cv_predictions.csv,
-                                              group_metrics.csv,
-                                              aggregates.json}
+                                              seed_predictions.csv}
+         data/source_data/figure_6/csv/model_case_confidence.csv
+         data/logs/supplementary_figure_4.log  (Cohen's kappa row)
 Outputs: stdout printout + data/source_data/table_1/csv/table_1.csv
 """
 import json
@@ -560,6 +561,15 @@ def main():
     # placeholder.
     _suppfig4_log = os.path.join(R1_ROOT, 'data', 'logs', 'supplementary_figure_4.log')
     cohen_w = cohen_wm = cohen_dh = None
+    # Fail loudly rather than writing placeholders over a deposited table. Silently
+    # emitting "N/A" here once produced a table_1.csv that looked complete and was
+    # not; a missing or unparseable log is a pipeline-ordering problem, not a result.
+    if not os.path.isfile(_suppfig4_log):
+        raise SystemExit(
+            f"table_1.py: {_suppfig4_log} is missing, so the Cohen's kappa row cannot be\n"
+            f"  filled. Run code/figures/supplementary_figure_4.py first, or use\n"
+            f"  'bash code/run_all.sh', which orders the two correctly."
+        )
     if os.path.isfile(_suppfig4_log):
         with open(_suppfig4_log) as _fh:
             _suppfig4_text = _fh.read()
@@ -573,6 +583,14 @@ def main():
         m = _re.search(r"Aggregate\s+Δκ = ([+\-\d.]+) \[([+\-\d.]+), ([+\-\d.]+)\]", _suppfig4_text)
         if m:
             cohen_dh = (float(m.group(1)), float(m.group(2)), float(m.group(3)))
+
+    if cohen_w is None or cohen_wm is None or cohen_dh is None:
+        raise SystemExit(
+            f"table_1.py: could not parse the Cohen's kappa values out of\n"
+            f"  {_suppfig4_log}. The log exists but does not carry the expected\n"
+            f"  'kappa_aggregate' lines, so it is stale or truncated. Re-run\n"
+            f"  code/figures/supplementary_figure_4.py before this script."
+        )
 
     def _fmt_or_dash(val):
         return val if val else "—"

@@ -39,7 +39,7 @@ The repo includes a parallel runner that runs every figure + table script concur
 
 ```bash
 pip install -r requirements.txt   # numpy, matplotlib, pandas, Pillow, scikit-learn, scipy, seaborn, statsmodels
-bash code/run_all.sh figures      # all 8 figure scripts in parallel
+bash code/run_all.sh figures      # all 9 figure scripts in parallel
 bash code/run_all.sh tables       # all 4 table scripts in parallel
 bash code/run_all.sh              # everything in parallel (default)
 ```
@@ -69,7 +69,7 @@ The bundled `data/logs/<script>.log` files document the wall-clock runtime of ea
 | `supplementary_figure_7.py` | ~3 s | Pre-binned aggregates |
 | `table_1.py` | ~40 s | Reader-level + case-level paired bootstrap deltas across 7 metrics |
 | `supplementary_table_*.py` | <1 s | Direct CSV groupby |
-| **Total** (`bash code/run_all.sh`) | **~260 s (~4.3 min)** | All 14 scripts; `supplementary_figure_4.py` runs first because `table_1.py` reads its log, then the remaining 12 in parallel |
+| **Total** (`bash code/run_all.sh`) | **~260 s (~4.3 min)** | All 14 scripts; `supplementary_figure_4.py` runs first because `table_1.py` reads its log, then the remaining 13 in parallel |
 
 ## Source-data dependencies
 

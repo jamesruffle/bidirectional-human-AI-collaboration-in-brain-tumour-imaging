@@ -40,7 +40,12 @@ code/analysis/          Standalone diagnostic analyses that support statements i
                         its power/MDE calculation).
 code/run_all.sh         Parallel runner — executes every figure, table, and
                         analysis script concurrently with timing captured in
-                        each log.
+                        each log. Exits non-zero and names the offenders if any
+                        script fails.
+code/generate_aggregates.py
+                        Derives aggregates.json and best_cv_predictions.csv from
+                        seed_predictions.csv. Both derived files are bundled, so
+                        this only needs re-running if seed_predictions.csv changes.
 code/regenerate_seed_predictions.py
                         Internal bridge script that rebuilds seed_predictions.csv
                         from the canonical CV cache. Requires a non-bundled
@@ -58,12 +63,12 @@ data/logs/              stdout captured from each script (numerical values print
 
 ## Running figures, tables, and analyses
 
-Every figure and table is regenerated **live from the bundled CSVs** — no static aggregate caches. Shared analysis logic (per-reader metrics, prefer-correct dedup, case-level ensembles, paired bootstrap deltas) lives in `code/_metrics_utils.py` and is imported by both the figure and table scripts, so every printed value is traceable to a Python computation on the CSV inputs in `data/source_data/`.
+Every data figure and every table is regenerated **live from the bundled CSVs** — no static aggregate caches. Figures 2 and 3 and Supplementary Figures 1 and 3 are the exceptions: they render patient imaging or are hand-drawn schematics, and ship as images with no generating source (see the figure table below). Shared analysis logic (per-reader metrics, prefer-correct dedup, case-level ensembles, paired bootstrap deltas) lives in `code/_metrics_utils.py` and is imported by both the figure and table scripts, so every printed value is traceable to a Python computation on the CSV inputs in `data/source_data/`.
 
 The repo includes a parallel runner that runs everything concurrently and writes a timed log under `data/logs/<script>.log`:
 
 ```bash
-bash code/run_all.sh             # all 8 figure + 4 table + 1 analysis script in parallel
+bash code/run_all.sh             # all 9 figure + 4 table + 1 analysis script in parallel
 bash code/run_all.sh figures     # figures only
 bash code/run_all.sh tables      # tables only
 bash code/run_all.sh analysis    # standalone analyses only
@@ -75,7 +80,7 @@ To run a single script:
 python3 code/figures/fig_1.py 2>&1 | tee data/logs/fig_1.log
 ```
 
-Only the PNG outputs are tracked in git (they are byte-identical across runs). Each script also writes an SVG, and the main-figure scripts a PDF, alongside the PNG; these are regenerated on every run and are gitignored to keep the repository small.
+Only the PNG outputs are tracked in git (they are byte-identical across runs). Each script also writes an SVG, and the main-figure scripts plus `supplementary_figure_2.py` a PDF, alongside the PNG; these are regenerated on every run and are gitignored to keep the repository small.
 
 ## Expected runtimes (128-CPU host, parallel)
 
@@ -102,7 +107,8 @@ artefact that produces it share a name.
 
 | Published name | Repository artefact |
 |---|---|
-| Supplementary Figures 1 and 3 | schematics; rendered images only, no generating source |
+| Supplementary Figure 1 | schematic; rendered image only, no generating source |
+| Supplementary Figure 3 | schematic; not in this repository — the published rendition is embedded in the supplementary document |
 | Supplementary Figure 2 | `code/figures/supplementary_figure_2.py` → `data/figures/Supplementary_Figure_2.png` (component source: `code/figures/human_ai_paradigm.jsx`) |
 | Supplementary Figure 4 | `code/figures/supplementary_figure_4.py` → `data/figures/Supplementary_Figure_4.png` |
 | Supplementary Figure 5 | `code/figures/supplementary_figure_5.py` → `data/figures/Supplementary_Figure_5.png` |
@@ -141,7 +147,7 @@ Brain-image figures (Fig. 2, Fig. 3) are not script-reproducible — they depend
 on raw NIfTI imaging held under controlled access. The manuscript versions remain
 canonical.
 
-Supplementary Figures 1 and 3 are schematics that ship as rendered images only.
+Supplementary Figure 1 is a schematic that ships as a rendered image only. Supplementary Figure 3 is a schematic that is not deposited here at all; its published rendition is embedded in the supplementary document.
 Supplementary Figure 2 is the exception: it was authored as the React component
 `code/figures/human_ai_paradigm.jsx`, and `code/figures/supplementary_figure_2.py`
 now reproduces it end to end, rendering the same markup as a self-contained HTML
@@ -153,7 +159,7 @@ open-source Lucide icon set, used under the ISC licence.
 
 ## Dependencies
 
-All software dependencies and operating systems (including version numbers)
+Software dependencies and operating system
 used to produce the published figure outputs and stdout logs in this
 repository:
 

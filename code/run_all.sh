@@ -16,6 +16,7 @@ cd "$(dirname "$0")/.."
 
 LOG_DIR=data/logs
 mkdir -p "$LOG_DIR"
+rm -f "$LOG_DIR/.failed"
 
 FIGS=(
     code/figures/fig_1.py
@@ -57,15 +58,22 @@ run_one() {
         local t0 t1 elapsed
         t0=$(date +%s.%N)
         python3 -W ignore "$script"
+        local rc=$?
         t1=$(date +%s.%N)
         elapsed=$(awk -v a="$t0" -v b="$t1" 'BEGIN { printf "%.1f", b - a }')
         echo "----"
         echo "Run ended:   $(date -u +%Y-%m-%dT%H:%M:%SZ)"
         echo "Wall clock:  ${elapsed}s"
+        echo "Exit status: ${rc}"
     } > "$log" 2>&1
     local elapsed_quiet
     elapsed_quiet=$(awk '/^Wall clock:/ {print $3}' "$log")
-    echo "[$(basename "$script" .py)] ${elapsed_quiet}"
+    if [ "$rc" -ne 0 ]; then
+        echo "[$(basename "$script" .py)] FAILED (exit ${rc}) after ${elapsed_quiet} — see $log" >&2
+        echo "$script" >> "$LOG_DIR/.failed"
+    else
+        echo "[$(basename "$script" .py)] ${elapsed_quiet}"
+    fi
 }
 
 export -f run_one
@@ -87,4 +95,11 @@ fi
 t1=$(date +%s.%N)
 total=$(awk -v a="$t0" -v b="$t1" 'BEGIN { printf "%.1f", b - a }')
 echo "----"
+if [ -s "$LOG_DIR/.failed" ]; then
+    n=$(wc -l < "$LOG_DIR/.failed")
+    echo "${n} of ${#SCRIPTS[@]} scripts FAILED after ${total}s wall clock:" >&2
+    sed 's/^/  /' "$LOG_DIR/.failed" >&2
+    rm -f "$LOG_DIR/.failed"
+    exit 1
+fi
 echo "All scripts done in ${total}s wall clock (parallel, ${#SCRIPTS[@]} jobs, $(nproc) CPUs)."

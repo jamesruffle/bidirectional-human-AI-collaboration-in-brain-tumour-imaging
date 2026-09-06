@@ -6,8 +6,9 @@ Self-contained reproduction script. Reads two CSVs from
 `data/figures/Supplementary_Figure_5.png` byte-identical to the canonical.
 
 Inputs:
-  - suppfig5_panel_data.csv         : 110 rows of per-(rad, pathology, condition) aggregates
-  - suppfig5_radiologist_meta.csv   : 11 rows of radiologist experience metadata
+  - figure_1/csv_v2/radiologist_df.csv            : the canonical per-review frame
+  - supplementary_figure_5/csv/suppfig5_radiologist_meta.csv
+                                                  : 11 rows of radiologist experience metadata
 
 """
 import os

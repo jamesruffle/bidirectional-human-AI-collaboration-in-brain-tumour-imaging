@@ -1,7 +1,7 @@
 {
   "title": "Bidirectional human-AI collaboration in brain tumour assessment improves both expert human and AI agent performance: analysis code and source data",
   "upload_type": "software",
-  "description": "<p>Analysis code, per-figure reproduction scripts and de-identified, aggregate source data for the multi-reader multi-case randomised crossover study reported in the paper of the same title (Nature Communications, 2026). Every figure and table in the paper is regenerated live from the bundled CSV inputs by the scripts in <code>code/</code>; the stdout of each script is captured in <code>data/logs/</code>. Raw patient imaging is not included and is held under controlled access. The trained model weights are deposited separately at <a href=\"https://doi.org/10.5281/zenodo.20055549\">10.5281/zenodo.20055549</a>.</p>",
+  "description": "<p>Analysis code, per-figure reproduction scripts and de-identified, aggregate source data for the multi-reader multi-case randomised crossover study reported in the paper of the same title (Nature Communications, 2026). Every data figure and every table in the paper is regenerated live from the bundled CSV inputs by the scripts in <code>code/</code>; the two MRI montages (Figures 2 and 3) and the study schematics (Supplementary Figures 1 and 3) have no generating source here, because they render patient imaging or were drawn by hand; the stdout of each script is captured in <code>data/logs/</code>. Raw patient imaging is not included and is held under controlled access. The trained model weights are deposited separately at <a href=\"https://doi.org/10.5281/zenodo.20055549\">10.5281/zenodo.20055549</a>.</p>",
   "license": "Apache-2.0",
   "access_right": "open",
   "language": "eng",

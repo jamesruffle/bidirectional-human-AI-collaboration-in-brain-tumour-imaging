@@ -2,8 +2,11 @@
 """Fig 1: impact of support on agent performance.
 
 Self-contained reproduction script. Loads the consolidated CSV/JSON inputs at
-data/source_data/figure_1/csv_v2/ (~480 KB total), derives the subset frames
-and aggregations from radiologist_df, then renders the 8-panel figure (a-h).
+data/source_data/figure_1/csv_v2/ (~480 KB total), plus two CSVs from
+data/source_data/figure_6/csv/ (model_case_confidence.csv and
+cv_predictions_min.csv) for the model-confidence panels, derives the subset
+frames and aggregations from radiologist_df, then renders the 8-panel figure
+(a-h).
 
 Output: writes Fig_1.png and Fig_1.svg to data/figures/.
 """
