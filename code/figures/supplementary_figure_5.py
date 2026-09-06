@@ -291,8 +291,8 @@ for row, (metric, title, cmap, vmin, vmax, better_direction) in enumerate(metric
             white_border_counts[(row, col)] = percentage
 
 # Add overall title
-fig.suptitle('Radiologist performance by pathology dataset (white borders indicate better performance)',
-             fontsize=16, y=0.92)
+suptitle = fig.suptitle('Radiologist performance by pathology dataset',
+                        fontsize=16, y=0.92)
 
 legend_text = (
     'Subspecialty markers: * Adult Neuroradiologist;  '
@@ -308,6 +308,12 @@ fig.text(
 )
 
 plt.tight_layout()
+
+# Panels b, d and f carry the colorbars, so the figure is wider than the heatmap block and
+# centring the title on the figure leaves it sitting right of the heatmaps. Re-centre it on
+# the heatmap axes themselves, read after tight_layout has settled their positions.
+_heatmaps = [axes[r][c].get_position() for r in range(3) for c in range(2)]
+suptitle.set_x((min(p.x0 for p in _heatmaps) + max(p.x1 for p in _heatmaps)) / 2)
 
 # Save as both PNG and SVG
 plt.savefig(os.path.join(FIGURES_OUTPUT_PATH, 'Supplementary_Figure_5.png'),

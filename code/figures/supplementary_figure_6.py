@@ -51,7 +51,7 @@ def main():
     # Create visualization with space for colorbars below
     fig = plt.figure(figsize=(18, 10))
     fig.suptitle('Effect of lesion morphology, pathology, size, and distribution on radiologist performance',
-                 fontsize=16, fontweight='normal', y=0.82)
+                 fontsize=16, fontweight='normal', y=0.845)
 
     # Create GridSpec with extra space at bottom for colorbars and legends
     gs = plt.GridSpec(3, 3, figure=fig, height_ratios=[1, 0.04, 0.11], hspace=0.07, wspace=0.3)
