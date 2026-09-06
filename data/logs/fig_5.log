@@ -1,4 +1,4 @@
-Run started: 2026-09-06T17:16:25Z
+Run started: 2026-09-06T21:36:11Z
 Script:      code/figures/fig_5.py
 Host CPUs:   128
 ----
@@ -34,5 +34,5 @@ Pooled-across-readers bin deviation from perfect calibration (matches Fig 5 pane
   With model                      pooled bin deviation = 0.089
 ──────────────────────────────────────────────────────────────────────────────
 ----
-Run ended:   2026-09-06T17:16:29Z
-Wall clock:  3.9s
+Run ended:   2026-09-06T21:36:14Z
+Wall clock:  3.7s

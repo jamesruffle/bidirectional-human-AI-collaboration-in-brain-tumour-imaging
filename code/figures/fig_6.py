@@ -837,8 +837,13 @@ rad_metrics_with['specificity'] = tn / (tn + fp) if (tn + fp) > 0 else 0
 model_conf_metrics = {'without': {}, 'with': {}}
 
 if True:
-    # Get common cases for model evaluation
-    common_cases = radiologist_df.dropna(subset=['model_predicted_enhancement'])
+    # Get common cases for model evaluation. The model's per-case probability is a
+    # property of the case, so iterating both conditions would emit every reader-case
+    # pair twice and narrow every bootstrap interval below by a factor of ~sqrt(2).
+    # The unit of analysis is the reader-case pair (n=1100), matching line 1408 and
+    # table_1.py:442.
+    common_cases = radiologist_df[~radiologist_df['with_segmentation']].dropna(
+        subset=['model_predicted_enhancement'])
 
     # Load probability maps for model confidence analysis
     print("\nCalculating model confidence metrics...")

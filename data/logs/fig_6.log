@@ -1,4 +1,4 @@
-Run started: 2026-09-06T17:16:25Z
+Run started: 2026-09-06T21:36:11Z
 Script:      code/figures/fig_6.py
 Host CPUs:   128
 ----
@@ -57,19 +57,19 @@ Model metrics for panels e, f, g (from nested CV grid search, n=1100 pairs):
 Calculating model confidence metrics...
 Total unique cases to process: 564
 Loaded probability maps: 564/564 (from pre-computed CSV)
-Processing confidence for 2200 radiologist-case reviews
+Processing confidence for 1100 radiologist-case reviews
 Model without support - Conf-Acc Corr: -0.078
 Model without support - Calibration Diff: -0.112
 Model without support - Confidence Bias: -0.189
-Model without support - N reviews: 2200
+Model without support - N reviews: 1100
 Model with support - Conf-Acc Corr: 0.272
 Model with support - Calibration Diff: 0.276
 Model with support - Confidence Bias: 1.868
 
 Bootstrap 95% CIs for Model AI-arm confidence metrics (B=5000, seed=20260505):
-  Model alone           Conf-Acc Corr: -0.078 [-0.087, -0.069]
-  Model alone           Calibration Diff: -0.112 [-0.140, -0.074]
-  Model alone           Confidence Bias: -0.189 [-0.238, -0.144]
+  Model alone           Conf-Acc Corr: -0.078 [-0.091, -0.065]
+  Model alone           Calibration Diff: -0.112 [-0.153, -0.062]
+  Model alone           Confidence Bias: -0.189 [-0.260, -0.127]
   Model with rad        Conf-Acc Corr: +0.272 [+0.211, +0.332]
   Model with rad        Calibration Diff: +0.276 [+0.218, +0.345]
   Model with rad        Confidence Bias: +1.868 [+1.467, +2.270]
@@ -145,5 +145,5 @@ Fig_6 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures
 
 Figure 6 saved to /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_6.png
 ----
-Run ended:   2026-09-06T17:16:41Z
-Wall clock:  15.5s
+Run ended:   2026-09-06T21:36:26Z
+Wall clock:  15.2s
