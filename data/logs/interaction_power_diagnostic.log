@@ -1,4 +1,4 @@
-Run started: 2026-09-06T17:16:25Z
+Run started: 2026-09-06T21:55:22Z
 Script:      code/analysis/interaction_power_diagnostic.py
 Host CPUs:   128
 ----
@@ -41,5 +41,5 @@ test that does not discriminate between the presence and absence of an interacti
 The manuscript accordingly reports the per-condition associations descriptively.
 ==============================================================================
 ----
-Run ended:   2026-09-06T17:16:26Z
+Run ended:   2026-09-06T21:55:22Z
 Wall clock:  0.7s

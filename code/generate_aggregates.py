@@ -58,7 +58,7 @@ SEED_CSV_PATH = os.path.join(
 OUT_DIR = os.path.join(R1_ROOT, 'data', 'source_data', 'figure_1', 'csv_v2')
 
 
-def optimistic_dedup_seed_predictions(df_seeds):
+def dedup_seed_predictions(df_seeds):
     """Apply prefer-correct dedup across all seeds.
 
     For each unique (case_id, radiologist) pair, gather rows from every
@@ -118,7 +118,7 @@ def main():
     print(f'Seeds in CSV: {seeds}')
     print(f'Total seed-prediction rows: {len(df_seeds)}')
 
-    df_dedup = optimistic_dedup_seed_predictions(df_seeds)
+    df_dedup = dedup_seed_predictions(df_seeds)
     print(f'After 5-seed prefer-correct dedup: {len(df_dedup)} pairs')
 
     gt    = df_dedup['gt'].astype(int).values

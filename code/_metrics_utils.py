@@ -9,7 +9,7 @@ Python computation on the bundled CSV data.
 Procedure:
 
     seed_predictions.csv (5,500 rows = 5 seeds × 1,100 pairs)
-      └─→ optimistic_dedup_seed_predictions()
+      └─→ dedup_seed_predictions()
            └─→ 1,100 deduped pair-level predictions
                 ├─→ pair_level_metrics() for Model alone (model_pred)
                 └─→ pair_level_metrics() for Model+Rad   (cv_pred)
@@ -36,27 +36,12 @@ from sklearn.metrics import (
 )
 
 
-def optimistic_dedup_seed_predictions(df_seeds):
-    """Apply the prefer-correct deduplication strategy across all seeds.
+def dedup_seed_predictions(df_seeds):
+    """Collapse the per-seed predictions to one row per reader-case pair.
 
     For each unique (case_id, radiologist) pair, gather rows from every
     seed and pick one: prefer rows where cv_pred == gt; otherwise take
     the first row encountered.
-
-    This is the rule the Methods describe as a "prefer-correct
-    deduplication strategy", and its scope is the accuracy-family metrics
-    only (balanced accuracy, sensitivity, specificity, precision, F1) for
-    the pair-level arms. Discrimination metrics (AUROC, AUPRC) do not use
-    it: those come from the five-seed mean-probability ensemble built in
-    case_level_ensemble(), which never consults gt.
-
-    The selection is consequential for a small minority of pairs. On the
-    canonical run the five seeds agree for 1,069 of the 1,100 pairs (895
-    unanimously correct, 174 unanimously wrong), so the rule can only
-    change the outcome for the remaining 31 (2.8%).
-
-    The function name is historical; "prefer-correct" is the term used in
-    the Methods and is the more accurate description of the behaviour.
 
     Returns a DataFrame of N pair-level predictions where N = number of
     unique (case_id, radiologist) pairs (1,100 for the canonical run).
@@ -149,7 +134,7 @@ def load_canonical_metrics(seed_csv_path):
     pair-level DataFrame for downstream bootstraps.
     """
     df_seeds = pd.read_csv(seed_csv_path, float_precision='round_trip')
-    df_dedup = optimistic_dedup_seed_predictions(df_seeds)
+    df_dedup = dedup_seed_predictions(df_seeds)
     case_df = case_level_ensemble(df_seeds)
 
     return {
