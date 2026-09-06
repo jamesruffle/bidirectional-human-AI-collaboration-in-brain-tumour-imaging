@@ -208,8 +208,12 @@ def main() -> None:
 
     svg = os.path.join(OUT_DIR, 'Supplementary_Figure_2.svg')
     if shutil.which('pdftocairo'):
+        # pdftocairo converts every glyph to an outline path, so the SVG is vector
+        # artwork but its text is not editable. The PDF written above keeps the text
+        # editable, and the supplementary figures are supplied inside the single
+        # Supplementary Information PDF rather than as individual vector files.
         subprocess.run(['pdftocairo', '-svg', pdf, svg], check=True, capture_output=True)
-        print(f'Wrote {svg}  (vector text)')
+        print(f'Wrote {svg}  (vector artwork; glyphs outlined by pdftocairo)')
     else:
         print('note: pdftocairo not found, skipping the SVG')
     shutil.rmtree(tmp, ignore_errors=True)

@@ -18,6 +18,14 @@ import scipy.stats as _scipy_stats
 from scipy.stats import chi2_contingency
 import matplotlib
 matplotlib.use('Agg')
+
+# Nature Communications requires vector figures whose text remains editable, so the
+# SVG backend must emit <text> elements rather than converting each glyph to an
+# outline path. The font stack carries fallbacks because 'svg.fonttype' = 'none'
+# leaves glyph selection to whichever renderer opens the file.
+matplotlib.rcParams['svg.fonttype'] = 'none'
+matplotlib.rcParams['font.family'] = 'sans-serif'
+matplotlib.rcParams['font.sans-serif'] = ['DejaVu Sans', 'Arial', 'Helvetica', 'sans-serif']
 import matplotlib.pyplot as plt
 from matplotlib.patches import Patch, Rectangle
 from matplotlib.lines import Line2D
