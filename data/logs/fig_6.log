@@ -1,4 +1,4 @@
-Run started: 2026-09-05T21:26:41Z
+Run started: 2026-09-06T15:56:43Z
 Script:      code/figures/fig_6.py
 Host CPUs:   128
 ----
@@ -101,19 +101,19 @@ Radiologist confidence by correctness, per arm (paragraph 125):
 Model confidence by correctness (paragraph 127, panel i):
 
 Model Incorrect predictions:
-  Number of cases without support: 388
+  Number of cases without support: 194
   Number of cases with support: 174
   Without support mean: 10.000 ± 0.000  (paragraph 127: 10.00 ± 0.00)
   With support mean: 6.238 ± 2.427  (paragraph 127: 6.24 ± 2.43)
-  T-statistic: 30.480
+  T-statistic: 21.532
   P-value: 0.000000
 
 Model Correct predictions:
-  Number of cases without support: 1812
+  Number of cases without support: 906
   Number of cases with support: 926
   Without support mean: 9.811 ± 1.019  (paragraph 127: 9.81 ± 1.02)
   With support mean: 8.105 ± 2.408  (paragraph 127: 8.11 ± 2.41)
-  T-statistic: 25.932
+  T-statistic: 19.653
   P-value: 0.000000
 
 Optimal-quadrant thresholds (median split — paragraph 127):
@@ -145,5 +145,5 @@ Fig_6 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures
 
 Figure 6 saved to /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_6.png
 ----
-Run ended:   2026-09-05T21:26:56Z
-Wall clock:  15.2s
+Run ended:   2026-09-06T15:56:59Z
+Wall clock:  15.8s
