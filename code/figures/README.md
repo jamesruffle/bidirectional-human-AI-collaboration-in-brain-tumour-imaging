@@ -26,7 +26,7 @@ separate item.
 | **Fig 5** | Accuracy, experience and confidence, with and without model support | `fig_5.py` | `Fig_5.png` | reproducible from `radiologist_df.csv` (live `groupby`) |
 | **Fig 6** | Enhancing healthcare value | `fig_6.py` | `Fig_6.png` | reproducible from `radiologist_df.csv` + `salary_progression.csv` (live regression) |
 | **Supp Fig 1** | Paradigms of evaluating AI value | (none — schematic) | `Supplementary_Figure_1.png` | not script-reproducible; rendered image only |
-| **Supp Fig 2** | Human-AI collaboration paradigms | `human_ai_paradigm.jsx` | — | source deposited; rendered in a browser, not by the Python pipeline |
+| **Supp Fig 2** | Human-AI collaboration paradigms | `supplementary_figure_2.py` | `Supplementary_Figure_2.png` | reproducible; a static schematic, so the script renders markup rather than plotting data (needs Chrome — see below) |
 | **Supp Fig 3** | Study schematic | (none — Inkscape schematic) | — | not script-reproducible; ships as a rendered image only |
 | **Supp Fig 4** | Agreement comparisons | `supplementary_figure_4.py` | `Supplementary_Figure_4.png` | reproducible from `radiologist_df.csv` |
 | **Supp Fig 5** | Performance by pathology dataset | `supplementary_figure_5.py` | `Supplementary_Figure_5.png` | reproducible from `radiologist_df.csv` + `suppfig5_radiologist_meta.csv` |
@@ -62,13 +62,14 @@ The bundled `data/logs/<script>.log` files document the wall-clock runtime of ea
 | `fig_5.py` | ~3 s | Live `groupby` over 2,200 reviews; small plotting overhead |
 | `fig_1.py` | ~47 s | 6 reader-level + 6 case-level bootstrap CIs (B=5,000); pair-level model bootstrap; Δ-confidence bootstrap *p* at B=5,000,000 |
 | `fig_6.py` | ~15 s | Live confidence-calibration + equivalent-experience regression + bootstrap CIs |
+| `supplementary_figure_2.py` | ~3 s | Renders a self-contained HTML page with headless Chrome; no data, no computation |
 | `supplementary_figure_4.py` | ~215 s (~3.6 min) | 3 κ-contrast bootstraps at B=5,000,000, evaluated from per-case 2×2 counts so the *p* values resolve below the 2/B floor of a 5,000-replicate run |
 | `supplementary_figure_5.py` | ~5 s | Per-pathology stratified plotting |
 | `supplementary_figure_6.py` | ~15 s | UMAP coordinates pre-computed; matplotlib only |
 | `supplementary_figure_7.py` | ~3 s | Pre-binned aggregates |
 | `table_1.py` | ~40 s | Reader-level + case-level paired bootstrap deltas across 7 metrics |
 | `supplementary_table_*.py` | <1 s | Direct CSV groupby |
-| **Total** (`bash code/run_all.sh`) | **~260 s (~4.3 min)** | All 13 scripts; `supplementary_figure_4.py` runs first because `table_1.py` reads its log, then the remaining 12 in parallel |
+| **Total** (`bash code/run_all.sh`) | **~260 s (~4.3 min)** | All 14 scripts; `supplementary_figure_4.py` runs first because `table_1.py` reads its log, then the remaining 12 in parallel |
 
 ## Source-data dependencies
 
@@ -94,6 +95,18 @@ Diagrams, not derived from data, so none is reproducible from the bundled CSVs. 
 **Supplementary Figure 2** is the one with deposited source. It is a React component, `human_ai_paradigm.jsx`, rendered in a browser and screen-captured at 144 dpi; the capture is what appears in the manuscript. The component was co-developed with an AI agent — deliberately, as an instance of the human-assisted AI agent paradigm the figure itself illustrates — and the source is deposited here so the figure can be regenerated and inspected like any other. Its six pictograms (car, plane, user, cpu, shield, eye) come from the open-source [Lucide](https://lucide.dev) icon set via `lucide-react`, used under the ISC licence; the component embeds no raster imagery, no stock photography and no external assets of any other kind.
 
 To re-render: drop the component into any React + Tailwind CSS project with `lucide-react` installed and screenshot the rendered output.
+
+**Supplementary Figure 2** is the one figure that is not a data plot. It was authored as a React
+component, and the published image was a screenshot of it rendered in a browser. Nothing in it is
+computed, so `supplementary_figure_2.py` reproduces the same markup as a **self-contained** HTML page
+and renders it with headless Chrome. The component's Tailwind utility classes are written out as
+explicit CSS instead of being fetched from the Tailwind CDN at run time, and the six lucide icons are
+inlined as path data, so the script needs no network access and its output cannot drift with an
+upstream release. The original component stays deposited at
+`code/figures/human_ai_paradigm.jsx` for reference and is not executed. This is the only
+script with a non-Python dependency: it needs `google-chrome` or `chromium` on `PATH`, and
+`pdftocairo` if the vector SVG is also wanted. Verified against the published figure: the ink bands
+match to within 0.001 of figure height, with both cards at 0.459.
 
 **Supplementary Figure 1** ships as a rendered image only, at `data/figures/Supplementary_Figure_1.png`, with no generating source deposited. **Supplementary Figure 3** is not in the repository; its published rendition is embedded in the supplementary document, whose PNG metadata records Inkscape as the tool that produced it.
 

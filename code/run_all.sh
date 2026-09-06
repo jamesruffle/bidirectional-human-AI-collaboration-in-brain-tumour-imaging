@@ -22,6 +22,7 @@ FIGS=(
     code/figures/fig_4.py
     code/figures/fig_5.py
     code/figures/fig_6.py
+    code/figures/supplementary_figure_2.py
     code/figures/supplementary_figure_4.py
     code/figures/supplementary_figure_5.py
     code/figures/supplementary_figure_6.py
