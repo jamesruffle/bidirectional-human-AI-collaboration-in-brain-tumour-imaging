@@ -135,6 +135,8 @@ same filename refer to two different objects either side of a single commit.
 | `fig_5.py` | `data/source_data/figure_1/csv_v2/radiologist_df.csv` |
 | `fig_6.py` | `data/source_data/figure_6/` (+ `data/source_data/figure_1/csv_v2/radiologist_df.csv`) |
 | `supplementary_figure_4.py` | `data/source_data/figure_1/csv_v2/radiologist_df.csv` |
+
+Two columns of `radiologist_df.csv` are carried from an upstream frame and are not used by any script here: `lesion_size_category` records the size of the *enhancing* lesion, so it reads `Unknown` for every case without enhancement and is therefore determined by `has_enhancement_gt` rather than independent of it; `radiomic_category` is likewise unused. Neither contributes to a published number. The lesion-size strata in Supplementary Figure 7 come from that figure's own input CSV, not from this column.
 | `supplementary_figure_5.py` | `data/source_data/supplementary_figure_5/csv/` |
 | `supplementary_figure_6.py` | `data/source_data/supplementary_figure_6/csv/` |
 | `supplementary_figure_7.py` | `data/source_data/supplementary_figure_7/` |

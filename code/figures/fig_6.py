@@ -1635,8 +1635,8 @@ if combined_data:
 
                 # Echo computed p-values
                 print(f"\nModel {acc_label} predictions:")
-                print(f"  Number of cases without support: {len(without_support_conf)}")
-                print(f"  Number of cases with support: {len(with_support_conf)}")
+                print(f"  Number of reader-case pairs without support: {len(without_support_conf)}")
+                print(f"  Number of reader-case pairs with support: {len(with_support_conf)}")
                 # 3-dp for precision; 2-dp matches the manuscript paragraph 127 precision.
                 print(f"  Without support mean: {without_support_conf.mean():.3f} ± {without_support_conf.std():.3f}  (paragraph 127: {without_support_conf.mean():.2f} ± {without_support_conf.std():.2f})")
                 print(f"  With support mean: {with_support_conf.mean():.3f} ± {with_support_conf.std():.3f}  (paragraph 127: {with_support_conf.mean():.2f} ± {with_support_conf.std():.2f})")
