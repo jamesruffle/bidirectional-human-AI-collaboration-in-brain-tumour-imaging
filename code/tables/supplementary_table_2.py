@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Supplementary Table 2: False-positive and false-negative geography
+"""Supplementary Data 1: False-positive and false-negative geography
 and pathology distribution.
 
 Per-condition × country × pathology breakdown of model and radiologist
@@ -12,6 +12,10 @@ Inputs:  data/source_data/figure_1/csv_v2/{radiologist_df.csv,
                                               best_cv_predictions.csv}
 Outputs: stdout printout + data/source_data/supplementary_table_2/
                             csv/supplementary_table_2.csv
+
+This script's filename carries a historical offset: it produces Supplementary
+Data 1, not a numbered Supplementary Table. See README.md for why the filenames
+were left unchanged.
 """
 import os
 import sys
@@ -52,7 +56,7 @@ def main():
     )
 
     print("─" * 78)
-    print("Supplementary Table 2: Country × Pathology subgroup metrics")
+    print("Supplementary Data 1: Country × Pathology subgroup metrics")
     print("─" * 78)
     print(f"{'Condition':<32} {'Country':<22} {'Pathology':<32} {'N':>4} "
           f"{'TP':>3} {'FP':>3} {'TN':>3} {'FN':>3} "

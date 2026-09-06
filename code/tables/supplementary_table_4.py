@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Supplementary Table 4: Female–male performance gaps Δ = female − male.
+"""Supplementary Table 3: Female–male performance gaps Δ = female − male.
 
 For each agent × support condition, reports the difference in each metric
 (BA, AUROC, AUPRC, sensitivity, specificity, precision, F1) between the
@@ -15,6 +15,9 @@ Inputs:  data/source_data/figure_1/csv_v2/{radiologist_df.csv,
                                               sex_metadata.csv}
 Outputs: stdout printout + data/source_data/supplementary_table_4/
                             csv/supplementary_table_4.csv
+
+This script's filename carries a historical offset: it produces the published
+Supplementary Table 3. See README.md for why the filenames were left unchanged.
 """
 import os
 import sys
@@ -44,7 +47,7 @@ def main():
     metrics = compute_sex_metrics(radiologist_df, bcv_df, sex_meta)
 
     print("─" * 78)
-    print("Supplementary Table 4: Female–male performance gaps (Δ = female − male)")
+    print("Supplementary Table 3: Female–male performance gaps (Δ = female − male)")
     print("─" * 78)
 
     conditions = [

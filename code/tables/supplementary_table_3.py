@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Supplementary Table 3: Patient-sex disaggregation of agent performance.
+"""Supplementary Table 2: Patient-sex disaggregation of agent performance.
 
 Per-sex (Female, Male) point values for each agent × support condition on the
 82-case sex-metadata subset (37 female, 45 male).
@@ -9,6 +9,9 @@ Inputs:  data/source_data/figure_1/csv_v2/{radiologist_df.csv,
                                               sex_metadata.csv}
 Outputs: stdout printout + data/source_data/supplementary_table_3/
                             csv/supplementary_table_3.csv
+
+This script's filename carries a historical offset: it produces the published
+Supplementary Table 2. See README.md for why the filenames were left unchanged.
 """
 import os
 import sys
@@ -119,7 +122,7 @@ def main():
     n_male = int((sex_meta['Sex'] == 'Male').sum())
     n_rad_cases = int(radiologist_df['case_id'].nunique())
     print("─" * 78)
-    print("Supplementary Table 3: Patient-sex disaggregation of agent performance")
+    print("Supplementary Table 2: Patient-sex disaggregation of agent performance")
     print("─" * 78)
     print(f"Sex metadata available for {n_total} cases (Female {n_female}, Male {n_male})")
     print(f"  Coverage of {n_rad_cases}-case radiologist subset: "
