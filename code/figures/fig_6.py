@@ -108,6 +108,10 @@ pair_level_cv_metrics = _pair_metrics['model_with_human']
 
 best_cv_predictions = _cv_min.to_dict(orient='records')
 prob_data_pre = dict(zip(_prob_df['case_id'], _prob_df['top_percentile_prob']))
+# top_percentile_prob is the case-level summary of the model's voxel-wise
+# enhancing-tumour probability map: the mean of the voxels at or above the
+# 99th percentile of that map. It is the scalar the model-alone arm uses as
+# its confidence that enhancement is present.
 
 # Restore RNG state (panels a/b/i jitter depends on it). The state is
 # stored as plain JSON (numpy + Python random states) so the bundle

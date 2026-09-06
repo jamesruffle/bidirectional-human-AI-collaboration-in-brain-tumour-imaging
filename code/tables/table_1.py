@@ -436,6 +436,8 @@ def main():
     # AI-side (model + model+rad) pair-level confidence/correct arrays — mirrors fig_6
     _prob_df = pd.read_csv(os.path.join(SRC_FIG6, 'model_case_confidence.csv'),
                            float_precision='round_trip')
+    # top_percentile_prob: mean of the voxels at or above the 99th percentile of
+    # the case's enhancing-tumour probability map — the model-alone confidence.
     _prob_map = dict(zip(_prob_df['case_id'], _prob_df['top_percentile_prob']))
     _mp_w_arr, _mc_w_arr = [], []
     # Case-level quantity: one row per reader-case pair, not per pair per condition.
