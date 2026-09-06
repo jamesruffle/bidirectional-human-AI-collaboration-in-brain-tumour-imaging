@@ -15,7 +15,7 @@ how AI is studied in healthcare today: most prior work sits in the lower-right
 upper-right "Model | Human" formulation in which the AI is supported by the
 human — is rarely evaluated.
 
-![Paradigms of evaluating AI value in healthcare](figures/Supplementary_Figure_1_paradigms.png)
+![Paradigms of evaluating AI value in healthcare](data/figures/Supplementary_Figure_1.png)
 
 **Impact of support on agent performance.** Headline results across the
 564-case radiologist-reviewed cohort: factorial accuracy evaluation,
@@ -46,13 +46,12 @@ code/regenerate_seed_predictions.py
                         data/cv_cache_backup/*.pkl.original input; users do not
                         need to run this (seed_predictions.csv is already bundled).
 data/source_data/       CSV / JSON inputs consumed by the figure / table scripts.
-data/figures/           Reproduced PNG + SVG outputs from running the scripts.
+data/figures/           PNG + SVG outputs from running the scripts, plus the
+                        Supplementary Figure 1 schematic (rendered image only).
 data/logs/              stdout captured from each script (numerical values printed
                         in figure captions and table cells are reproducible from
                         these; each log header records start timestamp + host CPU
                         count, and the trailing line records the wall clock).
-figures/                Static, non-script-reproducible figures referenced from
-                        this README (e.g. the Supplementary Figure 1 paradigm illustration).
 ```
 
 ## Running figures, tables, and analyses

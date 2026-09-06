@@ -25,7 +25,7 @@ separate item.
 | **Fig 4** | Performance curves with/without support | `fig_4.py` | `Fig_4.{png,svg}` | reproducible |
 | **Fig 5** | Accuracy, experience and confidence, with and without model support | `fig_5.py` | `Fig_5.{png,svg}` | reproducible from `radiologist_df.csv` (live `groupby`) |
 | **Fig 6** | Enhancing healthcare value | `fig_6.py` | `Fig_6.{png,svg}` | reproducible from `radiologist_df.csv` + `salary_progression.csv` (live regression) |
-| **Supp Fig 1** | Paradigms of evaluating AI value | (none — schematic) | — | not script-reproducible; ships as a rendered image only |
+| **Supp Fig 1** | Paradigms of evaluating AI value | (none — schematic) | `Supplementary_Figure_1.png` | not script-reproducible; rendered image only |
 | **Supp Fig 2** | Human-AI collaboration paradigms | `human_ai_paradigm.jsx` | — | source deposited; rendered in a browser, not by the Python pipeline |
 | **Supp Fig 3** | Study schematic | (none — Inkscape schematic) | — | not script-reproducible; ships as a rendered image only |
 | **Supp Fig 4** | Agreement comparisons | `supplementary_figure_4.py` | `Supplementary_Figure_4.{png,svg}` | reproducible from `radiologist_df.csv` |
@@ -95,7 +95,7 @@ Diagrams, not derived from data, so none is reproducible from the bundled CSVs. 
 
 To re-render: drop the component into any React + Tailwind CSS project with `lucide-react` installed and screenshot the rendered output.
 
-**Supplementary Figures 1 and 3** ship as rendered images only, with no generating source deposited. Supplementary Figure 3's PNG metadata records Inkscape as the tool that produced it.
+**Supplementary Figure 1** ships as a rendered image only, at `data/figures/Supplementary_Figure_1.png`, with no generating source deposited. **Supplementary Figure 3** is not in the repository; its published rendition is embedded in the supplementary document, whose PNG metadata records Inkscape as the tool that produced it.
 
 ## How each figure is reproduced
 
