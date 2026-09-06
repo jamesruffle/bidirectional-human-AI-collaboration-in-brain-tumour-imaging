@@ -1394,7 +1394,10 @@ if combined_data:
     model_without_correct_conf = []
     model_without_incorrect_conf = []
     if len(prob_data) > 0:
-        for _, row in radiologist_df.iterrows():
+        # The model-alone probability is a property of the CASE, so iterating both
+        # conditions of radiologist_df would emit every case-reader pair twice. Restrict
+        # to a single condition: the unit of analysis is the reader-case pair (n=1100).
+        for _, row in radiologist_df[~radiologist_df['with_segmentation']].iterrows():
             case_id = row['case_id']
             if case_id in prob_data:
                 confidence_score = abs(prob_data[case_id] - 0.5) * 2 * 10

@@ -438,7 +438,8 @@ def main():
                            float_precision='round_trip')
     _prob_map = dict(zip(_prob_df['case_id'], _prob_df['top_percentile_prob']))
     _mp_w_arr, _mc_w_arr = [], []
-    for _, _row in rdf.iterrows():
+    # Case-level quantity: one row per reader-case pair, not per pair per condition.
+    for _, _row in rdf[~rdf['with_segmentation']].iterrows():
         if _row['case_id'] in _prob_map:
             _mp_w_arr.append(abs(_prob_map[_row['case_id']] - 0.5) * 20)
             _mc_w_arr.append(_row['model_predicted_enhancement'] == _row['has_enhancement_gt'])

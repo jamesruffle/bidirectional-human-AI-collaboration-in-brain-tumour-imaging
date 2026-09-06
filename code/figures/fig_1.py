@@ -975,7 +975,9 @@ _prob_df_canonical = pd.read_csv(os.path.join(_FIG6_CSV, 'model_case_confidence.
                                   float_precision='round_trip')
 _prob_map = dict(zip(_prob_df_canonical['case_id'], _prob_df_canonical['top_percentile_prob']))
 _mp_w, _mc_w_arr = [], []
-for _, _row in radiologist_df.iterrows():
+# Model-alone confidence is case-level, so restrict to one condition to avoid
+# emitting each reader-case pair twice (n=1100, the reader-case pair).
+for _, _row in radiologist_df[~radiologist_df['with_segmentation']].iterrows():
     if _row['case_id'] in _prob_map:
         _mp_w.append(abs(_prob_map[_row['case_id']] - 0.5) * 20)
         _mc_w_arr.append(_row['model_predicted_enhancement'] == _row['has_enhancement_gt'])
