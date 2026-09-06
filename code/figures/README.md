@@ -9,7 +9,7 @@ All shared analysis logic — per-reader metrics, prefer-correct dedup, case-lev
 The journal renamed the Extended Data items to Supplementary Figures at acceptance and
 the repository followed, so script, output, log and source-data names all match the
 published name: `supplementary_figure_4.py` renders
-`data/figures/Supplementary_Figure_4.{png,svg}` and logs to
+`data/figures/Supplementary_Figure_4.png` (plus an untracked SVG) and logs to
 `data/logs/supplementary_figure_4.log`; `supplementary_figure_5..7.py` read their inputs
 from `data/source_data/supplementary_figure_5..7/`. In running prose the paper
 abbreviates these as "Supplementary Fig. N", which is Nature house style and not a

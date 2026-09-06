@@ -46,8 +46,9 @@ code/regenerate_seed_predictions.py
                         data/cv_cache_backup/*.pkl.original input; users do not
                         need to run this (seed_predictions.csv is already bundled).
 data/source_data/       CSV / JSON inputs consumed by the figure / table scripts.
-data/figures/           PNG + SVG outputs from running the scripts, plus the
-                        Supplementary Figure 1 schematic (rendered image only).
+data/figures/           PNG outputs from running the scripts (SVG/PDF are
+                        written too but not tracked), plus the Supplementary
+                        Figure 1 schematic (rendered image only).
 data/logs/              stdout captured from each script (numerical values printed
                         in figure captions and table cells are reproducible from
                         these; each log header records start timestamp + host CPU
@@ -73,7 +74,7 @@ To run a single script:
 python3 code/figures/fig_1.py 2>&1 | tee data/logs/fig_1.log
 ```
 
-PNG outputs are byte-identical across runs; SVG outputs may differ by matplotlib metadata only.
+Only the PNG outputs are tracked in git (they are byte-identical across runs). Each script also writes an SVG, and the main-figure scripts a PDF, alongside the PNG; these are regenerated on every run and are gitignored to keep the repository small.
 
 ## Expected runtimes (128-CPU host, parallel)
 
