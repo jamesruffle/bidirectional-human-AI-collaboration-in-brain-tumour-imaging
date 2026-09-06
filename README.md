@@ -102,10 +102,10 @@ artefact that produces it share a name.
 | Published name | Repository artefact |
 |---|---|
 | Supplementary Figures 1–3 | schematics; only Supplementary Figure 2 has deposited source (`code/figures/human_ai_paradigm.jsx`) |
-| Supplementary Figure 4 | `code/figures/supplementary_figure_4.py` → `data/figures/Supplementary_Figure_4.{png,svg}` |
-| Supplementary Figure 5 | `code/figures/supplementary_figure_5.py` → `data/figures/Supplementary_Figure_5.{png,svg}` |
-| Supplementary Figure 6 | `code/figures/supplementary_figure_6.py` → `data/figures/Supplementary_Figure_6.{png,svg}` |
-| Supplementary Figure 7 | `code/figures/supplementary_figure_7.py` → `data/figures/Supplementary_Figure_7.{png,svg}` |
+| Supplementary Figure 4 | `code/figures/supplementary_figure_4.py` → `data/figures/Supplementary_Figure_4.png` |
+| Supplementary Figure 5 | `code/figures/supplementary_figure_5.py` → `data/figures/Supplementary_Figure_5.png` |
+| Supplementary Figure 6 | `code/figures/supplementary_figure_6.py` → `data/figures/Supplementary_Figure_6.png` |
+| Supplementary Figure 7 | `code/figures/supplementary_figure_7.py` → `data/figures/Supplementary_Figure_7.png` |
 | Supplementary Table 1 | reader subspecialty roster (no script) |
 | Supplementary Table 2 | `code/tables/supplementary_table_3.py` |
 | Supplementary Table 3 | `code/tables/supplementary_table_4.py` |

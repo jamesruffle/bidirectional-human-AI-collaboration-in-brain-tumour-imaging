@@ -19,19 +19,19 @@ separate item.
 
 | Manuscript figure | Title | Script | Output | Status |
 |---|---|---|---|---|
-| **Fig 1** | Impact of support on agent performance | `fig_1.py` | `Fig_1.{png,svg}` | reproducible from `radiologist_df.csv` + `best_cv_predictions.csv` + `seed_predictions.csv` |
+| **Fig 1** | Impact of support on agent performance | `fig_1.py` | `Fig_1.png` | reproducible from `radiologist_df.csv` + `best_cv_predictions.csv` + `seed_predictions.csv` |
 | **Fig 2** | Enhancing patient brain images | (none — patient NIfTI imaging only) | — | not script-reproducible (controlled-access imaging) |
 | **Fig 3** | Nonenhancing patient brain images | (none — patient NIfTI imaging only) | — | not script-reproducible (controlled-access imaging) |
-| **Fig 4** | Performance curves with/without support | `fig_4.py` | `Fig_4.{png,svg}` | reproducible |
-| **Fig 5** | Accuracy, experience and confidence, with and without model support | `fig_5.py` | `Fig_5.{png,svg}` | reproducible from `radiologist_df.csv` (live `groupby`) |
-| **Fig 6** | Enhancing healthcare value | `fig_6.py` | `Fig_6.{png,svg}` | reproducible from `radiologist_df.csv` + `salary_progression.csv` (live regression) |
+| **Fig 4** | Performance curves with/without support | `fig_4.py` | `Fig_4.png` | reproducible |
+| **Fig 5** | Accuracy, experience and confidence, with and without model support | `fig_5.py` | `Fig_5.png` | reproducible from `radiologist_df.csv` (live `groupby`) |
+| **Fig 6** | Enhancing healthcare value | `fig_6.py` | `Fig_6.png` | reproducible from `radiologist_df.csv` + `salary_progression.csv` (live regression) |
 | **Supp Fig 1** | Paradigms of evaluating AI value | (none — schematic) | `Supplementary_Figure_1.png` | not script-reproducible; rendered image only |
 | **Supp Fig 2** | Human-AI collaboration paradigms | `human_ai_paradigm.jsx` | — | source deposited; rendered in a browser, not by the Python pipeline |
 | **Supp Fig 3** | Study schematic | (none — Inkscape schematic) | — | not script-reproducible; ships as a rendered image only |
-| **Supp Fig 4** | Agreement comparisons | `supplementary_figure_4.py` | `Supplementary_Figure_4.{png,svg}` | reproducible from `radiologist_df.csv` |
-| **Supp Fig 5** | Performance by pathology dataset | `supplementary_figure_5.py` | `Supplementary_Figure_5.{png,svg}` | reproducible from `radiologist_df.csv` + `suppfig5_radiologist_meta.csv` |
-| **Supp Fig 6** | Effect of lesion morphology (UMAP) | `supplementary_figure_6.py` | `Supplementary_Figure_6.{png,svg}` | reproducible from `umap_analysis_results.csv` (UMAP coordinates pre-computed; UMAP is non-deterministic across machines and is therefore bundled rather than re-run) |
-| **Supp Fig 7** | Pathology, size, radiomic assessment | `supplementary_figure_7.py` | `Supplementary_Figure_7.{png,svg}` | reproducible |
+| **Supp Fig 4** | Agreement comparisons | `supplementary_figure_4.py` | `Supplementary_Figure_4.png` | reproducible from `radiologist_df.csv` |
+| **Supp Fig 5** | Performance by pathology dataset | `supplementary_figure_5.py` | `Supplementary_Figure_5.png` | reproducible from `radiologist_df.csv` + `suppfig5_radiologist_meta.csv` |
+| **Supp Fig 6** | Effect of lesion morphology (UMAP) | `supplementary_figure_6.py` | `Supplementary_Figure_6.png` | reproducible from `umap_analysis_results.csv` (UMAP coordinates pre-computed; UMAP is non-deterministic across machines and is therefore bundled rather than re-run) |
+| **Supp Fig 7** | Pathology, size, radiomic assessment | `supplementary_figure_7.py` | `Supplementary_Figure_7.png` | reproducible |
 
 ## Reproducing all figures
 
@@ -104,4 +104,4 @@ Each `code/figures/<script>.py` is self-contained:
 1. Reads the bundled inputs (CSV / JSON) under `data/source_data/<dir>/`. Where required for byte-identical scatter-jitter reproduction (Fig 6 only), a small JSON RNG-state file is also bundled and restored at runtime.
 2. Computes derived intermediates live via `_metrics_utils` from the upstream primary CSVs.
 3. Renders the figure in-process using matplotlib.
-4. Writes a PNG + SVG to `data/figures/` (`Fig_<N>.{png,svg}` for main figures, `Supplementary_Figure_<N>.{png,svg}` for supplementary figures — see the naming note above).
+4. Writes a PNG + SVG to `data/figures/` (`Fig_<N>.png` for main figures, `Supplementary_Figure_<N>.png` for supplementary figures — see the naming note above).
