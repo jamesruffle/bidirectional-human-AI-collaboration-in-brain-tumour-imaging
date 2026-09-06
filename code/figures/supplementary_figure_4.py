@@ -56,7 +56,7 @@ def _bootstrap_delta(count_arrays, B, seed, agg=False, chunk=20000):
     cases and re-tallying is a sum of that case's counts, so a block of
     replicates is a single matrix product against the per-case multiplicities.
     That is what makes B large enough to resolve a p-value below the 2/B floor
-    a five-thousand-replicate run is limited to.
+    of a five-thousand-replicate run.
     """
     n = count_arrays[0].shape[0]
     rng = np.random.RandomState(seed)
@@ -84,7 +84,7 @@ def _boot_p(boot, B):
     """Two-sided bootstrap p and the crossing count it rests on.
 
     Returns the printable p alongside the number of replicates on the crossing
-    side, because a p of 2k/B is only as trustworthy as k is large; k = 0 means
+    side, because the resolution of a p of 2k/B is set by k; k = 0 means
     the p is below the resolution of the run rather than equal to zero.
     """
     k = int(min((boot <= 0).sum(), (boot >= 0).sum()))

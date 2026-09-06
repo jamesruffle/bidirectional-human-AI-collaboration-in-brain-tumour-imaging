@@ -3,9 +3,9 @@
 Experience x assistance-condition INTERACTION test + POWER/MDE diagnostic.
 
 Purpose: document, transparently and reproducibly, (a) the experience x assistance
-interaction estimate, and (b) that the 11-reader design is underpowered to detect an
-interaction of plausible magnitude — so that the manuscript's narrowed (descriptive)
-claim is consistent with the analysis code rather than in tension with it.
+interaction estimate, and (b) the minimum interaction this 11-reader design can detect
+at 80% power, so that the manuscript's descriptive treatment of the per-condition
+associations is backed by the analysis code.
 
 Design: 11 readers, each measured with and without model support (22 rows). The experience x
 condition interaction is, for a paired design, exactly the slope of the WITHIN-READER difference
@@ -122,15 +122,15 @@ def main():
         print(f"  Minimum detectable interaction slope at 80% power = |{mde:.5f}| per year")
         print(f"  Ratio |MDE| / |observed| = {abs(mde)/max(abs(it['slope']),1e-9):.1f}x")
         print(f"  Power to detect the OBSERVED interaction = {pow_obs*100:.1f}%")
-        verdict = "UNDERPOWERED" if pow_obs < 0.8 else "adequately powered"
-        print(f"  -> {verdict}: at n={n}, the observed interaction is far below the "
-              f"effect this design could reliably detect.")
+        verdict = "Power below 80%" if pow_obs < 0.8 else "Power at or above 80%"
+        print(f"  -> {verdict}: at n={n}, the observed interaction is smaller than the "
+              f"minimum detectable effect.")
 
     print("\n" + "=" * 78)
-    print("SUMMARY: The interaction tests are non-significant, but the design is severely")
-    print("underpowered (observed power well below 80%), so a non-significant result is")
-    print("uninformative rather than evidence against an interaction. The manuscript therefore")
-    print("narrows to the descriptive per-condition statement and does not claim 'strengthening'.")
+    print("SUMMARY: The interaction tests are non-significant, and the observed interactions")
+    print("are smaller than the minimum detectable effect at n=11, so this is an exploratory")
+    print("test that does not discriminate between the presence and absence of an interaction.")
+    print("The manuscript accordingly reports the per-condition associations descriptively.")
     print("=" * 78)
 
 

@@ -1,4 +1,4 @@
-Run started: 2026-09-05T20:19:32Z
+Run started: 2026-09-06T09:25:29Z
 Script:      code/analysis/interaction_power_diagnostic.py
 Host CPUs:   128
 ----
@@ -14,7 +14,7 @@ Data: data/source_data/figure_1/csv_v2/radiologist_df.csv -> compute_individual_
   Minimum detectable interaction slope at 80% power = |0.00823| per year
   Ratio |MDE| / |observed| = 9.0x
   Power to detect the OBSERVED interaction = 6.1%
-  -> UNDERPOWERED: at n=11, the observed interaction is far below the effect this design could reliably detect.
+  -> Power below 80%: at n=11, the observed interaction is smaller than the minimum detectable effect.
 
 ### mean_confidence   (n=11 readers, interaction df=9)
   Per-condition (manuscript sanity check): without R2=0.511 p=0.013 | with R2=0.756 p=0.001
@@ -23,7 +23,7 @@ Data: data/source_data/figure_1/csv_v2/radiologist_df.csv -> compute_individual_
   Minimum detectable interaction slope at 80% power = |0.05927| per year
   Ratio |MDE| / |observed| = 4.1x
   Power to detect the OBSERVED interaction = 10.6%
-  -> UNDERPOWERED: at n=11, the observed interaction is far below the effect this design could reliably detect.
+  -> Power below 80%: at n=11, the observed interaction is smaller than the minimum detectable effect.
 
 ### mean_response_time   (n=11 readers, interaction df=9)
   Per-condition (manuscript sanity check): without R2=0.067 p=0.443 | with R2=0.072 p=0.425
@@ -32,14 +32,14 @@ Data: data/source_data/figure_1/csv_v2/radiologist_df.csv -> compute_individual_
   Minimum detectable interaction slope at 80% power = |2.22051| per year
   Ratio |MDE| / |observed| = 5.7x
   Power to detect the OBSERVED interaction = 7.9%
-  -> UNDERPOWERED: at n=11, the observed interaction is far below the effect this design could reliably detect.
+  -> Power below 80%: at n=11, the observed interaction is smaller than the minimum detectable effect.
 
 ==============================================================================
-SUMMARY: The interaction tests are non-significant, but the design is severely
-underpowered (observed power well below 80%), so a non-significant result is
-uninformative rather than evidence against an interaction. The manuscript therefore
-narrows to the descriptive per-condition statement and does not claim 'strengthening'.
+SUMMARY: The interaction tests are non-significant, and the observed interactions
+are smaller than the minimum detectable effect at n=11, so this is an exploratory
+test that does not discriminate between the presence and absence of an interaction.
+The manuscript accordingly reports the per-condition associations descriptively.
 ==============================================================================
 ----
-Run ended:   2026-09-05T20:19:33Z
-Wall clock:  0.7s
+Run ended:   2026-09-06T09:25:30Z
+Wall clock:  0.6s

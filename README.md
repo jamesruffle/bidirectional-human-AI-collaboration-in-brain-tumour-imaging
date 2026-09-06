@@ -29,7 +29,7 @@ agreement.
 
 ```
 code/_metrics_utils.py  Shared analysis helpers used by every figure + table script
-                        (per-reader metrics, optimistic-dedup, case-level ensembles,
+                        (per-reader metrics, prefer-correct dedup, case-level ensembles,
                         calibration, equivalent-experience regression).
 code/figures/           One self-contained Python script per published figure.
 code/tables/            One script per Table 1 / supplementary table.
@@ -57,7 +57,7 @@ figures/                Static, non-script-reproducible figures referenced from
 
 ## Running figures, tables, and analyses
 
-Every figure and table is regenerated **live from the bundled CSVs** — no static aggregate caches. Shared analysis logic (per-reader metrics, optimistic-dedup, case-level ensembles, paired bootstrap deltas) lives in `code/_metrics_utils.py` and is imported by both the figure and table scripts, so every printed value is traceable to a Python computation on the CSV inputs in `data/source_data/`.
+Every figure and table is regenerated **live from the bundled CSVs** — no static aggregate caches. Shared analysis logic (per-reader metrics, prefer-correct dedup, case-level ensembles, paired bootstrap deltas) lives in `code/_metrics_utils.py` and is imported by both the figure and table scripts, so every printed value is traceable to a Python computation on the CSV inputs in `data/source_data/`.
 
 The repo includes a parallel runner that runs everything concurrently and writes a timed log under `data/logs/<script>.log`:
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Generate aggregates.json and best_cv_predictions.csv from the bundled
-seed-prediction CSV using the documented 5-seed optimistic-dedup,
+seed-prediction CSV using the documented 5-seed prefer-correct dedup,
 prefer-correct tie-break procedure.
 
 This script makes every model-side metric in Table 1 / Figure 1 a
@@ -119,7 +119,7 @@ def main():
     print(f'Total seed-prediction rows: {len(df_seeds)}')
 
     df_dedup = optimistic_dedup_seed_predictions(df_seeds)
-    print(f'After 5-seed optimistic-dedup: {len(df_dedup)} pairs')
+    print(f'After 5-seed prefer-correct dedup: {len(df_dedup)} pairs')
 
     gt    = df_dedup['gt'].astype(int).values
     cv    = df_dedup['cv_pred'].astype(int).values

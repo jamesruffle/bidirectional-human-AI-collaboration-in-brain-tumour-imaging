@@ -2,7 +2,7 @@
 
 Companion to `code/figures/`. Per Nature Communications source-data requirements, every numerical table in the manuscript and supplementary material has a corresponding standalone Python script in this directory. Each script is self-contained, reads only from CSVs under `data/source_data/`, and writes a CSV under `data/source_data/<table_dir>/csv/` plus a captured log under `data/logs/`.
 
-All shared analysis logic — per-reader metrics, optimistic-dedup, case-level ensembles, paired bootstrap deltas — lives in `code/_metrics_utils.py`. Every table cell value derives from the same primary CSVs (`radiologist_df.csv`, `best_cv_predictions.csv`, `seed_predictions.csv`, `sex_metadata.csv`) by the same code path used by the figure scripts.
+All shared analysis logic — per-reader metrics, prefer-correct dedup, case-level ensembles, paired bootstrap deltas — lives in `code/_metrics_utils.py`. Every table cell value derives from the same primary CSVs (`radiologist_df.csv`, `best_cv_predictions.csv`, `seed_predictions.csv`, `sex_metadata.csv`) by the same code path used by the figure scripts.
 
 ## Table inventory
 
