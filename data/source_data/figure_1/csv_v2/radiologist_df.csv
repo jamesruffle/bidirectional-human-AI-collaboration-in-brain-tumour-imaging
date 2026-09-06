@@ -207,7 +207,7 @@ Radiologist #10,NHNN_1736,1,8,7,40.872522115707397,1,False,7,Presurgical glioma,
 Radiologist #10,BraTS-MET-00548-000,0,8,10,61.497947931289673,1,False,7,Metastases,1,BraTS-MET,USA,0,1,0,1,Large (>5cm³),Enhancing
 Radiologist #10,BraTS-PED-00251-000,1,9,7,29.368295431137085,0,False,7,Paediatric presurgical tumour,0,BraTS-PED,USA,0,1,0,0,Unknown,Non-enhancing
 Radiologist #10,BraTS-GLI-02227-100,0,6,8,68.703555107116699,0,False,7,Postoperative glioma resection,1,BraTS-GLI,USA,1,0,1,0,Unknown,Enhancing
-Radiologist #10,BraTS-SSA-00198-000,1,10,9,21.294864177703857,1,False,7,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #10,BraTS-SSA-00198-000,1,10,9,21.294864177703857,1,False,7,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #10,BraTS2021_01706,1,9,8,28.869794845581055,1,False,7,Presurgical glioma,1,BraTS2021,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #10,UCSF-PDGM-0019,1,10,9,22.585803270339966,1,False,7,Presurgical glioma,1,UCSF-PDGM,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #10,NHNN_1165_scan1,1,7,7,46.435988664627075,1,False,7,Presurgical glioma,1,NHNN,UK,1,1,0,1,Large (>5cm³),Enhancing
@@ -269,7 +269,7 @@ Radiologist #10,UCSF-PDGM-0449,1,10,9,27.417901277542114,0,False,7,Presurgical g
 Radiologist #10,NHNN_1935_scan1,0,8,6,66.030023813247681,0,False,7,Presurgical glioma,1,NHNN,UK,1,0,1,0,Unknown,Enhancing
 Radiologist #10,BraTS-GLI-02818-101,0,5,6,98.766782999038696,0,False,7,Postoperative glioma resection,0,BraTS-GLI,USA,1,1,0,0,Unknown,Non-enhancing
 Radiologist #10,BraTS-MEN-00406-000,1,10,8,31.012325286865234,1,False,7,Meningioma,1,BraTS-MEN,USA,1,1,0,1,Large (>5cm³),Enhancing
-Radiologist #10,BraTS-SSA-00123-000,1,10,8,43.010403633117676,1,False,7,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #10,BraTS-SSA-00123-000,1,10,8,43.010403633117676,1,False,7,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #10,NHNN_805,0,8,7,54.175655841827393,0,False,7,Presurgical glioma,0,NHNN,UK,1,1,0,0,Unknown,Non-enhancing
 Radiologist #10,NHNN_813,1,2,6,154.26566243171692,1,False,7,Presurgical glioma,1,NHNN,UK,1,1,1,0,Large (>5cm³),Enhancing
 Radiologist #10,NHNN_705,0,4,7,73.550530910491943,1,False,7,Presurgical glioma,1,NHNN,UK,0,1,1,0,Large (>5cm³),Enhancing
@@ -307,7 +307,7 @@ Radiologist #10,NHNN_1736,1,7,6,55.306949138641357,1,True,7,Presurgical glioma,1
 Radiologist #10,BraTS-MET-00548-000,0,7,6,30.38385272026062,1,True,7,Metastases,1,BraTS-MET,USA,0,1,0,1,Large (>5cm³),Enhancing
 Radiologist #10,BraTS-PED-00251-000,1,8,7,28.33637809753418,0,True,7,Paediatric presurgical tumour,0,BraTS-PED,USA,0,1,0,0,Unknown,Non-enhancing
 Radiologist #10,BraTS-GLI-02227-100,0,8,7,75.62968635559082,0,True,7,Postoperative glioma resection,1,BraTS-GLI,USA,1,0,1,0,Unknown,Enhancing
-Radiologist #10,BraTS-SSA-00198-000,1,10,5,25.340535879135132,1,True,7,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #10,BraTS-SSA-00198-000,1,10,5,25.340535879135132,1,True,7,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #10,BraTS2021_01706,1,10,6,28.15639853477478,1,True,7,Presurgical glioma,1,BraTS2021,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #10,UCSF-PDGM-0019,1,8,7,26.5966637134552,1,True,7,Presurgical glioma,1,UCSF-PDGM,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #10,NHNN_1165_scan1,1,8,7,30.383314371109009,1,True,7,Presurgical glioma,1,NHNN,UK,1,1,0,1,Large (>5cm³),Enhancing
@@ -369,7 +369,7 @@ Radiologist #10,UCSF-PDGM-0449,1,9,8,27.368468523025513,0,True,7,Presurgical gli
 Radiologist #10,NHNN_1935_scan1,0,6,3,36.389265298843384,0,True,7,Presurgical glioma,1,NHNN,UK,1,0,1,0,Unknown,Enhancing
 Radiologist #10,BraTS-GLI-02818-101,0,7,7,40.955576181411743,0,True,7,Postoperative glioma resection,0,BraTS-GLI,USA,1,1,0,0,Unknown,Non-enhancing
 Radiologist #10,BraTS-MEN-00406-000,1,10,6,34.10641622543335,1,True,7,Meningioma,1,BraTS-MEN,USA,1,1,0,1,Large (>5cm³),Enhancing
-Radiologist #10,BraTS-SSA-00123-000,1,9,6,31.233879089355469,1,True,7,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #10,BraTS-SSA-00123-000,1,9,6,31.233879089355469,1,True,7,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #10,NHNN_805,1,5,4,143.22616457939148,0,True,7,Presurgical glioma,0,NHNN,UK,0,1,0,0,Unknown,Non-enhancing
 Radiologist #10,NHNN_813,1,8,6,19.759449005126953,1,True,7,Presurgical glioma,1,NHNN,UK,1,1,1,0,Large (>5cm³),Enhancing
 Radiologist #10,NHNN_705,0,6,5,41.962431907653809,1,True,7,Presurgical glioma,1,NHNN,UK,0,1,1,0,Large (>5cm³),Enhancing
@@ -423,7 +423,7 @@ Radiologist #2,NHNN_256_scan2,0,7,8,37.017060041427612,0,False,7,Presurgical gli
 Radiologist #2,BraTS2021_01435,1,7,6,14.83602499961853,0,False,7,Presurgical glioma,1,BraTS2021,USA,0,0,1,0,Unknown,Enhancing
 Radiologist #2,NHNN_580,0,2,3,21.098810195922852,1,False,7,Presurgical glioma,1,NHNN,UK,0,1,0,1,Large (>5cm³),Enhancing
 Radiologist #2,NHNN_330,0,7,7,28.54882550239563,1,False,7,Presurgical glioma,0,NHNN,UK,0,0,1,0,Large (>5cm³),Non-enhancing
-Radiologist #2,BraTS-SSA-00096-000,1,7,9,12.366656064987183,1,False,7,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #2,BraTS-SSA-00096-000,1,7,9,12.366656064987183,1,False,7,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #2,BraTS-GLI-02943-100,1,6,8,24.940177440643311,0,False,7,Postoperative glioma resection,0,BraTS-GLI,USA,0,1,0,0,Unknown,Non-enhancing
 Radiologist #2,BraTS-MEN-00299-000,1,7,8,12.325310945510864,1,False,7,Meningioma,1,BraTS-MEN,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #2,NHNN_481,0,6,7,23.516476392745972,1,False,7,Presurgical glioma,0,NHNN,UK,0,0,1,0,Large (>5cm³),Non-enhancing
@@ -441,7 +441,7 @@ Radiologist #2,NHNN_1096,0,4,5,46.480849504470825,0,False,7,Presurgical glioma,1
 Radiologist #2,BraTS-PED-00150-000,1,8,5,28.178800821304321,0,False,7,Paediatric presurgical tumour,1,BraTS-PED,USA,0,0,1,0,Unknown,Enhancing
 Radiologist #2,BraTS-MEN-00737-000,1,6,9,47.505658864974976,1,False,7,Meningioma,1,BraTS-MEN,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #2,BraTS-PED-00249-000,1,9,7,18.265608072280884,0,False,7,Paediatric presurgical tumour,0,BraTS-PED,USA,0,1,0,0,Unknown,Non-enhancing
-Radiologist #2,BraTS-SSA-00206-000,1,6,6,15.711153030395508,1,False,7,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #2,BraTS-SSA-00206-000,1,6,6,15.711153030395508,1,False,7,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #2,NHNN_9,0,5,7,38.421968698501587,0,False,7,Presurgical glioma,1,NHNN,UK,1,0,1,0,Unknown,Enhancing
 Radiologist #2,BraTS-MET-00626-000,1,9,9,13.772299528121948,1,False,7,Metastases,1,BraTS-MET,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #2,BraTS-GLI-02278-100,1,6,10,13.929460287094116,1,False,7,Postoperative glioma resection,1,BraTS-GLI,USA,1,1,0,1,Large (>5cm³),Enhancing
@@ -523,7 +523,7 @@ Radiologist #2,NHNN_256_scan2,0,8,6,23.722452640533447,0,True,7,Presurgical glio
 Radiologist #2,BraTS2021_01435,1,8,4,87.917127132415771,0,True,7,Presurgical glioma,1,BraTS2021,USA,0,0,1,0,Unknown,Enhancing
 Radiologist #2,NHNN_580,1,3,3,171.29088973999023,1,True,7,Presurgical glioma,1,NHNN,UK,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #2,NHNN_330,0,9,7,74.564069986343384,1,True,7,Presurgical glioma,0,NHNN,UK,0,0,1,0,Large (>5cm³),Non-enhancing
-Radiologist #2,BraTS-SSA-00096-000,1,9,8,14.569628715515137,1,True,7,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #2,BraTS-SSA-00096-000,1,9,8,14.569628715515137,1,True,7,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #2,BraTS-GLI-02943-100,1,5,10,48.455352067947388,0,True,7,Postoperative glioma resection,0,BraTS-GLI,USA,0,1,0,0,Unknown,Non-enhancing
 Radiologist #2,BraTS-MEN-00299-000,1,9,6,20.872045516967773,1,True,7,Meningioma,1,BraTS-MEN,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #2,NHNN_481,0,6,7,30.949885845184326,1,True,7,Presurgical glioma,0,NHNN,UK,0,0,1,0,Large (>5cm³),Non-enhancing
@@ -541,7 +541,7 @@ Radiologist #2,NHNN_1096,0,6,7,31.83332085609436,0,True,7,Presurgical glioma,1,N
 Radiologist #2,BraTS-PED-00150-000,1,7,5,26.24533224105835,0,True,7,Paediatric presurgical tumour,1,BraTS-PED,USA,0,0,1,0,Unknown,Enhancing
 Radiologist #2,BraTS-MEN-00737-000,1,8,6,48.464126586914062,1,True,7,Meningioma,1,BraTS-MEN,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #2,BraTS-PED-00249-000,0,3,6,44.538067102432251,0,True,7,Paediatric presurgical tumour,0,BraTS-PED,USA,1,1,0,0,Unknown,Non-enhancing
-Radiologist #2,BraTS-SSA-00206-000,1,8,6,37.262158632278442,1,True,7,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #2,BraTS-SSA-00206-000,1,8,6,37.262158632278442,1,True,7,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #2,NHNN_9,0,7,7,26.653821706771851,0,True,7,Presurgical glioma,1,NHNN,UK,1,0,1,0,Unknown,Enhancing
 Radiologist #2,BraTS-MET-00626-000,1,7,6,17.951826810836792,1,True,7,Metastases,1,BraTS-MET,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #2,BraTS-GLI-02278-100,1,9,9,29.002437591552734,1,True,7,Postoperative glioma resection,1,BraTS-GLI,USA,1,1,0,1,Large (>5cm³),Enhancing
@@ -602,7 +602,7 @@ Radiologist #2,NHNN_871,0,5,5,44.803916215896606,1,True,7,Presurgical glioma,0,N
 Radiologist #3,NHNN_158_scan3,0,7,6,164.92834067344666,0,False,13,Presurgical glioma,0,NHNN,UK,1,1,0,0,Unknown,Non-enhancing
 Radiologist #3,BraTS-GLI-00472-101,0,7,8,35.046805620193481,0,False,13,Postoperative glioma resection,0,BraTS-GLI,USA,1,1,0,0,Unknown,Non-enhancing
 Radiologist #3,NHNN_135,0,4,3,47.63434362411499,1,False,13,Presurgical glioma,1,NHNN,UK,0,1,0,1,Large (>5cm³),Enhancing
-Radiologist #3,BraTS-SSA-00192-000,1,10,7,28.456592798233032,1,False,13,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #3,BraTS-SSA-00192-000,1,10,7,28.456592798233032,1,False,13,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #3,BraTS2021_01637,0,9,8,23.066012620925903,0,False,13,Presurgical glioma,0,BraTS2021,USA,1,1,0,0,Unknown,Non-enhancing
 Radiologist #3,BraTS-GLI-02130-100,1,6,7,19.176742076873779,0,False,13,Postoperative glioma resection,0,BraTS-GLI,USA,0,1,0,0,Unknown,Non-enhancing
 Radiologist #3,NHNN_202_scan1,0,7,4,26.495170831680298,0,False,13,Presurgical glioma,1,NHNN,UK,1,0,1,0,Unknown,Enhancing
@@ -612,7 +612,7 @@ Radiologist #3,BraTS-GLI-00511-100,0,8,7,17.555666208267212,0,False,13,Postopera
 Radiologist #3,NHNN_596,0,6,3,90.166599988937378,1,False,13,Presurgical glioma,1,NHNN,UK,0,1,1,0,Large (>5cm³),Enhancing
 Radiologist #3,NHNN_1793,0,7,5,22.494199275970459,0,False,13,Presurgical glioma,0,NHNN,UK,1,1,0,0,Unknown,Non-enhancing
 Radiologist #3,BraTS-GLI-02175-101,1,5,6,23.105342388153076,1,False,13,Postoperative glioma resection,1,BraTS-GLI,USA,1,1,0,1,Large (>5cm³),Enhancing
-Radiologist #3,BraTS-SSA-00049-000,1,7,6,22.712682962417603,1,False,13,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #3,BraTS-SSA-00049-000,1,7,6,22.712682962417603,1,False,13,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #3,NHNN_1743_scan2,1,4,4,37.70224404335022,0,False,13,Presurgical glioma,1,NHNN,UK,0,0,1,0,Unknown,Enhancing
 Radiologist #3,BraTS-GLI-02862-101,0,8,8,25.63212776184082,0,False,13,Postoperative glioma resection,0,BraTS-GLI,USA,1,1,0,0,Unknown,Non-enhancing
 Radiologist #3,EGD-0397,0,6,6,24.683889150619507,1,False,13,Presurgical glioma,1,EGD,Netherlands,0,1,0,1,Large (>5cm³),Enhancing
@@ -702,7 +702,7 @@ Radiologist #3,BraTS-PED-00338-000,1,8,6,9.768883228302002,0,False,13,Paediatric
 Radiologist #3,NHNN_158_scan3,0,7,6,47.938578605651855,0,True,13,Presurgical glioma,0,NHNN,UK,1,1,0,0,Unknown,Non-enhancing
 Radiologist #3,BraTS-GLI-00472-101,0,7,8,18.411290168762207,0,True,13,Postoperative glioma resection,0,BraTS-GLI,USA,1,1,0,0,Unknown,Non-enhancing
 Radiologist #3,NHNN_135,0,5,5,39.20385217666626,1,True,13,Presurgical glioma,1,NHNN,UK,0,1,0,1,Large (>5cm³),Enhancing
-Radiologist #3,BraTS-SSA-00192-000,1,8,6,10.359410047531128,1,True,13,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #3,BraTS-SSA-00192-000,1,8,6,10.359410047531128,1,True,13,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #3,BraTS2021_01637,0,8,7,15.104392051696777,0,True,13,Presurgical glioma,0,BraTS2021,USA,1,1,0,0,Unknown,Non-enhancing
 Radiologist #3,BraTS-GLI-02130-100,1,7,7,10.286570310592651,0,True,13,Postoperative glioma resection,0,BraTS-GLI,USA,0,1,0,0,Unknown,Non-enhancing
 Radiologist #3,NHNN_202_scan1,0,7,5,23.513595819473267,0,True,13,Presurgical glioma,1,NHNN,UK,1,0,1,0,Unknown,Enhancing
@@ -712,7 +712,7 @@ Radiologist #3,BraTS-GLI-00511-100,0,6,7,13.570588350296021,0,True,13,Postoperat
 Radiologist #3,NHNN_596,0,6,5,23.479950666427612,1,True,13,Presurgical glioma,1,NHNN,UK,0,1,1,0,Large (>5cm³),Enhancing
 Radiologist #3,NHNN_1793,1,6,5,19.860742807388306,0,True,13,Presurgical glioma,0,NHNN,UK,0,1,0,0,Unknown,Non-enhancing
 Radiologist #3,BraTS-GLI-02175-101,1,8,7,12.037567615509033,1,True,13,Postoperative glioma resection,1,BraTS-GLI,USA,1,1,0,1,Large (>5cm³),Enhancing
-Radiologist #3,BraTS-SSA-00049-000,1,7,5,12.251319885253906,1,True,13,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #3,BraTS-SSA-00049-000,1,7,5,12.251319885253906,1,True,13,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #3,NHNN_1743_scan2,1,7,5,12.024821996688843,0,True,13,Presurgical glioma,1,NHNN,UK,0,0,1,0,Unknown,Enhancing
 Radiologist #3,BraTS-GLI-02862-101,0,8,8,10.300740957260132,0,True,13,Postoperative glioma resection,0,BraTS-GLI,USA,1,1,0,0,Unknown,Non-enhancing
 Radiologist #3,EGD-0397,1,7,4,11.537978172302246,1,True,13,Presurgical glioma,1,EGD,Netherlands,1,1,0,1,Large (>5cm³),Enhancing
@@ -809,7 +809,7 @@ Radiologist #5,BraTS2021_00814,1,10,8,13.989383220672607,1,False,11,Presurgical 
 Radiologist #5,UPENN-GBM-00304_11,1,9,8,25.184992551803589,1,False,11,Presurgical glioma,1,UPENN-GBM,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #5,BraTS-GLI-02904-101,0,9,9,15.144498825073242,0,False,11,Postoperative glioma resection,0,BraTS-GLI,USA,1,1,0,0,Unknown,Non-enhancing
 Radiologist #5,NHNN_909,0,7,8,54.632365703582764,0,False,11,Presurgical glioma,1,NHNN,UK,1,0,1,0,Unknown,Enhancing
-Radiologist #5,BraTS-SSA-00068-000,1,7,8,21.641719341278076,1,False,11,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #5,BraTS-SSA-00068-000,1,7,8,21.641719341278076,1,False,11,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #5,NHNN_1800,0,5,7,98.094485282897949,1,False,11,Presurgical glioma,1,NHNN,UK,0,1,0,1,Large (>5cm³),Enhancing
 Radiologist #5,BraTS2021_00480,1,9,8,13.946830034255981,1,False,11,Presurgical glioma,1,BraTS2021,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #5,BraTS-GLI-00549-100,0,9,7,14.015604019165039,0,False,11,Postoperative glioma resection,0,BraTS-GLI,USA,1,1,0,0,Unknown,Non-enhancing
@@ -880,7 +880,7 @@ Radiologist #5,NHNN_1034,0,4,8,25.937793970108032,1,False,11,Presurgical glioma,
 Radiologist #5,BraTS-GLI-02837-101,0,6,6,34.28834056854248,0,False,11,Postoperative glioma resection,1,BraTS-GLI,USA,1,0,1,0,Unknown,Enhancing
 Radiologist #5,BraTS-GLI-03010-101,0,8,7,11.945864915847778,0,False,11,Postoperative glioma resection,0,BraTS-GLI,USA,1,1,0,0,Unknown,Non-enhancing
 Radiologist #5,NHNN_683,1,3,7,40.56847882270813,0,False,11,Presurgical glioma,1,NHNN,UK,0,0,1,0,Unknown,Enhancing
-Radiologist #5,BraTS-SSA-00208-000,0,4,7,33.899786710739136,1,False,11,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,0,1,0,1,Large (>5cm³),Enhancing
+Radiologist #5,BraTS-SSA-00208-000,0,4,7,33.899786710739136,1,False,11,Presurgical glioma,1,BraTS-SSA,Nigeria,0,1,0,1,Large (>5cm³),Enhancing
 Radiologist #5,NHNN_1925,0,7,7,17.931630611419678,0,False,11,Presurgical glioma,1,NHNN,UK,1,0,1,0,Unknown,Enhancing
 Radiologist #5,BraTS-PED-00055-000,1,7,7,13.163369655609131,1,False,11,Paediatric presurgical tumour,1,BraTS-PED,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #5,NHNN_158_scan2,0,7,7,96.040024518966675,0,False,11,Presurgical glioma,0,NHNN,UK,1,1,0,0,Unknown,Non-enhancing
@@ -909,7 +909,7 @@ Radiologist #5,BraTS2021_00814,1,9,7,11.344437599182129,1,True,11,Presurgical gl
 Radiologist #5,UPENN-GBM-00304_11,1,10,7,14.184875965118408,1,True,11,Presurgical glioma,1,UPENN-GBM,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #5,BraTS-GLI-02904-101,0,9,8,10.411568880081177,0,True,11,Postoperative glioma resection,0,BraTS-GLI,USA,1,1,0,0,Unknown,Non-enhancing
 Radiologist #5,NHNN_909,0,3,6,16.454282283782959,0,True,11,Presurgical glioma,1,NHNN,UK,1,0,1,0,Unknown,Enhancing
-Radiologist #5,BraTS-SSA-00068-000,1,7,6,12.266736745834351,1,True,11,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #5,BraTS-SSA-00068-000,1,7,6,12.266736745834351,1,True,11,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #5,NHNN_1800,0,3,7,18.742817640304565,1,True,11,Presurgical glioma,1,NHNN,UK,0,1,0,1,Large (>5cm³),Enhancing
 Radiologist #5,BraTS2021_00480,1,10,7,23.130077600479126,1,True,11,Presurgical glioma,1,BraTS2021,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #5,BraTS-GLI-00549-100,0,10,6,15.268128395080566,0,True,11,Postoperative glioma resection,0,BraTS-GLI,USA,1,1,0,0,Unknown,Non-enhancing
@@ -980,7 +980,7 @@ Radiologist #5,NHNN_1034,1,8,6,17.847303867340088,1,True,11,Presurgical glioma,1
 Radiologist #5,BraTS-GLI-02837-101,1,3,6,29.338207244873047,0,True,11,Postoperative glioma resection,1,BraTS-GLI,USA,0,0,1,0,Unknown,Enhancing
 Radiologist #5,BraTS-GLI-03010-101,0,9,8,14.882017850875854,0,True,11,Postoperative glioma resection,0,BraTS-GLI,USA,1,1,0,0,Unknown,Non-enhancing
 Radiologist #5,NHNN_683,1,8,5,19.232518434524536,0,True,11,Presurgical glioma,1,NHNN,UK,0,0,1,0,Unknown,Enhancing
-Radiologist #5,BraTS-SSA-00208-000,1,8,6,15.691695928573608,1,True,11,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #5,BraTS-SSA-00208-000,1,8,6,15.691695928573608,1,True,11,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #5,NHNN_1925,0,9,6,13.745533227920532,0,True,11,Presurgical glioma,1,NHNN,UK,1,0,1,0,Unknown,Enhancing
 Radiologist #5,BraTS-PED-00055-000,1,8,6,11.576517343521118,1,True,11,Paediatric presurgical tumour,1,BraTS-PED,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #5,NHNN_158_scan2,0,9,7,11.201578617095947,0,True,11,Presurgical glioma,0,NHNN,UK,1,1,0,0,Unknown,Non-enhancing
@@ -1208,7 +1208,7 @@ Radiologist #6,NHNN_146_scan3,0,6,3,75.44212007522583,0,False,8,Presurgical glio
 Radiologist #6,BraTS-GLI-02943-100,1,7,8,46.983895540237427,0,False,8,Postoperative glioma resection,0,BraTS-GLI,USA,0,1,0,0,Unknown,Non-enhancing
 Radiologist #6,NHNN_626,0,7,3,57.683855295181274,1,False,8,Presurgical glioma,1,NHNN,UK,0,1,1,0,Large (>5cm³),Enhancing
 Radiologist #6,NHNN_453,1,6,6,76.533804655075073,1,False,8,Presurgical glioma,0,NHNN,UK,1,0,1,0,Large (>5cm³),Non-enhancing
-Radiologist #6,BraTS-SSA-00097-000,1,10,7,32.87376856803894,1,False,8,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,1,0,Large (>5cm³),Enhancing
+Radiologist #6,BraTS-SSA-00097-000,1,10,7,32.87376856803894,1,False,8,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,1,0,Large (>5cm³),Enhancing
 Radiologist #6,EGD-0221,1,2,3,71.762937784194946,0,False,8,Presurgical glioma,0,EGD,Netherlands,0,1,0,0,Unknown,Non-enhancing
 Radiologist #6,NHNN_290,0,5,6,30.449205160140991,0,False,8,Presurgical glioma,0,NHNN,UK,1,1,0,0,Unknown,Non-enhancing
 Radiologist #6,BraTS-GLI-02957-101,0,6,9,36.083932876586914,0,False,8,Postoperative glioma resection,0,BraTS-GLI,USA,1,1,0,0,Unknown,Non-enhancing
@@ -1308,7 +1308,7 @@ Radiologist #6,NHNN_146_scan3,0,5,7,31.237825870513916,0,True,8,Presurgical glio
 Radiologist #6,BraTS-GLI-02943-100,1,7,9,14.937316417694092,0,True,8,Postoperative glioma resection,0,BraTS-GLI,USA,0,1,0,0,Unknown,Non-enhancing
 Radiologist #6,NHNN_626,0,6,7,22.178754329681396,1,True,8,Presurgical glioma,1,NHNN,UK,0,1,1,0,Large (>5cm³),Enhancing
 Radiologist #6,NHNN_453,1,6,5,26.576360702514648,1,True,8,Presurgical glioma,0,NHNN,UK,1,0,1,0,Large (>5cm³),Non-enhancing
-Radiologist #6,BraTS-SSA-00097-000,1,10,9,20.503585338592529,1,True,8,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,1,0,Large (>5cm³),Enhancing
+Radiologist #6,BraTS-SSA-00097-000,1,10,9,20.503585338592529,1,True,8,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,1,0,Large (>5cm³),Enhancing
 Radiologist #6,EGD-0221,0,6,5,20.837951421737671,0,True,8,Presurgical glioma,0,EGD,Netherlands,1,1,0,0,Unknown,Non-enhancing
 Radiologist #6,NHNN_290,0,6,9,19.93497371673584,0,True,8,Presurgical glioma,0,NHNN,UK,1,1,0,0,Unknown,Non-enhancing
 Radiologist #6,BraTS-GLI-02957-101,0,8,10,24.35903525352478,0,True,8,Postoperative glioma resection,0,BraTS-GLI,USA,1,1,0,0,Unknown,Non-enhancing
@@ -1444,7 +1444,7 @@ Radiologist #11,BraTS-GLI-02247-100,0,7,5,30.278995513916016,1,False,5,Postopera
 Radiologist #11,NHNN_256_scan2,0,7,5,66.866286277770996,0,False,5,Presurgical glioma,0,NHNN,UK,1,1,0,0,Unknown,Non-enhancing
 Radiologist #11,BraTS-GLI-02063-106,0,7,4,37.235221385955811,1,False,5,Postoperative glioma resection,1,BraTS-GLI,USA,0,1,1,0,Large (>5cm³),Enhancing
 Radiologist #11,BraTS-GLI-02943-100,1,6,5,65.325484752655029,0,False,5,Postoperative glioma resection,0,BraTS-GLI,USA,0,1,0,0,Unknown,Non-enhancing
-Radiologist #11,BraTS-SSA-00117-000,0,6,6,39.460654020309448,1,False,5,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,0,1,1,0,Large (>5cm³),Enhancing
+Radiologist #11,BraTS-SSA-00117-000,0,6,6,39.460654020309448,1,False,5,Presurgical glioma,1,BraTS-SSA,Nigeria,0,1,1,0,Large (>5cm³),Enhancing
 Radiologist #11,NHNN_1647,1,5,4,43.629757165908813,1,False,5,Presurgical glioma,0,NHNN,UK,1,0,1,0,Large (>5cm³),Non-enhancing
 Radiologist #11,NHNN_181_scan1,0,7,4,14.923799753189087,1,False,5,Presurgical glioma,1,NHNN,UK,0,1,1,0,Medium (1-5cm³),Enhancing
 Radiologist #11,EGD-0096,1,10,6,12.868196249008179,1,False,5,Presurgical glioma,1,EGD,Netherlands,1,1,0,1,Large (>5cm³),Enhancing
@@ -1544,7 +1544,7 @@ Radiologist #11,BraTS-GLI-02247-100,0,6,4,14.393097877502441,1,True,5,Postoperat
 Radiologist #11,NHNN_256_scan2,0,4,4,25.590176820755005,0,True,5,Presurgical glioma,0,NHNN,UK,1,1,0,0,Unknown,Non-enhancing
 Radiologist #11,BraTS-GLI-02063-106,0,5,3,22.921823263168335,1,True,5,Postoperative glioma resection,1,BraTS-GLI,USA,0,1,1,0,Large (>5cm³),Enhancing
 Radiologist #11,BraTS-GLI-02943-100,1,6,5,23.179038047790527,0,True,5,Postoperative glioma resection,0,BraTS-GLI,USA,0,1,0,0,Unknown,Non-enhancing
-Radiologist #11,BraTS-SSA-00117-000,1,7,4,15.641708374023438,1,True,5,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,1,0,Large (>5cm³),Enhancing
+Radiologist #11,BraTS-SSA-00117-000,1,7,4,15.641708374023438,1,True,5,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,1,0,Large (>5cm³),Enhancing
 Radiologist #11,NHNN_1647,0,5,3,24.55110502243042,1,True,5,Presurgical glioma,0,NHNN,UK,0,0,1,0,Large (>5cm³),Non-enhancing
 Radiologist #11,NHNN_181_scan1,0,5,4,20.242633104324341,1,True,5,Presurgical glioma,1,NHNN,UK,0,1,1,0,Medium (1-5cm³),Enhancing
 Radiologist #11,EGD-0096,1,10,5,21.629711389541626,1,True,5,Presurgical glioma,1,EGD,Netherlands,1,1,0,1,Large (>5cm³),Enhancing
@@ -1663,7 +1663,7 @@ Radiologist #7,NHNN_328_scan2,0,8,8,63.141931056976318,0,False,23,Presurgical gl
 Radiologist #7,BraTS-MET-00210-000,0,8,6,172.69147562980652,1,False,23,Metastases,1,BraTS-MET,USA,0,1,1,0,Large (>5cm³),Enhancing
 Radiologist #7,NHNN_256_scan2,0,8,8,106.6562135219574,0,False,23,Presurgical glioma,0,NHNN,UK,1,1,0,0,Unknown,Non-enhancing
 Radiologist #7,NHNN_504,1,5,6,139.67175626754761,0,False,23,Presurgical glioma,0,NHNN,UK,0,1,0,0,Unknown,Non-enhancing
-Radiologist #7,BraTS-SSA-00055-000,1,10,8,20.126813888549805,1,False,23,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #7,BraTS-SSA-00055-000,1,10,8,20.126813888549805,1,False,23,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #7,BraTS2021_00392,1,10,8,28.859889984130859,1,False,23,Presurgical glioma,1,BraTS2021,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #7,NHNN_186,1,8,6,144.6619176864624,1,False,23,Presurgical glioma,0,NHNN,UK,1,0,1,0,Large (>5cm³),Non-enhancing
 Radiologist #7,UCSF-PDGM-0446,0,4,6,155.88140106201172,0,False,23,Presurgical glioma,0,UCSF-PDGM,USA,1,1,0,0,Unknown,Non-enhancing
@@ -1763,7 +1763,7 @@ Radiologist #7,NHNN_328_scan2,0,8,7,28.540174722671509,0,True,23,Presurgical gli
 Radiologist #7,BraTS-MET-00210-000,0,5,6,40.885380029678345,1,True,23,Metastases,1,BraTS-MET,USA,0,1,1,0,Large (>5cm³),Enhancing
 Radiologist #7,NHNN_256_scan2,0,8,8,26.653396844863892,0,True,23,Presurgical glioma,0,NHNN,UK,1,1,0,0,Unknown,Non-enhancing
 Radiologist #7,NHNN_504,1,5,6,146.26994061470032,0,True,23,Presurgical glioma,0,NHNN,UK,0,1,0,0,Unknown,Non-enhancing
-Radiologist #7,BraTS-SSA-00055-000,1,10,10,16.204034090042114,1,True,23,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #7,BraTS-SSA-00055-000,1,10,10,16.204034090042114,1,True,23,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #7,BraTS2021_00392,1,10,7,19.208841562271118,1,True,23,Presurgical glioma,1,BraTS2021,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #7,NHNN_186,0,9,8,30.811665534973145,1,True,23,Presurgical glioma,0,NHNN,UK,0,0,1,0,Large (>5cm³),Non-enhancing
 Radiologist #7,UCSF-PDGM-0446,0,8,8,33.13153600692749,0,True,23,Presurgical glioma,0,UCSF-PDGM,USA,1,1,0,0,Unknown,Non-enhancing
@@ -1887,7 +1887,7 @@ Radiologist #8,NHNN_624,0,7,7,46.780501842498779,0,False,25,Presurgical glioma,0
 Radiologist #8,BraTS-GLI-02133-100,1,8,7,15.629502534866333,1,False,25,Postoperative glioma resection,1,BraTS-GLI,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #8,BraTS2021_00343,1,10,7,21.79265284538269,1,False,25,Presurgical glioma,1,BraTS2021,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #8,NHNN_514,0,9,6,28.684484481811523,0,False,25,Presurgical glioma,0,NHNN,UK,1,1,0,0,Unknown,Non-enhancing
-Radiologist #8,BraTS-SSA-00148-000,1,10,5,16.019074678421021,1,False,25,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #8,BraTS-SSA-00148-000,1,10,5,16.019074678421021,1,False,25,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #8,BraTS-MEN-00977-000,1,10,9,22.129491567611694,1,False,25,Meningioma,1,BraTS-MEN,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #8,BraTS-GLI-02638-101,0,8,5,22.87055230140686,1,False,25,Postoperative glioma resection,1,BraTS-GLI,USA,0,1,1,0,Large (>5cm³),Enhancing
 Radiologist #8,NHNN_401,1,10,5,28.839699268341064,1,False,25,Presurgical glioma,1,NHNN,UK,1,1,0,1,Large (>5cm³),Enhancing
@@ -1987,7 +1987,7 @@ Radiologist #8,NHNN_624,0,10,6,12.681313753128052,0,True,25,Presurgical glioma,0
 Radiologist #8,BraTS-GLI-02133-100,1,10,8,15.432212829589844,1,True,25,Postoperative glioma resection,1,BraTS-GLI,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #8,BraTS2021_00343,1,10,6,14.870402097702026,1,True,25,Presurgical glioma,1,BraTS2021,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #8,NHNN_514,0,10,7,20.217278003692627,0,True,25,Presurgical glioma,0,NHNN,UK,1,1,0,0,Unknown,Non-enhancing
-Radiologist #8,BraTS-SSA-00148-000,1,10,7,17.245002031326294,1,True,25,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #8,BraTS-SSA-00148-000,1,10,7,17.245002031326294,1,True,25,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #8,BraTS-MEN-00977-000,1,10,5,13.538978815078735,1,True,25,Meningioma,1,BraTS-MEN,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #8,BraTS-GLI-02638-101,0,8,6,18.648396015167236,1,True,25,Postoperative glioma resection,1,BraTS-GLI,USA,0,1,1,0,Large (>5cm³),Enhancing
 Radiologist #8,NHNN_401,1,10,6,24.641079187393188,1,True,25,Presurgical glioma,1,NHNN,UK,1,1,0,1,Large (>5cm³),Enhancing
@@ -2072,7 +2072,7 @@ Radiologist #4,BraTS-GLI-02904-100,0,8,9,30.334544658660889,0,False,11,Postopera
 Radiologist #4,UPENN-GBM-00398_11,1,8,9,18.465772151947021,1,False,11,Presurgical glioma,1,UPENN-GBM,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #4,BraTS2021_01227,1,9,9,16.75680947303772,1,False,11,Presurgical glioma,1,BraTS2021,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #4,NHNN_1442,1,5,8,67.63603401184082,1,False,11,Presurgical glioma,0,NHNN,UK,1,0,1,0,Large (>5cm³),Non-enhancing
-Radiologist #4,BraTS-SSA-00068-000,1,7,8,18.824246168136597,1,False,11,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #4,BraTS-SSA-00068-000,1,7,8,18.824246168136597,1,False,11,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #4,BraTS-MEN-00935-000,1,9,8,14.537311553955078,1,False,11,Meningioma,1,BraTS-MEN,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #4,BraTS2021_01435,0,3,2,20.366430044174194,0,False,11,Presurgical glioma,1,BraTS2021,USA,1,0,1,0,Unknown,Enhancing
 Radiologist #4,UPENN-GBM-00391_11,1,7,9,17.256195306777954,1,False,11,Presurgical glioma,1,UPENN-GBM,USA,1,1,0,1,Large (>5cm³),Enhancing
@@ -2096,7 +2096,7 @@ Radiologist #4,NHNN_767,1,6,8,44.785122156143188,1,False,11,Presurgical glioma,1
 Radiologist #4,NHNN_849,0,6,7,34.998841762542725,1,False,11,Presurgical glioma,1,NHNN,UK,0,1,1,0,Large (>5cm³),Enhancing
 Radiologist #4,BraTS-GLI-02130-102,0,7,8,32.042541980743408,0,False,11,Postoperative glioma resection,0,BraTS-GLI,USA,1,1,0,0,Unknown,Non-enhancing
 Radiologist #4,NHNN_134,0,8,7,35.127109289169312,0,False,11,Presurgical glioma,1,NHNN,UK,1,0,1,0,Unknown,Enhancing
-Radiologist #4,BraTS-SSA-00049-000,1,6,7,34.018192291259766,1,False,11,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #4,BraTS-SSA-00049-000,1,6,7,34.018192291259766,1,False,11,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #4,NHNN_1787,1,6,8,53.4339599609375,1,False,11,Presurgical glioma,1,NHNN,UK,1,1,1,0,Large (>5cm³),Enhancing
 Radiologist #4,NHNN_1490,0,7,6,29.42004132270813,1,False,11,Presurgical glioma,1,NHNN,UK,0,1,1,0,Large (>5cm³),Enhancing
 Radiologist #4,NHNN_1025,1,8,8,56.244577646255493,1,True,11,Presurgical glioma,1,NHNN,UK,1,1,0,1,Large (>5cm³),Enhancing
@@ -2172,7 +2172,7 @@ Radiologist #4,BraTS-GLI-02904-100,0,8,8,13.967508554458618,0,True,11,Postoperat
 Radiologist #4,UPENN-GBM-00398_11,1,10,8,14.606257200241089,1,True,11,Presurgical glioma,1,UPENN-GBM,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #4,BraTS2021_01227,1,9,8,13.915899515151978,1,True,11,Presurgical glioma,1,BraTS2021,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #4,NHNN_1442,1,5,8,44.800260782241821,1,True,11,Presurgical glioma,0,NHNN,UK,1,0,1,0,Large (>5cm³),Non-enhancing
-Radiologist #4,BraTS-SSA-00068-000,1,9,8,12.897475719451904,1,True,11,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #4,BraTS-SSA-00068-000,1,9,8,12.897475719451904,1,True,11,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #4,BraTS-MEN-00935-000,1,10,8,16.019270181655884,1,True,11,Meningioma,1,BraTS-MEN,USA,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #4,BraTS2021_01435,1,6,4,13.851880550384521,0,True,11,Presurgical glioma,1,BraTS2021,USA,0,0,1,0,Unknown,Enhancing
 Radiologist #4,UPENN-GBM-00391_11,1,9,8,11.210147619247437,1,True,11,Presurgical glioma,1,UPENN-GBM,USA,1,1,0,1,Large (>5cm³),Enhancing
@@ -2196,6 +2196,6 @@ Radiologist #4,NHNN_767,1,5,6,15.72611403465271,1,True,11,Presurgical glioma,1,N
 Radiologist #4,NHNN_849,0,7,8,16.131816387176514,1,True,11,Presurgical glioma,1,NHNN,UK,0,1,1,0,Large (>5cm³),Enhancing
 Radiologist #4,BraTS-GLI-02130-102,0,8,8,9.8700728416442871,0,True,11,Postoperative glioma resection,0,BraTS-GLI,USA,1,1,0,0,Unknown,Non-enhancing
 Radiologist #4,NHNN_134,0,8,7,14.234585046768188,0,True,11,Presurgical glioma,1,NHNN,UK,1,0,1,0,Unknown,Enhancing
-Radiologist #4,BraTS-SSA-00049-000,1,8,7,12.102952718734741,1,True,11,Presurgical glioma,1,BraTS-SSA,Sub-Saharan Africa,1,1,0,1,Large (>5cm³),Enhancing
+Radiologist #4,BraTS-SSA-00049-000,1,8,7,12.102952718734741,1,True,11,Presurgical glioma,1,BraTS-SSA,Nigeria,1,1,0,1,Large (>5cm³),Enhancing
 Radiologist #4,NHNN_1787,1,5,8,18.927327632904053,1,True,11,Presurgical glioma,1,NHNN,UK,1,1,1,0,Large (>5cm³),Enhancing
 Radiologist #4,NHNN_1490,1,6,8,23.920325994491577,1,True,11,Presurgical glioma,1,NHNN,UK,1,1,1,0,Large (>5cm³),Enhancing
