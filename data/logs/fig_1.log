@@ -1,4 +1,4 @@
-Run started: 2026-09-06T15:56:43Z
+Run started: 2026-09-06T17:16:25Z
 Script:      code/figures/fig_1.py
 Host CPUs:   128
 ----
@@ -142,8 +142,8 @@ Reporting-speed variability — raw cases/hour (paragraph 109):
   Levene's test of equal variances: W = 8.265, p = 0.0041
 
 Country composition test (564 reviewed vs 1109 full test set; para 182):
-  Reviewed (564):    Netherlands=28 (4.96%), UK=208 (36.88%), USA=316 (56.03%), Sub-Saharan Africa=12 (2.13%)
-  Full set (1109):   Netherlands=82 (7.39%), UK=397 (35.80%), USA=614 (55.37%), Sub-Saharan Africa=16 (1.44%)
+  Reviewed (564):    Netherlands=28 (4.96%), UK=208 (36.88%), USA=316 (56.03%), Nigeria=12 (2.13%)
+  Full set (1109):   Netherlands=82 (7.39%), UK=397 (35.80%), USA=614 (55.37%), Nigeria=16 (1.44%)
   χ²(3) = 13.36, p = 0.0039
 
 Per-reader calibration regression (accuracy ~ confidence in 1-10 units):
@@ -185,5 +185,5 @@ Figure_1 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figu
 Figure_1 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_1.svg
 Figure_1 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_1.pdf
 ----
-Run ended:   2026-09-06T15:57:29Z
-Wall clock:  45.7s
+Run ended:   2026-09-06T17:17:11Z
+Wall clock:  45.5s

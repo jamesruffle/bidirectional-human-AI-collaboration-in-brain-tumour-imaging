@@ -1,9 +1,9 @@
-Run started: 2026-09-06T15:56:43Z
+Run started: 2026-09-06T17:16:25Z
 Script:      code/tables/supplementary_table_3.py
 Host CPUs:   128
 ----
 ──────────────────────────────────────────────────────────────────────────────
-Supplementary Table 3: Patient-sex disaggregation of agent performance
+Supplementary Table 2: Patient-sex disaggregation of agent performance
 ──────────────────────────────────────────────────────────────────────────────
 Sex metadata available for 82 cases (Female 37, Male 45)
   Coverage of 564-case radiologist subset: 82/564 (14.5%)
@@ -21,5 +21,5 @@ Model        Model (With radiologist)     Male       45  37   0   4   4   0.911 
 
 Saved: /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/supplementary_table_3/csv/supplementary_table_3.csv
 ----
-Run ended:   2026-09-06T15:56:43Z
+Run ended:   2026-09-06T17:16:26Z
 Wall clock:  0.7s

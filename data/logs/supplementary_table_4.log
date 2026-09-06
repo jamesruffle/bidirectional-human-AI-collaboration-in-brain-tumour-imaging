@@ -1,9 +1,9 @@
-Run started: 2026-09-06T15:56:43Z
+Run started: 2026-09-06T17:16:25Z
 Script:      code/tables/supplementary_table_4.py
 Host CPUs:   128
 ----
 ──────────────────────────────────────────────────────────────────────────────
-Supplementary Table 4: Female–male performance gaps (Δ = female − male)
+Supplementary Table 3: Female–male performance gaps (Δ = female − male)
 ──────────────────────────────────────────────────────────────────────────────
 Agent        Condition                               ΔBA    ΔAUROC    ΔAUPRC     ΔSens     ΔSpec     ΔPrec       ΔF1
 Radiologist  Radiologist (Without model)          +0.004    -0.058    -0.114    -0.026    +0.033    -0.169    -0.117
@@ -14,5 +14,5 @@ Model        Model (With radiologist)             +0.032    +0.026    -0.000    
 
 Saved: /home/jruffle/Downloads/radiologist_enhancement_rct/data/source_data/supplementary_table_4/csv/supplementary_table_4.csv
 ----
-Run ended:   2026-09-06T15:56:43Z
+Run ended:   2026-09-06T17:16:26Z
 Wall clock:  0.7s
