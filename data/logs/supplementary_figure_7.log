@@ -1,4 +1,4 @@
-Run started: 2026-09-07T06:40:50Z
+Run started: 2026-09-07T08:34:04Z
 Script:      code/figures/supplementary_figure_7.py
 Host CPUs:   128
 ----
@@ -67,6 +67,6 @@ Overall improvements:
 
 Supplementary Figure 7 saved to /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Supplementary_Figure_7.png
 ----
-Run ended:   2026-09-07T06:40:53Z
+Run ended:   2026-09-07T08:34:08Z
 Wall clock:  3.6s
 Exit status: 0
