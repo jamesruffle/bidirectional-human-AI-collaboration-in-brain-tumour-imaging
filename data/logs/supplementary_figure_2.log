@@ -1,4 +1,4 @@
-Run started: 2026-09-06T22:44:10Z
+Run started: 2026-09-07T06:40:50Z
 Script:      code/figures/supplementary_figure_2.py
 Host CPUs:   128
 ----
@@ -7,6 +7,6 @@ Wrote self-contained page (9393 bytes), no network needed
 Wrote /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Supplementary_Figure_2.png  5068x9527 px  (698 dpi at A4 text width)
 Wrote /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Supplementary_Figure_2.svg  (vector artwork; glyphs outlined by pdftocairo)
 ----
-Run ended:   2026-09-06T22:44:14Z
+Run ended:   2026-09-07T06:40:53Z
 Wall clock:  3.9s
 Exit status: 0

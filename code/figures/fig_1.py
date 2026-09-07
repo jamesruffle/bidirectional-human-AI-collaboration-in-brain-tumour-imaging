@@ -1499,7 +1499,7 @@ ax.grid(True, alpha=0.3)
 
 # Add legend
 import matplotlib.lines as mlines
-green_line = mlines.Line2D([], [], color='green', marker='o', linestyle='-', 
+green_line = mlines.Line2D([], [], color='#2ca02c', marker='o', linestyle='-', 
                           markersize=8, label='Improved')
 orange_line = mlines.Line2D([], [], color='orange', marker='o', linestyle='-', 
                            markersize=8, label='Unchanged')
