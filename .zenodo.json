@@ -18,31 +18,38 @@
   "creators": [
     {
       "name": "Ruffle, James K.",
-      "affiliation": "Queen Square Institute of Neurology, University College London, London, UK"
+      "affiliation": "Queen Square Institute of Neurology, University College London, London, UK",
+      "orcid": "0000-0001-6248-7203"
     },
     {
       "name": "Mohinta, Samia",
-      "affiliation": "Queen Square Institute of Neurology, University College London, London, UK"
+      "affiliation": "Queen Square Institute of Neurology, University College London, London, UK",
+      "orcid": "0000-0002-6675-5006"
     },
     {
       "name": "Pombo, Guilherme",
-      "affiliation": "NVIDIA, UK"
+      "affiliation": "NVIDIA, UK",
+      "orcid": "0000-0001-5547-1297"
     },
     {
       "name": "Biswas, Asthik",
-      "affiliation": "Great Ormond Street Hospital for Children, London, UK"
+      "affiliation": "Great Ormond Street Hospital for Children, London, UK",
+      "orcid": "0000-0003-2010-9524"
     },
     {
       "name": "Campbell, Alan",
-      "affiliation": "Imaging Department, Royal National Orthopaedic Hospital, Stanmore, Middlesex, UK"
+      "affiliation": "Imaging Department, Royal National Orthopaedic Hospital, Stanmore, Middlesex, UK",
+      "orcid": "0000-0002-5956-8560"
     },
     {
       "name": "Davagnanam, Indran",
-      "affiliation": "Lysholm Department of Neuroradiology, National Hospital for Neurology and Neurosurgery, London, UK"
+      "affiliation": "Lysholm Department of Neuroradiology, National Hospital for Neurology and Neurosurgery, London, UK",
+      "orcid": "0000-0002-0363-1911"
     },
     {
       "name": "Doig, David",
-      "affiliation": "Lysholm Department of Neuroradiology, National Hospital for Neurology and Neurosurgery, London, UK"
+      "affiliation": "Lysholm Department of Neuroradiology, National Hospital for Neurology and Neurosurgery, London, UK",
+      "orcid": "0000-0002-7492-6610"
     },
     {
       "name": "Hammam, Ahmed",
@@ -50,7 +57,8 @@
     },
     {
       "name": "Hyare, Harpreet",
-      "affiliation": "Queen Square Institute of Neurology, University College London, London, UK"
+      "affiliation": "Queen Square Institute of Neurology, University College London, London, UK",
+      "orcid": "0000-0002-4672-3349"
     },
     {
       "name": "Jabeen, Farrah",
@@ -58,11 +66,13 @@
     },
     {
       "name": "Lim, Emma",
-      "affiliation": "Department of Imaging, Imperial College Healthcare NHS Trust, London, UK"
+      "affiliation": "Department of Imaging, Imperial College Healthcare NHS Trust, London, UK",
+      "orcid": "0000-0001-5577-9427"
     },
     {
       "name": "Mallon, Dermot",
-      "affiliation": "Lysholm Department of Neuroradiology, National Hospital for Neurology and Neurosurgery, London, UK"
+      "affiliation": "Lysholm Department of Neuroradiology, National Hospital for Neurology and Neurosurgery, London, UK",
+      "orcid": "0000-0001-7434-1201"
     },
     {
       "name": "Owen, Stephanie",
@@ -74,11 +84,13 @@
     },
     {
       "name": "Brandner, Sebastian",
-      "affiliation": "Queen Square Institute of Neurology, University College London, London, UK"
+      "affiliation": "Queen Square Institute of Neurology, University College London, London, UK",
+      "orcid": "0000-0002-9821-0342"
     },
     {
       "name": "Nachev, Parashkev",
-      "affiliation": "Queen Square Institute of Neurology, University College London, London, UK"
+      "affiliation": "Queen Square Institute of Neurology, University College London, London, UK",
+      "orcid": "0000-0002-2718-4423"
     }
   ],
   "related_identifiers": [
