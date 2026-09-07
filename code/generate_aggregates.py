@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Generate aggregates.json and best_cv_predictions.csv from the bundled
-seed-prediction CSV using the documented 5-seed prefer-correct dedup,
-prefer-correct tie-break procedure.
+seed-prediction CSV using the documented 5-seed prefer-correct tie-break.
 
 This script makes every model-side metric in Table 1 / Figure 1 a
 *derived* artifact emitted by a runnable Python file from a CSV input,
