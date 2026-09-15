@@ -1,7 +1,7 @@
 # Bidirectional human–AI collaboration in brain tumour imaging assessments
 
 [![arXiv](https://img.shields.io/badge/arXiv-2512.19707-b31b1b.svg)](https://arxiv.org/abs/2512.19707)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22517094.svg)](https://doi.org/10.5281/zenodo.22517094)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22517093.svg)](https://doi.org/10.5281/zenodo.22517093)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
 Reproducibility package for *"Bidirectional human-AI collaboration in brain tumour assessment improves both expert human and AI agent performance"* (Ruffle et al., Nature Communications, 2026, in press).
@@ -204,9 +204,12 @@ If you use this code or the bundled data, please cite:
 ```
 
 The version of this repository used in the paper is archived on Zenodo as release
-v1.0.0, DOI [10.5281/zenodo.22517094](https://doi.org/10.5281/zenodo.22517094). Cite
-that DOI for the code and source data; the concept DOI 10.5281/zenodo.22517093 always
-resolves to the latest release.
+v1.0.1. The concept DOI [10.5281/zenodo.22517093](https://doi.org/10.5281/zenodo.22517093)
+always resolves to the latest release, and the badge above points to it. The version
+DOI specific to v1.0.1 is the one to cite for the code and source data, and is given
+in the paper's Code availability statement; a Zenodo record also lists it under
+"Versions". The badge and this paragraph name the concept DOI rather than a version
+DOI deliberately, so that they remain correct inside every archived snapshot.
 
 ## Funding
 
