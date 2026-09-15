@@ -1617,7 +1617,7 @@ kappa_without = np.nanmean(kappa_without_matrix[~np.eye(n_rads, dtype=bool)])
 # Note this is the UNWEIGHTED mean of the off-diagonal agent x agent matrix, which is a
 # different quantity from the pair-count-weighted aggregate κ reported in the Results
 # and printed by supplementary_figure_4.py.
-print(f"\nPanel g title κ̄ (unweighted off-diagonal matrix mean): {kappa_without:.4f}")
+print(f"\nPanel g title mean κ (unweighted off-diagonal matrix mean): {kappa_without:.4f}")
 
 # Create heatmap (inferno colourmap, kappa range 0–1.0)
 sns.heatmap(kappa_without_matrix, annot=False, cmap='inferno',
@@ -1687,10 +1687,14 @@ for i in range(n_rads):
 # Calculate percentage
 without_percentage = (without_higher_count / total_comparisons * 100) if total_comparisons > 0 else 0
 
-# Plain-text kappa with a combining macron (U+03BA U+0304) rather than mathtext:
-# a $...$ run makes matplotlib lay the whole line out glyph by glyph, emitting one
-# <tspan> per character with no font fallback, which the deposited SVG then carries.
-ax.set_title(f'g) Inter-rater agreement without support\n(\u03ba\u0304 = {kappa_without:.3f}, {without_percentage:.0f}% higher)',
+# "mean κ" as plain text rather than mathtext or a combining macron. A $...$ run
+# makes matplotlib lay the whole line out glyph by glyph, emitting one <tspan> per
+# character with no font fallback, which the deposited SVG then carries; and a
+# combining macron (U+0304) needs the renderer to do mark attachment, which not
+# every SVG viewer does — where it does not, the bar lands beside the kappa rather
+# than above it. Spelling out "mean" renders identically in every renderer, and
+# distinguishes this matrix mean from the pair-count-weighted aggregate in Table 1.
+ax.set_title(f'g) Inter-rater agreement without support\n(mean \u03ba = {kappa_without:.3f}, {without_percentage:.0f}% higher)',
              fontsize=14)
 ax.set_xlabel('Agent', fontsize=12)
 ax.set_ylabel('Agent', fontsize=12)
@@ -1753,7 +1757,7 @@ np.fill_diagonal(kappa_with_matrix, 1.0)
 
 # Calculate mean kappa for title
 kappa_with = np.nanmean(kappa_with_matrix[~np.eye(n_rads, dtype=bool)])
-print(f"Panel h title κ̄ (unweighted off-diagonal matrix mean): {kappa_with:.4f}")
+print(f"Panel h title mean κ (unweighted off-diagonal matrix mean): {kappa_with:.4f}")
 
 # Create heatmap (inferno colourmap, kappa range 0–1.0)
 # Create colorbar axes to the right with some spacing
@@ -1789,7 +1793,7 @@ for i in range(n_rads):
 # Calculate percentage
 with_percentage = (with_higher_count / total_comparisons * 100) if total_comparisons > 0 else 0
 
-ax.set_title(f'h) Inter-rater agreement with support\n(\u03ba\u0304 = {kappa_with:.3f}, {with_percentage:.0f}% higher)',
+ax.set_title(f'h) Inter-rater agreement with support\n(mean \u03ba = {kappa_with:.3f}, {with_percentage:.0f}% higher)',
              fontsize=14)
 ax.set_xlabel('Agent', fontsize=12)
 ax.set_ylabel('Agent', fontsize=12)
