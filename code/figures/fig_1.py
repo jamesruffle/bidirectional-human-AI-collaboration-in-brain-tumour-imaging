@@ -1687,7 +1687,10 @@ for i in range(n_rads):
 # Calculate percentage
 without_percentage = (without_higher_count / total_comparisons * 100) if total_comparisons > 0 else 0
 
-ax.set_title(f'g) Inter-rater agreement without support\n($\\overline{{\\text{{κ}}}}$ = {kappa_without:.3f}, {without_percentage:.0f}% higher)',
+# Plain-text kappa with a combining macron (U+03BA U+0304) rather than mathtext:
+# a $...$ run makes matplotlib lay the whole line out glyph by glyph, emitting one
+# <tspan> per character with no font fallback, which the deposited SVG then carries.
+ax.set_title(f'g) Inter-rater agreement without support\n(\u03ba\u0304 = {kappa_without:.3f}, {without_percentage:.0f}% higher)',
              fontsize=14)
 ax.set_xlabel('Agent', fontsize=12)
 ax.set_ylabel('Agent', fontsize=12)
@@ -1786,7 +1789,7 @@ for i in range(n_rads):
 # Calculate percentage
 with_percentage = (with_higher_count / total_comparisons * 100) if total_comparisons > 0 else 0
 
-ax.set_title(f'h) Inter-rater agreement with support\n($\\overline{{\\text{{κ}}}}$ = {kappa_with:.3f}, {with_percentage:.0f}% higher)',
+ax.set_title(f'h) Inter-rater agreement with support\n(\u03ba\u0304 = {kappa_with:.3f}, {with_percentage:.0f}% higher)',
              fontsize=14)
 ax.set_xlabel('Agent', fontsize=12)
 ax.set_ylabel('Agent', fontsize=12)
