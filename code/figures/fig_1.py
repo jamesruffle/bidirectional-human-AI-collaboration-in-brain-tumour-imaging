@@ -1617,7 +1617,7 @@ kappa_without = np.nanmean(kappa_without_matrix[~np.eye(n_rads, dtype=bool)])
 # Note this is the UNWEIGHTED mean of the off-diagonal agent x agent matrix, which is a
 # different quantity from the pair-count-weighted aggregate κ reported in the Results
 # and printed by supplementary_figure_4.py.
-print(f"\nPanel g title mean κ (unweighted off-diagonal matrix mean): {kappa_without:.4f}")
+print(f"\nPanel g title κ̄ (unweighted off-diagonal matrix mean): {kappa_without:.4f}")
 
 # Create heatmap (inferno colourmap, kappa range 0–1.0)
 sns.heatmap(kappa_without_matrix, annot=False, cmap='inferno',
@@ -1687,15 +1687,53 @@ for i in range(n_rads):
 # Calculate percentage
 without_percentage = (without_higher_count / total_comparisons * 100) if total_comparisons > 0 else 0
 
-# "mean κ" as plain text rather than mathtext or a combining macron. A $...$ run
-# makes matplotlib lay the whole line out glyph by glyph, emitting one <tspan> per
-# character with no font fallback, which the deposited SVG then carries; and a
-# combining macron (U+0304) needs the renderer to do mark attachment, which not
-# every SVG viewer does — where it does not, the bar lands beside the kappa rather
-# than above it. Spelling out "mean" renders identically in every renderer, and
-# distinguishes this matrix mean from the pair-count-weighted aggregate in Table 1.
-ax.set_title(f'g) Inter-rater agreement without support\n(mean \u03ba = {kappa_without:.3f}, {without_percentage:.0f}% higher)',
-             fontsize=14)
+# ── Panel g/h titles: kappa with a DRAWN overbar ───────────────────────────────
+# The bar is a Line2D, not a combining macron (U+0304). A combining mark needs the
+# renderer to attach it to the preceding glyph and not every SVG viewer does; where
+# it does not the bar lands beside the kappa rather than above it. Mathtext is worse
+# still: a $...$ run makes matplotlib lay the whole title line out glyph by glyph,
+# one <tspan> per character with no font fallback, which the deposited SVG carries.
+# Bar placement needs the final axes geometry, so the bars are drawn by
+# _draw_overbars() after plt.tight_layout().
+_OVERBAR_TITLES = []
+
+
+def _title_with_overbar(ax, line1, pre, sym, post, fontsize=14):
+    """Two-line panel title in which `sym` carries a drawn overbar."""
+    ax.set_title(line1 + '\n ', fontsize=fontsize)
+    txt = ax.text(0.5, 1.005, f'{pre}{sym}{post}', transform=ax.transAxes,
+                  ha='center', va='bottom', fontsize=fontsize)
+    _OVERBAR_TITLES.append((ax, txt, pre, sym, fontsize))
+    return txt
+
+
+def _draw_overbars():
+    """Draw the recorded overbars. Must be called after the final layout pass."""
+    from matplotlib.lines import Line2D
+    from matplotlib.font_manager import FontProperties
+    for ax, txt, pre, sym, fontsize in _OVERBAR_TITLES:
+        fig = ax.figure
+        fig.canvas.draw()
+        renderer = fig.canvas.get_renderer()
+        fp = FontProperties(size=fontsize)
+
+        def width(t):
+            return renderer.get_text_width_height_descent(t, fp, False)[0] if t else 0.0
+
+        bb = txt.get_window_extent(renderer=renderer)
+        x0 = bb.x0 + width(pre)
+        x1 = x0 + width(sym)
+        y = bb.y0 + bb.height * 1.02
+        inv = ax.transAxes.inverted()
+        (a0, ay), (a1, _) = inv.transform([(x0, y), (x1, y)])
+        ax.add_line(Line2D([a0, a1], [ay, ay], transform=ax.transAxes,
+                           color='black', linewidth=1.2, solid_capstyle='butt',
+                           clip_on=False))
+
+
+_title_with_overbar(ax, 'g) Inter-rater agreement without support',
+                    '(', '\u03ba',
+                    f' = {kappa_without:.3f}, {without_percentage:.0f}% higher)')
 ax.set_xlabel('Agent', fontsize=12)
 ax.set_ylabel('Agent', fontsize=12)
 # Rotate x-tick labels
@@ -1757,7 +1795,7 @@ np.fill_diagonal(kappa_with_matrix, 1.0)
 
 # Calculate mean kappa for title
 kappa_with = np.nanmean(kappa_with_matrix[~np.eye(n_rads, dtype=bool)])
-print(f"Panel h title mean κ (unweighted off-diagonal matrix mean): {kappa_with:.4f}")
+print(f"Panel h title κ̄ (unweighted off-diagonal matrix mean): {kappa_with:.4f}")
 
 # Create heatmap (inferno colourmap, kappa range 0–1.0)
 # Create colorbar axes to the right with some spacing
@@ -1793,8 +1831,9 @@ for i in range(n_rads):
 # Calculate percentage
 with_percentage = (with_higher_count / total_comparisons * 100) if total_comparisons > 0 else 0
 
-ax.set_title(f'h) Inter-rater agreement with support\n(mean \u03ba = {kappa_with:.3f}, {with_percentage:.0f}% higher)',
-             fontsize=14)
+_title_with_overbar(ax, 'h) Inter-rater agreement with support',
+                    '(', '\u03ba',
+                    f' = {kappa_with:.3f}, {with_percentage:.0f}% higher)')
 ax.set_xlabel('Agent', fontsize=12)
 ax.set_ylabel('Agent', fontsize=12)
 # Rotate x-tick labels
@@ -2264,6 +2303,7 @@ ax.legend(handles=legend_elements, loc='lower right', title='Experience', framea
 fig1.suptitle('Impact of support on agent performance', fontsize=16, y=0.99)
 
 plt.tight_layout()
+_draw_overbars()   # overbars need the final axes geometry
 
 # Save Figure_1
 fig1_path = os.path.join(FIGURES_OUTPUT_PATH, 'Fig_1.png')
