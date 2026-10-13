@@ -1405,7 +1405,7 @@ for _, row in paired_data.iterrows():
     size = row['years_experience'] * 9  # area scale; keys in the legend use the same factor
     
     ax.plot([0, 1], [row['accuracy_without'], row['accuracy_with']], 
-            color=color, alpha=0.7, linewidth=2, marker='o', markersize=8)
+            color=color, alpha=0.7, linewidth=2)
     
     # Add scatter points with size
     ax.scatter(0, row['accuracy_without'], s=size, alpha=0.8, 

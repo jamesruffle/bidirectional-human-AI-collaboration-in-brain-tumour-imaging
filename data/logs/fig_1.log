@@ -1,4 +1,4 @@
-Run started: 2026-09-07T08:34:04Z
+Run started: 2026-10-13T10:23:48Z
 Script:      code/figures/fig_1.py
 Host CPUs:   128
 ----
@@ -163,8 +163,8 @@ Panel c: Using consistent metrics from Panel A
   Model alone (pair-level accuracy): 0.8236
   Model with radiologist support (pair-level CV accuracy): 0.8418
 
-Panel g title κ̄ (unweighted off-diagonal matrix mean): 0.3380
-Panel h title κ̄ (unweighted off-diagonal matrix mean): 0.4837
+Panel g title mean κ (unweighted off-diagonal matrix mean): 0.3380
+Panel h title mean κ (unweighted off-diagonal matrix mean): 0.4837
 
 Panel d: Using pair-level accuracy from Panel A
   Model alone (pair-level accuracy): 0.8236
@@ -185,6 +185,6 @@ Figure_1 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figu
 Figure_1 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_1.svg
 Figure_1 saved to: /home/jruffle/Downloads/radiologist_enhancement_rct/data/figures/Fig_1.pdf
 ----
-Run ended:   2026-09-07T08:34:51Z
-Wall clock:  46.7s
+Run ended:   2026-10-13T10:24:40Z
+Wall clock:  51.6s
 Exit status: 0
