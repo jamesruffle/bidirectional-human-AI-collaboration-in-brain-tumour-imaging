@@ -72,12 +72,10 @@ def _reader_bootstrap_ci(arr, B=B, seed=SEED):
 def _reader_normal_ci(arr, sd=None):
     """Normal-approximation 95% CI: mean ± 1.96 × (SD / sqrt(n)).
 
-    By default the SD of `arr` (population, ddof=0) is used. For the
-    Sensitivity / Specificity rows the published Table 1 instead centres the
-    point estimate on the confidence-weighted MRMC FOM (= mean of per-reader
-    confidence-weighted sens/spec) but uses the *raw* per-reader sens/spec SD
-    for the half-width — caller passes the raw SD explicitly via `sd` to
-    reproduce that method.
+    The SD is that of `arr` itself (population, ddof=0). Every Table 1 row
+    uses this default, Sensitivity and Specificity included: their point and
+    interval both come from the confidence-weighted per-reader values. `sd`
+    replaces the SD used for the half-width; Table 1's calls always pass None.
     """
     a = np.asarray(arr, dtype=float)
     a = a[~np.isnan(a)]
