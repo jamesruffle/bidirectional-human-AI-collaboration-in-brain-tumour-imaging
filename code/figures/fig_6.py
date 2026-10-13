@@ -30,6 +30,7 @@ matplotlib.use('Agg')
 # outline path. The font stack carries fallbacks because 'svg.fonttype' = 'none'
 # leaves glyph selection to whichever renderer opens the file.
 matplotlib.rcParams['svg.fonttype'] = 'none'
+matplotlib.rcParams['font.size'] = 11
 matplotlib.rcParams['font.family'] = 'sans-serif'
 matplotlib.rcParams['font.sans-serif'] = ['DejaVu Sans', 'Arial', 'Helvetica', 'sans-serif']
 import matplotlib.pyplot as plt
@@ -149,9 +150,9 @@ fig6 = plt.figure(figsize=(20, 18))
 # which sit right of figure centre (gridspec margins are left=0.125, right=0.9), so a
 # title centred at 0.5 lands ~1% left of centre in the saved image.
 fig6.suptitle('Metacognitive and economic estimates for human-AI partnership',
-              fontsize=16, x=0.50875, y=0.92)
+              fontsize=16, x=0.50875, y=0.931)
 
-gs = fig6.add_gridspec(3, 3, hspace=0.45, wspace=0.35)
+gs = fig6.add_gridspec(3, 3, hspace=0.57, wspace=0.35)
 
 # Define reference color palette
 reference_colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd']
@@ -314,12 +315,12 @@ ax_0_0a.scatter(x_scatter, actual_training_years, color=reference_colors[1], alp
 
 for i, (x, y, rad_name, years_exp) in enumerate(zip(x_scatter, actual_training_years, equiv_df['radiologist'], equiv_df['years_experience'])):
     rad_num = rad_name.split('#')[1] if '#' in rad_name else str(i+1)
-    ax_0_0a.text(x, y, rad_num, ha='center', va='center', fontsize=7, color='black', zorder=6)
+    ax_0_0a.text(x, y, rad_num, ha='center', va='center', fontsize=11, color='black', zorder=6)
 
-ax_0_0a.set_xlabel('Agent', fontsize=10)
-ax_0_0a.set_ylabel('Years', fontsize=10)
+ax_0_0a.set_xlabel('Agent', fontsize=11)
+ax_0_0a.set_ylabel('Years', fontsize=11)
 ax_0_0a.set_xticks(x_pos)
-ax_0_0a.set_xticklabels(x_labels, rotation=45, ha='right', fontsize=9)
+ax_0_0a.set_xticklabels(x_labels, rotation=45, ha='right', fontsize=11)
 ax_0_0a.grid(True, alpha=0.3, axis='y')
 
 # Set y-axis limits for years
@@ -329,10 +330,10 @@ ax_0_0a.set_ylim(0, 26)
 for i, y_val in enumerate(years_data):
     if i == 1:  # Radiologist bar (which shows mean)
         ax_0_0a.text(x_pos[i], y_val + 0.2, f'x̄={y_val:.1f} yrs',
-                    ha='center', va='bottom', fontsize=8)
+                    ha='center', va='bottom', fontsize=11)
     else:  # Model bar
         ax_0_0a.text(x_pos[i], y_val + 0.2, f'{y_val:.1f} yrs',
-                    ha='center', va='bottom', fontsize=8)
+                    ha='center', va='bottom', fontsize=11)
 
 ax_0_0a.set_title('a) Actual experience', fontsize=11)
 
@@ -364,12 +365,12 @@ ax_0_0b.scatter(x_scatter_cost, individual_costs, color=reference_colors[1], alp
 
 for i, (x, y, rad_name) in enumerate(zip(x_scatter_cost, individual_costs, equiv_df['radiologist'])):
     rad_num = rad_name.split('#')[1] if '#' in rad_name else str(i+1)
-    ax_0_0b.text(x, y, rad_num, ha='center', va='center', fontsize=7, color='black', zorder=6)
+    ax_0_0b.text(x, y, rad_num, ha='center', va='center', fontsize=11, color='black', zorder=6)
 
-ax_0_0b.set_xlabel('Agent', fontsize=10)
-ax_0_0b.set_ylabel('Cost (in £1000s)', fontsize=10)
+ax_0_0b.set_xlabel('Agent', fontsize=11)
+ax_0_0b.set_ylabel('Cost (in £1000s)', fontsize=11)
 ax_0_0b.set_xticks(x_pos)
-ax_0_0b.set_xticklabels(x_labels, rotation=45, ha='right', fontsize=9)
+ax_0_0b.set_xticklabels(x_labels, rotation=45, ha='right', fontsize=11)
 ax_0_0b.grid(True, alpha=0.3, axis='y')
 
 # Set y-axis limits for cost
@@ -385,18 +386,18 @@ for i, c_val in enumerate(cost_data):
         # Convert to millions if over 1 million
         if c_val >= 1000000:
             ax_0_0b.text(x_pos[i], c_val + 60000, f'x̄=£{c_val/1000000:.3f}m',
-                        ha='center', va='bottom', fontsize=8)
+                        ha='center', va='bottom', fontsize=11)
         else:
             ax_0_0b.text(x_pos[i], c_val + 60000, f'x̄=£{c_val:.0f}',
-                        ha='center', va='bottom', fontsize=8)
+                        ha='center', va='bottom', fontsize=11)
     else:  # Model bar
         # Model cost is around £5000; round to nearest £1,000.
         if c_val >= 1000000:
             ax_0_0b.text(x_pos[i], c_val + 60000, f'£{c_val/1000000:.3f}m',
-                        ha='center', va='bottom', fontsize=8)
+                        ha='center', va='bottom', fontsize=11)
         else:
             ax_0_0b.text(x_pos[i], c_val + 60000, f'£{round(c_val/1000)*1000:,.0f}',
-                        ha='center', va='bottom', fontsize=8)
+                        ha='center', va='bottom', fontsize=11)
 
 ax_0_0b.set_title('b) Actual cost', fontsize=11)
 
@@ -502,7 +503,7 @@ if True:
 
     ax2.tick_params(axis='y', labelcolor='black')
 
-    ax_0_1.set_title('c) Estimated experience and salary-equivalent gain from support')
+    ax_0_1.set_title('c) Estimated experience and salary-equivalent\ngain from support')
     
     # Align y-axes so both start at 0
     ax_0_1.set_ylim(bottom=0)
@@ -703,7 +704,7 @@ if True:
     # Match y-axis label styling to Panel C (no bold, black color)
     ax_0_2.set_ylabel('Equivalent experience (years) [bars]', color='black')
     ax2_0_2.set_ylabel('Salary-equivalent (in £1000s) [points]', color='black')
-    ax_0_2.set_title('d) Cumulative estimated experience and salary-equivalent')
+    ax_0_2.set_title('d) Cumulative estimated experience\nand salary-equivalent')
 
     # Match y-axis tick styling to Panel C
     ax_0_2.tick_params(axis='y', labelcolor='black')
@@ -1700,13 +1701,13 @@ if True:
                   marker='o', s=150, alpha=0.9, color=colors_seg[0],
                   edgecolors='black', linewidth=0.5, zorder=5)
     ax_2_1.text(mean_rad_without['conf_acc_corr'], mean_rad_without['calibration_diff'],
-               'R', ha='center', va='center', fontsize=10, color='black', zorder=6)
+               'R', ha='center', va='center', fontsize=11, color='black', zorder=6)
 
     ax_2_1.scatter(mean_rad_with['conf_acc_corr'], mean_rad_with['calibration_diff'],
                   marker='o', s=150, alpha=0.9, color=colors_seg[1],
                   edgecolors='black', linewidth=0.5, zorder=5)
     ax_2_1.text(mean_rad_with['conf_acc_corr'], mean_rad_with['calibration_diff'],
-               'R', ha='center', va='center', fontsize=10, color='black', zorder=6)
+               'R', ha='center', va='center', fontsize=11, color='black', zorder=6)
 
     # Add arrow connecting R points - offset endpoint to avoid obscuring arrowhead
     # Calculate direction vector and shorten arrow to point to edge of scatter point
@@ -1733,7 +1734,7 @@ if True:
                           edgecolors='black', linewidth=0.5, zorder=5)
             ax_2_1.text(model_conf_metrics['without']['conf_acc_corr'],
                        model_conf_metrics['without']['calibration_diff'],
-                       'M', ha='center', va='center', fontsize=10, color='black', zorder=6)
+                       'M', ha='center', va='center', fontsize=11, color='black', zorder=6)
 
             # Plot model with support
             ax_2_1.scatter(model_conf_metrics['with']['conf_acc_corr'],
@@ -1742,7 +1743,7 @@ if True:
                           edgecolors='black', linewidth=0.5, zorder=5)
             ax_2_1.text(model_conf_metrics['with']['conf_acc_corr'],
                        model_conf_metrics['with']['calibration_diff'],
-                       'M', ha='center', va='center', fontsize=10, color='black', zorder=6)
+                       'M', ha='center', va='center', fontsize=11, color='black', zorder=6)
 
             # Add arrow connecting M points - offset endpoint to avoid obscuring arrowhead
             dx_m = model_conf_metrics['with']['conf_acc_corr'] - model_conf_metrics['without']['conf_acc_corr']
@@ -1834,7 +1835,7 @@ if True:
         Patch(facecolor=quadrant_colors['bottom_left'], alpha=0.3, label='↓ Calibration\n↓ Self-awareness')
     ]
     
-    ax_2_1.legend(handles=quadrant_legend_elements, loc='lower right', fontsize=9, frameon=True, title='Quadrant regions')
+    ax_2_1.legend(handles=quadrant_legend_elements, loc='upper center', bbox_to_anchor=(0.5, -0.13), ncol=2, fontsize=11, frameon=True, title='Quadrant regions')
     
     # Calculate percentage optimally calibrated (in top right quadrant)
     # Include individual radiologists and model, but exclude 'R' mean point
@@ -1963,7 +1964,7 @@ if True:
                                       loc='upper left', frameon=True, title='Condition')
         # Add the quadrant legend back as a second legend
         ax_2_1.add_artist(scatter_legend)
-        ax_2_1.legend(handles=quadrant_legend_elements, loc='lower right', fontsize=9, frameon=True, title='Quadrant regions')
+        ax_2_1.legend(handles=quadrant_legend_elements, loc='upper center', bbox_to_anchor=(0.5, -0.13), ncol=2, fontsize=11, frameon=True, title='Quadrant regions')
     
 # Panel f (row 2, col 2): Model impact on confidence calibration
 ax_2_2 = fig6.add_subplot(gs[2, 2])
