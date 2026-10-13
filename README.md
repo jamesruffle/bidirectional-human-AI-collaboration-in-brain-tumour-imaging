@@ -36,8 +36,9 @@ code/figures/           One self-contained Python script per published figure.
 code/tables/            One script per Table 1 / supplementary table.
 code/analysis/          Standalone diagnostic analyses that support statements in
                         the manuscript without producing a published figure or
-                        table (e.g. the experience x assistance interaction and
-                        its power/MDE calculation).
+                        table. interaction_power_diagnostic.py tests the
+                        experience x assistance interaction and computes the
+                        smallest interaction 11 readers can detect at 80% power.
 code/run_all.sh         Parallel runner — executes every figure, table, and
                         analysis script concurrently with timing captured in
                         each log. Exits non-zero and names the offenders if any
@@ -138,6 +139,7 @@ same filename refer to two different objects either side of a single commit.
 | `supplementary_figure_5.py` | `data/source_data/supplementary_figure_5/csv/` |
 | `supplementary_figure_6.py` | `data/source_data/supplementary_figure_6/csv/` |
 | `supplementary_figure_7.py` | `data/source_data/supplementary_figure_7/` |
+| `interaction_power_diagnostic.py` | `data/source_data/figure_1/csv_v2/radiologist_df.csv` |
 
 Two columns of `radiologist_df.csv` are carried from an upstream frame and are not used by any script here: `lesion_size_category` records the size of the *enhancing* lesion, so it reads `Unknown` for every case without enhancement and is therefore determined by `has_enhancement_gt` rather than independent of it; `radiomic_category` is likewise unused. Neither contributes to a published number. The lesion-size strata in Supplementary Figure 7 come from that figure's own input CSV, not from this column.
 
