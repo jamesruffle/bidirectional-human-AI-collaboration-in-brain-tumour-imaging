@@ -58,7 +58,7 @@ def main():
     fig3 = plt.figure(figsize=(16, 24))
 
     # Add overall title
-    fig3.suptitle('Performance curves with/without support', fontsize=16, y=0.92)  # Adjusted y position
+    fig3.suptitle('Performance curves with/without support', fontsize=16, y=0.910)  # Adjusted y position
 
     # Define the grid layout - 4 rows, 2 columns - reduced wspace for closer columns
     gs = fig3.add_gridspec(4, 2, hspace=0.25, wspace=0.2)
